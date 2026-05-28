@@ -137,6 +137,35 @@ body {
 .card:nth-child(6) { animation-delay:0.25s; }
 .card:nth-child(7) { animation-delay:0.3s; }
 .card:nth-child(8) { animation-delay:0.35s; }
+/* GitHub Repos */
+.repo-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
+.repo-card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); padding:20px 22px; transition:var(--transition); display:flex; flex-direction:column; }
+.repo-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); border-color:rgba(139,92,246,0.3); }
+.repo-card-top { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.repo-lang-dot { width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+.repo-name { font-size:16px; font-weight:700; color:var(--accent-cyan); text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.repo-name:hover { text-decoration:underline; }
+.repo-desc { font-size:13px; color:var(--text-secondary); line-height:1.5; flex:1; margin-bottom:12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.repo-stats { display:flex; align-items:center; gap:16px; font-size:12px; color:var(--text-muted); flex-wrap:wrap; }
+.repo-stat { display:flex; align-items:center; gap:4px; }
+.repo-stars { color:var(--accent-amber); font-weight:600; }
+.repo-forks { color:var(--text-secondary); }
+.repo-topics { display:flex; flex-wrap:wrap; gap:4px; margin-top:10px; }
+.repo-topic { font-size:11px; padding:2px 8px; border-radius:4px; background:rgba(139,92,246,0.1); color:var(--accent-purple); }
+.repo-loading { text-align:center; padding:60px 20px; color:var(--text-muted); }
+.repo-loading .spinner { width:36px; height:36px; border:3px solid var(--border-color); border-top-color:var(--accent-purple); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 16px; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.repo-category-btns { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+.repo-cat-btn { padding:8px 16px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:13px; font-weight:500; cursor:pointer; transition:var(--transition); }
+.repo-cat-btn:hover { border-color:var(--accent-purple); color:var(--text-primary); }
+.repo-cat-btn.active { background:rgba(139,92,246,0.15); border-color:var(--accent-purple); color:var(--accent-purple); }
+.repo-load-more { display:block; margin:24px auto 0; padding:12px 32px; border-radius:50px; border:1px solid var(--accent-purple); background:rgba(139,92,246,0.1); color:var(--accent-purple); font-size:14px; font-weight:600; cursor:pointer; transition:var(--transition); }
+.repo-load-more:hover { background:rgba(139,92,246,0.2); }
+.repo-load-more:disabled { opacity:0.4; cursor:not-allowed; }
+/* Update indicator */
+.update-badge { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--accent-green); background:rgba(16,185,129,0.1); padding:4px 12px; border-radius:50px; margin-left:12px; }
+.update-dot { width:6px; height:6px; border-radius:50%; background:var(--accent-green); animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
 </style>
 </head>
 <body>
@@ -150,6 +179,7 @@ body {
       <a class="nav-link" href="#global-economy">全球经济</a>
       <a class="nav-link" href="#japan-aging">日本老龄化</a>
       <a class="nav-link" href="#youth-employment">青年应对</a>
+      <a class="nav-link" href="#github-trending">GitHub热门</a>
     </div>
     <button class="hamburger" id="hamburgerBtn">&#9776;</button>
   </div>
@@ -158,6 +188,7 @@ body {
     <a class="nav-link" href="#global-economy">全球经济</a>
     <a class="nav-link" href="#japan-aging">日本老龄化</a>
     <a class="nav-link" href="#youth-employment">青年应对</a>
+    <a class="nav-link" href="#github-trending">GitHub热门</a>
   </div>
 </nav>
 
@@ -1129,11 +1160,42 @@ body {
   </div>
 </section>
 
+<!-- ========== Module E: GitHub Trending AI Projects ========== -->
+<section class="section" id="github-trending">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(139,92,246,0.15);color:var(--accent-purple);">&#128187;</div>
+    <div>
+      <div class="section-title">GitHub 热门 AI 项目 <span class="update-badge"><span class="update-dot"></span>实时数据</span></div>
+      <div class="section-subtitle">基于 GitHub Search API 实时拉取，按 Star 数排序 | 点击项目名直接访问</div>
+    </div>
+  </div>
+
+  <div class="repo-category-btns" id="repoCategories">
+    <button class="repo-cat-btn active" data-query="topic:ai+topic:llm">LLM 大模型</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:agent">AI Agent</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:rag">RAG 检索增强</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:computer-vision">计算机视觉</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:reinforcement-learning">强化学习</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:diffusion-model">扩散模型</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:mlops">MLOps</button>
+    <button class="repo-cat-btn" data-query="topic:ai+topic:robotics">机器人</button>
+  </div>
+
+  <div class="repo-grid" id="repoGrid">
+    <div class="repo-loading" id="repoLoading">
+      <div class="spinner"></div>
+      <div>正在从 GitHub 拉取热门项目...</div>
+    </div>
+  </div>
+
+  <button class="repo-load-more" id="repoLoadMore" style="display:none;">加载更多</button>
+</section>
+
 <!-- Footer -->
 <footer class="footer">
-  <p>AI Insight Hub &copy; 2026 &mdash; 基于国际权威信源编译 | 数据更新：2026年5月</p>
-  <p style="margin-top:8px;">信源：NVIDIA / Google DeepMind / OpenAI / Anthropic / IMF / 世界经济论坛 / Nature / 达拉斯联储 / OECD / McKinsey / CrewAI / e-Conomy SEA</p>
-  <p style="margin-top:8px;"><a href="https://github.com/FNK1221/ai-insight-hub" target="_blank">GitHub 仓库</a></p>
+  <p>AI Insight Hub &copy; 2026 &mdash; 基于国际权威信源编译 | 内容每周自动更新</p>
+  <p style="margin-top:8px;">信源：NVIDIA / Google DeepMind / OpenAI / Anthropic / IMF / 世界经济论坛 / Nature / 达拉斯联储 / OECD / McKinsey / CrewAI / e-Conomy SEA / GitHub API</p>
+  <p style="margin-top:8px;"><a href="https://github.com/FNK1221/ai-insight-hub" target="_blank">GitHub 仓库</a> · <span id="lastUpdate">最近更新：加载中...</span></p>
 </footer>
 
 <!-- Back to Top -->
@@ -1256,6 +1318,140 @@ document.querySelectorAll('.mobile-menu .nav-link').forEach(l => {
     document.getElementById('mobileMenu').classList.remove('open');
   });
 });
+
+// ===== Last Update Time =====
+document.getElementById('lastUpdate').textContent = '最近更新：' + new Date().toLocaleDateString('zh-CN', { year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+
+// ===== GitHub Trending Repos =====
+(function() {
+  const grid = document.getElementById('repoGrid');
+  const loadMoreBtn = document.getElementById('repoLoadMore');
+  const loadingEl = document.getElementById('repoLoading');
+  let currentPage = 1;
+  let currentQuery = 'topic:ai+topic:llm';
+  let totalLoaded = 0;
+  const PER_PAGE = 12;
+
+  // Language color map
+  const langColors = {
+    'Python':'#3572A5','JavaScript':'#f1e05a','TypeScript':'#3178c6','Rust':'#dea584',
+    'C++':'#f34b7d','C':'#555555','Go':'#00ADD8','Java':'#b07219','Jupyter Notebook':'#DA5B0B',
+    'Shell':'#89e051','Lua':'#000080','Swift':'#F05138','Kotlin':'#A97BFF','Ruby':'#701516',
+    'CSS':'#563d7c','HTML':'#e34c26','Dart':'#00B4AB','Zig':'#ec915c','Julia':'#9558B2',
+    'R':'#198CE7','Scala':'#c22d40','Elixir':'#6e4a7e','Clojure':'#db5855'
+  };
+
+  function formatStars(n) {
+    if (n >= 1000) return (n/1000).toFixed(1) + 'k';
+    return n.toString();
+  }
+
+  function timeAgo(dateStr) {
+    const diff = Date.now() - new Date(dateStr).getTime();
+    const days = Math.floor(diff / 86400000);
+    if (days === 0) return '今天';
+    if (days === 1) return '昨天';
+    if (days < 30) return days + '天前';
+    if (days < 365) return Math.floor(days/30) + '个月前';
+    return Math.floor(days/365) + '年前';
+  }
+
+  function renderRepo(repo) {
+    const langColor = langColors[repo.language] || '#8b5cf6';
+    const topics = (repo.topics || []).slice(0, 4).map(t =>
+      `<span class="repo-topic">${t}</span>`
+    ).join('');
+
+    return `
+      <div class="repo-card">
+        <div class="repo-card-top">
+          <span class="repo-lang-dot" style="background:${langColor}"></span>
+          <a class="repo-name" href="${repo.html_url}" target="_blank" title="${repo.full_name}">${repo.name}</a>
+        </div>
+        <div class="repo-desc">${repo.description || '暂无描述'}</div>
+        <div class="repo-stats">
+          <span class="repo-stat repo-stars">&#9733; ${formatStars(repo.stargazers_count)}</span>
+          <span class="repo-stat repo-forks">&#128278; ${formatStars(repo.forks_count)}</span>
+          <span class="repo-stat">${repo.language || '—'}</span>
+          <span class="repo-stat">更新 ${timeAgo(repo.pushed_at)}</span>
+        </div>
+        ${topics ? `<div class="repo-topics">${topics}</div>` : ''}
+      </div>
+    `;
+  }
+
+  async function fetchRepos(page, append) {
+    if (!append) {
+      grid.innerHTML = '';
+      totalLoaded = 0;
+    }
+    loadingEl && loadingEl.remove();
+
+    // Show loading
+    const loadDiv = document.createElement('div');
+    loadDiv.className = 'repo-loading';
+    loadDiv.id = 'repoLoading';
+    loadDiv.innerHTML = '<div class="spinner"></div><div>正在从 GitHub 拉取热门项目...</div>';
+    grid.appendChild(loadDiv);
+
+    try {
+      const sort = 'stars';
+      const order = 'desc';
+      const url = `https://api.github.com/search/repositories?q=${currentQuery}&sort=${sort}&order=${order}&per_page=${PER_PAGE}&page=${page}`;
+      const resp = await fetch(url);
+      const data = await resp.json();
+
+      loadDiv.remove();
+
+      if (data.items && data.items.length > 0) {
+        data.items.forEach(repo => {
+          grid.insertAdjacentHTML('beforeend', renderRepo(repo));
+        });
+        totalLoaded += data.items.length;
+
+        // Show/hide load more
+        if (totalLoaded < data.total_count && totalLoaded < 60) {
+          loadMoreBtn.style.display = 'block';
+          loadMoreBtn.disabled = false;
+        } else {
+          loadMoreBtn.style.display = 'none';
+        }
+      } else {
+        grid.innerHTML = '<div class="repo-loading"><div style="font-size:40px;margin-bottom:12px;">&#128270;</div><div>暂无数据，请尝试其他分类</div></div>';
+        loadMoreBtn.style.display = 'none';
+      }
+    } catch (err) {
+      loadDiv.remove();
+      grid.innerHTML = `<div class="repo-loading"><div style="font-size:40px;margin-bottom:12px;">&#9888;&#65039;</div><div>GitHub API 请求失败（可能触发速率限制），请稍后刷新重试</div><div style="font-size:12px;color:var(--text-muted);margin-top:8px;">${err.message}</div></div>`;
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+  // Category buttons
+  document.querySelectorAll('.repo-cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.repo-cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentQuery = btn.dataset.query;
+      currentPage = 1;
+      fetchRepos(1, false);
+    });
+  });
+
+  // Load more
+  loadMoreBtn.addEventListener('click', () => {
+    currentPage++;
+    loadMoreBtn.disabled = true;
+    loadMoreBtn.textContent = '加载中...';
+    fetchRepos(currentPage, true).then(() => {
+      loadMoreBtn.textContent = '加载更多';
+    });
+  });
+
+  // Initial fetch
+  fetchRepos(1, false);
+})();
+
 </script>
 </body>
 </html>
