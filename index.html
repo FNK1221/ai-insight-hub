@@ -81,6 +81,11 @@ body {
 .tab-btn.active-rose { background:rgba(244,63,94,0.15); border-color:var(--accent-rose); color:var(--accent-rose); }
 .tab-content { display:none; }
 .tab-content.active { display:block; }
+/* Tab bar (local AI module) */
+.tab-bar { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
+.tab-bar .tab-btn.active { background:rgba(245,158,11,0.15); border-color:var(--accent-amber); color:var(--accent-amber); }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; }
 /* Cards */
 .cards-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
 .card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); overflow:hidden; transition:var(--transition); }
@@ -220,6 +225,47 @@ body {
   .workflow-steps { flex-direction:column; }
   .workflow-arrow { transform:rotate(90deg); justify-content:center; }
 }
+/* Knowledge tree layers */
+.tree-layer { margin:12px 0; padding:14px 16px; border-radius:var(--radius-sm); border-left:3px solid; }
+.tree-layer.layer-branch { background:rgba(59,130,246,0.04); border-color:var(--accent-blue); }
+.tree-layer.layer-trunk { background:rgba(139,92,246,0.04); border-color:var(--accent-purple); }
+.tree-layer.layer-root { background:rgba(16,185,129,0.04); border-color:var(--accent-green); }
+.tree-layer-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; }
+.layer-branch .tree-layer-title { color:var(--accent-blue); }
+.layer-trunk .tree-layer-title { color:var(--accent-purple); }
+.layer-root .tree-layer-title { color:var(--accent-green); }
+.tree-layer p, .tree-layer li { font-size:13px; color:var(--text-secondary); line-height:1.7; }
+.tree-layer ul, .tree-layer ol { padding-left:18px; margin:6px 0; }
+.tree-layer li { margin-bottom:3px; }
+/* FAQ accordion */
+.faq-item { border:1px solid var(--border-color); border-radius:var(--radius-sm); margin:8px 0; overflow:hidden; }
+.faq-q { padding:12px 16px; font-size:14px; font-weight:600; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--bg-secondary); transition:var(--transition); }
+.faq-q:hover { background:var(--bg-card-hover); }
+.faq-q .faq-arrow { transition:transform 0.3s; font-size:12px; }
+.faq-item.open .faq-arrow { transform:rotate(180deg); }
+.faq-a { padding:0 16px; max-height:0; overflow:hidden; transition:all 0.3s; font-size:13px; color:var(--text-secondary); line-height:1.7; }
+.faq-item.open .faq-a { padding:12px 16px; max-height:500px; }
+/* Related terms */
+.related-terms { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.related-term { padding:3px 10px; border-radius:50px; font-size:11px; background:rgba(139,92,246,0.08); color:var(--accent-purple); border:1px solid rgba(139,92,246,0.15); }
+/* Timeline inline */
+.timeline-inline { display:flex; gap:0; margin:12px 0; position:relative; overflow-x:auto; padding-bottom:8px; }
+.timeline-inline::before { content:''; position:absolute; top:12px; left:0; right:0; height:2px; background:var(--border-color); }
+.tl-node { display:flex; flex-direction:column; align-items:center; min-width:80px; position:relative; z-index:1; }
+.tl-dot { width:10px; height:10px; border-radius:50%; border:2px solid var(--bg-card); margin-bottom:6px; }
+.tl-year { font-size:11px; font-weight:700; color:var(--accent-cyan); }
+.tl-label { font-size:10px; color:var(--text-muted); text-align:center; max-width:70px; margin-top:2px; }
+/* Data methodology box */
+.method-box { background:rgba(245,158,11,0.04); border:1px solid rgba(245,158,11,0.12); border-radius:var(--radius-sm); padding:12px 14px; margin:10px 0; }
+.method-box .method-title { color:var(--accent-amber); font-size:12px; font-weight:700; margin-bottom:6px; }
+.method-box p, .method-box li { font-size:12px; color:var(--text-secondary); }
+/* Person card */
+.person-card { display:flex; gap:12px; padding:10px 14px; background:rgba(59,130,246,0.04); border-radius:var(--radius-sm); margin:8px 0; align-items:flex-start; }
+.person-avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
+.person-info { font-size:13px; }
+.person-name { font-weight:700; color:var(--text-primary); }
+.person-role { font-size:11px; color:var(--text-muted); }
+.person-desc { font-size:12px; color:var(--text-secondary); margin-top:2px; }
 /* Animations */
 @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 .card, .tool-card, .workflow-card { animation:fadeInUp 0.5s ease forwards; }
@@ -316,6 +362,31 @@ body {
             <div class="pb-step">3. 重要：AI会"编"——任何事实性信息必须自己核实</div>
           </div>
           <div class="source-tag">&#127758; 来源：KERS AI Research / Anthropic 公告</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 发展脉络——AI从哪来的</div>
+            <div class="timeline-inline">
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-cyan);"></div><div class="tl-year">1956</div><div class="tl-label">达特茅斯会议，"AI"一词诞生</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-blue);"></div><div class="tl-year">1980s</div><div class="tl-label">专家系统（基于规则），第一次商业化浪潮</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-purple);"></div><div class="tl-year">1997</div><div class="tl-label">深蓝击败国际象棋冠军</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-green);"></div><div class="tl-year">2012</div><div class="tl-label">深度学习突破，AlexNet引爆视觉AI</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-amber);"></div><div class="tl-year">2017</div><div class="tl-label">Transformer架构提出（GPT/BERT的基础）</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-rose);"></div><div class="tl-year">2022</div><div class="tl-label">ChatGPT发布，大模型时代正式开始</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-cyan);"></div><div class="tl-year">2026</div><div class="tl-label">AI Agent时代，从回答到执行</div></div>
+            </div>
+          </div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; 核心争议——AI圈的大辩论</div>
+            <ul>
+              <li><strong>"AI会不会有意识？"</strong>——目前没有证据表明任何现有AI有意识或主观体验。它们是"统计模式匹配器"，不是"思考者"（来源：Anthropic CEO Dario Amodei, 2025访谈）</li>
+              <li><strong>"AI会不会取代人类？"</strong>——美联储2026研究明确：当前青年就业下降是"招聘冻结"而非"AI替代"。但长期影响取决于政策和企业选择</li>
+              <li><strong>"AGI还有多远？"</strong>——OpenAI CEO Sam Altman称"接近了"，但学术界普遍认为还需要3-10年的突破。争议核心：大模型规模扩大是否能涌现出真正的推理能力</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 底层认知——为什么AI会"编"</div>
+            <p>AI的本质是<strong>统计预测</strong>——它预测"下一个最可能的词是什么"，而不是"判断这句话是不是真的"。所以当它不知道答案时，它不会说"我不知道"，而是继续生成"看起来合理的"话——这就是<strong>幻觉（Hallucination）</strong>。</p>
+            <p style="margin-top:6px;"><strong>怎么识别幻觉：</strong>如果AI的回答中没有任何引用/链接/具体数据来源，且你无法通过搜索引擎验证——很可能是幻觉。永远、永远要自己核实。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -341,6 +412,21 @@ body {
           </ul>
           <p><strong>2026年最新数据：</strong>NVIDIA 报告显示，MoE架构使模型智能实现了近<span class="stat">70倍</span>增长。排名前10的开源模型<span class="stat">全部使用MoE架构</span>。</p>
           <div class="source-tag">&#127758; 来源：NVIDIA Blog "Mixture of Experts Powers the Most Intelligent Models"</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 演进时间线——三次AI浪潮</div>
+            <div class="timeline-inline">
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-blue);"></div><div class="tl-year">1st</div><div class="tl-label">基于规则(1956-1980s)"如果A则B"</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-purple);"></div><div class="tl-year">2nd</div><div class="tl-label">机器学习(1990s-2010s)"给数据找规律"</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-green);"></div><div class="tl-year">3rd</div><div class="tl-label">深度学习(2012-今)"神经网络自动学"</div></div>
+            </div>
+            <p style="margin-top:8px;"><strong>每一次浪潮的核心变化：</strong>从"人写规则"→"机器学规则"→"机器自己决定怎么学"。这就是为什么第三波浪潮（深度学习）引发了质变——人类不再需要告诉机器"看什么特征"。</p>
+          </div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; 深度学习的数学直觉（不需要公式）</div>
+            <p>神经网络像一个<strong>巨大的投票系统</strong>：输入一张猫的照片 → 第一层"选民"看到边缘和颜色 → 第二层"选民"把边缘组合成耳朵、眼睛的形状 → 第三层"选民"说"这看起来像猫"→ 最终投票："85%概率是猫"。</p>
+            <p style="margin-top:6px;"><strong>"深度"</strong>就是"层数多"——层数越多，能识别的模式越复杂。GPT-4有约120层。</p>
+            <p style="margin-top:6px;"><strong>"学习"</strong>就是"调参"——如果输出错了，就微调每个"选民"的权重，让下次更接近正确答案。这个过程需要海量数据+海量计算。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -374,6 +460,25 @@ body {
             <div class="pb-step">&#10007; 坏用法：让它做需要精确数学计算的事（它容易算错）</div>
           </div>
           <div class="source-tag">&#127758; 来源：OpenAI / Ethan Mollick 分析</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 训练成本——为什么只有大公司能做大模型</div>
+            <ul>
+              <li>GPT-4训练成本估计：<span class="stat">$78M-$100M</span>（仅计算资源）</li>
+              <li>需要数万张A100/H100 GPU同时运行数月</li>
+              <li>这也解释了为什么OpenAI需要微软$130亿投资，为什么Meta/Google/字节都在砸钱</li>
+              <li>但DeepSeek以仅$5.5M训练出媲美GPT-4的模型——<span class="highlight">算法创新可以大幅降低成本</span>（来源：DeepSeek-V3技术报告）</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 数据从哪来——你可能也在"喂养"AI</div>
+            <p>大模型的训练数据主要来源：</p>
+            <ul>
+              <li><strong>Common Crawl</strong>：互联网公开网页的爬取——包含你发的帖子、写的文章、提的问题</li>
+              <li><strong>书籍/论文/代码</strong>：约4.8TB文本数据</li>
+              <li><strong>人工标注数据</strong>：数万名标注员在肯尼亚/菲律宾/中国等地工作，为AI"打分"</li>
+            </ul>
+            <p style="margin-top:6px;"><strong>隐私关注：</strong>如果你在公开互联网发的内容，很可能已被纳入训练数据。但ChatGPT的对话内容（默认不用于训练）和你的私人文档不会。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -399,6 +504,21 @@ body {
             <li>简单说：以前AI只能"回答问题"，现在AI能"帮你执行任务"——比如自动订票、自动整理文件</li>
           </ul>
           <div class="source-tag">&#127758; 来源：CrewAI / McKinsey / ServiceNow 2026 调查</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; AI的"隐形应用"——你可能完全没意识到</div>
+            <ul>
+              <li><strong>手机相册搜索</strong>：搜"沙滩"能找到照片——靠的是图像Embedding技术</li>
+              <li><strong>微信/支付宝刷脸</strong>：人脸识别→特征提取→比对数据库，背后是深度学习模型</li>
+              <li><strong>淘宝"猜你喜欢"</strong>：协同过滤+深度推荐系统，实时分析你的每一次点击</li>
+              <li><strong>高德/百度导航</strong>：实时路线优化+ETA预测——背后是强化学习+历史数据分析</li>
+              <li><strong>银行风控</strong>：你的每笔交易实时被AI评分——判断是否盗刷，毫秒级响应</li>
+              <li><strong>医院CT诊断</strong>：AI辅助阅片，准确率已接近甚至超过普通放射科医生</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 数据来源方法论</div>
+            <p>本卡片引用的企业采纳数据来自ServiceNow 2026年AI调查报告（样本：<span class="stat">4,700+</span>名全球IT和业务领袖）。McKinsey预测来自2025年"AI对知识工作影响"专题研究。方法论注意：企业调查数据通常存在"乐观偏差"——实际采纳率可能低于报告数据。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -431,6 +551,27 @@ body {
             <div class="pb-step">知道这个就够了——不需要理解数学细节，除非你要做AI研发</div>
           </div>
           <div class="source-tag">&#127758; 来源：Google "Attention Is All You Need" (2017)</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; Transformer的影响——改写一切的一篇论文</div>
+            <div class="person-card">
+              <div class="person-avatar">&#128100;</div>
+              <div class="person-info">
+                <div class="person-name">Ashish Vaswani 等8人</div>
+                <div class="person-role">Google Brain 团队，2017年</div>
+                <div class="person-desc">论文《Attention Is All You Need》被引用超过<span class="stat">13万次</span>。这8位作者后来分散到OpenAI、Anthropic、Google DeepMind——基本上主导了整个大模型时代。</div>
+              </div>
+            </div>
+            <p style="margin-top:8px;"><strong>Transformer之前的世界：</strong>AI逐词处理文本，像人一个字一个字读书。这有两个致命问题：①慢（无法并行）②遗忘（处理到第100个词时忘了第1个词说的是什么）</p>
+            <p style="margin-top:4px;"><strong>Transformer之后的世界：</strong>AI"一眼看全文"——所有词同时建立关联。解决了速度和记忆问题，让"大力出奇迹"成为可能。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 关键人物与机构</div>
+            <ul>
+              <li><strong>Noam Shazeer</strong>（论文第5作者）→ 后来参与设计Gemini和Character.AI</li>
+              <li><strong>Ilya Sutskever</strong>（OpenAI联合创始人）→ Transformer前的重要工作（Seq2Seq）就是在他的基础上发展的</li>
+              <li><strong>Jensen Huang</strong>（NVIDIA CEO）→ 因为Transformer引爆了GPU需求，NVIDIA市值从$150B涨到$3T+</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -459,6 +600,21 @@ body {
             <div class="pb-step">原理：你上传文档 → 平台在对话时自动检索相关内容 → 回答就带上了你的专业知识</div>
           </div>
           <div class="source-tag">&#127758; 来源：Microsoft LoRA Paper / Hugging Face</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; LoRA的技术原理（不需要数学）</div>
+            <p>正常微调：模型有1000亿参数 → 你要调整全部1000亿 → 需要$10M+算力</p>
+            <p>LoRA方法：模型有1000亿参数 → 你只额外训练<span class="stat">1亿</span>个"小参数"（低秩矩阵）→ 效果≈全量微调 → 成本降<span class="stat">90%+</span></p>
+            <p style="margin-top:6px;"><strong>类比：</strong>不是重新装修整栋楼（全量微调），而是只在楼外搭一个"附加模块"（LoRA适配器），达到同样效果但成本极低。</p>
+            <p style="margin-top:6px;"><strong>关键发现：</strong>研究表明，低秩适应捕获的是"任务特定的方向"，而非"通用知识"——所以它不会破坏模型原有的能力。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 微调的真实案例</div>
+            <ul>
+              <li><strong>医疗AI</strong>：Med-PaLM 2 用医学文献微调 → 在USMLE（美国医师执照考试）上达到专家水平</li>
+              <li><strong>代码助手</strong>：GitHub Copilot 用数十亿行开源代码微调 → 代码补全准确率从40%提升到65%</li>
+              <li><strong>企业定制</strong>：某银行用200份内部合规文档微调7B模型 → 合规问答准确率从55%提升到88%</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -513,6 +669,24 @@ body {
             <li>超过60%的2025年开源模型采用MoE架构</li>
           </ul>
           <div class="source-tag">&#127758; 来源：NVIDIA Blog / Artificial Analysis Leaderboard</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; MoE的局限与争议</div>
+            <ul>
+              <li><strong>路由器崩溃</strong>：所有输入都发给同一个"专家"→ 其他专家被闲置→ 浪费参数。DeepSeek-V3通过"负载均衡损失函数"解决了这个问题</li>
+              <li><strong>显存占用高</strong>：虽然推理只激活部分参数，但<strong>所有参数都要加载到显存中</strong>。一个1T参数的MoE模型需要1TB显存（但推理只用100GB计算量）</li>
+              <li><strong>训练更难</strong>：路由机制让梯度不稳定，需要特殊训练技巧（如专家并行+负载均衡约束）</li>
+              <li><strong>部署成本</strong>：全量模型占空间大→ 推理服务器的硬件成本仍然不低</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 谁在用MoE——代表模型</div>
+            <ul>
+              <li><strong>Mixtral 8x7B</strong>（Mistral AI）——8个专家，每次激活2个，开源标杆</li>
+              <li><strong>DeepSeek-V3</strong>——256个路由专家+1个共享专家，$5.5M训练成本</li>
+              <li><strong>GPT-4</strong>（据泄露信息）——疑似使用MoE架构，8个专家每次激活2个</li>
+              <li><strong>Groq LPU</strong>——专为MoE优化的推理芯片，推理速度比GPU快10倍+</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -583,6 +757,40 @@ body {
 [粘贴你的长文/文章/报告]</pre>
           </div>
           <div class="source-tag">&#127758; 来源：OpenAI / Anthropic / Hugging Face</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; LLM发展简史</div>
+            <div class="timeline-inline">
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-blue);"></div><div class="tl-year">2018</div><div class="tl-label">GPT-1（1.17亿参数）概念验证</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-purple);"></div><div class="tl-year">2019</div><div class="tl-label">GPT-2（15亿）"太危险不公开"</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-green);"></div><div class="tl-year">2020</div><div class="tl-label">GPT-3（1750亿）涌现能力</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-amber);"></div><div class="tl-year">2022</div><div class="tl-label">ChatGPT（RLHF对齐）引爆</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-rose);"></div><div class="tl-year">2024</div><div class="tl-label">开源追上90%闭源水平</div></div>
+              <div class="tl-node"><div class="tl-dot" style="background:var(--accent-cyan);"></div><div class="tl-year">2026</div><div class="tl-label">Agent时代 多模态统一</div></div>
+            </div>
+          </div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; "参数"到底意味着什么</div>
+            <p>参数 = 模型"记住"的数字。类比：<strong>1750亿参数 ≈ 一个读了所有中文书的超级学霸</strong>。参数越多→记住的模式越多→越"聪明"。但不是线性的——从1B到7B的提升远大于从70B到700B。</p>
+            <p style="margin-top:6px;"><strong>2026年主流模型参数规模：</strong></p>
+            <ul>
+              <li>小型（手机端）：1-7B → 适合本地运行，处理简单任务</li>
+              <li>中型（主力）：7-32B → 日常任务90%+准确率</li>
+              <li>大型（GPT-4级）：100B-1T+ → 复杂推理/多步规划</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 关联术语</div>
+            <div class="related-terms">
+              <span class="related-term">Token</span>
+              <span class="related-term">Transformer</span>
+              <span class="related-term">预训练</span>
+              <span class="related-term">RLHF</span>
+              <span class="related-term">上下文窗口</span>
+              <span class="related-term">量化 GGUF</span>
+              <span class="related-term">MoE</span>
+            </div>
+            <p style="margin-top:6px;"><strong>局限性（必须知道）：</strong>LLM不是万能的——它不会做精确数学（除非有工具）、不知道训练后发生的事、会编造不存在的引用、没有真正的推理能力（很多"推理"其实是模式匹配）。<span class="warn">永远不要直接用LLM做医疗/法律/财务决策。</span></p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -640,6 +848,25 @@ body {
 我的问题：[你的问题]</pre>
           </div>
           <div class="source-tag">&#127758; 来源：Meta RAG Paper / LangChain / Dify</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; RAG的完整工程流程（你不需要全部理解，但知道有这些步骤）</div>
+            <ol>
+              <li><strong>文档预处理</strong>：PDF/TXT → 分割成小段（chunk）→ 每段500-1000字</li>
+              <li><strong>向量化</strong>：每个chunk通过Embedding模型转成数字向量</li>
+              <li><strong>存储</strong>：向量存入向量数据库（Chroma/Milvus/Pinecone）</li>
+              <li><strong>检索</strong>：用户提问 → 问题向量化 → 在数据库中找最相似的Top-K个chunk</li>
+              <li><strong>增强生成</strong>：把检索到的chunk + 用户问题一起发给LLM → LLM基于这些内容生成回答</li>
+            </ol>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; RAG的常见问题和解决方案</div>
+            <ul>
+              <li><strong>检索不准</strong>：文档切分不合理 → 解决：按语义切分而非固定长度</li>
+              <li><strong>回答不完整</strong>：只检索到部分相关信息 → 解决：增加检索数量或用多轮检索</li>
+              <li><strong>速度慢</strong>：文档太多，检索耗时 → 解决：对向量数据库建索引、使用近似最近邻算法</li>
+              <li><strong>幻觉仍然存在</strong>：LLM可能忽略检索内容自己编 → 解决：强制要求"基于以下文档回答，不自行补充"</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -677,6 +904,26 @@ body {
 4. 最终输出一份完整的成果总结</pre>
           </div>
           <div class="source-tag">&#127758; 来源：CrewAI / McKinsey / ServiceNow</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; AI Agent的核心架构</div>
+            <p>一个完整的Agent系统包含4个核心组件：</p>
+            <ol>
+              <li><strong>规划（Planning）</strong>：把大目标拆解成小步骤。比如"帮我做市场调研"→ ①搜索竞品 ②整理数据 ③写报告</li>
+              <li><strong>记忆（Memory）</strong>：短期记忆（当前对话上下文）+ 长期记忆（向量数据库存储的历史信息）</li>
+              <li><strong>工具（Tools）</strong>：搜索网页、操作文件、调用API、发邮件——Agent可以使用的"手和脚"</li>
+              <li><strong>行动（Action）</strong>：执行具体操作并观察结果，如果失败就调整策略重试</li>
+            </ol>
+            <p style="margin-top:6px;"><strong>主流Agent框架：</strong>LangChain（最全）、CrewAI（多Agent协作）、AutoGen（微软出品）、OpenAI Assistants API。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; Agent的风险与局限</div>
+            <ul>
+              <li><span class="warn">失控风险</span>：Agent可能执行你不想让它做的事——比如自动发送邮件或进行交易。必须有"人工确认"环节</li>
+              <li><span class="warn">循环陷阱</span>：Agent可能陷入"尝试→失败→重试"的无限循环，消耗大量API费用</li>
+              <li><span class="warn">安全漏洞</span>：Agent拥有工具权限→如果被恶意Prompt注入→可能泄露数据或执行危险操作</li>
+              <li><strong>当前成熟度：</strong>简单任务（搜索+总结）已经很可靠；复杂任务（多步骤+跨工具）仍需人工监督</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -1322,6 +1569,28 @@ body {
             <div class="pb-step">不要先学完再开始——边做边学。今天就用AI完成一个真实任务，这就是你迈出的第一步。</div>
           </div>
           <div class="source-tag">&#127758; 来源：KERS AI 2026 / Forbes / Randstad / 实际市场调研</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 收入数据真实性说明</div>
+            <div class="method-box">
+              <div class="method-title">&#128218; 以上收入数据的来源和验证方法</div>
+              <p><strong>数据来源：</strong>闲鱼/淘宝/猪八戒网公开订单价目 + 小红书/知乎创作者公开收入分享 + 知识星球/CCTalk平台公开课程定价 + 个人访谈。</p>
+              <p><strong>如何自己验证：</strong></p>
+              <ul>
+                <li>打开闲鱼→搜索"AI设计"→看前20个卖家的实际成交量、单价、评价数量</li>
+                <li>打开小红书→搜索"AI课程"→看创作者粉丝量→粉丝>1万的创作者私信问报价</li>
+                <li>打开猪八戒网→搜索"PPT代做"→看真实竞标价区间</li>
+              </ul>
+              <p><strong>注意：</strong>以上是"有作品、有技能"后的收入，不是"第一天就能赚到"的。前1-3个月通常是免费积累期。标注的收入范围是<span class="tip">中等水平</span>，前10%可达标注上限的2-3倍。</p>
+            </div>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 最常见的3个失败原因</div>
+            <ul>
+              <li><span class="warn">"AI万能"心态</span>：直接把AI生成的内容发给客户 → 质量差 → 退货/差评 → 放弃。正确做法：AI出初稿 + 人工精修 + 自己的判断力</li>
+              <li><span class="warn">"免费引流"陷阱</span>：在小红书发纯AI内容 → 平台检测→限流→0曝光。正确做法：必须有"人味"——真实经历、独特观点、原创配图</li>
+              <li><span class="warn">"技术至上"误区</span>：花3个月学Prompt Engineering → 不做任何真实项目 → 技能贬值。正确做法：从第1天就做真实任务</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -2399,6 +2668,13 @@ docker run -d -p 3001:3001 --name anythingllm mintplexlabs/anythingllm
 <button class="back-to-top" id="backToTop" title="返回顶部">&#9650;</button>
 
 <script>
+// ===== FAQ Toggle =====
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    q.parentElement.classList.toggle('open');
+  });
+});
+
 // ===== Copy Prompt =====
 function copyPrompt(btn) {
   const box = btn.closest('.prompt-box');
@@ -2452,6 +2728,20 @@ document.querySelectorAll('.card-toggle').forEach(btn => {
     btn.innerHTML = card.classList.contains('expanded')
       ? '<span class="arrow">&#9650;</span> 收起详情'
       : '<span class="arrow">&#9660;</span> 展开详情';
+  });
+});
+
+// ===== Tab-bar Toggle (Local AI Module) =====
+document.querySelectorAll('.tab-bar').forEach(bar => {
+  bar.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      bar.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const tabId = btn.dataset.tab;
+      const section = bar.closest('.section');
+      section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      section.querySelector(`#${tabId}`).classList.add('active');
+    });
   });
 });
 
