@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Insight Hub · AI洞察站</title>
+<style>
+:root {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #111827;
+  --bg-card: #1a2235;
+  --bg-card-hover: #1f2a40;
+  --text-primary: #e8ecf1;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --accent-purple: #8b5cf6;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --border-color: #1e293b;
+  --gradient-hero: linear-gradient(135deg, #0a0e1a 0%, #1a1040 50%, #0a0e1a 100%);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(10, 14, 26, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+.navbar-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; height: 64px;
+}
+.logo {
+  font-size: 20px; font-weight: 700; color: var(--accent-cyan);
+  letter-spacing: -0.5px; text-decoration: none;
+  display: flex; align-items: center; gap: 8px;
+}
+.logo-icon { font-size: 24px; }
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  padding: 8px 16px; border-radius: 8px;
+  color: var(--text-secondary); text-decoration: none;
+  font-size: 14px; font-weight: 500;
+  transition: var(--transition); cursor: pointer;
+  border: none; background: none;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-cyan); background: rgba(6, 182, 212, 0.1);
+}
+.hamburger {
+  display: none; background: none; border: none;
+  color: var(--text-primary); font-size: 24px; cursor: pointer;
+}
+.mobile-menu {
+  display: none; position: fixed; top: 64px; left: 0; right: 0;
+  background: rgba(10, 14, 26, 0.95); backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 24px; flex-direction: column; gap: 4px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu .nav-link { display: block; width: 100%; text-align: left; padding: 12px 16px; }
+
+/* ===== Hero ===== */
+.hero {
+  padding: 140px 24px 80px;
+  text-align: center;
+  background: var(--gradient-hero);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(59,130,246,0.08) 0%, transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(139,92,246,0.08) 0%, transparent 50%);
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+@keyframes heroGlow {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-5%, 3%) scale(1.1); }
+}
+.hero h1 {
+  font-size: clamp(32px, 6vw, 56px); font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin-bottom: 16px; position: relative;
+}
+.hero p {
+  font-size: clamp(16px, 2.5vw, 20px); color: var(--text-secondary);
+  max-width: 640px; margin: 0 auto 32px; position: relative;
+}
+.search-box {
+  max-width: 480px; margin: 0 auto; position: relative;
+}
+.search-box input {
+  width: 100%; padding: 14px 20px 14px 48px;
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  border-radius: 50px; color: var(--text-primary); font-size: 15px;
+  outline: none; transition: var(--transition);
+}
+.search-box input:focus { border-color: var(--accent-cyan); box-shadow: 0 0 0 3px rgba(6,182,212,0.15); }
+.search-box input::placeholder { color: var(--text-muted); }
+.search-icon {
+  position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
+  color: var(--text-muted); font-size: 16px;
+}
+.search-results {
+  position: absolute; top: 100%; left: 0; right: 0;
+  margin-top: 8px; background: var(--bg-card);
+  border: 1px solid var(--border-color); border-radius: var(--radius);
+  max-height: 300px; overflow-y: auto; display: none; z-index: 100;
+}
+.search-results.visible { display: block; }
+.search-result-item {
+  padding: 12px 18px; cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+.search-result-item:last-child { border-bottom: none; }
+.search-result-item:hover { background: var(--bg-card-hover); }
+.search-result-item .sr-title { font-size: 14px; font-weight: 600; }
+.search-result-item .sr-module { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+/* ===== Section ===== */
+.section {
+  max-width: 1200px; margin: 0 auto;
+  padding: 60px 24px;
+}
+.section-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 32px;
+}
+.section-icon {
+  width: 44px; height: 44px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+.section-title {
+  font-size: 28px; font-weight: 700;
+}
+.section-subtitle {
+  font-size: 14px; color: var(--text-muted); margin-top: 2px;
+}
+
+/* ===== Tabs ===== */
+.tabs {
+  display: flex; gap: 4px; margin-bottom: 28px;
+  background: var(--bg-secondary); padding: 4px;
+  border-radius: var(--radius-sm); width: fit-content;
+}
+.tab-btn {
+  padding: 10px 20px; border-radius: 6px;
+  background: none; border: none; color: var(--text-secondary);
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: var(--transition);
+}
+.tab-btn.active-green { background: rgba(16,185,129,0.15); color: var(--accent-green); }
+.tab-btn.active-blue { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+.tab-btn.active-purple { background: rgba(139,92,246,0.15); color: var(--accent-purple); }
+.tab-btn:hover { color: var(--text-primary); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ===== Cards ===== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(59,130,246,0.3);
+}
+.card-header {
+  padding: 20px 22px 0;
+  display: flex; align-items: flex-start; gap: 14px;
+}
+.card-badge {
+  padding: 4px 10px; border-radius: 50px;
+  font-size: 11px; font-weight: 700;
+  white-space: nowrap; flex-shrink: 0; margin-top: 2px;
+}
+.badge-green { background: rgba(16,185,129,0.15); color: var(--accent-green); }
+.badge-blue { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+.badge-purple { background: rgba(139,92,246,0.15); color: var(--accent-purple); }
+.badge-cyan { background: rgba(6,182,212,0.15); color: var(--accent-cyan); }
+.badge-amber { background: rgba(245,158,11,0.15); color: var(--accent-amber); }
+.badge-rose { background: rgba(244,63,94,0.15); color: var(--accent-rose); }
+.card-title { font-size: 17px; font-weight: 700; line-height: 1.4; }
+.card-preview {
+  padding: 10px 22px 18px;
+  font-size: 14px; color: var(--text-secondary); line-height: 1.6;
+}
+.card-detail {
+  padding: 0 22px 20px;
+  font-size: 14px; color: var(--text-secondary); line-height: 1.8;
+  display: none;
+}
+.card.expanded .card-detail { display: block; }
+.card-toggle {
+  display: flex; align-items: center; gap: 6px;
+  padding: 12px 22px; border-top: 1px solid var(--border-color);
+  font-size: 13px; color: var(--accent-cyan);
+  font-weight: 500; background: none; border-left: none;
+  border-right: none; border-bottom: none;
+  width: 100%; cursor: pointer; transition: var(--transition);
+}
+.card-toggle:hover { color: var(--accent-blue); }
+.card-toggle .arrow { transition: transform 0.3s; display: inline-block; }
+.card.expanded .card-toggle .arrow { transform: rotate(180deg); }
+
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed; bottom: 32px; right: 32px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent-cyan); color: white;
+  border: none; cursor: pointer; font-size: 20px;
+  box-shadow: 0 4px 16px rgba(6,182,212,0.3);
+  opacity: 0; transform: translateY(20px);
+  transition: var(--transition); z-index: 999;
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover { background: var(--accent-blue); }
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center; padding: 40px 24px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted); font-size: 13px;
+}
+.footer a { color: var(--accent-cyan); text-decoration: none; }
+
+/* ===== Divider ===== */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: 20px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .tabs { width: 100%; overflow-x: auto; }
+  .tab-btn { font-size: 13px; padding: 8px 14px; white-space: nowrap; }
+  .section { padding: 40px 16px; }
+  .hero { padding: 120px 16px 60px; }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card { animation: fadeInUp 0.5s ease forwards; }
+.card:nth-child(2) { animation-delay: 0.05s; }
+.card:nth-child(3) { animation-delay: 0.1s; }
+.card:nth-child(4) { animation-delay: 0.15s; }
+.card:nth-child(5) { animation-delay: 0.2s; }
+.card:nth-child(6) { animation-delay: 0.25s; }
+.card:nth-child(7) { animation-delay: 0.3s; }
+.card:nth-child(8) { animation-delay: 0.35s; }
+
+/* no-results */
+.no-results {
+  text-align: center; padding: 60px 20px;
+  color: var(--text-muted); font-size: 15px;
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="logo"><span class="logo-icon">&#9889;</span> AI Insight Hub</a>
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link active" href="#ai-knowledge">AI知识</a>
+      <a class="nav-link" href="#global-economy">全球经济</a>
+      <a class="nav-link" href="#japan-aging">日本老龄化</a>
+      <a class="nav-link" href="#youth-employment">青年应对</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="#ai-knowledge">AI知识</a>
+    <a class="nav-link" href="#global-economy">全球经济</a>
+    <a class="nav-link" href="#japan-aging">日本老龄化</a>
+    <a class="nav-link" href="#youth-employment">青年应对</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>AI Insight Hub</h1>
+  <p>从入门到前沿，从全球视野到个体应对 —— 一站式理解AI时代的全部关键问题</p>
+  <div class="search-box">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" id="searchInput" placeholder="搜索知识点，如：大语言模型、介护保险、副业..." autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</section>
+
+<!-- ========== Module A: AI Knowledge ========== -->
+<section class="section" id="ai-knowledge">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(59,130,246,0.15);color:var(--accent-blue);">&#129302;</div>
+    <div>
+      <div class="section-title">AI 知识分层</div>
+      <div class="section-subtitle">从零基础到前沿研究，按你的节奏理解人工智能</div>
+    </div>
+  </div>
+
+  <div class="tabs" id="aiTabs">
+    <button class="tab-btn active-green" data-tab="beginner" data-color="green">入门易懂</button>
+    <button class="tab-btn" data-tab="intermediate" data-color="blue">进阶理解</button>
+    <button class="tab-btn" data-tab="advanced" data-color="purple">高端前沿</button>
+  </div>
+
+  <!-- Beginner -->
+  <div class="tab-content active" id="tab-beginner">
+    <div class="cards-grid">
+
+      <div class="card" data-keywords="AI 人工智能 什么是 基础 概念">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">什么是人工智能？</div>
+        </div>
+        <div class="card-preview">人工智能（AI）是让计算机模拟人类智能行为的技术，包括学习、推理、感知和决策。</div>
+        <div class="card-detail">
+          <p>人工智能不是一个单一技术，而是一系列让机器表现出智能行为的方法集合。它的核心思想是：让机器通过数据和算法，自动地完成过去只有人类才能完成的任务。</p>
+          <p><strong>关键区分：</strong>AI 分为"弱AI"（专用AI）和"强AI"（通用AI）。目前所有可见的AI产品（包括ChatGPT）都属于弱AI——它们在特定任务上表现出色，但不具备真正的理解和意识。强AI目前仍只存在于理论中。</p>
+          <p><strong>生活实例：</strong>你手机里的语音助手（Siri/小爱）、短视频的推荐算法、拍照时的美颜滤镜，背后都是AI在工作。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="机器学习 深度学习 区别 ML DL">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">机器学习 vs 深度学习</div>
+        </div>
+        <div class="card-preview">机器学习是AI的子集，深度学习是机器学习的子集——层层递进，越来越"聪明"。</div>
+        <div class="card-detail">
+          <p><strong>机器学习（ML）：</strong>给计算机大量数据，让它自己找出规律。比如给模型看了10万张猫和狗的照片，它就能学会分辨猫狗。关键在于"学习"而非"硬编码规则"。</p>
+          <p><strong>深度学习（DL）：</strong>机器学习的升级版，使用多层神经网络来自动提取特征。传统机器学习需要人工设计特征（比如"猫有尖耳朵"），而深度学习能自己发现特征，省去了人工干预。</p>
+          <p><strong>简单类比：</strong>机器学习就像教小孩认字——你得告诉他"横竖撇捺"这些特征；深度学习就像让小孩自己看书，看多了自然就认得了。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI 日常应用 语音助手 推荐系统 自动驾驶">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">AI 就在你身边</div>
+        </div>
+        <div class="card-preview">你可能没意识到，AI已经渗透到日常生活的方方面面。</div>
+        <div class="card-detail">
+          <p><strong>语音助手：</strong>Siri、小爱同学、天猫精灵，它们用语音识别理解你的话，用自然语言处理生成回答。</p>
+          <p><strong>推荐系统：</strong>抖音、B站、淘宝的推荐，背后是AI分析你的行为数据，预测你可能喜欢什么。</p>
+          <p><strong>自动驾驶：</strong>特斯拉、华为ADS、小鹏NGP，AI实时分析摄像头和雷达数据，做出驾驶决策。</p>
+          <p><strong>医疗辅助：</strong>AI读片（CT/MRI影像分析）已在中国多家三甲医院投入使用，准确率超过部分人类医生。</p>
+          <p><strong>拍照美化：</strong>美颜相机的磨皮、瘦身功能，本质上就是AI在做图像分割和变形。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="ChatGPT 原理 GPT 生成式 大语言模型">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">ChatGPT 为什么这么"聪明"？</div>
+        </div>
+        <div class="card-preview">ChatGPT的核心原理是"预测下一个词"，但规模大到产生质变。</div>
+        <div class="card-detail">
+          <p>ChatGPT的原理可以用一句话概括：<strong>读了几乎整个互联网的文字，然后学会了预测下一个词</strong>。</p>
+          <p><strong>训练过程：</strong>① 收集海量文本数据（网页、书籍、论文等）→ ② 让模型做"填空题"（给前文，预测下一个词）→ ③ 不断调整参数让预测越来越准 → ④ 加入人类反馈（RLHF）让回答更有用、更安全。</p>
+          <p><strong>为什么它看起来"懂"：</strong>因为它见过太多类似的问题和回答，本质上是在做超级高级的"模式匹配"。它并不真正"理解"内容，但模仿得足够好，以至于效果接近理解。</p>
+          <p><strong>局限性：</strong>会"幻觉"（编造不存在的事实）、知识有截止日期、不能做数学推理、没有真正的世界观。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI 能做什么 不能做什么 能力 局限">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">AI 能做什么 & 不能做什么？</div>
+        </div>
+        <div class="card-preview">理解AI的边界，比理解AI的能力更重要。</div>
+        <div class="card-detail">
+          <p><strong>AI 擅长：</strong>模式识别（图像/语音分类）、文本生成与翻译、数据分析与预测、重复性任务自动化、信息检索与整理。</p>
+          <p><strong>AI 不擅长：</strong>真正的创新与创造力、情感理解与共情、常识推理（如"水会流下坡"这种人类直觉）、小样本学习（看1个例子就学会）、道德判断与价值决策、物理世界的灵活交互。</p>
+          <p><strong>关键认知：</strong>AI是一个极强力的工具，但它没有意图、没有欲望、没有自我意识。它的一切"行为"都是统计规律的输出。把AI当"超级助手"而非"超级智能"来理解，就不会被误导。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI 历史 发展简史 图灵 深蓝 AlphaGo">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">AI 发展简史</div>
+        </div>
+        <div class="card-preview">从1950年代的梦想到2020年代的爆发，AI经历了三次浪潮。</div>
+        <div class="card-detail">
+          <p><strong>第一波（1956-1974）：</strong>达特茅斯会议提出"AI"概念，图灵测试诞生。早期乐观主义，但受限于算力和数据，进入第一次AI寒冬。</p>
+          <p><strong>第二波（1980-1995）：</strong>专家系统兴起，日本第五代计算机计划。但规则难以扩展，第二次寒冬来临。</p>
+          <p><strong>第三波（2006-至今）：</strong>深度学习爆发。2012年AlexNet在ImageNet竞赛中碾压式夺冠，2016年AlphaGo击败李世石，2022年ChatGPT发布引爆全球。这一次的驱动力是：海量数据+GPU算力+更好的算法。</p>
+          <p><strong>当前阶段：</strong>大模型时代。GPT-4、Claude、Gemini等模型能力不断提升，AI Agent（自主智能体）成为新热点。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI 术语 名词解释 Token 参数 模型">
+        <div class="card-header">
+          <span class="card-badge badge-green">入门</span>
+          <div class="card-title">AI 常见术语速查</div>
+        </div>
+        <div class="card-preview">遇到AI术语一头雾水？这张速查表帮你快速搞懂。</div>
+        <div class="card-detail">
+          <p><strong>Token：</strong>AI处理文字的最小单位。一个汉字约等于1-2个Token。"上下文窗口"就是模型一次能处理的Token数量。</p>
+          <p><strong>参数（Parameters）：</strong>模型内部的"旋钮"。参数越多，模型越"大"。GPT-3有1750亿参数，GPT-4参数量未公开但估计超万亿。</p>
+          <p><strong>微调（Fine-tuning）：</strong>在已有大模型基础上，用特定领域的数据再做训练，让它更擅长某个方向。</p>
+          <p><strong>提示词（Prompt）：</strong>你给AI的输入文本。写好Prompt是使用AI的核心技能，被称为"提示词工程"。</p>
+          <p><strong>幻觉（Hallucination）：</strong>AI编造不存在信息的现象。这是当前AI最大的可靠性问题之一。</p>
+          <p><strong>多模态（Multimodal）：</strong>能同时处理文字、图片、音频等多种类型数据的AI模型。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Intermediate -->
+  <div class="tab-content" id="tab-intermediate">
+    <div class="cards-grid">
+
+      <div class="card" data-keywords="神经网络 CNN RNN Transformer 架构 深度学习">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">神经网络架构三巨头</div>
+        </div>
+        <div class="card-preview">CNN处理图像，RNN处理序列，Transformer处理一切——这是深度学习的三大基石架构。</div>
+        <div class="card-detail">
+          <p><strong>CNN（卷积神经网络）：</strong>专为图像设计。核心思想是"卷积"——用小窗口在图像上滑动，提取局部特征（边缘、纹理、形状），逐层组合成更复杂的特征。AlexNet、ResNet、YOLO都是CNN的代表作。</p>
+          <p><strong>RNN（循环神经网络）：</strong>专为序列数据设计（文字、语音、时间序列）。它有"记忆"——处理当前输入时会参考之前的输入。但标准RNN有"遗忘问题"，长序列会丢失早期信息。LSTM和GRU是改进版本。</p>
+          <p><strong>Transformer：</strong>2017年Google提出，用"自注意力机制"替代了RNN的循环结构。它可以并行处理所有位置的信息，彻底解决了长距离依赖问题。GPT、BERT、ChatGPT……当今几乎所有大语言模型都基于Transformer。这是过去十年AI最重要的架构突破。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="训练 推理 Training Inference 区别">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">训练 vs 推理：AI的两个阶段</div>
+        </div>
+        <div class="card-preview">训练是"学习"，推理是"考试"——理解这个区分就理解了AI的成本结构。</div>
+        <div class="card-detail">
+          <p><strong>训练（Training）：</strong>用海量数据调整模型参数，让模型学会某种能力。这个过程极其昂贵——GPT-4的训练估计花费超过1亿美元，使用了数万块H100 GPU，耗时数月。训练是不可逆的"知识灌输"。</p>
+          <p><strong>推理（Inference）：</strong>训练完成后，模型接收输入并产生输出。你每次使用ChatGPT提问，触发的就是推理。推理成本远低于训练，但量大——全球每天数十亿次调用的成本依然可观。</p>
+          <p><strong>为什么重要：</strong>训练决定了AI的能力上限，推理决定了AI的实际价值。当前行业的核心竞争力是：如何用更低的推理成本提供更强的推理能力。量化（INT8/INT4）、蒸馏、MoE都是为此服务的。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="LLM 大语言模型 原理 预训练">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">大语言模型（LLM）原理</div>
+        </div>
+        <div class="card-preview">大语言模型的"大"不仅是参数量，更是涌现能力——量变引起质变。</div>
+        <div class="card-detail">
+          <p><strong>核心机制：</strong>LLM本质是一个超大规模的"下一个词预测器"。给定前文，它计算词表中每个词出现的概率分布，选概率最高的（或按概率采样）作为输出。</p>
+          <p><strong>涌现能力（Emergent Abilities）：</strong>当模型参数量从数十亿增长到数百亿、千亿时，会突然出现小模型不具备的能力——如_chain-of-thought推理、代码编写、数学解题。这被称为"涌现"，类似于物理学中的相变现象。</p>
+          <p><strong>关键组件：</strong>① Tokenizer（文字→数字）→ ② Embedding（数字→向量）→ ③ Transformer Layers（多层注意力计算）→ ④ Output Head（向量→概率分布）。</p>
+          <p><strong>当前格局：</strong>OpenAI（GPT系列）、Anthropic（Claude）、Google（Gemini）、Meta（LLaMA开源）、中国（DeepSeek、Qwen、GLM）形成多极竞争。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI Agent 智能体 自主 Agent">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">AI Agent：不只是聊天机器人</div>
+        </div>
+        <div class="card-preview">AI Agent能自主规划、使用工具、执行多步骤任务——这是AI从"回答问题"到"解决问题"的关键跃迁。</div>
+        <div class="card-detail">
+          <p><strong>什么是AI Agent：</strong>Agent = LLM + 规划能力 + 工具使用 + 记忆。不同于ChatGPT只能一问一答，Agent可以自主分解任务、调用API、读取文件、执行代码，完成复杂的多步骤工作流。</p>
+          <p><strong>核心框架：</strong>ReAct（Reason+Act）——模型先思考下一步该做什么，然后执行动作，再根据结果继续推理，循环直到任务完成。</p>
+          <p><strong>典型应用：</strong>自动编程助手（Cursor/Copilot）、自动研究报告生成、客服机器人（可查订单/退款）、个人AI助理（管理日程/邮件）。</p>
+          <p><strong>当前挑战：</strong>长链条推理容易"跑偏"、工具调用的可靠性不足、安全边界难以控制、成本（每次推理都调用大模型）。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="RAG 检索增强 生成 知识库">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">RAG：让AI不再"胡说八道"</div>
+        </div>
+        <div class="card-preview">检索增强生成（RAG）是目前解决AI幻觉最实用的方案——先查资料，再回答。</div>
+        <div class="card-detail">
+          <p><strong>核心思想：</strong>纯LLM只能靠训练数据回答问题，容易过时或编造。RAG在回答前先从外部知识库检索相关文档，把检索到的内容作为上下文喂给LLM，让它的回答有据可依。</p>
+          <p><strong>流程：</strong>用户提问 → 向量检索（在知识库中找最相关的文档片段）→ 组装Prompt（检索结果+用户问题）→ LLM生成回答。</p>
+          <p><strong>优势：</strong>回答可溯源、知识可实时更新（不用重新训练）、减少幻觉、企业数据不外泄。</p>
+          <p><strong>局限：</strong>检索质量决定回答质量、知识库需要持续维护、长文档的检索精度有限。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="Fine-tuning 提示词工程 Prompt Engineering 微调">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">Fine-tuning vs Prompt Engineering</div>
+        </div>
+        <div class="card-preview">让AI更好用的两条路：改提示词（便宜灵活）和微调模型（贵但深度定制）。</div>
+        <div class="card-detail">
+          <p><strong>Prompt Engineering（提示词工程）：</strong>不修改模型，仅通过优化输入文本让AI输出更好。成本低、迭代快、随时可调。技巧包括：Few-shot示例、Chain-of-Thought思维链、角色设定、结构化输出要求等。</p>
+          <p><strong>Fine-tuning（微调）：</strong>在基础模型上用特定数据继续训练，改变模型内部参数。成本高、需要专业知识和数据，但能让模型深度适配特定领域。</p>
+          <p><strong>选择指南：</strong>90%的场景先用Prompt Engineering。当提示词技巧用尽仍无法满足需求（如特定写作风格、领域专业术语、特定输出格式），再考虑Fine-tuning。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="AI 安全 对齐 Alignment 价值观">
+        <div class="card-header">
+          <span class="card-badge badge-blue">进阶</span>
+          <div class="card-title">AI安全与对齐问题</div>
+        </div>
+        <div class="card-preview">让AI"听话"且"不伤害人类"，是当前AI研究最紧迫的课题之一。</div>
+        <div class="card-detail">
+          <p><strong>什么是对齐（Alignment）：</strong>确保AI系统的目标和行为与人类价值观一致。一个能力极强但目标与人类不一致的AI，可能产生灾难性后果。</p>
+          <p><strong>对齐的挑战：</strong>价值观难以量化（不同文化、个体有不同价值观）、意图误解（AI优化了错误的指标）、奖励欺骗（AI找到了获得高奖励的捷径而非真正完成任务）。</p>
+          <p><strong>当前方案：</strong>RLHF（基于人类反馈的强化学习）是目前最主流的对齐方法。更前沿的包括Constitutional AI（宪法AI，让AI按照一组原则自我审查）和DPO（直接偏好优化）。</p>
+          <p><strong>未解问题：</strong>如何评估模型是否真正对齐？如何防止越狱攻击？如何确保未来更强大的模型仍然安全？这些都是开放研究问题。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Advanced -->
+  <div class="tab-content" id="tab-advanced">
+    <div class="cards-grid">
+
+      <div class="card" data-keywords="多模态 大模型 视觉 GPT-4V Gemini 图像理解">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">多模态大模型</div>
+        </div>
+        <div class="card-preview">文字+图像+音频+视频——统一理解一切信息形态的下一代AI。</div>
+        <div class="card-detail">
+          <p><strong>核心思想：</strong>将不同模态的信息映射到同一个"语义空间"，让模型可以像人类一样同时理解文字描述和视觉内容。GPT-4V能看图说话，Gemini能理解视频，Sora能生成视频。</p>
+          <p><strong>技术路线：</strong>① 模态对齐（Contrastive Learning，如CLIP）→ ② 统一建模（Flamingo、LLaVA）→ ③ 原生多模态（Gemini、GPT-4o，从训练之初就混合多模态数据）。</p>
+          <p><strong>前沿挑战：</strong>高质量多模态数据稀缺、不同模态之间的语义鸿沟、多模态对齐的评估标准缺失、视频理解的超长上下文、音频-语言的细粒度对齐。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="MoE 混合专家 Mixture of Experts 架构">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">MoE：混合专家架构</div>
+        </div>
+        <div class="card-preview">万亿参数却只激活一小部分——MoE是当前大模型"既大又快"的秘密武器。</div>
+        <div class="card-detail">
+          <p><strong>原理：</strong>MoE将模型分为多个"专家"子网络，每次推理只激活与当前输入最相关的2-4个专家。总参数量巨大，但实际计算量远小于同规模的稠密模型。</p>
+          <p><strong>代表模型：</strong>GPT-4（据传使用16个专家）、Mixtral 8x7B、DeepSeek-MoE、Qwen-MoE。</p>
+          <p><strong>优势：</strong>用更少的推理计算获得更强的能力；训练时多个专家可以并行学习不同领域知识。</p>
+          <p><strong>挑战：</strong>负载均衡（确保各专家被均匀使用）、路由决策的优化、通信开销（分布式训练时）、专家坍缩（多个专家学到相似知识，浪费了参数）。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="RLHF DPO 对齐 强化学习 人类反馈 偏好优化">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">RLHF 与 DPO 对齐方法</div>
+        </div>
+        <div class="card-preview">让AI变得"好用"且"安全"的核心技术——从人类反馈中学习什么是好的回答。</div>
+        <div class="card-detail">
+          <p><strong>RLHF（基于人类反馈的强化学习）：</strong>ChatGPT的核心对齐技术。流程：① 训练奖励模型（人类标注哪个回答更好）→ ② 用强化学习（PPO）优化语言模型，让它产生高奖励的回答。</p>
+          <p><strong>DPO（直接偏好优化）：</strong>2023年斯坦福提出的RLHF替代方案。跳过奖励模型训练，直接用人类偏好数据优化语言模型。更简单、更稳定、效果接近甚至超过RLHF。</p>
+          <p><strong>前沿方向：</strong>Constitutional AI（AI自我评估对齐）、RLAIF（用AI代替人类做偏好标注）、在线RLHF（持续从用户反馈中学习）。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="Scaling Law 涌现能力 规模定律 参数量">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">Scaling Law 与涌现能力</div>
+        </div>
+        <div class="card-preview">"越大越好"是经验还是定律？Scaling Law是当前AI发展的核心争论。</div>
+        <div class="card-detail">
+          <p><strong>Scaling Law：</strong>2020年OpenAI提出的经验定律——模型性能（用交叉熵损失衡量）与模型参数量、训练数据量、计算量之间呈现幂律关系。简单说：参数更多、数据更多、算力更多→模型更好，而且提升幅度可预测。</p>
+          <p><strong>涌现能力：</strong>当模型规模超过某个阈值时，会突然出现小模型不具备的能力（如推理、代码、数学）。这暗示"量变引起质变"。</p>
+          <p><strong>当前争论：</strong>① 涌现是否只是评估指标的假象？（用精确匹配会看到"突然出现"，用柔性指标则是平滑提升）② Scaling Law是否正在"撞墙"？（GPT-4到GPT-5的提升是否还符合预期）③ 是否存在更高效的路？（如DeepSeek用更少算力达到接近效果）。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="世界模型 World Model 具身智能 仿真">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">世界模型</div>
+        </div>
+        <div class="card-preview">让AI真正理解物理世界的运作规律——从"语言理解"到"世界理解"的关键一步。</div>
+        <div class="card-detail">
+          <p><strong>概念：</strong>世界模型是AI对物理世界进行内部模拟的能力——理解"如果我推一下杯子，它会掉下桌子"。当前LLM仅基于文本统计，缺乏对物理世界的真正理解。</p>
+          <p><strong>代表工作：</strong>Sora（OpenAI的视频生成模型被视为一种世界模拟器）、Genie（DeepMind的交互式环境生成）、JEPA（LeCun提出的联合嵌入预测架构）。</p>
+          <p><strong>为什么重要：</strong>只有具备了世界模型，AI才能进行真正的规划和推理——而非仅靠模式匹配。这是通向AGI（通用人工智能）的必要条件之一。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="自我改进 递归 递归优化 AI递归 self-improvement">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">AI自我改进与递归优化</div>
+        </div>
+        <div class="card-preview">AI能否设计出比自己更强的AI？这是通向超级智能的可能路径，也是最大的风险。</div>
+        <div class="card-detail">
+          <p><strong>核心假设：</strong>如果一个AI系统足够聪明，它就能设计出比自己更聪明的AI系统，后者又能设计更更聪明的……形成"智能爆炸"（Intelligence Explosion）。</p>
+          <p><strong>当前现实：</strong>AI已经在辅助AI研究——用AI帮助写论文、调代码、搜索文献、设计实验。但AI还不能独立进行"从0到1"的范式创新。</p>
+          <p><strong>关键风险：</strong>如果递归自我改进真的实现，AI的能力可能以指数速度增长，远超人类理解和控制的速度。这是AI安全领域最核心的"存在性风险"（Existential Risk）。</p>
+          <p><strong>学界态度：</strong>一部分研究者认为这是科幻（LeCun），另一部分认为必须提前准备（Anthropic/OpenAI安全团队）。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="量子机器学习 Quantum ML 量子计算">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">量子机器学习</div>
+        </div>
+        <div class="card-preview">当量子计算遇上AI，可能打开全新的计算范式——但这条路比想象中更漫长。</div>
+        <div class="card-detail">
+          <p><strong>核心思路：</strong>利用量子叠加和量子纠缠，在特定问题上实现指数级加速。理论上，量子计算机可以处理经典计算机无法处理的高维优化问题。</p>
+          <p><strong>应用方向：</strong>量子增强的优化（如量子退火）、量子核方法、变分量子电路（VQC）作为神经网络层、量子采样加速生成模型。</p>
+          <p><strong>现状：</strong>NISQ（含噪声中等规模量子）时代，量子比特数有限且噪声大。真正的量子优势（Quantum Advantage）在机器学习领域尚未被明确验证。IBM、Google、中国科大等在持续推进。</p>
+          <p><strong>预期：</strong>5-10年内可能有初步的实用化场景（如分子模拟加速），但大规模替代经典ML仍需更长时间。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+      <div class="card" data-keywords="神经符号AI Neuro-symbolic 符号推理 神经网络">
+        <div class="card-header">
+          <span class="card-badge badge-purple">前沿</span>
+          <div class="card-title">神经符号AI</div>
+        </div>
+        <div class="card-preview">把神经网络的学习能力与符号推理的精确性结合——可能是通向可靠AI的路径。</div>
+        <div class="card-detail">
+          <p><strong>问题：</strong>纯神经网络擅长模式识别但不擅长精确推理；纯符号系统擅长逻辑推理但无法从数据中学习。两者各有短板。</p>
+          <p><strong>神经符号AI：</strong>将两种范式融合。例如：神经网络负责感知和理解，符号系统负责推理和验证。这样模型既能从数据中学习，又能进行可验证的逻辑推理。</p>
+          <p><strong>应用前景：</strong>数学定理证明（AlphaProof）、法律推理（AI辅助判案）、医疗诊断（学习+规则约束）、自动驾驶决策（感知+安全规则）。</p>
+          <p><strong>挑战：</strong>如何让两种范式有效交互、如何设计统一的训练目标、如何评估系统的推理可信度。</p>
+        </div>
+        <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========== Module B: Global Economy ========== -->
+<section class="section" id="global-economy">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(6,182,212,0.15);color:var(--accent-cyan);">&#127758;</div>
+    <div>
+      <div class="section-title">全球经济发展方向</div>
+      <div class="section-subtitle">AI正在重塑全球经济版图，谁在引领，谁在追赶？</div>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <div class="card" data-keywords="美国 AI战略 经济影响 科技政策">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">美国AI战略与经济影响</div>
+      </div>
+      <div class="card-preview">美国以私营企业为核心驱动力，政府在基础设施和监管上做战略性引导。</div>
+      <div class="card-detail">
+        <p><strong>战略定位：</strong>美国将AI视为维持全球科技霸权的核心。2023年10月签署AI行政令，2024年成立AI安全研究所，强调"创新优先、安全并行"。</p>
+        <p><strong>经济影响：</strong>AI预计到2030年为美国GDP贡献1.2-1.5万亿美元/年。主要受益行业：软件/IT、金融、医疗、制造业。岗位替代与创造并存——约23%的现有任务可能被AI自动化，但也会创造新岗位类型。</p>
+        <p><strong>核心玩家：</strong>OpenAI、Google DeepMind、Anthropic、Meta AI、Microsoft——这5家公司基本定义了全球AI的技术前沿。芯片层面，NVIDIA垄断了约80%的AI训练芯片市场。</p>
+        <p><strong>挑战：</strong>AI垄断风险加剧（科技巨头控制核心基础设施）、劳动力市场的不平等效应（高技能受益，中低技能受损）、AI安全与开源的张力。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="中国 AI产业 政策 市场 规模">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">中国AI产业政策与市场规模</div>
+      </div>
+      <div class="card-preview">中国走"政府引导+企业跟进"的路线，AI应用落地速度全球领先。</div>
+      <div class="card-detail">
+        <p><strong>政策框架：</strong>2017年《新一代人工智能发展规划》定下2030年AI核心产业规模超1万亿的目标。2024年"人工智能+"行动写入政府工作报告，推动AI与制造业深度融合。</p>
+        <p><strong>市场规模：</strong>2025年中国AI核心产业规模预计超5000亿元，带动相关产业超1.8万亿元。应用端增速最快的领域：智慧城市、智能制造、自动驾驶、金融科技。</p>
+        <p><strong>核心优势：</strong>海量数据、快速迭代的应用场景、强大的制造业基础、政府执行力。</p>
+        <p><strong>核心挑战：</strong>高端AI芯片受限（华为昇腾/寒武纪在追赶但差距仍大）、基础研究深度不足（Transformer等核心架构仍源自海外）、数据合规与隐私保护、AI伦理与治理框架尚在建设中。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="欧盟 AI法案 监管 合规 风险分级">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">欧盟AI法案与监管框架</div>
+      </div>
+      <div class="card-preview">全球最严格的AI监管法案——风险分级制度正在成为全球AI治理的参考模板。</div>
+      <div class="card-detail">
+        <p><strong>核心机制：</strong>按风险等级将AI系统分为4类：① 不可接受风险（禁止）——如社会信用评分、潜意识操控；② 高风险（严格监管）——如医疗诊断、司法判决辅助；③ 有限风险（透明度要求）——如聊天机器人需标注"AI生成"；④ 最小风险（自由使用）。</p>
+        <p><strong>影响：</strong>任何向欧盟市场提供AI产品的企业都必须合规。违规罚款最高达年营收的6%或3500万欧元。这对全球AI企业都有约束力（类似GDPR效应）。</p>
+        <p><strong>争议：</strong>过度监管可能抑制创新——欧洲AI初创公司数量远少于中美。开源AI是否应该被监管也引发激烈讨论。但支持者认为，没有护栏的AI发展才是最大的风险。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="东南亚 数字经济 印尼 越南 泰国">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">东南亚数字经济崛起</div>
+      </div>
+      <div class="card-preview">6亿人口+快速数字化——东南亚正在成为全球数字经济的新增长极。</div>
+      <div class="card-detail">
+        <p><strong>市场概况：</strong>东南亚互联网经济GMV预计2025年突破3000亿美元。印尼、越南、泰国为三大增长引擎。数字支付、电商、网约车是核心赛道。</p>
+        <p><strong>AI应用：</strong>Grab和Gojek用AI优化物流和定价、Shopee用AI推荐和风控、Sea Group自研大模型服务东南亚多语言场景。AI正在帮助东南亚"跳过"传统基础设施建设阶段。</p>
+        <p><strong>投资热度：</strong>谷歌、淡马锡、贝恩联合报告显示，东南亚AI相关投资年增长率超40%。新加坡作为区域AI枢纽，吸引了大量国际AI公司设立亚太总部。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="中东 AI投资 沙特 阿联酋 转型">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">中东AI投资与转型</div>
+      </div>
+      <div class="card-preview">石油财富正在转化为AI资本——沙特和阿联酋要建"沙漠硅谷"。</div>
+      <div class="card-detail">
+        <p><strong>沙特：</strong>PIF（公共投资基金）向AI领域投入数百亿美元。NEOM项目中的认知城市The Line试图用AI管理整个城市。购买大量NVIDIA芯片，目标是成为全球AI算力中心之一。</p>
+        <p><strong>阿联酋：</strong>2017年就设立了全球首位"AI部长"。Falcon大模型开源系列（TII研发）在中东AI生态中占据核心位置。迪拜的智慧城市和自动驾驶项目走在前列。</p>
+        <p><strong>战略逻辑：</strong>"后石油时代"的战略转型——用石油收入投资AI基础设施和人才，为经济多元化铺路。中东的独特优势：充沛的能源（AI数据中心耗电巨大）、主权资本（不受市场短期压力）、地缘中立（可以同时与中美合作）。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="AI 就业 替代 岗位 结构性影响">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">AI对全球就业市场的结构性影响</div>
+      </div>
+      <div class="card-preview">AI不是"取代所有人"，而是"重塑所有岗位"——关键在于你站在哪一边。</div>
+      <div class="card-detail">
+        <p><strong>受影响最大的岗位：</strong>数据录入、初级文书、基础翻译、简单客服、常规会计——这些是"规则明确、重复性强"的工作。麦肯锡估计全球约3.75亿人需要转换职业类别。</p>
+        <p><strong>新增岗位：</strong>AI训练师、提示词工程师、AI伦理审查员、人机协作设计师、AI产品经理。这些都是5年前不存在的岗位。</p>
+        <p><strong>增强而非替代的岗位：</strong>医生（AI辅助诊断提升效率）、律师（AI加速法律检索）、程序员（AI编程助手提升产出）、设计师（AI生成初稿，人类精修）。</p>
+        <p><strong>核心趋势：</strong>AI正在将"技能溢价"推高——掌握AI工具的人产出倍增，不会用的人竞争力下降。这不是"人与AI"的竞争，而是"会用AI的人"与"不会用AI的人"的竞争。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="供应链 智能化 数字供应链">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">全球供应链智能化趋势</div>
+      </div>
+      <div class="card-preview">从"精益"到"韧性"——后疫情时代的供应链正在被AI重塑。</div>
+      <div class="card-detail">
+        <p><strong>驱动因素：</strong>新冠疫情暴露了全球供应链的脆弱性。地缘政治紧张（中美脱钩、红海危机）进一步加速了供应链重构。AI成为提升供应链韧性和效率的关键工具。</p>
+        <p><strong>AI应用：</strong>需求预测（机器学习预测销量波动）、库存优化（动态安全库存）、物流路径规划（实时避堵与最优路径）、供应商风险监控（NLP分析新闻与公告）、智能质检（计算机视觉检测缺陷）。</p>
+        <p><strong>趋势：</strong>供应链正在从"全球化"转向"区域化+智能化"——更多近岸外包，更多AI驱动的实时决策，更少依赖单一来源。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="数字货币 去中心化金融 DeFi 区块链 CBDC">
+      <div class="card-header">
+        <span class="card-badge badge-cyan">经济</span>
+        <div class="card-title">数字货币与去中心化金融</div>
+      </div>
+      <div class="card-preview">央行数字货币（CBDC）与去中心化金融（DeFi）正在并行改变全球金融基础设施。</div>
+      <div class="card-detail">
+        <p><strong>CBDC（央行数字货币）：</strong>截至2025年，全球超130个国家正在探索CBDC。中国数字人民币（e-CNY）已进入全面试点阶段，交易额超千亿。CBDC的优势：降低跨境支付成本、提升货币政策传导效率、增强金融包容性。</p>
+        <p><strong>DeFi（去中心化金融）：</strong>基于区块链的金融服务，无需传统银行作为中介。核心协议：Uniswap（去中心化交易所）、Aave（去中心化借贷）、MakerDAO（去中心化稳定币）。总锁仓量（TVL）从2020年的10亿美元增长到数百亿美元。</p>
+        <p><strong>AI+金融：</strong>AI正在与DeFi融合——AI驱动的自动交易策略、智能合约审计（AI检测漏洞）、信用评估（链上数据分析）、风险预警系统。这是金融科技的下一个前沿。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========== Module C: Japan Aging ========== -->
+<section class="section" id="japan-aging">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(245,158,11,0.15);color:var(--accent-amber);">&#127988;</div>
+    <div>
+      <div class="section-title">日本如何度过人口老龄化</div>
+      <div class="section-subtitle">一个先行者的完整经验——政策、科技、社会多维度应对</div>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <div class="card" data-keywords="日本 少子老龄化 数据 现状 人口下降">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">少子老龄化的数据与现状</div>
+      </div>
+      <div class="card-preview">日本是全球老龄化最严重的国家之一，这是所有应对措施的背景板。</div>
+      <div class="card-detail">
+        <p><strong>核心数据：</strong>日本总人口从2008年峰值1.28亿持续下降，2025年约1.22亿。65岁以上人口占比超29%，为全球最高。出生率跌至0.72（2023年），远低于2.1的人口更替水平。劳动力人口从1995年的8700万缩减至约6800万。</p>
+        <p><strong>区域差异：</strong>东京都圈仍在吸引年轻人，但地方城市"限界集落"（65岁以上占半数以上的村落）数量激增。全国约20%的市町村面临消失风险。</p>
+        <p><strong>经济影响：</strong>GDP增速长期低迷（1%左右）、社保支出占GDP约22%且持续增长、医疗和养老支出占比逐年上升、消费市场萎缩导致企业增长困难。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="介护保险 制度 长期照护 日本">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">介护保险制度详解</div>
+      </div>
+      <div class="card-preview">2000年实施的介护保险是全球最成熟的长期照护保险制度——值得中国重点研究。</div>
+      <div class="card-detail">
+        <p><strong>制度设计：</strong>40岁以上国民强制参保，65岁以上为第一号被保险人。需要介护服务时经专业评估定级（要支援1-2级、要介护1-5级），按等级享受不同服务量。个人承担10%费用，保险支付90%。</p>
+        <p><strong>服务内容：</strong>居家服务（访面护理、日间照料、短期入住）、社区服务（小规模多功能型、认知症对应型）、设施服务（特别养护老人院、老人保健设施）。</p>
+        <p><strong>资金来源：</strong>50%来自保费（第一号25%+第二号25%），50%来自公费（国库25%+都道府县12.5%+市町村12.5%）。</p>
+        <p><strong>挑战：</strong>制度成本持续膨胀（2025年度预算超13万亿日元）、护理人才严重短缺（需求约253万人，实际供给约210万人）、高龄者负担加重（第一号保费从2000年的月均2911日元增至2024年的约6500日元）。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="机器人 AI养老 护理机器人 智能养老">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">机器人与AI在养老中的应用</div>
+      </div>
+      <div class="card-preview">日本把"机器人"作为解决护理人手不足的核心技术路径。</div>
+      <div class="card-detail">
+        <p><strong>物理辅助机器人：</strong>搬运辅助（帮助护理员搬移老人，减轻腰部负担，如RIKYO的护理辅助机器人）、行走辅助（助力老年人和康复患者行走）、喂食辅助（帮助上肢障碍者自主进食）。</p>
+        <p><strong>交流陪伴AI：</strong>PARO（海豹型疗愈机器人，已在30多个国家使用）、Pepper（软银的人形机器人，用于养老院导引和简单对话）、AI对话系统（针对认知症患者的回忆疗法，通过AI引导患者回忆过去，延缓认知衰退）。</p>
+        <p><strong>监测与预警：</strong>智能床垫（监测睡眠和呼吸，预防夜间事故）、AI摄像头（跌倒检测和行为异常预警）、IoT传感器网络（独居老人的活动监测和紧急呼叫）。</p>
+        <p><strong>效果：</strong>日本经产省调查显示，引入护理机器人的机构中约70%报告"护理负担减轻"，但成本回收期仍较长（平均3-5年），大规模普及仍需政策补贴推动。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="女性 老年人 就业 促进政策 日本">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">女性与老年人就业促进政策</div>
+      </div>
+      <div class="card-preview">"让想工作的人都能工作"——日本正在将潜在劳动力转化为实际劳动力。</div>
+      <div class="card-detail">
+        <p><strong>女性就业：</strong>"女性经济学"（Womenomics）是安倍经济学的重要支柱。核心措施：改善工作方式（减少加班文化）、扩充保育设施（待机儿童问题从2017年的2.6万降至2023年的约5000）、推动企业女性管理层比例提升。效果：女性劳动参与率从2012年的63.4%提升至2024年的约73%。</p>
+        <p><strong>老年人就业：</strong>2021年修订《高年龄者就业稳定法》，要求企业确保65岁以下员工就业机会，鼓励支持到70岁。65-69岁就业率从2012年的约39%提升至2024年的约52%。银发人才中心提供老年人专属的轻量级工作匹配。</p>
+        <p><strong>挑战：</strong>女性仍集中在非正规雇佣（兼职、派遣），薪酬差距为发达国家中最大之一；老年人就业虽增加但多为低薪岗位，"终身雇佣"体系瓦解后安全保障不足。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="外国劳动者 日本 移民 特定技能 外国人">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">外国劳动者引进政策演变</div>
+      </div>
+      <div class="card-preview">日本从不接受移民到逐步开放——这是被迫但务实的人口政策转向。</div>
+      <div class="card-detail">
+        <p><strong>政策演变：</strong>1990年代开始通过"技能实习制度"引入外国劳动者（名义上是技术转移，实际是廉价劳动力）。2019年新设"特定技能"签证，分1号（最长5年）和2号（可带家属、可永久居留），覆盖16个行业。2024年进一步扩大特定技能2号的范围。</p>
+        <p><strong>数据：</strong>在日外国人从2012年的约203万增至2024年的超340万，占日本总人口约2.7%。主要来源国：越南、中国、菲律宾、巴西。护理行业的外国劳动者增速最快。</p>
+        <p><strong>矛盾：</strong>社会对大规模移民的抵触依然存在，但劳动力缺口使得政策持续放宽。语言障碍、文化适应、权益保护（技能实习制度下的剥削问题频发）是主要痛点。日本正在尝试"多文化共生"的社区模式。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="社区互助 地域共生 互助模型">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">社区互助与地域共生模型</div>
+      </div>
+      <div class="card-preview">"大家一起守护社区"——日本的社区养老模式正在重新定义"邻里"的含义。</div>
+      <div class="card-detail">
+        <p><strong>地域包括照顾体系：</strong>日本2005年开始推行"地域包括照顾体系"——在30分钟生活圈内，整合医疗、护理、预防、居住和生活支援五大服务，让老人在熟悉的社区安老。</p>
+        <p><strong>关键创新：</strong>① "咖啡馆模式"——社区中的小型交流据点，老人可以在此喝茶、社交、咨询护理信息；② "时间银行"——健康的低龄老人帮助高龄老人，积累的服务时间留给自己将来使用；③ 自治会制度——社区自治组织承担巡逻、防灾、独居老人看护等职能。</p>
+        <p><strong>效果：</strong>超过80%的市町村建立了地域包括照顾体系。但地方财政紧张、社区志愿者老龄化（平均年龄超65岁）使可持续性面临挑战。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="日本 经验 启示 中国 借鉴">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">日本经验对中国的启示</div>
+      </div>
+      <div class="card-preview">中国比日本晚了约20年进入老龄化，但速度更快——有窗口期，但要快。</div>
+      <div class="card-detail">
+        <p><strong>相似性：</strong>同为东亚文化（重视家庭养老但核心家庭化削弱了家庭养老能力）、都面临出生率快速下降、城镇化带来的人口流动使农村老龄化更严重。</p>
+        <p><strong>可借鉴：</strong>① 介护保险制度——中国正在试点"长期护理保险"，日本的分级评估和服务体系值得参考；② 科技养老——中国AI和物联网产业更强，可更快速推进智慧养老；③ 社区养老模式——日本的地域共生体系为中国的"居家养老+社区服务"提供范本。</p>
+        <p><strong>需避免：</strong>① 推迟改革的代价——日本在老龄化初期犹豫不决，错过了最佳窗口期；② 过度依赖机构化——日本后来发现社区养老更符合老人意愿且成本更低；③ 制度碎片化——介护保险与医疗、年金制度协调不足导致效率损失。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="日本 老龄化 未来 挑战 应对">
+      <div class="card-header">
+        <span class="card-badge badge-amber">日本</span>
+        <div class="card-title">未来挑战与应对</div>
+      </div>
+      <div class="card-preview">老龄化没有"解药"，但日本正在证明：适应比对抗更务实。</div>
+      <div class="card-detail">
+        <p><strong>2025年问题：</strong>团块世代（1947-1949年出生，约800万人）全部进入75岁以上，医疗和护理需求将急剧膨胀。这是日本老龄化最严峻的里程碑。</p>
+        <p><strong>技术路线：</strong>① 远程医疗大规模普及（已修订法律允许在线初诊）→ ② AI辅助诊断和处方审核 → 3 自动化护理设备大规模部署 → ④ 健康寿命延长（预防医学和生活方式干预）。</p>
+        <p><strong>社会路线：</strong>① 继续提高劳动参与率（目标：男女均超80%）→ ② 外国劳动者进一步增加（目标：占劳动力5%以上）→ ③ 城市集约化（缩小城市边界，集中基础设施）→ ④ 终身学习体系完善。</p>
+        <p><strong>深层反思：</strong>日本的经验表明，应对老龄化不是"解决"问题，而是"适应"变化——重新定义生产力（不以GDP增速为唯一目标）、重新定义工作（不受年龄限制）、重新定义社区（让每个人都被看见）。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========== Module D: Youth Employment ========== -->
+<section class="section" id="youth-employment">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(244,63,94,0.15);color:var(--accent-rose);">&#128170;</div>
+    <div>
+      <div class="section-title">新时代青年应对就业压力</div>
+      <div class="section-subtitle">压力是真实的，但应对方式比焦虑更有用——8个维度帮你破局</div>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <div class="card" data-keywords="AI 岗位 消亡 新生 替代 创造 职业">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">AI时代的岗位消亡与新生</div>
+      </div>
+      <div class="card-preview">每个时代都有旧岗位消失、新岗位诞生——AI时代的速度更快，但规律没变。</div>
+      <div class="card-detail">
+        <p><strong>正在消亡的岗位：</strong>初级翻译、基础数据录入员、简单客服、流水线质检员、传统会计核算、初级法律文书、简单平面设计。这些岗位的共同特征：规则明确、重复性高、创意要求低。</p>
+        <p><strong>正在新生的岗位：</strong>AI训练师/标注师、提示词工程师、AI产品经理、大模型运维工程师、AI伦理审计员、人机交互设计师、AI安全研究员、数字孪生工程师。这些岗位在5年前大多不存在。</p>
+        <p><strong>核心认知：</strong>历史上每次技术革命（蒸汽机→电力→互联网）都曾引发"失业恐慌"，但最终都创造了比消灭的更多的工作。AI的不同之处在于速度——过去一个世代的变迁现在可能只需5-10年。所以关键是适应速度，而非恐慌本身。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="核心技能 不可替代 能力 竞争力">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">核心不可替代技能清单</div>
+      </div>
+      <div class="card-preview">AI越强，"人味"越贵——这些是AI在可预见的未来无法替代的能力。</div>
+      <div class="card-detail">
+        <p><strong>1. 复杂问题拆解与解决：</strong>AI能解已知问题，但定义"正确的问题"仍需要人。能把模糊需求拆解成可执行步骤的人，永远是稀缺资源。</p>
+        <p><strong>2. 跨领域连接力：</strong>AI在单一领域很强，但把医学+工程+商业结合起来的创新仍需要人。跨界者比专家更有竞争力。</p>
+        <p><strong>3. 情感智能与领导力：</strong>团队的信任建立、冲突化解、愿景传达——这些需要真正的共情和人格魅力，AI只是辅助。</p>
+        <p><strong>4. 道德判断与价值决策：</strong>当AI给出多个选项时，选择哪个？这需要人的价值观。AI可以计算，但不能替你做价值选择。</p>
+        <p><strong>5. 身体智慧与实操能力：</strong>水电工、手术医生、手工艺人——需要精细身体操作的工作，机器人短期内无法替代。</p>
+        <p><strong>6. 创意审美与品味：</strong>AI可以生成1000个方案，但判断"哪个好"需要人的审美和品味。品味是AI时代的"定价权"。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="持续学习 转型 方法论 终身学习">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">持续学习与转型的方法论</div>
+      </div>
+      <div class="card-preview">不是"学什么"的问题，而是"怎么学"——一个可持续的学习系统比任何单次培训都重要。</div>
+      <div class="card-detail">
+        <p><strong>费曼学习法：</strong>学到的东西能用最简单的语言给别人讲明白，才是真懂。如果你不能用10岁小孩听得懂的话解释一个概念，说明你还没真正理解。</p>
+        <p><strong>项目驱动学习：</strong>不要"先学再做"，要"边做边学"。选一个你真正想做的项目（比如做一个AI小工具），遇到不会的再去学，学完立刻用上。这比系统性地看完一本教材效率高10倍。</p>
+        <p><strong>20%时间法则：</strong>Google著名的创新制度——每周用20%的时间探索新领域。个人也可以：每周拿出1天学一个与当前工作不直接相关的技能。这20%的"无用之用"往往是职业突破的来源。</p>
+        <p><strong>输出倒逼输入：</strong>写技术博客、做分享、教别人——当你必须向他人输出时，你的学习深度和效率会大幅提升。"教是最好的学"不是鸡汤，是认知科学。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="副业 多元收入 斜杠青年">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">副业与多元收入策略</div>
+      </div>
+      <div class="card-preview">"单一收入来源=单一风险点"——AI时代的抗风险策略是收入多元化。</div>
+      <div class="card-detail">
+        <p><strong>为什么需要副业：</strong>不是因为主职不够好，而是因为任何单一收入来源都是脆弱的。公司可以裁员、行业可以衰退、AI可以替代——但3个收入来源同时归零的概率极低。</p>
+        <p><strong>副业选择原则：</strong>① 与主职有技能协同（不要完全跨界，利用已有能力）→ ② 边际成本低（知识付费/咨询/工具类，而非时间换钱型）→ 3 能积累资产（内容/作品/用户，而非纯消耗时间）→ ④ 不与主职利益冲突。</p>
+        <p><strong>AI赋能副业：</strong>用ChatGPT辅助内容创作、用Cursor辅助编程接单、用Midjourney辅助设计、用AI做数据分析报告——AI让"一人公司"成为可能。关键不是AI替代你，而是AI让你一个人的产出等于一个3-5人团队。</p>
+        <p><strong>起步建议：</strong>先从"最低成本的实验"开始——写一篇技术文章发公众号/知乎，接一个小的自由职业单子，做一个最小的产品原型。用3个月验证"这个副业能不能跑通"，跑不通换下一个，成本极低。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="个人品牌 AI工具 赋能 影响力">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">个人品牌与AI工具赋能</div>
+      </div>
+      <div class="card-preview">在这个信息爆炸的时代，"被看见"比"做得好"更重要——而AI正在大幅降低"被看见"的门槛。</div>
+      <div class="card-detail">
+        <p><strong>为什么个人品牌重要：</strong>招聘的本质是"信任传递"——简历是自说自话，但你的公开作品、社区贡献、行业影响力是第三方背书。个人品牌 = 信任资本 = 机会杠杆。</p>
+        <p><strong>AI工具矩阵：</strong>① 内容创作：ChatGPT/Claude（文字）、Midjourney/SD（图像）、Sora/Runway（视频）→ ② 编程开发：Cursor/Copilot（代码生成）、v0/Bolt（AI全栈开发）→ ③ 知识管理：Obsidian+AI插件（笔记智能关联）、Notion AI（文档整理）→ ④ 效率提升：Perplexity（AI搜索）、Gamma（AI演示文稿）。</p>
+        <p><strong>实操路线：</strong>选定1个平台深耕（知乎/公众号/小红书/B站/推特）→ 每周2-3篇AI辅助的原创内容 → 3个月后看数据反馈调整方向 → 6个月建立基本的行业认知度。关键：持续>完美，真实>包装。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="考公 考研 就业 选择 决策">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">考公/考研/就业的选择决策</div>
+      </div>
+      <div class="card-preview">没有标准答案，但有决策框架——关键不是"哪个更好"，而是"哪个更适合你"。</div>
+      <div class="card-detail">
+        <p><strong>考公（公务员）：</strong>适合追求稳定、对公共事务有热情、抗压能力强的人。但考公竞争率持续攀升（2025年国考约303:1），"上岸"越来越难。且AI正在进入政务领域，未来部分基层公务员可能被替代。不要把考公当"逃避"，要当成"选择"。</p>
+        <p><strong>考研：</strong>适合对学术研究有真正兴趣、需要学历门槛（医学/法律/部分研发岗）、或想通过读研转换赛道的人。但如果只是"延迟就业"，2-3年后可能面临同样的竞争且少了2年工作经验。研究生扩招导致学历通胀也是事实。</p>
+        <p><strong>直接就业：</strong>适合有明确职业方向、自学能力强、想尽早积累实战经验的人。AI时代的职场经验比学历更"值钱"——2年真实项目经验往往胜过2年象牙塔。但初期待遇可能较低、试错成本较高。</p>
+        <p><strong>决策框架：</strong>问自己3个问题：① 我更怕"无聊"还是"不稳定"？→ ② 我愿意为当前选择投入多少时间成本？→ 3 如果3年后这个选择错了，我能承受吗？选择承受得了后果的那条路。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="心理 调适 抗焦虑 压力 心理健康">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">心理调适与抗焦虑策略</div>
+      </div>
+      <div class="card-preview">焦虑是正常的，但被焦虑控制是不值得的——实用的心理管理工具。</div>
+      <div class="card-detail">
+        <p><strong>焦虑的根源：</strong>① 信息过载（每天被"AI要取代XX"的新闻轰炸）→ ② 比较效应（社交媒体上同龄人的"成功"展示）→ 3 不确定性（未来职业路径不可预测）→ ④ 控制感缺失（宏观环境个人无法影响）。</p>
+        <p><strong>应对策略：</strong>① 信息断舍离——取关制造焦虑的自媒体，只关注真正有价值的信源 → ② 控制圈聚焦——画两个圈：能控制的和不能控制的，只在"能控制圈"里行动 → 3 最小可行行动——焦虑时做最小的一件有意义的事（哪怕只是打开一本书），行动本身就能缓解焦虑 → ④ 反比较练习——不和社交媒体上的"精修人生"比，和昨天的自己比。</p>
+        <p><strong>重要提醒：</strong>如果焦虑已经严重影响到睡眠、食欲、社交功能，请及时寻求专业心理咨询。心理疾病和身体疾病一样需要治疗，不需要任何羞耻。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+    <div class="card" data-keywords="人脉 信息差 社交 网络">
+      <div class="card-header">
+        <span class="card-badge badge-rose">青年</span>
+        <div class="card-title">人脉建设与信息差突破</div>
+      </div>
+      <div class="card-preview">在AI时代，信息差不再是"知不知道"，而是"认不认识对的人"——人脉是信息差的放大器。</div>
+      <div class="card-detail">
+        <p><strong>重新定义人脉：</strong>人脉不是"认识多少人"，而是"有多少人愿意在你需要时帮你"。本质是信任和互惠。微信好友3000不如真正能帮你的30人。</p>
+        <p><strong>信息差的三个层次：</strong>① 第一层（公开信息）——AI和搜索引擎能帮你搞定，已经不值钱；② 第二层（半公开信息）——行业内部的趋势、机会、坑——需要行业人脉才能获取；③ 第三层（个人洞察）——结合你的独特经历和认知产生的判断——这才是真正的壁垒。</p>
+        <p><strong>人脉建设实操：</strong>① 给价值而非索取——先帮别人解决问题，再寻求帮助 → ② 深耕1-2个行业社区——GitHub、技术论坛、行业微信群，持续贡献有价值的内容 → 3 "弱关系"更值钱——你的下个机会更可能来自"朋友的朋友"而非密友 → ④ 每月约1-2次"咖啡聊天"——和行业前辈或同路人交流，收获远超独自学习。</p>
+        <p><strong>AI时代的特殊优势：</strong>AI降低了"做事"的门槛，但"知道该做什么"和"认识能一起做的人"反而更重要。AI时代的人脉价值没有下降，反而上升了。</p>
+      </div>
+      <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>AI Insight Hub &copy; 2026 &mdash; 理解AI时代，从这一站开始</p>
+  <p style="margin-top:8px;">内容由AI辅助生成，仅供参考学习。投资/就业决策请结合专业建议。</p>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" title="返回顶部">&#8593;</button>
+
+<script>
+// ===== Tab Switching =====
+document.querySelectorAll('#aiTabs .tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tabId = btn.dataset.tab;
+    const color = btn.dataset.color;
+    // Reset all tabs
+    document.querySelectorAll('#aiTabs .tab-btn').forEach(b => {
+      b.className = 'tab-btn';
+    });
+    btn.className = 'tab-btn active-' + color;
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.getElementById('tab-' + tabId).classList.add('active');
+  });
+});
+
+// ===== Card Expand/Collapse =====
+document.querySelectorAll('.card-toggle').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const card = btn.closest('.card');
+    card.classList.toggle('expanded');
+    btn.innerHTML = card.classList.contains('expanded')
+      ? '<span class="arrow">&#9650;</span> 收起'
+      : '<span class="arrow">&#9660;</span> 展开详情';
+  });
+});
+
+// ===== Search =====
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+const allCards = document.querySelectorAll('.card');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  if (!q) { searchResults.classList.remove('visible'); return; }
+  const matches = [];
+  allCards.forEach(card => {
+    const title = card.querySelector('.card-title').textContent.toLowerCase();
+    const keywords = (card.dataset.keywords || '').toLowerCase();
+    const preview = card.querySelector('.card-preview').textContent.toLowerCase();
+    if (title.includes(q) || keywords.includes(q) || preview.includes(q)) {
+      const section = card.closest('.section');
+      const sectionTitle = section ? section.querySelector('.section-title').textContent : '';
+      matches.push({ title: card.querySelector('.card-title').textContent, module: sectionTitle, sectionId: section ? section.id : '' });
+    }
+  });
+  if (matches.length === 0) {
+    searchResults.innerHTML = '<div style="padding:16px;color:var(--text-muted);text-align:center;">未找到相关内容</div>';
+  } else {
+    searchResults.innerHTML = matches.slice(0, 8).map(m =>
+      `<div class="search-result-item" onclick="goToSection('${m.sectionId}')">
+        <div class="sr-title">${m.title}</div>
+        <div class="sr-module">${m.module}</div>
+      </div>`
+    ).join('');
+  }
+  searchResults.classList.add('visible');
+});
+
+searchInput.addEventListener('blur', () => {
+  setTimeout(() => searchResults.classList.remove('visible'), 200);
+});
+
+function goToSection(id) {
+  searchInput.value = '';
+  searchResults.classList.remove('visible');
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+// ===== Navbar Scroll Spy =====
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('#navLinks .nav-link');
+
+function updateActiveNav() {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    if (window.scrollY >= top) current = section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+}
+
+// ===== Back to Top =====
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  updateActiveNav();
+  backToTop.classList.toggle('visible', window.scrollY > 600);
+});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ===== Mobile Menu =====
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+});
+</script>
+</body>
+</html>
