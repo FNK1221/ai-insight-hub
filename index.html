@@ -243,6 +243,7 @@ body {
       <a class="nav-link" href="#youth-survival">青年实操</a>
       <a class="nav-link" href="#ai-toolkit">AI实操手册</a>
       <a class="nav-link" href="#ai-practice">落地实践</a>
+      <a class="nav-link" href="#local-ai">本地AI助手</a>
       <a class="nav-link" href="#github-trending">GitHub热门</a>
     </div>
     <button class="hamburger" id="hamburgerBtn">&#9776;</button>
@@ -254,6 +255,7 @@ body {
     <a class="nav-link" href="#youth-survival">青年实操</a>
     <a class="nav-link" href="#ai-toolkit">AI实操手册</a>
     <a class="nav-link" href="#ai-practice">落地实践</a>
+    <a class="nav-link" href="#local-ai">本地AI助手</a>
     <a class="nav-link" href="#github-trending">GitHub热门</a>
   </div>
 </nav>
@@ -2014,6 +2016,344 @@ body {
       </ol>
       <div class="source-tag">🌐 来源：ChatGPT中文指南2026 / PromptRefine / 实战验证</div>
     </div>
+  </div>
+</section>
+
+<!-- ========== Module G: Build Your Own Local AI Assistant ========== -->
+<section class="section" id="local-ai">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(245,158,11,0.15);color:#F59E0B;">&#129302;</div>
+    <div>
+      <div class="section-title">打造你的个人AI助手——从零到部署</div>
+      <div class="section-subtitle">不需要花一分钱，不需要高配电脑，按步骤操作就能拥有一个完全属于你、了解你、帮你处理90%日常事务的本地AI</div>
+    </div>
+  </div>
+  <div class="data-banner">
+    <span class="data-banner-icon">&#128161;</span>
+    <span>这是一个<strong>完全免费、完全离线、完全隐私</strong>的方案。你的数据永远不离开你的电脑，没有人能看到你和AI的对话。所有工具都是开源的。</span>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="local-overview">全局概览</button>
+    <button class="tab-btn" data-tab="local-hardware">硬件要求</button>
+    <button class="tab-btn" data-tab="local-install">安装部署</button>
+    <button class="tab-btn" data-tab="local-personal">个人训练</button>
+    <button class="tab-btn" data-tab="local-rag">知识库RAG</button>
+    <button class="tab-btn" data-tab="local-advance">进阶优化</button>
+    <button class="tab-btn" data-tab="local-cost">费用&兼容</button>
+  </div>
+
+  <!-- Tab 1: 全局概览 -->
+  <div class="tab-panel active" id="local-overview">
+    <div class="card" data-keywords="本地AI 架构 概览 原理 为什么 免费 隐私">
+      <div class="card-header">
+        <span class="card-badge badge-orange">核心</span>
+        <div class="card-title">为什么要在本地跑AI？——看完这个你就理解了</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p><strong>核心原理：开源模型 + 你的电脑 = 属于你的AI</strong></p>
+        <p>2026年，开源AI模型的质量已经接近甚至持平ChatGPT-4水平。你完全可以把它们下载到自己的电脑上运行——不需要联网，不需要付费，没有任何人能看到你的数据。</p>
+        <p style="margin-top:16px;"><strong>本地AI vs 云端AI 对比：</strong></p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:10px;text-align:left;border-bottom:1px solid var(--border-color);">对比项</th><th style="padding:10px;text-align:center;border-bottom:1px solid var(--border-color);">ChatGPT/Claude</th><th style="padding:10px;text-align:center;border-bottom:1px solid var(--border-color);">本地AI (Ollama)</th></tr>
+          <tr><td style="padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.05);">费用</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#EF4444;">$20/月起</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">完全免费</td></tr>
+          <tr><td style="padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.05);">隐私</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#F59E0B;">数据上传服务器</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">数据从不离开电脑</td></tr>
+          <tr><td style="padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.05);">需要网络</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">必须联网</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">完全离线可用</td></tr>
+          <tr><td style="padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.05);">处理90%日常任务</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">能</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">能（7B+模型）</td></tr>
+          <tr><td style="padding:8px 10px;">能训练成了解你的</td><td style="padding:8px;text-align:center;color:#EF4444;">不能</td><td style="padding:8px;text-align:center;color:#10B981;">能（RAG + 微调）</td></tr>
+        </table>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 最重要的一句话</div>
+          <div class="pb-step"><span class="highlight">你不需要高配电脑。</span>16GB内存的普通笔记本，装个Ollama，跑一个4GB的7B模型，就能处理90%的日常AI任务——写周报、翻译、总结、问答、编程辅助。完全免费、完全离线。</div>
+        </div>
+        <p style="margin-top:16px;"><strong>5分钟理解整个流程：</strong></p>
+        <ol>
+          <li><strong>装Ollama</strong>（1分钟）——类似安装QQ，下载→双击→完成</li>
+          <li><strong>下载模型</strong>（2分钟）——一行命令，自动下载4GB模型</li>
+          <li><strong>开始对话</strong>（0分钟）——打开终端/浏览器，直接用</li>
+          <li><strong>喂你的数据</strong>（可选）——把你的文档、笔记喂给它，它就"了解"你了</li>
+          <li><strong>设置快捷方式</strong>（可选）——让它在你的电脑上随时待命</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 2: 硬件要求 -->
+  <div class="tab-panel" id="local-hardware">
+    <div class="card" data-keywords="硬件配置 显存 内存 GPU 最低要求 电脑配置 笔记本">
+      <div class="card-header">
+        <span class="card-badge badge-blue">硬件</span>
+        <div class="card-title">你的电脑能跑吗？——硬件要求对照表</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p><strong>核心原则：显存（VRAM）或内存（RAM）决定你能跑多大的模型。</strong></p>
+        <p>2026年的量化技术可以把模型压缩到原来的1/4，精度只损失1-2%。</p>
+        <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:10px;text-align:left;border-bottom:1px solid var(--border-color);">你的硬件</th><th style="padding:10px;text-align:center;border-bottom:1px solid var(--border-color);">能跑什么模型</th><th style="padding:10px;text-align:center;border-bottom:1px solid var(--border-color);">体验</th><th style="padding:10px;text-align:center;border-bottom:1px solid var(--border-color);">费用</th></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">普通笔记本（无独显，16GB）</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Qwen 2.5:7B（CPU）</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">1-3 tok/s<br><small>较慢但能用</small></td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;">0元</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">RTX 3060 12GB</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Qwen 2.5:7B / 14B</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">25-35 tok/s 流畅</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;">0元</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">RTX 4090 24GB</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Qwen 2.5:32B</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">20-30 tok/s<br><small>接近GPT-4</small></td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">已有显卡=0元</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">Mac M1/M2 16GB</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Qwen 2.5:7B</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">15-25 tok/s</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;">0元</td></tr>
+          <tr><td style="padding:8px;">Mac M3/M4 36GB+</td><td style="padding:8px;text-align:center;">Qwen 2.5:14B~70B</td><td style="padding:8px;text-align:center;">25-40 tok/s</td><td style="padding:8px;text-align:center;color:#10B981;font-weight:700;">0元</td></tr>
+        </table>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 关键结论</div>
+          <div class="pb-step">16GB内存是分水岭。低于16GB只能跑极小模型，16GB能跑7B日常模型。</div>
+          <div class="pb-step"><span class="highlight">没有独显完全没关系。</span>用CPU模式跑Qwen 2.5:1.5B（1.1GB），每秒5-10个字，日常对话够用。</div>
+          <div class="pb-step">5年前的RTX 3060在Q4量化下运行，能提供与H100上<strong>90%的质量</strong>——只是更慢。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: 安装部署 -->
+  <div class="tab-panel" id="local-install">
+    <div class="card" data-keywords="Ollama 安装 部署 Windows Mac 教程 步骤 LM Studio Open WebUI Docker">
+      <div class="card-header">
+        <span class="card-badge badge-green">实操</span>
+        <div class="card-title">5步完成安装——照着做就行</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p><strong>第1步：安装Ollama（1分钟）</strong></p>
+        <ol>
+          <li>打开 <a href="https://ollama.com/download" target="_blank" style="color:var(--accent-cyan);">https://ollama.com/download</a></li>
+          <li>下载Windows安装包（约500MB），双击安装</li>
+          <li>打开cmd输入 <code>ollama --version</code> 验证</li>
+        </ol>
+        <p style="margin-top:16px;"><strong>第2步：下载并运行模型（2分钟）</strong></p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># 推荐：Qwen 2.5 7B（约4.5GB，中文最强）
+ollama run qwen2.5:7b
+
+# 电脑较慢用这个（约1.1GB）
+ollama run qwen2.5:1.5b
+
+# 有24GB显存用这个（接近GPT-4）
+ollama run qwen2.5:32b
+
+# 推理能力最强（约8GB）
+ollama run deepseek-r1:14b</pre>
+        </div>
+        <p><small>第一次运行自动下载，7B模型约5-10分钟，之后秒启动。</small></p>
+        <p style="margin-top:16px;"><strong>第3步：安装图形界面Open WebUI（可选，3分钟）</strong></p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># Docker方式（推荐）
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+# pip方式
+pip install open-webui && open-webui serve</pre>
+        </div>
+        <p>安装后浏览器打开 <strong>http://localhost:3000</strong>，ChatGPT风格界面，自动连接本地模型。</p>
+        <p style="margin-top:16px;"><strong>第4步：新手替代——LM Studio</strong></p>
+        <p>打开 <a href="https://lmstudio.ai/" target="_blank" style="color:var(--accent-cyan);">lmstudio.ai</a> → 下载安装 → 搜索模型 → 下载 → 加载 → 对话。零命令行。</p>
+        <p style="margin-top:16px;"><strong>第5步：配置系统提示词（让它了解你）</strong></p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># 新建文件 Modelfile
+FROM qwen2.5:7b
+PARAMETER temperature 0.7
+PARAMETER num_ctx 32768
+
+SYSTEM """
+你是我的私人AI助手。关于我的信息：
+- 我是一个产品经理，同时做独立开发
+- 沟通风格：简洁直接，先说结论
+- 工作语言：中文
+- 关注领域：AI、产品、独立开发
+
+如果不确定，直接说不知道，不要编造。
+"""
+
+# 导入并运行
+ollama create my-assistant -f Modelfile
+ollama run my-assistant</pre>
+        </div>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 踩坑提醒</div>
+          <div class="pb-step">GPU没加速？更新NVIDIA驱动到最新版</div>
+          <div class="pb-step">端口冲突？改端口：docker run -p 3001:8080 ...</div>
+          <div class="pb-step">下载慢？设置国内镜像或用代理</div>
+          <div class="pb-step">输出乱码？检查chat template——中文模型需要专门的模板</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 4: 个人训练 -->
+  <div class="tab-panel" id="local-personal">
+    <div class="card" data-keywords="微调 fine-tuning 训练 LoRA QLoRA Unsloth LLaMA-Factory">
+      <div class="card-header">
+        <span class="card-badge badge-purple">进阶</span>
+        <div class="card-title">让AI"认识你"——三种方式</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p><strong>方式1：系统提示词（5分钟）</strong>→ 写描述你的信息放在SYSTEM里。优点：零成本。缺点：AI只是"参考"。</p>
+        <p style="margin-top:12px;"><strong>方式2：RAG知识库（30分钟-2小时，性价比最高）</strong>→ 把你的笔记/文档喂给AI，每次提问先搜索你的数据再回答。→ 详见"知识库RAG"Tab</p>
+        <p style="margin-top:12px;"><strong>方式3：微调/Fine-tuning（数小时）</strong>→ 用你的数据"训练"模型，永久改变输出风格。</p>
+        <p style="margin-top:12px;"><strong>微调工具对比：</strong></p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">工具</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">难度</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">最低显存</th><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">说明</th></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">Unsloth</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">简单</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">6GB</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">24GB显存也能微调70B</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">LLaMA-Factory</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#F59E0B;">中等</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">12GB</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">国内最流行，中文教程最多</td></tr>
+          <tr><td style="padding:6px 8px;">Axolotl</td><td style="padding:6px 8px;text-align:center;color:#F59E0B;">中等</td><td style="padding:6px 8px;text-align:center;">12GB</td><td style="padding:6px 8px;">功能最全</td></tr>
+        </table>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># LLaMA-Factory 快速微调
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory && pip install -e ".[torch,metrics]"
+
+# 准备训练数据（JSONL格式）
+# {"instruction": "帮我写周报", "output": "先列本周完成的工作..."}
+
+# 启动Web界面配置
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli webui</pre>
+        </div>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 微调真相</div>
+          <div class="pb-step">微调不需要海量数据——<span class="highlight">50-200条高质量问答对</span>就能明显改变风格</div>
+          <div class="pb-step">推荐路径：<strong>系统提示词 → RAG → 微调</strong>，逐步升级</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 5: 知识库RAG -->
+  <div class="tab-panel" id="local-rag">
+    <div class="card" data-keywords="RAG 知识库 AnythingLLM ChromaDB 向量数据库 个人笔记">
+      <div class="card-header">
+        <span class="card-badge badge-green">实操</span>
+        <div class="card-title">搭建个人知识库——让AI读过你所有的笔记</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p>RAG = 你的文档 + AI = 超级问答系统。AI回答前先从你的文档搜索，基于真实数据回答。</p>
+        <p style="margin-top:12px;"><strong>最简单方案：AnythingLLM + Ollama（零代码，30分钟）</strong></p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># Docker方式
+docker pull mintplexlabs/anythingllm
+docker run -d -p 3001:3001 --name anythingllm mintplexlabs/anythingllm
+
+# 或直接下载桌面版：https://anythingllm.com
+
+# 配置：打开 http://localhost:3001
+# → 设置 → LLM Provider → Ollama
+# → 选模型 → 上传你的PDF/TXT/MD/DOCX
+# → 点"Save and Embed"
+# → 开始提问！</pre>
+        </div>
+        <p><strong>支持的数据类型：</strong>PDF（报告/论文）、Markdown/TXT（笔记/日志）、DOCX（方案）、CSV/Excel（数据表）、网页链接。</p>
+        <p style="margin-top:12px;"><strong>实际使用场景：</strong></p>
+        <ol>
+          <li>"我上个月笔记里写过关于XX的想法，帮我找出来"→ AI搜索并引用原文</li>
+          <li>"总结我保存的这篇论文的核心观点"→ AI从你的PDF提取要点</li>
+          <li>"根据我之前的项目文档，帮我写更新方案"→ AI基于历史文档来写</li>
+        </ol>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; RAG的隐私优势</div>
+          <div class="pb-step">你的笔记、想法、个人记录——<span class="highlight">不应该上传到ChatGPT</span>。本地RAG数据始终在你的硬盘上。</div>
+          <div class="pb-step">"不是偏执，这是架构。处理私密数据的正确工具就是私密工具。"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 6: 进阶优化 -->
+  <div class="tab-panel" id="local-advance">
+    <div class="card" data-keywords="量化 GGUF Q4 temperature 参数优化 模型选择">
+      <div class="card-header">
+        <span class="card-badge badge-orange">高级</span>
+        <div class="card-title">量化选择 + 参数调优 + 模型推荐</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <p><strong>量化 = 压缩模型。</strong>类似RAW(50MB)→JPEG(5MB)，体积缩小到1/4，精度只损失1-2%。</p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;border-bottom:1px solid var(--border-color);">级别</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">体积</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">质量</th><th style="padding:8px;border-bottom:1px solid var(--border-color);">场景</th></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">Q8_0</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">50%</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">几乎无损</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">最高质量</td></tr>
+          <tr style="background:rgba(16,185,129,0.08);"><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">Q4_K_M</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">30%</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">轻微</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">推荐大多数</td></tr>
+          <tr><td style="padding:6px 8px;">Q2_K</td><td style="padding:6px 8px;text-align:center;">15%</td><td style="padding:6px 8px;text-align:center;">显著</td><td style="padding:6px 8px;">仅紧急</td></tr>
+        </table>
+        <p style="margin-top:12px;"><strong>参数调优：</strong>temperature（代码:0.2-0.3 | 创意:0.7-1.0）、num_ctx（日常:4096 | 长文档:32768）、top_p（默认0.9）</p>
+        <p style="margin-top:12px;"><strong>2026年5月推荐模型：</strong></p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;border-bottom:1px solid var(--border-color);">模型</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">体积</th><th style="padding:8px;border-bottom:1px solid var(--border-color);">核心优势</th></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">Qwen 2.5:7B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">4.5GB</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">中文最强，综合最优</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">DeepSeek-R1:14B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">8GB</td><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">推理/数学/编程SOTA</td></tr>
+          <tr><td style="padding:6px 8px;">Qwen 2.5:32B</td><td style="padding:6px 8px;text-align:center;">20GB</td><td style="padding:6px 8px;">接近GPT-4，需24GB显存</td></tr>
+        </table>
+        <div class="source-tag">&#127758; 来源：dev.to / axiaoxin博客 / Ollama官方</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 7: 费用&兼容 -->
+  <div class="tab-panel" id="local-cost">
+    <div class="card" data-keywords="费用 成本 免费 预算 兼容性 Windows Mac Linux 避坑">
+      <div class="card-header">
+        <span class="card-badge badge-green">省钱</span>
+        <div class="card-title">费用全解析 + 兼容性避坑</div>
+      </div>
+      <div class="card-detail" style="display:block;">
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(16,185,129,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">你是谁</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">方案</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">费用</th></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">新手</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">LM Studio + Qwen 1.5B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;font-size:18px;">0元</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">有普通电脑</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Ollama + Qwen 7B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;font-size:18px;">0元</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">想搭知识库</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Ollama + AnythingLLM</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;font-weight:700;font-size:18px;">0元</td></tr>
+          <tr><td style="padding:6px 8px;">想升级硬件</td><td style="padding:6px 8px;text-align:center;">二手RTX 3090</td><td style="padding:6px 8px;text-align:center;">5000-7000元（一次性）</td></tr>
+        </table>
+        <p><strong>所有软件都是免费的：</strong>Ollama、LM Studio、Open WebUI、AnythingLLM、所有模型（Qwen/DeepSeek/GLM）。</p>
+        <p style="margin-top:12px;"><strong>兼容性：</strong></p>
+        <ul>
+          <li>Windows：完全支持，确保NVIDIA驱动最新</li>
+          <li>Mac：Intel和Apple Silicon都支持，需macOS 12.0+，16GB内存最佳</li>
+          <li>存储：预留20-100GB SSD（模型文件需要频繁读取）</li>
+          <li>网络：模型下载需联网，运行完全离线</li>
+        </ul>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 避坑清单</div>
+          <div class="pb-step">&#9888; 不要用机械硬盘——必须SSD</div>
+          <div class="pb-step">&#9888; 不要同时开太多应用——AI需要大量内存</div>
+          <div class="pb-step">&#10003; 先装最小模型确认环境OK再下大模型</div>
+          <div class="pb-step">&#10003; 系统提示词 + RAG > 微调（前者5分钟，后者几小时）</div>
+        </div>
+        <div class="source-tag">&#127758; 来源：Ollama官方 / dev.to / SitePoint / Kunalganglani</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 未来方向 -->
+  <div class="card" data-keywords="未来 AI方向 趋势 2026 2030 机会 布局 个人应该做什么" style="margin-top:24px;">
+    <div class="card-header">
+      <span class="card-badge badge-orange">方向</span>
+      <div class="card-title">AI未来5年发展方向——你应该提前布局什么</div>
+    </div>
+    <div class="card-preview">不只是"AI越来越强"，而是具体哪些领域在爆发、哪些岗位在被取代、哪些新机会正在出现。</div>
+    <div class="card-detail">
+      <p><strong>趋势1：AI从"工具"→"智能体"（Agent）</strong></p>
+      <ul><li>2026年：AI能自主规划、调用工具、闭环执行——你告诉它"我要什么"而非"怎么做"</li><li>2027-2030年：Agent生态成熟，低代码编排+跨工具调用成为标配</li></ul>
+      <p style="margin-top:12px;"><strong>趋势2：编程范式根本性迁移</strong></p>
+      <ul><li>开发者不再逐行写代码，用自然语言描述需求→AI自动完成代码→测试→部署</li><li>资深工程师用AI比例52% > 初级开发者38%——<span class="highlight">经验越丰富越善于利用AI</span></li></ul>
+      <p style="margin-top:12px;"><strong>趋势3：算力竞争→效率竞争</strong></p>
+      <ul><li>DeepSeek以500万美元训练出媲美GPT-4的模型——不足行业主流投入1/10</li><li>"聪明的算法比庞大的资源更强大"</li></ul>
+      <p style="margin-top:12px;"><strong>趋势4：高质量数据 > 算力</strong></p>
+      <ul><li>拥有垂直领域专业知识的人价值攀升——AI能处理通用任务，专业判断需要人</li></ul>
+      <p style="margin-top:12px;"><strong>你应该提前布局的5件事：</strong></p>
+      <ol>
+        <li><strong>学会用自然语言精准描述需求</strong>——未来核心技能</li>
+        <li><strong>搭建个人AI知识库</strong>——用上面教程30分钟搞定</li>
+        <li><strong>培养架构思维</strong>——AI负责执行，你负责判断</li>
+        <li><strong>积累垂直领域专业知识</strong>——AI越强，越需要有人判断输出是否正确</li>
+        <li><strong>不要绑定单一AI工具</strong>——保持工具切换的灵活性</li>
+      </ol>
+      <div class="practical-box">
+        <div class="pb-title">&#128161; 最重要的一句话</div>
+        <div class="pb-step"><span class="highlight">"必须有意识地保留必要的困难——因为那正是直觉诞生的土壤。"</span>AI能做90%，但那10%的判断力、创造力、对人性的理解——这些是AI永远替代不了的。</div>
+      </div>
+      <div class="source-tag">&#127758; 来源：IDC FutureScape 2026 / 达沃斯论坛 / dev.to</div>
+    </div>
+    <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
   </div>
 </section>
 
