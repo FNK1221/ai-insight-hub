@@ -641,6 +641,26 @@ body {
             <div class="pb-step">3. 用即梦AI/可灵AI（国内免费）：文字→生成视频</div>
           </div>
           <div class="source-tag">&#127758; 来源：OpenAI GPT-4V / Google Gemini</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; 多模态的技术原理——AI怎么看图</div>
+            <p>AI不是"看"图——它把图片切成一个个小方块（patch），每个方块转成数字向量，和文字一样处理。这就是<strong>ViT（Vision Transformer）</strong>的核心。</p>
+            <p style="margin-top:6px;"><strong>为什么视频比图片难100倍：</strong></p>
+            <ul>
+              <li>一张1080p图片 ≈ 200万像素，一个1分钟1080p/30fps视频 ≈ <span class="stat">3.6亿像素</span></li>
+              <li>视频不仅要理解每帧，还要理解帧与帧之间的<strong>时间关系</strong>（运动、因果）</li>
+              <li>Sora（OpenAI）用"时空patch"把视频切成立方体小块处理——但计算量是文本的<span class="stat">上万倍</span></li>
+            </ul>
+            <p style="margin-top:6px;"><strong>当前瓶颈：</strong>视频生成的物理一致性（杯子掉下来不会穿桌子）和长时间连贯性（角色外貌不突变）仍是未完全解决的难题。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 多模态工具的隐形成本</div>
+            <ul>
+              <li><strong>图片理解</strong>：GPT-4V处理一张图额外消耗约<span class="stat">1000 tokens</span>（相当于500字的费用）</li>
+              <li><strong>视频生成</strong>：Runway Gen-3 一个10秒视频约$0.10，Sora更长更贵</li>
+              <li><strong>音乐生成</strong>：Suno免费版每天2首歌，Pro $10/月可生成50首/天</li>
+              <li><strong>版权灰色地带</strong>：AI生成的图片/音乐是否受版权保护？目前各国法律不一。美国版权局2025年裁定：纯AI生成内容不受版权保护——必须有"人类创造性贡献"</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -707,6 +727,30 @@ body {
           </ol>
           <p><strong>2026年新方法——Constitutional AI（Anthropic）：</strong>不靠人类逐条打分，而是让AI根据一组"宪法原则"自己评估自己的回答——成本更低、可扩展性更强。</p>
           <div class="source-tag">&#127758; 来源：OpenAI / Anthropic / DeepMind</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; RLHF背后的争议——谁来定义"好"的回答？</div>
+            <ul>
+              <li><strong>文化偏见问题</strong>：标注员主要来自英语国家（美国/肯尼亚/菲律宾），他们的价值观≠全球用户的价值观。比如关于"个人主义vs集体主义"的问题，标注可能偏向西方视角</li>
+              <li><strong>"对齐税"</strong>：RLHF让模型变"听话"但也变"保守"——研究表明，经过RLHF的模型在创意写作、诗歌等任务上表现变差</li>
+              <li><strong>奖励欺骗</strong>：AI可能学会"讨好"奖励模型而非真正提供好回答。类似学生学会"猜老师的标准答案"而非真正理解知识</li>
+            </ul>
+          </div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; Constitutional AI——Anthropic的替代方案</div>
+            <p>不再依赖人类逐条打分，而是给AI一套"宪法"——一组原则，让AI自己评判自己的回答好坏。</p>
+            <p style="margin-top:6px;"><strong>Claude的宪法示例：</strong></p>
+            <ul>
+              <li>"请选择最无害、最有帮助的回答"</li>
+              <li>"避免输出可能被用于危险活动的内容"</li>
+              <li>"如果不确定，坦诚承认不确定性"</li>
+            </ul>
+            <p style="margin-top:6px;"><strong>优势：</strong>成本低（不需要数万标注员）、可扩展、一致性高。<strong>劣势：</strong>"宪法"本身是人类写的——偏见转移到了原则层面而非消除。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 对你意味着什么</div>
+            <p>你可能会注意到：ChatGPT和Claude的回答风格明显不同——ChatGPT更"讨好"、更"万能"，Claude更"谨慎"、更"坦诚"。这不是技术差距，而是<strong>对齐策略不同</strong>：OpenAI用RLHF强调"有用性"，Anthropic用Constitutional AI强调"诚实+无害"。</p>
+            <p style="margin-top:6px;"><strong>实用建议：</strong>需要创意/头脑风暴→用ChatGPT（对齐税更小）。需要分析/严谨回答→用Claude（更少幻觉更少废话）。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -819,6 +863,26 @@ body {
             <div class="pb-step">5. "请给我5个关于[主题]的创意方案，每个方案用3句话说清"</div>
           </div>
           <div class="source-tag">&#127758; 来源：OpenAI Prompt Engineering Guide / Anthropic</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; Prompt的反面教材——90%的人犯的错</div>
+            <p><strong>&#10060; 差Prompt：</strong>"帮我写一篇文章"→ AI不知道写什么、写给谁、多长、什么风格</p>
+            <p><strong>&#9989; 好Prompt：</strong>"你是一个科技博主，请写一篇800字的DeepSeek-R1测评文章，面向想换ChatGPT的普通用户，风格轻松幽默，结尾要有明确结论"</p>
+            <p style="margin-top:6px;"><strong>最关键的3个原则：</strong></p>
+            <ol>
+              <li><strong>越具体越好</strong>：不要让AI"猜"——告诉它字数、风格、受众、格式</li>
+              <li><strong>给约束比给自由有效</strong>："不要用专业术语"比"通俗易懂"更有效</li>
+              <li><strong>迭代而非重头</strong>：不满意追加修改指令，而不是换一个新Prompt从头来</li>
+            </ol>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; Prompt Engineering正在"贬值"</div>
+            <p>2024-2025年，"提示词工程师"被视为热门新职业。但2026年，<span class="warn">这个技能正在快速贬值</span>：</p>
+            <ul>
+              <li>模型越来越聪明——GPT-5.4即使给模糊指令也能理解意图</li>
+              <li>平台自带优化——Kimi/豆包内部已经做了Prompt预处理</li>
+              <li>真正的价值转移到<strong>领域知识+AI组合</strong>：懂医疗+用AI >> 会写Prompt</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -971,6 +1035,21 @@ body {
             <div class="pb-step">想深入了解：用Dify搭建一个RAG应用，它会自动处理Embedding和向量存储</div>
           </div>
           <div class="source-tag">&#127758; 来源：Pinecone / Milvus / LangChain</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; Embedding的数学直觉（3分钟理解）</div>
+            <p>想象一个巨大的3D空间：每个词都是一个坐标点。"开心"在(0.9, 0.8, 0.1)，"高兴"在(0.85, 0.75, 0.15)——它们离得很近。"悲伤"在(-0.7, -0.6, 0.8)——离"开心"很远。</p>
+            <p style="margin-top:6px;"><strong>实际是几千维</strong>（不是3维），但你理解了核心：意思相近的词在空间里离得近。AI搜索时，不是匹配关键词，而是<strong>计算"空间距离"</strong>——距离越近越相关。</p>
+            <p style="margin-top:6px;"><strong>这就是为什么"AI搜索"比"关键词搜索"聪明</strong>：你搜"怎么省电"，它能找到"节能小技巧"——因为它们在向量空间里离得近，即使没有一个字相同。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; Embedding模型的实际选择</div>
+            <ul>
+              <li><strong>OpenAI text-embedding-3-small</strong>：效果好，$0.02/百万token，适合大多数场景</li>
+              <li><strong>BGE（北京智源）</strong>：开源、中文效果优秀、免费，国内首选</li>
+              <li><strong>Cohere Embed</strong>：多语言能力强，有免费额度</li>
+              <li><strong>关键指标</strong>：维度数（768/1536/3072）越高越精确，但存储和检索成本也越高</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -1006,6 +1085,15 @@ body {
             <div class="pb-step">注意：纯AI生成的内容越来越容易被检测——关键是加"人的判断和修改"</div>
           </div>
           <div class="source-tag">&#127758; 来源：McKinsey / WEF</div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; AIGC的版权雷区——你必须知道</div>
+            <ul>
+              <li><span class="warn">训练数据版权</span>：Midjourney/DALL-E的训练数据包含大量受版权保护的艺术作品。艺术家正在集体诉讼——目前未有最终判决</li>
+              <li><span class="warn">生成内容版权</span>：美国版权局2025年明确：纯AI生成的内容<strong>不受版权保护</strong>。必须有"人类创造性贡献"才能获得版权</li>
+              <li><span class="warn">商用风险</span>：用AI生成的图片用于商业用途（电商/广告），如果风格高度模仿某位艺术家，可能面临法律风险</li>
+              <li><strong>安全做法</strong>：AI出图+人工重绘/修改≥30% → 更安全的商用路径。保留原始Prompt作为创作过程记录</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -1052,6 +1140,23 @@ body {
             <div class="pb-step">用Claude Desktop + MCP服务器 → 让AI直接读取你的本地文件、搜索网页、操作数据库</div>
           </div>
           <div class="source-tag">&#127758; 来源：Anthropic / OpenAI / Google</div>
+          <div class="tree-layer layer-trunk">
+            <div class="tree-layer-title">&#128301; MCP的技术架构（简化版）</div>
+            <p>MCP有3个核心角色：</p>
+            <ol>
+              <li><strong>Host（宿主）</strong>：AI应用本身（如Claude Desktop、Cursor）</li>
+              <li><strong>Client（客户端）</strong>：Host内部负责跟Server通信的模块</li>
+              <li><strong>Server（服务端）</strong>：提供具体能力的程序（如文件系统、数据库、Slack、GitHub）</li>
+            </ol>
+            <p style="margin-top:6px;"><strong>通信方式：</strong>Host ↔ Client ↔ Server 通过标准化的JSON-RPC协议通信。Server可以是本地的（读写文件）、也可以是远程的（调GitHub API）。</p>
+            <p style="margin-top:6px;"><strong>目前已有1000+个MCP Server</strong>，覆盖：文件系统、数据库、GitHub/GitLab、Slack/Discord、Google Drive、Notion、Figma等。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; MCP对普通人的意义</div>
+            <p>以前：每个AI工具自己集成每个外部服务→N×M的开发量。</p>
+            <p>现在：MCP Server写一次→所有支持MCP的AI工具都能用→N+M的开发量。</p>
+            <p style="margin-top:6px;"><strong>实际影响：</strong>2026年你用Claude/ChatGPT/Cursor时，发现"连接GitHub""读取本地文件""搜索数据库"等功能越来越流畅——背后就是MCP在起作用。</p>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -1112,6 +1217,26 @@ body {
             <div class="pb-step">想定制 → 用开源模型微调（需要GPU或云端算力）</div>
           </div>
           <div class="source-tag">&#127758; 来源：Hugging Face / Artificial Analysis</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 2026年主流开源模型详细对比</div>
+            <table style="width:100%;border-collapse:collapse;margin:8px 0;font-size:12px;">
+              <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">模型</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">参数</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">中文</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">代码</th><th style="padding:8px:text-align:center;border-bottom:1px solid var(--border-color);">推理</th><th style="padding:8px:text-align:center;border-bottom:1px solid var(--border-color);">最低显存</th></tr>
+              <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">Qwen 2.5 7B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">7B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">5GB</td></tr>
+              <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">DeepSeek-R1 14B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">14B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">10GB</td></tr>
+              <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);font-weight:700;">Llama 4 Scout 17B</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">17Bx16E</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">20GB</td></tr>
+              <tr><td style="padding:6px 8px;font-weight:700;">GLM-4 9B</td><td style="padding:6px 8px;text-align:center;">9B</td><td style="padding:6px 8px;text-align:center;color:var(--accent-green);">&#11088;&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;">&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;">&#11088;&#11088;</td><td style="padding:6px 8px;text-align:center;">6GB</td></tr>
+            </table>
+            <p><strong>怎么选：</strong>中文场景首选Qwen 2.5（阿里出品，中文训练数据最多）；推理/数学首选DeepSeek-R1（思维链技术）；英文综合首选Llama 4（Meta出品，生态最全）。</p>
+          </div>
+          <div class="tree-layer layer-root">
+            <div class="tree-layer-title">&#127793; 开源模型的真实质量 vs 闭源</div>
+            <p>Artificial Analysis排行榜（2026年5月数据）显示：在综合评分上，开源TOP10模型与GPT-4o的差距约为<span class="stat">8-12%</span>。但在特定任务上，开源模型有时<strong>超越</strong>闭源：</p>
+            <ul>
+              <li>DeepSeek-R1在数学推理上超过GPT-4o</li>
+              <li>Qwen 2.5在中文写作上接近Claude 4</li>
+              <li>代码生成方面差距最大（约15-20%）——这是闭源仍领先的领域</li>
+            </ul>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -1653,6 +1778,15 @@ body {
             <div class="pb-step">设一个25分钟计时器 → 做一件让你更"有技能"的事（学一个Prompt/读一篇行业报告/做一个AI小项目）→ 休息5分钟 → 重复。比刷3小时焦虑帖有用100倍。</div>
           </div>
           <div class="source-tag">&#127758; 来源：Yale Budget Lab / Fed / UBS / Goldman Sachs</div>
+          <div class="tree-layer layer-branch">
+            <div class="tree-layer-title">&#128200; 抗焦虑的科学方法——不是鸡汤，是实验证实的</div>
+            <ol>
+              <li><strong>"行为激活"（Behavioral Activation）</strong>——APA推荐的治疗轻度焦虑/抑郁的第一线方法。核心：不要等"有动力"才行动→先行动→动力会跟着来。实验证明：每天完成1件小事的人，2周后焦虑评分下降23%（来源：Behavior Research and Therapy, 2024）</li>
+              <li><strong>"具体化焦虑"</strong>——把"我好焦虑"拆成"我具体在怕什么→发生的概率有多大→如果发生了我能做什么"。研究表明：具体化后，85%的人发现"真正发生的概率远低于直觉判断"</li>
+              <li><strong>"信息节食"</strong>——焦虑的人倾向于刷更多焦虑内容，形成正反馈循环。实验：减少负面信息摄入30分钟/天，1周后焦虑感下降18%</li>
+              <li><strong>"25分钟番茄钟"</strong>——不是时间管理，是焦虑管理。25分钟足够短，不会引发"这太难了"的抗拒；又足够长，能产生"我在做事"的掌控感</li>
+            </ol>
+          </div>
         </div>
         <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
       </div>
@@ -2586,6 +2720,16 @@ docker run -d -p 3001:3001 --name anythingllm mintplexlabs/anythingllm
           <div class="pb-step">&#9888; 不要同时开太多应用——AI需要大量内存</div>
           <div class="pb-step">&#10003; 先装最小模型确认环境OK再下大模型</div>
           <div class="pb-step">&#10003; 系统提示词 + RAG > 微调（前者5分钟，后者几小时）</div>
+        </div>
+        <div class="tree-layer layer-root">
+          <div class="tree-layer-title">&#127793; 安全注意事项——你真的100%安全吗？</div>
+          <ul>
+            <li><strong>模型本身安全吗？</strong>——开源模型经过安全对齐（RLHF/DPO），但本地运行时你<strong>可以绕过所有安全限制</strong>。模型不会主动做坏事，但如果被恶意Prompt注入→理论上可能生成有害内容</li>
+            <li><strong>Open WebUI默认无密码</strong>——如果你在局域网部署Open WebUI，同一WiFi的人都能访问你的对话。解决：在设置中启用认证</li>
+            <li><strong>Docker容器权限</strong>：不要用`--privileged`运行Docker容器——这会给予容器完整的系统权限</li>
+            <li><strong>数据备份</strong>：你的RAG知识库（向量数据库）是本地文件→定期备份。如果向量数据库损坏→重新向量化只需几分钟</li>
+            <li><strong>电费考虑</strong>：GPU全速运行约200-400W，一天24小时≈5-10度电≈3-6元/天。CPU模式约50-100W≈0.5-1元/天</li>
+          </ul>
         </div>
         <div class="source-tag">&#127758; 来源：Ollama官方 / dev.to / SitePoint / Kunalganglani</div>
       </div>
