@@ -43,11 +43,17 @@ jobs:
         run: |
           python scripts/cache_hn_stories.py
 
+      - name: Cache GitHub trending repos (PAT for higher rate limit)
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        run: |
+          python scripts/cache_github_repos.py
+
       - name: Cache AI tools from GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/cache_ai_tools.py
+          python scripts/cache_ai_tools.py»
 
       - name: Fetch latest AI news & update content
         env:
