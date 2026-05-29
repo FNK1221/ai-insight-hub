@@ -2894,6 +2894,196 @@ body {
       </div>
     </div>
 
+    <!-- 案例4：长篇专业写作 -->
+    <div class="scenario-card" data-keywords="写作 报告 论文 方案 文案 长文 拆解">
+      <div class="scenario-header">
+        <div class="scenario-icon" style="background:rgba(236,72,153,0.15);">&#9997;</div>
+        <div class="scenario-title">案例：用AI写5000字专业方案（而不是垃圾水文）</div>
+      </div>
+      <div class="scenario-tags">
+        <span class="scenario-tag">Claude</span>
+        <span class="scenario-tag">Kimi</span>
+        <span class="scenario-tag">4步Prompt链</span>
+      </div>
+      <div class="scenario-steps">
+        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>Prompt 1：</strong>给AI喂背景资料 + 出框架</span></div>
+        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>Prompt 2：</strong>逐段填充（每次只写500-800字）</span></div>
+        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>Prompt 3：</strong>角色审查 + 打分 + 修改</span></div>
+        <div class="scenario-step"><span class="step-num-badge">4</span><span><strong>Prompt 4：</strong>最终润色 + 格式统一</span></div>
+      </div>
+      <div class="prompt-box">
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>=== Prompt 1: 喂背景 + 出框架 ===
+我要写一份[产品运营方案/技术选型方案/市场推广方案]，请先帮我出框架。
+
+背景信息（请仔细阅读）：
+[粘贴你手头的资料：需求文档、竞品分析、用户调研等]
+
+要求：
+1. 先用你自己的话总结你理解的需求（确认理解正确）
+2. 输出完整的文章结构（一级标题+二级标题+每个部分的预估字数）
+3. 标出哪些部分需要我补充信息
+4. 标出哪些部分可以引用我给你的资料
+
+=== Prompt 2: 逐段填充（每次只用一次）===
+基于前面的框架，请写[第一章/第一节]的内容。
+
+写作要求：
+1. 字数控制在[500-800]字
+2. 语言风格：[专业严谨/通俗易懂/活泼生动]
+3. 每个观点都要有依据（数据/案例/逻辑推演，不要纯主观）
+4. [如有引用我的资料，标注出处]
+5. 不要使用"众所周知""毋庸置疑"这类空洞词汇
+
+=== Prompt 3: 审查修改 ===
+你刚才写的[第一章/全文]，请按以下标准审查并修改：
+
+1. 逐段检查：
+   - 每段是否有明确的论点？
+   - 论据是否充分？有没有"说了等于没说"的段落？
+   - 逻辑是否连贯？上下段之间是否有跳跃？
+2. 检查全文：
+   - 有没有前后矛盾的地方？
+   - 有没有重复表达的内容？
+   - 数据/案例引用是否准确？
+3. 打分（1-10分）并说明扣分原因
+4. 输出修改后的版本（直接给出最终版，不要给修改痕迹版）</pre>
+      </div>
+      <div class="practical-box">
+        <div class="pb-title">&#128161; 避坑指南</div>
+        <div class="pb-step"><strong>不要一次让AI写全文！</strong>→ 超过2000字质量断崖式下降。必须分章节写，每章500-800字</div>
+        <div class="pb-step"><strong>Claude 最适合长文写作</strong>→ 它的上下文窗口200K，不会忘记前面的内容。Kimi也行（128K）</div>
+        <div class="pb-step"><strong>写完后手动通读一遍</strong>→ AI写作的通病是"看起来很专业但信息密度低"。删掉所有"废话段"就能提质量</div>
+      </div>
+    </div>
+
+    <!-- 案例5：数据分析 + Excel自动化 -->
+    <div class="scenario-card" data-keywords="数据分析 Excel 自动化 处理 批量 报表 ChatGPT Claude 代码">
+      <div class="scenario-header">
+        <div class="scenario-icon" style="background:rgba(59,130,246,0.15);">&#128202;</div>
+        <div class="scenario-title">案例：用AI处理Excel数据——从杂乱到洞察</div>
+      </div>
+      <div class="scenario-tags">
+        <span class="scenario-tag">ChatGPT</span>
+        <span class="scenario-tag">Claude</span>
+        <span class="scenario-tag">3步搞定</span>
+      </div>
+      <div class="scenario-steps">
+        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>Prompt 1：</strong>上传Excel + 描述你要什么结果</span></div>
+        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>Prompt 2：</strong>AI生成Python代码处理数据</span></div>
+        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>Prompt 3：</strong>让AI生成可视化图表代码</span></div>
+      </div>
+      <div class="prompt-box">
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>=== Prompt 1: 上传 + 描述需求（ChatGPT/Claude）===
+[上传你的Excel文件，或粘贴前20行数据]
+
+这是一份[销售数据/用户行为日志/财务报表]，数据字段如下：
+- [列出每个字段名和含义]
+
+我需要你帮我：
+1. 先做数据清洗（处理空值/重复/异常值）
+2. 计算[关键指标：月度同比增长/用户留存率/产品销售排名]
+3. 找出[异常点：某月销售突降原因/某类用户流失率特别高]
+4. 给出3条可执行的业务建议
+
+=== Prompt 2: 生成处理代码（如果数据量很大）===
+如果数据超过1万行，请帮我写Python代码来处理：
+
+数据文件路径：data.xlsx
+输出要求：
+1. 用pandas读取Excel
+2. 数据清洗：去重、填充空值、转换日期格式
+3. 计算[你需要的指标]
+4. 结果保存到 result.xlsx
+
+环境：Python 3.12 + pandas + openpyxl
+（如果没有这些库：pip install pandas openpyxl）
+
+=== Prompt 3: 生成可视化 ===
+基于分析结果，帮我生成可视化图表的Python代码：
+
+要求：
+1. 柱状图：[月度销售额趋势]
+2. 饼图：[产品类别占比]
+3. 折线图：[用户增长趋势]
+4. 用matplotlib，保存为PNG图片
+5. 配色方案：深色背景 + 高对比度彩色线条</pre>
+      </div>
+      <div class="practical-box">
+        <div class="pb-title">&#128161; 实操建议</div>
+        <div class="pb-step">数据量 < 1万行 → 直接上传Excel给ChatGPT/Claude，让它直接分析</div>
+        <div class="pb-step">数据量 > 1万行 → 让AI写Python脚本，你本地运行</div>
+        <div class="pb-step"><strong>高级技巧：</strong>让AI写Jupyter Notebook格式的代码（带文字说明+代码+图表），一键生成完整分析报告</div>
+      </div>
+    </div>
+
+    <!-- 案例6：多工具协作自动化工作流 -->
+    <div class="scenario-card" data-keywords="自动化 工作流 多工具 协作 n8n Make Zapier 效率">
+      <div class="scenario-header">
+        <div class="scenario-icon" style="background:rgba(16,185,129,0.15);">&#9889;</div>
+        <div class="scenario-title">案例：搭建AI自动化工作流——让AI替你重复劳动</div>
+      </div>
+      <div class="scenario-tags">
+        <span class="scenario-tag">n8n</span>
+        <span class="scenario-tag">Make</span>
+        <span class="scenario-tag">零代码</span>
+      </div>
+      <div class="scenario-steps">
+        <div class="scenario-step"><span class="step-num-badge">1</span><span>场景：每天自动收集信息 → AI总结 → 推送通知</span></div>
+        <div class="scenario-step"><span class="step-num-badge">2</span><span>工具：n8n（免费开源）+ Ollama/OpenAI API</span></div>
+        <div class="scenario-step"><span class="step-num-badge">3</span><span>搭建：拖拽节点 → 配置 → 运行</span></div>
+      </div>
+      <div class="prompt-box">
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>=== 场景1：每日新闻摘要自动推送 ===
+
+第1步：安装 n8n
+docker run -d --name n8n -p 5678:5678 n8nio/n8n
+# 浏览器打开 http://localhost:5678
+
+第2步：创建工作流（拖拽连线，零代码）
+节点1: Cron（定时触发）→ 每天早上8:00
+节点2: HTTP Request（抓取RSS）
+  → URL: https://feedx.net/rss/36kr.xml
+节点3: AI Agent（n8n内置）
+  → 连接Ollama: http://localhost:11434
+  → 模型: qwen2.5:7b
+  → Prompt: 从以下新闻中选出3条最重要的，每条用50字总结：
+节点4: 微信/钉钉/飞书推送节点
+
+=== 场景2：自动处理邮件 ===
+
+第1步：安装 n8n（同上）
+第2步：工作流：
+节点1: Gmail Trigger（新邮件触发）
+节点2: AI Agent（分类邮件）
+  Prompt: 判断这封邮件属于哪类：紧急工作/日常通知/垃圾邮件/个人
+  → 如果是"紧急工作"，进入节点3
+节点3: AI Agent（生成回复草稿）
+  Prompt: 基于邮件内容，生成一封专业、简洁的回复草稿
+节点4: 通知我（钉钉/飞书）
+  → 附带：邮件摘要 + 回复草稿链接
+
+=== 场景3：批量文件处理（用Claude + Bash）===
+你告诉Claude：
+"帮我写一个Python脚本，功能是：
+1. 监控某个文件夹
+2. 发现新的PDF文件时自动处理
+3. 提取PDF中的表格数据
+4. 按日期整理存入Excel
+5. 用邮件发送整理结果"
+
+然后Claude会给你完整可运行的代码。</pre>
+      </div>
+      <div class="practical-box">
+        <div class="pb-title">&#128161; 入门建议</div>
+        <div class="pb-step"><strong>最简单入门：</strong>从Make.com（原Integromat）开始，可视化拖拽，免费版每月1000次运行</div>
+        <div class="pb-step"><strong>进阶：</strong>n8n 自托管版完全免费无限制，功能比 Make/Zapier 更强大</div>
+        <div class="pb-step"><strong>企业级：</strong>Dify（开源）可以搭建完整的AI Agent工作流，支持RAG+工具调用</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="card" style="margin-top:24px;">
@@ -3000,77 +3190,225 @@ body {
     </div>
   </div>
 
-  <!-- Tab 3: 安装部署 -->
+  <!-- Tab 3: 安装部署（零基础完整教程） -->
   <div class="tab-panel" id="local-install">
-    <div class="card" data-keywords="Ollama 安装 部署 Windows Mac 教程 步骤 LM Studio Open WebUI Docker">
+    <div class="card" data-keywords="Ollama 安装 部署 Windows Mac 教程 步骤 LM Studio Open WebUI Docker 零基础">
       <div class="card-header">
-        <span class="card-badge badge-green">实操</span>
-        <div class="card-title">5步完成安装——照着做就行</div>
+        <span class="card-badge badge-green">零基础教程</span>
+        <div class="card-title">从零开始部署本地大模型——每一步都有预期结果</div>
       </div>
       <div class="card-detail" style="display:block;">
-        <p><strong>第1步：安装Ollama（1分钟）</strong></p>
-        <ol>
-          <li>打开 <a href="https://ollama.com/download" target="_blank" style="color:var(--accent-cyan);">https://ollama.com/download</a></li>
-          <li>下载Windows安装包（约500MB），双击安装</li>
-          <li>打开cmd输入 <code>ollama --version</code> 验证</li>
-        </ol>
-        <p style="margin-top:16px;"><strong>第2步：下载并运行模型（2分钟）</strong></p>
+        <p><strong>开始之前，先确认你的电脑配置：</strong></p>
         <div class="prompt-box">
           <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-          <pre># 推荐：Qwen 2.5 7B（约4.5GB，中文最强）
-ollama run qwen2.5:7b
+          <pre># Windows用户：按 Win+R，输入 cmd，回车，然后复制以下命令：
+systeminfo | findstr /C:"Total Physical Memory"
+wmic path win32_videocontroller get name
 
-# 电脑较慢用这个（约1.1GB）
-ollama run qwen2.5:1.5b
+# Mac用户：点击左上角苹果图标 → 关于本机
+# 记下：内存(GB) + 芯片型号(M1/M2/M3) 或显卡型号
 
-# 有24GB显存用这个（接近GPT-4）
-ollama run qwen2.5:32b
-
-# 推理能力最强（约8GB）
-ollama run deepseek-r1:14b</pre>
-        </div>
-        <p><small>第一次运行自动下载，7B模型约5-10分钟，之后秒启动。</small></p>
-        <p style="margin-top:16px;"><strong>第3步：安装图形界面Open WebUI（可选，3分钟）</strong></p>
-        <div class="prompt-box">
-          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-          <pre># Docker方式（推荐）
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
-
-# pip方式
-pip install open-webui && open-webui serve</pre>
-        </div>
-        <p>安装后浏览器打开 <strong>http://localhost:3000</strong>，ChatGPT风格界面，自动连接本地模型。</p>
-        <p style="margin-top:16px;"><strong>第4步：新手替代——LM Studio</strong></p>
-        <p>打开 <a href="https://lmstudio.ai/" target="_blank" style="color:var(--accent-cyan);">lmstudio.ai</a> → 下载安装 → 搜索模型 → 下载 → 加载 → 对话。零命令行。</p>
-        <p style="margin-top:16px;"><strong>第5步：配置系统提示词（让它了解你）</strong></p>
-        <div class="prompt-box">
-          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-          <pre># 新建文件 Modelfile
-FROM qwen2.5:7b
-PARAMETER temperature 0.7
-PARAMETER num_ctx 32768
-
-SYSTEM """
-你是我的私人AI助手。关于我的信息：
-- 我是一个产品经理，同时做独立开发
-- 沟通风格：简洁直接，先说结论
-- 工作语言：中文
-- 关注领域：AI、产品、独立开发
-
-如果不确定，直接说不知道，不要编造。
-"""
-
-# 导入并运行
-ollama create my-assistant -f Modelfile
-ollama run my-assistant</pre>
+# 对照表：
+# 内存 < 8GB  → 只能跑 Qwen 2.5:0.5B（很弱）→ 不推荐
+# 内存 8-16GB  → Qwen 2.5:1.5B 或 3B（够日常对话）
+# 内存 16GB+ 有独显 → Qwen 2.5:7B（中文最强7B级别）
+# 有RTX 3060 12GB+ → Qwen 2.5:14B 或 DeepSeek-R1:14B</pre>
         </div>
         <div class="practical-box">
-          <div class="pb-title">&#128161; 踩坑提醒</div>
-          <div class="pb-step">GPU没加速？更新NVIDIA驱动到最新版</div>
-          <div class="pb-step">端口冲突？改端口：docker run -p 3001:8080 ...</div>
-          <div class="pb-step">下载慢？设置国内镜像或用代理</div>
-          <div class="pb-step">输出乱码？检查chat template——中文模型需要专门的模板</div>
+          <div class="pb-title">&#128161; 不确定自己能不能跑？</div>
+          <div class="pb-step">最简单验证：看你的内存是不是 ≥ 16GB。是 → 能跑7B。不是 → 先跑1.5B体验一下再说</div>
         </div>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第1步：安装 Ollama（3分钟）</strong></p>
+        <ol style="line-height:2.2;">
+          <li>打开浏览器，访问 <a href="https://ollama.com/download" target="_blank" style="color:var(--accent-cyan);">ollama.com/download</a></li>
+          <li>点击 Windows 图标（大蓝色按钮）→ 下载 OllamaSetup.exe（约 500MB）</li>
+          <li>下载完成后，双击 OllamaSetup.exe → 点击 "Install" → 等待进度条走完 → 点击 "Close"</li>
+          <li>安装成功标志：屏幕右下角任务栏出现一个 <strong>羊驼图标</strong>（Ollama 在后台运行了）</li>
+          <li>验证安装：按 <code>Win+R</code> → 输入 <code>cmd</code> → 回车 → 输入以下命令：</li>
+        </ol>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre>ollama --version</pre>
+        </div>
+        <p><strong>预期结果：</strong>显示 <code>ollama version is 0.x.x</code>（版本号）。如果报错"不是内部命令"→ 重启电脑再试。</p>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; Mac 用户</div>
+          <div class="pb-step">同样访问 ollama.com/download → 下载 Mac 版 → 拖到 Applications 文件夹 → 双击打开。终端输入 <code>ollama --version</code> 验证</div>
+        </div>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第2步：下载你的第一个 AI 模型（10-30分钟，只需做一次）</strong></p>
+        <p>在 cmd 中输入以下命令（选择一个适合你电脑的）：</p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># &#11088; 推荐：Qwen 2.5 7B（中文最强，约 4.5GB）
+# 适合：16GB内存 + 任何独显
+ollama run qwen2.5:7b
+
+# 电脑较弱：Qwen 2.5 1.5B（约 1.1GB，3分钟下完）
+# 适合：8GB内存，没有独显
+ollama run qwen2.5:1.5b
+
+# 中等配置：Qwen 2.5 3B（约 2GB）
+# 适合：12GB内存，日常对话完全够用
+ollama run qwen2.5:3b
+
+# 有RTX 3060 12GB+ 显存：DeepSeek-R1 14B（推理之王）
+# 适合：需要数学/编程/逻辑推理的场景
+ollama run deepseek-r1:14b
+
+# 旗舰级：Qwen 2.5 32B（接近 GPT-4）
+# 需要：24GB显存 或 32GB+内存
+ollama run qwen2.5:32b</pre>
+        </div>
+        <p><strong>下载过程中你会看到：</strong>progress bar 一点点走，显示百分比。7B 模型在 50Mbps 宽带下约 10-15 分钟。下载完成后自动开始加载模型。</p>
+        <p><strong>预期结果：</strong>看到 <code>>>>  </code> 提示符出现，后面有绿色光标在闪烁。这就说明 AI 已经准备好了，等你的输入。</p>
+        <p><strong>第一次对话：</strong>直接打字，比如输入 <code>你好，介绍一下你自己</code> → 按 Enter → AI 会开始逐字回复。</p>
+        <p>输入 <code>/bye</code> 退出对话。模型不会消失，下次输入 <code>ollama run qwen2.5:7b</code> 瞬间启动。</p>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 常见问题</div>
+          <div class="pb-step"><strong>下载特别慢？</strong>→ 设置代理或用国内镜像。Ollama 支持设置环境变量：<code>set OLLAMA_HOST=https://mirror.ollama.ai</code>（然后重启 Ollama）</div>
+          <div class="pb-step"><strong>报错 "CUDA out of memory"？</strong>→ 模型太大，换小一号的。32B→14B→7B→3B→1.5B</div>
+          <div class="pb-step"><strong>回复速度很慢（每秒1-2个字）？</strong>→ 正常，说明在用 CPU 跑。有独显的话更新 NVIDIA 驱动到最新版即可加速</div>
+          <div class="pb-step"><strong>中文回复里夹杂英文？</strong>→ 这是正常的，模型有时会混用。如果想强制中文，在 Modelfile 里设置（见第5步）</div>
+        </div>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第3步：安装图形界面——告别黑窗口（可选，5分钟）</strong></p>
+        <p>如果你觉得 cmd 黑窗口太丑，安装 <strong>Open WebUI</strong>，它长得和 ChatGPT 一模一样。</p>
+        <p><strong>方案 A：Docker 方式（推荐，但需要先装 Docker）</strong></p>
+        <ol style="line-height:2;">
+          <li>先安装 Docker Desktop：<a href="https://www.docker.com/products/docker-desktop/" target="_blank" style="color:var(--accent-cyan);">docker.com</a> → 下载 → 安装 → 重启电脑</li>
+          <li>打开 cmd，输入：</li>
+        </ol>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre>docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main</pre>
+        </div>
+        <li>等待镜像下载（首次约 5-10 分钟）</li>
+        <li>浏览器打开 <a href="http://localhost:3000" target="_blank" style="color:var(--accent-cyan);">http://localhost:3000</a></li>
+        <li>看到登录页面 → 点 "Sign Up" → 随便填用户名密码（本地用，不需要真实信息）</li>
+        <li>登录后 → 左上角选模型 → 应该能看到你刚才下载的 qwen2.5:7b → 点击 → 开始对话！</li>
+
+        <p style="margin-top:16px;"><strong>方案 B：pip 安装（无需 Docker，但需要 Python）</strong></p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># 确保已安装 Python 3.10+（在cmd输入 python --version 验证）
+pip install open-webui
+open-webui serve</pre>
+        </div>
+        <p>同样打开 http://localhost:8080 即可使用。</p>
+        <p style="margin-top:16px;"><strong>方案 C：桌面版（最简单，零命令行）</strong></p>
+        <p>访问 <a href="https://openwebui.com/" target="_blank" style="color:var(--accent-cyan);">openwebui.com</a> → 下载 Windows/Mac 桌面版 → 安装 → 打开 → 自动检测 Ollama → 直接用。</p>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第4步：新手终极替代——LM Studio（全程鼠标操作，零命令行）</strong></p>
+        <p>如果你完全不想碰命令行，用 LM Studio：</p>
+        <ol style="line-height:2.2;">
+          <li>打开 <a href="https://lmstudio.ai/" target="_blank" style="color:var(--accent-cyan);">lmstudio.ai</a> → 点击 "Download" → 安装</li>
+          <li>打开 LM Studio → 点击顶部 "搜索" 图标（放大镜）</li>
+          <li>搜索 <code>Qwen 2.5 7B GGUF</code> → 在结果中找 <code>qwen2.5-7b-instruct-q4_k_m.gguf</code>（这是推荐的量化版本）</li>
+          <li>点击 "Download" → 等待下载完成（约 4.5GB）</li>
+          <li>下载完成后点击左侧 "聊天" 图标 → 在模型列表中选中刚下载的模型 → 点击 "Load" → 开始对话</li>
+          <li>右侧面板可以调参数：temperature（创意度）、context length（上下文长度）等</li>
+        </ol>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; LM Studio vs Ollama 怎么选？</div>
+          <div class="pb-step"><strong>选 LM Studio：</strong>你怕命令行、想可视化调参、想同时对比多个模型</div>
+          <div class="pb-step"><strong>选 Ollama：</strong>你想后台常驻、用 API 调用、搭 RAG 知识库、程序员用户</div>
+          <div class="pb-step"><strong>最佳组合：</strong>装 Ollama 后台跑模型 + 装 Open WebUI 做前端界面。兼得两者优点</div>
+        </div>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第5步：让 AI 了解你——创建个人助手模型</strong></p>
+        <p>新建一个文本文件（叫 <code>Modelfile</code>），用记事本打开，写入以下内容：</p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># 第一行指定基础模型
+FROM qwen2.5:7b
+
+# 参数设置
+PARAMETER temperature 0.7
+PARAMETER num_ctx 32768
+PARAMETER stop "</s>"
+PARAMETER stop "<|endoftext|>"
+
+# &#11088;&#11088;&#11088; 这里就是你的个人信息 &#11088;&#11088;&#11088;
+# 修改成你自己的信息！越详细AI越懂你
+SYSTEM """
+你是我的私人AI助手，叫小助手。
+
+关于我的信息：
+- 姓名：[你的名字]
+- 职业：[你的职业]
+- 工作内容：[简述你每天做什么]
+- 沟通风格：简洁直接，先说结论，不要废话
+- 回复语言：只使用中文，不要用英文
+- 常用工具：[如 VS Code, Figma, Notion 等]
+- 关注领域：[如 AI, 产品设计, 独立开发]
+- 个人习惯：[如 我喜欢看代码示例而不是纯文字描述]
+
+行为规则：
+1. 如果不确定某个信息，直接说"我不确定"，不要编造
+2. 给出建议时，同时给出"为什么"和"可能的风险"
+3. 帮我写东西时，保持我喜欢的风格
+4. 如果我的要求不清晰，主动追问而不是猜
+5. 每次回答控制在合理长度，不要为了凑字数而冗余
+"""
+
+# 保存后在cmd中执行：
+# ollama create my-assistant -f Modelfile
+# ollama run my-assistant</pre>
+        </div>
+        <p><strong>执行步骤：</strong></p>
+        <ol style="line-height:2;">
+          <li>把上面的内容保存为 <code>Modelfile</code>（注意没有 .txt 后缀）</li>
+          <li>在 cmd 中 <code>cd</code> 到你保存这个文件的目录</li>
+          <li>输入 <code>ollama create my-assistant -f Modelfile</code> → 等几秒</li>
+          <li>输入 <code>ollama run my-assistant</code> → 开始对话</li>
+        </ol>
+        <p><strong>预期结果：</strong>AI 会用中文回复你，语气符合你设定的风格。你说"帮我写周报"，它会按你工作内容的格式来写。</p>
+
+        <p style="margin-top:20px;"><strong>&#128073; 第6步：验证你的本地 AI 能做什么</strong></p>
+        <p>依次尝试以下对话，测试你本地 AI 的能力：</p>
+        <div class="prompt-box">
+          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+          <pre># 测试1：基础对话
+你好，介绍一下你自己
+
+# 测试2：写周报
+我本周完成了：1.完成了XX功能的UI设计 2.修复了3个bug 3.写了技术文档。帮我写周报。
+
+# 测试3：代码能力（7B模型）
+用Python写一个脚本，读取当前目录下所有PDF文件，提取第一页的文字，保存到txt中
+
+# 测试4：长文本处理
+[粘贴一段500字的文章] 请用3句话总结这段文字的核心观点
+
+# 测试5：逻辑推理
+一个房间里有3盏灯和3个开关，每个开关控制一盏灯。你只能在房间里操作开关，然后到走廊观察。如何确定每个开关对应哪盏灯？
+
+# 测试6：翻译
+把以下英文翻译成中文，保持专业术语准确：[粘贴一段英文]</pre>
+        </div>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 7B模型的能力边界</div>
+          <div class="pb-step"><strong>能做好：</strong>周报/邮件/翻译/总结/简单代码/问答/头脑风暴/文案</div>
+          <div class="pb-step"><strong>勉强能做：</strong>复杂代码/数学推导/长篇专业写作/多步逻辑推理</div>
+          <div class="pb-step"><strong>做不好：</strong>超长文档（>8000字）精确处理/实时信息（它不知道今天几号）/需要联网的任务</div>
+          <div class="pb-step"><span class="highlight">策略：日常简单任务用本地AI（免费+隐私），复杂任务用ChatGPT/Claude（付费但更强）</span></div>
+        </div>
+
+        <div class="tree-layer layer-root" style="margin-top:20px;">
+          <div class="tree-layer-title">&#127793; 常见问题速查表</div>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;">
+            <tr style="background:rgba(239,68,68,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">问题</th><th style="padding:8px;border-bottom:1px solid var(--border-color);">解决方法</th></tr>
+            <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">安装后 cmd 输入 ollama 报错</td><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">重启电脑 → 检查环境变量 PATH 是否包含 Ollama 路径</td></tr>
+            <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">模型下载到一半失败</td><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">重新运行同一个命令，会自动续传。或者删掉 <code>C:\Users\你的用户名\.ollama\models</code> 里的半成品重下</td></tr>
+            <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">GPU 没有被使用（全 CPU 跑）</td><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">1. 更新 NVIDIA 驱动到最新 2. 安装 CUDA Toolkit 12.x 3. cmd 输入 <code>nvidia-smi</code> 确认显卡识别正常</td></tr>
+            <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">Ollama 占用太多内存/显存</td><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);"><code>ollama stop 模型名</code> 释放内存。或任务管理器结束 Ollama 进程</td></tr>
+            <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">Open WebUI 连不上 Ollama</td><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">确认 Ollama 在运行（任务栏有羊驼图标）→ Open WebUI 设置里确认 Ollama URL 是 <code>http://localhost:11434</code></td></tr>
+            <tr><td style="padding:8px;">Docker 装不上 / 报 WSL2 错误</td><td style="padding:8px;">用方案 B（pip）或方案 C（桌面版），不用 Docker</td></tr>
+          </table>
+        </div>
+        <div class="source-tag">&#127758; 来源：Ollama 官方文档 / Open WebUI GitHub / LM Studio 文档 / 社区实测</div>
       </div>
     </div>
   </div>
@@ -3114,42 +3452,110 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli webui</pre>
     </div>
   </div>
 
-  <!-- Tab 5: 知识库RAG -->
+  <!-- Tab 5: 知识库RAG（完整教程） -->
   <div class="tab-panel" id="local-rag">
-    <div class="card" data-keywords="RAG 知识库 AnythingLLM ChromaDB 向量数据库 个人笔记">
+    <div class="card" data-keywords="RAG 知识库 AnythingLLM ChromaDB 向量数据库 个人笔记 教程 步骤">
       <div class="card-header">
-        <span class="card-badge badge-green">实操</span>
-        <div class="card-title">搭建个人知识库——让AI读过你所有的笔记</div>
+        <span class="card-badge badge-green">实操教程</span>
+        <div class="card-title">搭建个人知识库——让AI读过你所有的笔记和文档</div>
       </div>
       <div class="card-detail" style="display:block;">
-        <p>RAG = 你的文档 + AI = 超级问答系统。AI回答前先从你的文档搜索，基于真实数据回答。</p>
-        <p style="margin-top:12px;"><strong>最简单方案：AnythingLLM + Ollama（零代码，30分钟）</strong></p>
-        <div class="prompt-box">
-          <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-          <pre># Docker方式
-docker pull mintplexlabs/anythingllm
-docker run -d -p 3001:3001 --name anythingllm mintplexlabs/anythingllm
+        <p><strong>RAG是什么？（3句话解释）</strong></p>
+        <p>你有一堆笔记/文档/PDF。AI以前不认识它们。RAG = 把你的文档存成"向量索引"（就像给每段话建了目录）。AI回答你问题时，先去你的文档目录里搜索相关内容，然后基于搜索结果回答。</p>
+        <p style="margin-top:12px;"><strong>效果对比：</strong></p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">你的问题</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">没有RAG</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">有RAG</th></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">"我上个月笔记里写过什么关于AI项目的想法？"</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#EF4444;">"我不知道你的笔记内容"</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">找到笔记原文并引用回答</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid rgba(255,255,255,0.05);">"帮我总结这份50页PDF的核心观点"</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#F59E0B;">"请上传文件"</td><td style="padding:8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">自动搜索相关段落并总结</td></tr>
+          <tr><td style="padding:8px;">"根据我之前的项目文档，写更新方案"</td><td style="padding:8px;text-align:center;color:#EF4444;">凭空编造</td><td style="padding:8px;text-align:center;color:#10B981;">基于历史文档准确撰写</td></tr>
+        </table>
 
-# 或直接下载桌面版：https://anythingllm.com
-
-# 配置：打开 http://localhost:3001
-# → 设置 → LLM Provider → Ollama
-# → 选模型 → 上传你的PDF/TXT/MD/DOCX
-# → 点"Save and Embed"
-# → 开始提问！</pre>
-        </div>
-        <p><strong>支持的数据类型：</strong>PDF（报告/论文）、Markdown/TXT（笔记/日志）、DOCX（方案）、CSV/Excel（数据表）、网页链接。</p>
-        <p style="margin-top:12px;"><strong>实际使用场景：</strong></p>
-        <ol>
-          <li>"我上个月笔记里写过关于XX的想法，帮我找出来"→ AI搜索并引用原文</li>
-          <li>"总结我保存的这篇论文的核心观点"→ AI从你的PDF提取要点</li>
-          <li>"根据我之前的项目文档，帮我写更新方案"→ AI基于历史文档来写</li>
+        <p style="margin-top:20px;"><strong>&#128073; 方案一：AnythingLLM + Ollama（零代码，最推荐，30分钟搞定）</strong></p>
+        <ol style="line-height:2.2;">
+          <li><strong>前置条件：</strong>你已经装好了 Ollama 并下载了模型（见安装部署tab）。确保 Ollama 正在运行。</li>
+          <li><strong>安装 AnythingLLM 桌面版：</strong>访问 <a href="https://anythingllm.com" target="_blank" style="color:var(--accent-cyan);">anythingllm.com</a> → Download → Windows/Mac 版 → 安装</li>
+          <li><strong>首次配置：</strong>
+            <ol style="line-height:2;margin-top:8px;margin-left:20px;">
+              <li>打开 AnythingLLM → 首次会要求创建管理员账号（用户名+密码）</li>
+              <li>进入后点击左侧 <strong>Settings</strong> → <strong>LLM Provider</strong></li>
+              <li>选 <strong>Ollama</strong> → Host 填 <code>http://localhost:11434</code>（默认就是这个）</li>
+              <li>点击 <strong>Test Connection</strong> → 应该显示绿色的 "Connected" + 你的模型列表</li>
+              <li>在模型列表里选 <code>qwen2.5:7b</code>（或你下载的模型）→ <strong>Save</strong></li>
+              <li>再到 <strong>Vector Database</strong> → 选 <strong>LanceDB</strong>（默认，零配置）→ <strong>Save</strong></li>
+            </ol>
+          </li>
+          <li><strong>创建工作区并上传文档：</strong>
+            <ol style="line-height:2;margin-top:8px;margin-left:20px;">
+              <li>左侧点击 <strong>Workspaces</strong> → <strong>New Workspace</strong> → 起名如"我的知识库"</li>
+              <li>进入工作区 → 点击顶部 <strong>上传</strong> 图标</li>
+              <li>选择你的文件：支持 PDF、TXT、Markdown、DOCX、CSV、Excel、网页链接</li>
+              <li>上传后点击 <strong>"Save and Embed"</strong> → AI 开始把你的文档存成向量索引（进度条显示）</li>
+              <li>等待完成（100页PDF约2-5分钟）</li>
+            </ol>
+          </li>
+          <li><strong>开始提问：</strong>
+            <ol style="line-height:2;margin-top:8px;margin-left:20px;">
+              <li>底部输入框输入问题，比如："总结我上传的文档的核心观点"</li>
+              <li>AI 会基于你的文档内容回答，并在回复中标注引用来源（"Source: xxx.pdf 第3页"）</li>
+              <li>点击引用可以直接跳转到原文段落</li>
+            </ol>
+          </li>
         </ol>
         <div class="practical-box">
-          <div class="pb-title">&#128161; RAG的隐私优势</div>
-          <div class="pb-step">你的笔记、想法、个人记录——<span class="highlight">不应该上传到ChatGPT</span>。本地RAG数据始终在你的硬盘上。</div>
-          <div class="pb-step">"不是偏执，这是架构。处理私密数据的正确工具就是私密工具。"</div>
+          <div class="pb-title">&#128161; 实际使用场景</div>
+          <div class="pb-step">"我上个月笔记里写过关于XX的想法" → AI搜索并引用原文</div>
+          <div class="pb-step">"总结我保存的这篇论文的核心观点" → AI从你的PDF提取要点</div>
+          <div class="pb-step">"根据我之前的项目文档写更新方案" → AI基于历史文档来写</div>
+          <div class="pb-step">"我的笔记里有没有提到过关于X的观点？正反两面都找" → AI多角度搜索</div>
         </div>
+
+        <p style="margin-top:20px;"><strong>&#128073; 方案二：Open WebUI + Ollama（如果已经装了Open WebUI）</strong></p>
+        <ol style="line-height:2.2;">
+          <li>打开 http://localhost:3000（Open WebUI）</li>
+          <li>左侧 <strong>Workspace</strong> → <strong>Knowledge</strong> → <strong>Create Knowledge</strong></li>
+          <li>起名（如"工作文档"）→ <strong>Upload Files</strong> → 选择文件上传</li>
+          <li>上传完自动向量化（进度条显示）</li>
+          <li>在聊天界面 → 顶部点击 <strong>+</strong> → 选择你的知识库 → 开启后所有对话都会先搜索知识库</li>
+        </ol>
+
+        <p style="margin-top:20px;"><strong>&#128073; 方案三：Dify + Ollama（最强大的可视化方案）</strong></p>
+        <ol style="line-height:2.2;">
+          <li>Docker 安装 Dify：<div class="prompt-box" style="margin:8px 0;"><button class="copy-btn" onclick="copyPrompt(this)">复制</button><pre>git clone https://github.com/langgenius/dify.git
+cd dify/docker
+cp .env.example .env
+docker compose up -d</pre></div></li>
+          <li>浏览器打开 http://localhost/install → 注册 → 登录</li>
+          <li>左侧 <strong>知识库</strong> → <strong>创建知识库</strong> → 上传文档 → 自动分段+向量化</li>
+          <li>左侧 <strong>应用</strong> → <strong>创建应用</strong> → 选 <strong>Chatflow</strong> → 拖拽节点搭建：用户输入 → 知识库检索 → LLM回复</li>
+        </ol>
+        <div class="practical-box">
+          <div class="pb-title">&#128161; 三个方案怎么选？</div>
+          <div class="pb-step"><strong>AnythingLLM：</strong>最简单，纯知识库问答，不想折腾选这个</div>
+          <div class="pb-step"><strong>Open WebUI：</strong>如果已经装了Open WebUI，直接内置知识库功能，不需要额外安装</div>
+          <div class="pb-step"><strong>Dify：</strong>功能最全（RAG+Agent+工具调用+工作流），适合想搭完整AI系统的用户</div>
+          <div class="pb-step"><span class="highlight">新手推荐路径：Ollama → AnythingLLM（体验RAG）→ Dify（进阶）</span></div>
+        </div>
+
+        <p style="margin-top:20px;"><strong>支持的文档类型和限制：</strong></p>
+        <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;">
+          <tr style="background:rgba(59,130,246,0.1);"><th style="padding:8px;text-align:left;border-bottom:1px solid var(--border-color);">类型</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">说明</th><th style="padding:8px;text-align:center;border-bottom:1px solid var(--border-color);">推荐</th></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">PDF</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">报告、论文、书籍</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">&#11088;</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">Markdown/TXT</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">笔记、日志、代码</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">&#11088;</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">DOCX</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">Word文档、方案</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#10B981;">&#11088;</td></tr>
+          <tr><td style="padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.05);">CSV/Excel</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);">数据表、表格</td><td style="padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);color:#F59E0B;">&#11088;&#11088;</td></tr>
+          <tr><td style="padding:6px 8px;">图片（扫描PDF）</td><td style="padding:6px 8px;text-align:center;">需要OCR，精度较低</td><td style="padding:6px 8px;text-align:center;color:#EF4444;">&#11088;</td></tr>
+        </table>
+        <p><small>单个PDF建议不超过200页，超过的话分卷上传效果更好。</small></p>
+
+        <div class="tree-layer layer-root">
+          <div class="tree-layer-title">&#127793; RAG隐私优势</div>
+          <ul>
+            <li>你的笔记、想法、个人记录——<span class="highlight">不应该上传到ChatGPT</span>。本地RAG数据始终在你的硬盘上</li>
+            <li>"不是偏执，这是架构。处理私密数据的正确工具就是私密工具。"</li>
+            <li>如果你需要团队共享知识库，可以用 Dify 的云端版（数据存在你自己的服务器上）</li>
+          </ul>
+        </div>
+        <div class="source-tag">&#127758; 来源：AnythingLLM 官方 / Dify 文档 / Open WebUI GitHub</div>
       </div>
     </div>
   </div>
