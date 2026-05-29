@@ -89,8 +89,12 @@ body {
 .tab-panel.active { display:block; }
 /* Cards */
 .cards-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
-.card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); overflow:hidden; transition:var(--transition); }
+.card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); overflow:hidden; transition:var(--transition); cursor:pointer; position:relative; }
 .card:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); border-color:rgba(59,130,246,0.3); }
+.card::after { content:'点击查看详情'; position:absolute; top:8px; right:8px; padding:4px 10px; border-radius:50px; font-size:11px; font-weight:600; background:rgba(6,182,212,0.12); color:var(--accent-cyan); border:1px solid rgba(6,182,212,0.2); opacity:0; transition:var(--transition); pointer-events:none; }
+.card:hover::after { opacity:1; }
+.card .card-toggle { position:relative; z-index:2; }
+.card .copy-btn { position:relative; z-index:2; }
 .card-header { padding:20px 22px 0; display:flex; align-items:flex-start; gap:14px; }
 .card-badge { padding:4px 10px; border-radius:50px; font-size:11px; font-weight:700; white-space:nowrap; flex-shrink:0; margin-top:2px; }
 .badge-green { background:rgba(16,185,129,0.15); color:var(--accent-green); }
@@ -358,6 +362,29 @@ body {
 .overlay-body { max-width:1200px; margin:0 auto; padding:40px 24px 80px; }
 .overlay-body .cards-grid, .overlay-body .tools-grid, .overlay-body .workflow-grid, .overlay-body .scenario-grid, .overlay-body .repo-grid { grid-template-columns:repeat(auto-fill, minmax(400px, 1fr)); }
 @media (max-width:768px) { .overlay-body .cards-grid, .overlay-body .tools-grid, .overlay-body .workflow-grid, .overlay-body .scenario-grid, .overlay-body .repo-grid { grid-template-columns:1fr; } }
+/* ===== Card Overlay (individual card fullscreen) ===== */
+.card-overlay { position:fixed; top:0; left:0; right:0; bottom:0; z-index:2100; background:rgba(10,14,26,0.92); backdrop-filter:blur(12px); overflow-y:auto; display:none; animation:cardOverlayIn 0.35s cubic-bezier(0.16,1,0.3,1); }
+.card-overlay.active { display:block; }
+@keyframes cardOverlayIn { from { opacity:0; } to { opacity:1; } }
+.card-overlay-inner { max-width:900px; margin:60px auto; padding:0 24px 80px; animation:cardSlideUp 0.4s cubic-bezier(0.16,1,0.3,1); }
+@keyframes cardSlideUp { from { opacity:0; transform:translateY(40px); } to { opacity:1; transform:translateY(0); } }
+.card-overlay-close { position:fixed; top:20px; right:24px; z-index:2110; width:44px; height:44px; border-radius:50%; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:20px; cursor:pointer; transition:var(--transition); display:flex; align-items:center; justify-content:center; }
+.card-overlay-close:hover { border-color:var(--accent-rose); color:var(--accent-rose); background:rgba(244,63,94,0.1); }
+.card-overlay-card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); overflow:hidden; }
+.card-overlay-card .card-header { padding:28px 32px 0; }
+.card-overlay-card .card-badge { font-size:12px; padding:5px 12px; }
+.card-overlay-card .card-title { font-size:22px; }
+.card-overlay-card .card-preview { padding:14px 32px 20px; font-size:15px; }
+.card-overlay-card .card-detail { display:block !important; padding:0 32px 28px; font-size:15px; line-height:1.9; }
+.card-overlay-card .card-detail p { margin-bottom:10px; }
+.card-overlay-card .card-detail ul, .card-overlay-card .card-detail ol { padding-left:24px; margin:10px 0; }
+.card-overlay-card .card-detail li { margin-bottom:6px; }
+.card-overlay-card .prompt-box { margin:16px 0; }
+.card-overlay-card .practical-box { margin:16px 0; }
+.card-overlay-card .source-tag { margin-top:10px; }
+.card-overlay-card .card-toggle { display:none; }
+.card-overlay-card::after { display:none; }
+@media (max-width:768px) { .card-overlay-inner { margin:20px auto; } .card-overlay-close { top:12px; right:12px; width:40px; height:40px; } .card-overlay-card .card-header { padding:20px 20px 0; } .card-overlay-card .card-title { font-size:18px; } .card-overlay-card .card-preview, .card-overlay-card .card-detail { padding-left:20px; padding-right:20px; } }
 /* Tool visit button */
 .tool-visit-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 18px; border-radius:50px; border:1px solid var(--accent-cyan); background:rgba(6,182,212,0.1); color:var(--accent-cyan); font-size:13px; font-weight:700; cursor:pointer; transition:var(--transition); text-decoration:none; margin-top:10px; }
 .tool-visit-btn:hover { background:var(--accent-cyan); color:#fff; }
@@ -3965,6 +3992,12 @@ docker compose up -d</pre></div></li>
   <div class="overlay-body" id="overlayBody"></div>
 </div>
 
+<!-- Card Overlay Container (individual card fullscreen) -->
+<div class="card-overlay" id="cardOverlay">
+  <button class="card-overlay-close" onclick="closeCardOverlay()" title="关闭">&#10005;</button>
+  <div class="card-overlay-inner" id="cardOverlayInner"></div>
+</div>
+
 <script>
 // ===== FAQ Toggle =====
 document.querySelectorAll('.faq-q').forEach(q => {
@@ -4029,7 +4062,55 @@ function closeOverlay() {
   document.getElementById('fullscreenOverlay').classList.remove('active');
   document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeOverlay(); closeCardOverlay(); } });
+
+// ===== Card Overlay (individual card fullscreen) =====
+function openCardOverlay(card) {
+  if (!card) return;
+  const overlay = document.getElementById('cardOverlay');
+  const inner = document.getElementById('cardOverlayInner');
+  // Clone the card and wrap in overlay card style
+  const clone = card.cloneNode(true);
+  clone.classList.add('card-overlay-card');
+  clone.classList.remove('card');
+  // Remove the expand hint
+  clone.style.cursor = 'default';
+  // Ensure detail is visible (CSS handles it, but force expanded class)
+  clone.classList.add('expanded');
+  inner.innerHTML = '';
+  inner.appendChild(clone);
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  // Re-bind copy buttons inside overlay
+  clone.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const box = this.closest('.prompt-box, .smart-prompt-box');
+      const pre = box ? box.querySelector('pre') : null;
+      if (pre) {
+        navigator.clipboard.writeText(pre.textContent).then(() => {
+          this.textContent = '已复制!'; this.classList.add('copied');
+          setTimeout(() => { this.textContent = '复制'; this.classList.remove('copied'); }, 2000);
+        });
+      }
+    });
+  });
+  overlay.scrollTop = 0;
+}
+function closeCardOverlay() {
+  document.getElementById('cardOverlay').classList.remove('active');
+  if (!document.getElementById('fullscreenOverlay').classList.contains('active')) {
+    document.body.style.overflow = '';
+  }
+}
+// Bind card clicks (exclude toggle/copy buttons)
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    // Don't open if clicking on toggle button, copy button, or links
+    if (e.target.closest('.card-toggle, .copy-btn, a, button')) return;
+    openCardOverlay(this);
+  });
+});
 
 // ===== Prompt Category Tabs =====
 document.querySelectorAll('.prompt-cat-btn').forEach(btn => {
