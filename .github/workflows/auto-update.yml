@@ -31,6 +31,24 @@ jobs:
         run: |
           pip install requests beautifulsoup4 feedparser
 
+      - name: Cache arXiv papers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/cache_arxiv.py
+
+      - name: Cache Hacker News stories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/cache_hn_stories.py
+
+      - name: Cache AI tools from GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/cache_ai_tools.py
+
       - name: Fetch latest AI news & update content
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,7 +58,7 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet index.html; then
+          if git diff --quiet index.html data/; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -51,7 +69,7 @@ jobs:
         run: |
           git config user.name "AI Insight Bot"
           git config user.email "bot@ai-insight-hub.dev"
-          git add index.html
+          git add index.html data/
           UPDATE_DATE=$(date +"%Y年%m月%d日")
           git commit -m "🤖 自动更新内容 - ${UPDATE_DATE}"
           git push

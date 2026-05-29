@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Insight Hub · AI洞察站</title>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 <style>
 :root {
   --bg-primary: #0a0e1a;
@@ -273,7 +274,71 @@ body {
 .card:nth-child(3), .tool-card:nth-child(3), .workflow-card:nth-child(3) { animation-delay:0.1s; }
 .card:nth-child(4), .tool-card:nth-child(4), .workflow-card:nth-child(4) { animation-delay:0.15s; }
 .card:nth-child(5), .tool-card:nth-child(5), .workflow-card:nth-child(5) { animation-delay:0.2s; }
-.card:nth-child(6), .tool-card:nth-child(6), .workflow-card:nth-child(6) { animation-delay:0.25s; }
+/* ===== Tag Cloud ===== */
+.tag-cloud { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:20px; padding:0 16px; position:relative; }
+.tag-cloud-item { padding:6px 14px; border-radius:50px; font-size:13px; font-weight:500; cursor:pointer; border:1px solid var(--border-color); background:rgba(26,34,53,0.6); color:var(--text-secondary); transition:var(--transition); opacity:0; transform:translateY(10px); animation:tagFadeIn 0.4s ease forwards; }
+.tag-cloud-item:hover { border-color:var(--accent-cyan); color:var(--accent-cyan); background:rgba(6,182,212,0.08); }
+.tag-cloud-item:nth-child(1) { animation-delay:0.05s; }
+.tag-cloud-item:nth-child(2) { animation-delay:0.1s; }
+.tag-cloud-item:nth-child(3) { animation-delay:0.15s; }
+.tag-cloud-item:nth-child(4) { animation-delay:0.2s; }
+.tag-cloud-item:nth-child(5) { animation-delay:0.25s; }
+.tag-cloud-item:nth-child(6) { animation-delay:0.3s; }
+.tag-cloud-item:nth-child(7) { animation-delay:0.35s; }
+.tag-cloud-item:nth-child(8) { animation-delay:0.4s; }
+.tag-cloud-item:nth-child(9) { animation-delay:0.45s; }
+.tag-cloud-item:nth-child(10) { animation-delay:0.5s; }
+.tag-cloud-item:nth-child(11) { animation-delay:0.55s; }
+.tag-cloud-item:nth-child(12) { animation-delay:0.6s; }
+.tag-cloud-item:nth-child(13) { animation-delay:0.65s; }
+.tag-cloud-item:nth-child(14) { animation-delay:0.7s; }
+.tag-cloud-item:nth-child(15) { animation-delay:0.75s; }
+.tag-cloud-item:nth-child(16) { animation-delay:0.8s; }
+.tag-cloud-item:nth-child(17) { animation-delay:0.85s; }
+.tag-cloud-item:nth-child(18) { animation-delay:0.9s; }
+.tag-cloud-item:nth-child(19) { animation-delay:0.95s; }
+.tag-cloud-item:nth-child(20) { animation-delay:1.0s; }
+@keyframes tagFadeIn { to { opacity:1; transform:translateY(0); } }
+
+/* ===== Real-time News Section ===== */
+.news-tabs { display:flex; gap:6px; margin-bottom:20px; flex-wrap:wrap; }
+.news-tab-btn { padding:8px 16px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:13px; font-weight:600; cursor:pointer; transition:var(--transition); white-space:nowrap; }
+.news-tab-btn:hover { border-color:var(--accent-blue); color:var(--text-primary); }
+.news-tab-btn.active { background:rgba(59,130,246,0.15); border-color:var(--accent-blue); color:var(--accent-blue); }
+.news-panel { display:none; }
+.news-panel.active { display:block; }
+.news-loading { text-align:center; padding:40px 20px; color:var(--text-muted); }
+.news-loading .spinner { width:32px; height:32px; border:3px solid var(--border-color); border-top-color:var(--accent-blue); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 12px; }
+.news-empty { text-align:center; padding:40px 20px; color:var(--text-muted); }
+.news-empty-icon { font-size:40px; margin-bottom:8px; }
+.news-error { text-align:center; padding:30px 20px; color:var(--accent-rose); }
+.news-error-icon { font-size:36px; margin-bottom:8px; }
+.news-refresh-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 18px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:13px; cursor:pointer; transition:var(--transition); margin-bottom:16px; }
+.news-refresh-btn:hover { border-color:var(--accent-blue); color:var(--accent-blue); }
+.news-refresh-btn:disabled { opacity:0.5; cursor:not-allowed; }
+.news-cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:14px; }
+.news-card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); padding:18px 20px; transition:var(--transition); }
+.news-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); border-color:rgba(59,130,246,0.3); }
+.news-card-header { display:flex; align-items:flex-start; gap:10px; margin-bottom:8px; }
+.news-card-badge { padding:3px 10px; border-radius:50px; font-size:11px; font-weight:700; white-space:nowrap; flex-shrink:0; }
+.news-card-title { font-size:15px; font-weight:700; line-height:1.4; color:var(--text-primary); }
+.news-card-title a { color:var(--text-primary); text-decoration:none; }
+.news-card-title a:hover { color:var(--accent-cyan); }
+.news-card-meta { display:flex; align-items:center; gap:12px; font-size:12px; color:var(--text-muted); margin-bottom:8px; flex-wrap:wrap; }
+.news-card-meta-item { display:flex; align-items:center; gap:3px; }
+.news-card-desc { font-size:13px; color:var(--text-secondary); line-height:1.6; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.news-card-tags { display:flex; flex-wrap:wrap; gap:4px; margin-top:8px; }
+.news-card-tag { font-size:11px; padding:2px 8px; border-radius:4px; background:rgba(59,130,246,0.1); color:var(--accent-blue); }
+.news-card-tag.tag-nlp { background:rgba(6,182,212,0.1); color:var(--accent-cyan); }
+.news-card-tag.tag-cv { background:rgba(139,92,246,0.1); color:var(--accent-purple); }
+.news-card-tag.tag-rl { background:rgba(16,185,129,0.1); color:var(--accent-green); }
+.news-card-tag.tag-genai { background:rgba(245,158,11,0.1); color:var(--accent-amber); }
+.news-card-tag.tag-mcp { background:rgba(249,115,22,0.1); color:var(--accent-orange); }
+
+/* ===== Enhanced Search ===== */
+.search-result-item .sr-context { font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.5; }
+.search-result-item .sr-context mark { background:rgba(6,182,212,0.25); color:var(--accent-cyan); border-radius:2px; padding:0 2px; }
+.search-highlight { background:rgba(6,182,212,0.2); border-radius:2px; }
 </style>
 </head>
 <body>
@@ -291,6 +356,7 @@ body {
       <a class="nav-link" href="#ai-practice">落地实践</a>
       <a class="nav-link" href="#local-ai">本地AI助手</a>
       <a class="nav-link" href="#github-trending">GitHub热门</a>
+      <a class="nav-link" href="#realtime-news">实时资讯</a>
     </div>
     <button class="hamburger" id="hamburgerBtn">&#9776;</button>
   </div>
@@ -303,6 +369,7 @@ body {
     <a class="nav-link" href="#ai-practice">落地实践</a>
     <a class="nav-link" href="#local-ai">本地AI助手</a>
     <a class="nav-link" href="#github-trending">GitHub热门</a>
+    <a class="nav-link" href="#realtime-news">实时资讯</a>
   </div>
 </nav>
 
@@ -314,6 +381,28 @@ body {
     <span class="search-icon">&#128269;</span>
     <input type="text" id="searchInput" placeholder="搜索知识点：MoE、介护保险、副业、ChatGPT..." autocomplete="off">
     <div class="search-results" id="searchResults"></div>
+  </div>
+  <div class="tag-cloud" id="tagCloud">
+    <span class="tag-cloud-item" data-tag="大模型">大模型</span>
+    <span class="tag-cloud-item" data-tag="GPT">GPT</span>
+    <span class="tag-cloud-item" data-tag="论文速递">论文速递</span>
+    <span class="tag-cloud-item" data-tag="开源工具">开源工具</span>
+    <span class="tag-cloud-item" data-tag="行业动态">行业动态</span>
+    <span class="tag-cloud-item" data-tag="本地部署">本地部署</span>
+    <span class="tag-cloud-item" data-tag="Prompt工程">Prompt工程</span>
+    <span class="tag-cloud-item" data-tag="RAG">RAG</span>
+    <span class="tag-cloud-item" data-tag="RLHF">RLHF</span>
+    <span class="tag-cloud-item" data-tag="ViT">ViT</span>
+    <span class="tag-cloud-item" data-tag="Embedding">Embedding</span>
+    <span class="tag-cloud-item" data-tag="MCP">MCP</span>
+    <span class="tag-cloud-item" data-tag="多模态">多模态</span>
+    <span class="tag-cloud-item" data-tag="Stable Diffusion">Stable Diffusion</span>
+    <span class="tag-cloud-item" data-tag="Llama">Llama</span>
+    <span class="tag-cloud-item" data-tag="Qwen">Qwen</span>
+    <span class="tag-cloud-item" data-tag="DeepSeek">DeepSeek</span>
+    <span class="tag-cloud-item" data-tag="ComfyUI">ComfyUI</span>
+    <span class="tag-cloud-item" data-tag="论文解读">论文解读</span>
+    <span class="tag-cloud-item" data-tag="Agent">Agent</span>
   </div>
 </section>
 
@@ -2770,6 +2859,59 @@ docker run -d -p 3001:3001 --name anythingllm mintplexlabs/anythingllm
   </div>
 </section>
 
+<!-- ========== Module H: Real-time News Feed ========== -->
+<section class="section" id="realtime-news">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(59,130,246,0.15);color:var(--accent-blue);">&#128240;</div>
+    <div>
+      <div class="section-title">实时资讯 <span class="update-badge"><span class="update-dot"></span>动态抓取</span></div>
+      <div class="section-subtitle">实时抓取 arXiv、Hacker News、行业RSS、GitHub 等信源，保持你的AI前沿感知</div>
+    </div>
+  </div>
+  <div class="data-banner">
+    <span class="data-banner-icon">&#9889;</span>
+    <span>数据通过浏览器直接从API获取，优先读取本地缓存（24小时有效期）。如遇加载失败，点击刷新按钮重试。</span>
+  </div>
+
+  <div class="news-tabs" id="newsTabs">
+    <button class="news-tab-btn active" data-panel="news-arxiv">📄 AI论文速递</button>
+    <button class="news-tab-btn" data-panel="news-hn">🔥 技术热点</button>
+    <button class="news-tab-btn" data-panel="news-rss">📰 行业动态</button>
+    <button class="news-tab-btn" data-panel="news-tools">🔧 开源AI工具</button>
+    <button class="news-tab-btn" data-panel="news-frontier">🔬 AI研究前沿</button>
+  </div>
+
+  <!-- Panel: arXiv Papers -->
+  <div class="news-panel active" id="news-arxiv">
+    <button class="news-refresh-btn" data-target="news-arxiv" onclick="NewsManager.refresh('arxiv')">&#128260; 刷新</button>
+    <div id="news-arxiv-content"></div>
+  </div>
+
+  <!-- Panel: Hacker News -->
+  <div class="news-panel" id="news-hn">
+    <button class="news-refresh-btn" data-target="news-hn" onclick="NewsManager.refresh('hn')">&#128260; 刷新</button>
+    <div id="news-hn-content"></div>
+  </div>
+
+  <!-- Panel: RSS Industry -->
+  <div class="news-panel" id="news-rss">
+    <button class="news-refresh-btn" data-target="news-rss" onclick="NewsManager.refresh('rss')">&#128260; 刷新</button>
+    <div id="news-rss-content"></div>
+  </div>
+
+  <!-- Panel: Open Source AI Tools -->
+  <div class="news-panel" id="news-tools">
+    <button class="news-refresh-btn" data-target="news-tools" onclick="NewsManager.refresh('tools')">&#128260; 刷新</button>
+    <div id="news-tools-content"></div>
+  </div>
+
+  <!-- Panel: AI Research Frontier -->
+  <div class="news-panel" id="news-frontier">
+    <button class="news-refresh-btn" data-target="news-frontier" onclick="NewsManager.refresh('frontier')">&#128260; 刷新</button>
+    <div id="news-frontier-content"></div>
+  </div>
+</section>
+
 <!-- ========== Module F: GitHub Trending AI Projects ========== -->
 <section class="section" id="github-trending">
   <div class="section-header">
@@ -2892,47 +3034,120 @@ document.querySelectorAll('.tab-bar').forEach(bar => {
 // ===== Search =====
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
-const allCards = document.querySelectorAll('.card');
+let fuseInstance = null;
 
-searchInput.addEventListener('input', () => {
-  const q = searchInput.value.trim().toLowerCase();
-  if (!q) { searchResults.classList.remove('visible'); return; }
-  const matches = [];
-  allCards.forEach(card => {
-    const title = card.querySelector('.card-title')?.textContent?.toLowerCase() || '';
-    const preview = card.querySelector('.card-preview')?.textContent?.toLowerCase() || '';
-    const keywords = card.dataset.keywords?.toLowerCase() || '';
-    const detail = card.querySelector('.card-detail')?.textContent?.toLowerCase() || '';
-    if (title.includes(q) || preview.includes(q) || keywords.includes(q) || detail.includes(q)) {
-      const section = card.closest('.section');
-      const sectionTitle = section?.querySelector('.section-title')?.textContent || '';
-      matches.push({ card, title: card.querySelector('.card-title')?.textContent, section: sectionTitle });
+function buildSearchIndex() {
+  const items = [];
+  document.querySelectorAll('.card, .tool-card, .workflow-card, .scenario-card, .news-card').forEach(el => {
+    const titleEl = el.querySelector('.card-title, .tool-name, .workflow-title, .scenario-title, .news-card-title');
+    const descEl = el.querySelector('.card-preview, .tool-section p, .workflow-note, .news-card-desc');
+    const section = el.closest('.section');
+    const sectionTitle = section ? (section.querySelector('.section-title')?.textContent || '') : '';
+    const title = titleEl ? titleEl.textContent : '';
+    const content = descEl ? descEl.textContent : '';
+    const keywords = el.dataset.keywords || '';
+    const tags = el.dataset.tags || '';
+    if (title || content) {
+      items.push({
+        title: title,
+        content: content,
+        keywords: keywords,
+        tags: tags,
+        section: sectionTitle,
+        element: el
+      });
     }
   });
-  if (matches.length === 0) {
+  fuseInstance = new Fuse(items, {
+    keys: [
+      { name: 'title', weight: 0.4 },
+      { name: 'content', weight: 0.3 },
+      { name: 'keywords', weight: 0.2 },
+      { name: 'tags', weight: 0.1 }
+    ],
+    threshold: 0.4,
+    tokenize: true,
+    includeMatches: true,
+    minMatchCharLength: 1
+  });
+}
+
+function addSearchableItem(el) {
+  if (!fuseInstance) return;
+  const titleEl = el.querySelector('.card-title, .tool-name, .workflow-title, .scenario-title, .news-card-title');
+  const descEl = el.querySelector('.card-preview, .tool-section p, .workflow-note, .news-card-desc');
+  const section = el.closest('.section');
+  const sectionTitle = section ? (section.querySelector('.section-title')?.textContent || '') : '';
+  const title = titleEl ? titleEl.textContent : '';
+  const content = descEl ? descEl.textContent : '';
+  const keywords = el.dataset.keywords || '';
+  const tags = el.dataset.tags || '';
+  if (title || content) {
+    fuseInstance.add({ title, content, keywords, tags, section: sectionTitle, element: el });
+  }
+}
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${escaped})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim();
+  if (!q) { searchResults.classList.remove('visible'); return; }
+  if (!fuseInstance) buildSearchIndex();
+
+  const results = fuseInstance.search(q, { limit: 8 });
+  if (results.length === 0) {
     searchResults.innerHTML = '<div style="padding:16px 20px;color:var(--text-muted);">未找到相关内容</div>';
   } else {
-    searchResults.innerHTML = matches.slice(0, 8).map(m =>
-      `<div class="search-result-item" data-section="${m.section}"><div class="sr-title">${m.title}</div><div class="sr-section">${m.section}</div></div>`
-    ).join('');
+    searchResults.innerHTML = results.map(r => {
+      const item = r.item;
+      let context = '';
+      if (r.matches) {
+        for (const m of r.matches) {
+          if (m.value && m.value.length > 10) {
+            context = m.value.substring(0, 80) + '...';
+            break;
+          }
+        }
+      }
+      return `<div class="search-result-item" data-section="${item.section}" data-title="${item.title}">
+        <div class="sr-title">${highlightMatch(item.title, q)}</div>
+        <div class="sr-section">${item.section}</div>
+        ${context ? `<div class="sr-context">${highlightMatch(context, q)}</div>` : ''}
+      </div>`;
+    }).join('');
   }
   searchResults.classList.add('visible');
+
   searchResults.querySelectorAll('.search-result-item').forEach(item => {
     item.addEventListener('click', () => {
-      const section = item.dataset.section;
-      const target = [...allCards].find(c => c.querySelector('.card-title')?.textContent === item.querySelector('.sr-title')?.textContent);
+      const titleText = item.dataset.title;
+      const allSearchable = document.querySelectorAll('.card, .tool-card, .workflow-card, .scenario-card, .news-card');
+      const target = [...allSearchable].find(c => {
+        const t = c.querySelector('.card-title, .tool-name, .workflow-title, .scenario-title, .news-card-title');
+        return t && t.textContent === titleText;
+      });
       if (target) {
         const sectionEl = target.closest('.section');
-        const tabContent = target.closest('.tab-content');
+        const tabContent = target.closest('.tab-content, .tab-panel, .news-panel');
         if (tabContent && !tabContent.classList.contains('active')) {
-          const tabId = tabContent.id.replace('tab-', '');
-          const tabBtn = sectionEl.querySelector(`.tab-btn[data-tab="${tabId}"]`);
-          if (tabBtn) tabBtn.click();
+          const tabId = tabContent.id.replace('tab-', '').replace('news-', '');
+          const parentTabs = sectionEl.querySelectorAll('.tab-btn, .news-tab-btn');
+          for (const tb of parentTabs) {
+            if (tb.dataset.tab === tabId || tb.dataset.panel === tabContent.id) {
+              tb.click();
+              break;
+            }
+          }
         }
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        if (!target.classList.contains('expanded')) {
-          target.querySelector('.card-toggle')?.click();
-        }
+        target.style.outline = '2px solid var(--accent-cyan)';
+        target.style.outlineOffset = '4px';
+        setTimeout(() => { target.style.outline = 'none'; }, 2000);
       }
       searchResults.classList.remove('visible');
       searchInput.value = '';
@@ -3102,6 +3317,424 @@ document.getElementById('lastUpdate').textContent = '最近更新：' + new Date
   });
 
   fetchRepos(1, false);
+})();
+
+// ===== Tag Cloud =====
+(function() {
+  document.querySelectorAll('.tag-cloud-item').forEach(tag => {
+    tag.addEventListener('click', () => {
+      const val = tag.dataset.tag;
+      searchInput.value = val;
+      searchInput.dispatchEvent(new Event('input'));
+      document.getElementById('realtime-news').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+})();
+
+// ===== News Tab Switching =====
+document.querySelectorAll('.news-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.news-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const panelId = btn.dataset.panel;
+    document.querySelectorAll('.news-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(panelId).classList.add('active');
+  });
+});
+
+// ===== News Manager =====
+const NewsManager = (function() {
+  const CACHE_KEY = 'aihub_news_cache';
+  const CACHE_TTL = 24 * 60 * 60 * 1000;
+  const pendingRequests = {};
+  const langColors = {
+    'Python':'#3572A5','JavaScript':'#f1e05a','TypeScript':'#3178c6','Rust':'#dea584',
+    'C++':'#f34b7d','Go':'#00ADD8','Java':'#b07219','Jupyter Notebook':'#DA5B0B',
+    'Shell':'#89e051','Lua':'#000080','Swift':'#F05138','Dart':'#00B4AB'
+  };
+
+  function getCache(key) {
+    try {
+      const raw = localStorage.getItem(CACHE_KEY + '_' + key);
+      if (!raw) return null;
+      const data = JSON.parse(raw);
+      if (Date.now() - data.timestamp > CACHE_TTL) return null;
+      return data.items;
+    } catch { return null; }
+  }
+
+  function setCache(key, items) {
+    try {
+      localStorage.setItem(CACHE_KEY + '_' + key, JSON.stringify({ items, timestamp: Date.now() }));
+    } catch { /* storage full */ }
+  }
+
+  function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    const diff = Date.now() - new Date(dateStr).getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 60) return Math.max(1, mins) + '分钟前';
+    const hours = Math.floor(mins / 60);
+    if (hours < 24) return hours + '小时前';
+    const days = Math.floor(hours / 24);
+    if (days < 30) return days + '天前';
+    return Math.floor(days / 30) + '个月前';
+  }
+
+  function formatStars(n) {
+    if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+    return n.toString();
+  }
+
+  function showLoading(containerId) {
+    document.getElementById(containerId).innerHTML = '<div class="news-loading"><div class="spinner"></div><div>正在加载数据...</div></div>';
+  }
+
+  function showEmpty(containerId, msg) {
+    document.getElementById(containerId).innerHTML = '<div class="news-empty"><div class="news-empty-icon">&#128269;</div><div>' + (msg || '暂无数据') + '</div></div>';
+  }
+
+  function showError(containerId, msg) {
+    document.getElementById(containerId).innerHTML = '<div class="news-error"><div class="news-error-icon">&#9888;&#65039;</div><div>' + (msg || '加载失败，请稍后重试') + '</div></div>';
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ---------- arXiv ----------
+  async function fetchArxiv() {
+    const key = 'arxiv';
+    const containerId = 'news-arxiv-content';
+    if (pendingRequests[key]) return;
+    pendingRequests[key] = true;
+
+    const cached = getCache(key);
+    if (cached) {
+      renderArxiv(containerId, cached);
+      delete pendingRequests[key];
+      return;
+    }
+
+    showLoading(containerId);
+    try {
+      const url = 'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.CV+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=20';
+      const resp = await fetch(url);
+      const text = await resp.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, 'text/xml');
+      const entries = xml.querySelectorAll('entry');
+      if (!entries.length) { showEmpty(containerId); delete pendingRequests[key]; return; }
+      const items = [];
+      entries.forEach(entry => {
+        const title = entry.querySelector('title')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+        const authors = [];
+        entry.querySelectorAll('author name').forEach((n, i) => { if (i < 3) authors.push(n.textContent); });
+        const authorStr = authors.length >= 3 ? authors.join(', ') + ' et al.' : authors.join(', ');
+        const summary = (entry.querySelector('summary')?.textContent?.replace(/\s+/g, ' ').trim() || '').substring(0, 200);
+        const published = entry.querySelector('published')?.textContent || '';
+        const categories = [];
+        entry.querySelectorAll('category').forEach(c => { categories.push(c.getAttribute('term')); });
+        const link = entry.querySelector('id')?.textContent || '';
+        items.push({ title, authors: authorStr, summary, published, categories, link });
+      });
+      setCache(key, items);
+      renderArxiv(containerId, items);
+    } catch (err) {
+      showError(containerId, 'arXiv API 加载失败: ' + err.message);
+    }
+    delete pendingRequests[key];
+  }
+
+  function renderArxiv(containerId, items) {
+    if (!items || !items.length) { showEmpty(containerId); return; }
+    const tagsMap = { 'cs.CL': 'NLP', 'cs.CV': 'CV', 'cs.AI': 'AI', 'cs.LG': 'ML', 'cs.RO': 'Robotics', 'cs.NE': 'Neuro', 'cs.SD': 'Sound', 'cs.IR': 'IR', 'stat.ML': 'StatML' };
+    const tagClassMap = { 'NLP': 'tag-nlp', 'CV': 'tag-cv', 'RL': 'tag-rl', 'GenAI': 'tag-genai', 'ML': 'tag-genai' };
+    document.getElementById(containerId).innerHTML = '<div class="news-cards">' + items.map(p => {
+      const cats = (p.categories || []).slice(0, 3).map(c => {
+        const label = tagsMap[c] || c;
+        const cls = tagClassMap[label] || '';
+        return '<span class="news-card-tag ' + cls + '">' + escapeHtml(label) + '</span>';
+      }).join('');
+      return '<div class="news-card" data-tags="' + escapeHtml(p.categories.join(',')) + '">' +
+        '<div class="news-card-header"><span class="news-card-badge badge-blue">arXiv</span><div class="news-card-title"><a href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener">' + escapeHtml(p.title) + '</a></div></div>' +
+        '<div class="news-card-meta"><span class="news-card-meta-item">&#128100; ' + escapeHtml(p.authors) + '</span><span class="news-card-meta-item">&#128197; ' + timeAgo(p.published) + '</span></div>' +
+        '<div class="news-card-desc">' + escapeHtml(p.summary) + '...</div>' +
+        (cats ? '<div class="news-card-tags">' + cats + '</div>' : '') +
+      '</div>';
+    }).join('') + '</div>';
+    if (typeof addSearchableItem === 'function') {
+      document.querySelectorAll('#' + containerId + ' .news-card').forEach(el => addSearchableItem(el));
+    }
+  }
+
+  // ---------- Hacker News ----------
+  async function fetchHN() {
+    const key = 'hn';
+    const containerId = 'news-hn-content';
+    if (pendingRequests[key]) return;
+    pendingRequests[key] = true;
+
+    const cached = getCache(key);
+    if (cached) {
+      renderHN(containerId, cached);
+      delete pendingRequests[key];
+      return;
+    }
+
+    showLoading(containerId);
+    try {
+      const url = 'https://hn.algolia.com/api/v1/search?query=AI+artificial+intelligence+LLM&tags=story&hitsPerPage=20&numericFilters=points>50';
+      const resp = await fetch(url);
+      const data = await resp.json();
+      if (!data.hits || !data.hits.length) { showEmpty(containerId, '暂无热门AI相关新闻'); delete pendingRequests[key]; return; }
+      const items = data.hits.map(h => ({
+        title: h.title || '',
+        url: h.url || ('https://news.ycombinator.com/item?id=' + h.objectID),
+        domain: (h.url ? new URL(h.url).hostname.replace('www.', '') : 'news.ycombinator.com'),
+        points: h.points || 0,
+        comments: h.num_comments || 0,
+        time: h.created_at || ''
+      }));
+      setCache(key, items);
+      renderHN(containerId, items);
+    } catch (err) {
+      showError(containerId, 'Hacker News API 加载失败: ' + err.message);
+    }
+    delete pendingRequests[key];
+  }
+
+  function renderHN(containerId, items) {
+    if (!items || !items.length) { showEmpty(containerId); return; }
+    document.getElementById(containerId).innerHTML = '<div class="news-cards">' + items.map(h => {
+      return '<div class="news-card" data-tags="hackernews,ai,llm,technology">' +
+        '<div class="news-card-header"><span class="news-card-badge badge-orange">HN</span><div class="news-card-title"><a href="' + escapeHtml(h.url) + '" target="_blank" rel="noopener">' + escapeHtml(h.title) + '</a></div></div>' +
+        '<div class="news-card-meta"><span class="news-card-meta-item">&#127760; ' + escapeHtml(h.domain) + '</span><span class="news-card-meta-item">&#128337; ' + timeAgo(h.time) + '</span><span class="news-card-meta-item" style="color:var(--accent-amber);">&#9650; ' + h.points + '</span><span class="news-card-meta-item">&#128172; ' + h.comments + '</span></div>' +
+      '</div>';
+    }).join('') + '</div>';
+    if (typeof addSearchableItem === 'function') {
+      document.querySelectorAll('#' + containerId + ' .news-card').forEach(el => addSearchableItem(el));
+    }
+  }
+
+  // ---------- RSS Industry News ----------
+  async function fetchRSS() {
+    const key = 'rss';
+    const containerId = 'news-rss-content';
+    if (pendingRequests[key]) return;
+    pendingRequests[key] = true;
+
+    const cached = getCache(key);
+    if (cached) {
+      renderRSS(containerId, cached);
+      delete pendingRequests[key];
+      return;
+    }
+
+    showLoading(containerId);
+    const feeds = [
+      'https://techcrunch.com/category/artificial-intelligence/feed/',
+      'https://www.technologyreview.com/feed/',
+      'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'
+    ];
+    const selectedFeeds = feeds.slice(0, 2);
+    let allItems = [];
+
+    try {
+      const results = await Promise.allSettled(selectedFeeds.map(async feed => {
+        const url = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feed);
+        const resp = await fetch(url);
+        const data = await resp.json();
+        if (data.status === 'ok' && data.items) {
+          return data.items.slice(0, 10).map(item => ({
+            title: item.title || '',
+            link: item.link || '',
+            pubDate: item.pubDate || '',
+            thumbnail: item.thumbnail || item.enclosure?.link || '',
+            source: data.feed?.title || new URL(feed).hostname
+          }));
+        }
+        return [];
+      }));
+
+      results.forEach(r => { if (r.status === 'fulfilled') allItems = allItems.concat(r.value); });
+      allItems.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+      allItems = allItems.slice(0, 20);
+
+      if (!allItems.length) { showEmpty(containerId, 'RSS 源加载失败，请稍后重试'); delete pendingRequests[key]; return; }
+      setCache(key, allItems);
+      renderRSS(containerId, allItems);
+    } catch (err) {
+      showError(containerId, '行业资讯加载失败: ' + err.message);
+    }
+    delete pendingRequests[key];
+  }
+
+  function renderRSS(containerId, items) {
+    if (!items || !items.length) { showEmpty(containerId); return; }
+    document.getElementById(containerId).innerHTML = '<div class="news-cards">' + items.map(r => {
+      const imgHtml = r.thumbnail ? '<div style="margin-top:8px;"><img src="' + escapeHtml(r.thumbnail) + '" alt="" style="width:100%;height:140px;object-fit:cover;border-radius:var(--radius-sm);background:var(--bg-secondary);" onerror="this.style.display=\'none\'"></div>' : '';
+      return '<div class="news-card" data-tags="rss,industry,news,' + escapeHtml(r.source) + '">' +
+        '<div class="news-card-header"><span class="news-card-badge badge-cyan">' + escapeHtml(r.source) + '</span><div class="news-card-title"><a href="' + escapeHtml(r.link) + '" target="_blank" rel="noopener">' + escapeHtml(r.title) + '</a></div></div>' +
+        '<div class="news-card-meta"><span class="news-card-meta-item">&#128197; ' + timeAgo(r.pubDate) + '</span></div>' +
+        imgHtml +
+      '</div>';
+    }).join('') + '</div>';
+    if (typeof addSearchableItem === 'function') {
+      document.querySelectorAll('#' + containerId + ' .news-card').forEach(el => addSearchableItem(el));
+    }
+  }
+
+  // ---------- GitHub AI Tools ----------
+  async function fetchTools() {
+    const key = 'tools';
+    const containerId = 'news-tools-content';
+    if (pendingRequests[key]) return;
+    pendingRequests[key] = true;
+
+    const cached = getCache(key);
+    if (cached) {
+      renderTools(containerId, cached);
+      delete pendingRequests[key];
+      return;
+    }
+
+    showLoading(containerId);
+    try {
+      const url = 'https://api.github.com/search/repositories?q=topic:ai-tool+OR+topic:llm-tool+OR+topic:ai-agent&sort=stars&order=desc&per_page=15';
+      const resp = await fetch(url);
+      const data = await resp.json();
+      if (!data.items || !data.items.length) { showEmpty(containerId, '暂无数据'); delete pendingRequests[key]; return; }
+      const items = data.items.map(r => ({
+        name: r.name || '',
+        fullName: r.full_name || '',
+        description: r.description || '',
+        stars: r.stargazers_count || 0,
+        language: r.language || '',
+        pushedAt: r.pushed_at || '',
+        url: r.html_url || '',
+        topics: r.topics || []
+      }));
+      setCache(key, items);
+      renderTools(containerId, items);
+    } catch (err) {
+      showError(containerId, 'GitHub API 加载失败: ' + err.message);
+    }
+    delete pendingRequests[key];
+  }
+
+  function renderTools(containerId, items) {
+    if (!items || !items.length) { showEmpty(containerId); return; }
+    document.getElementById(containerId).innerHTML = '<div class="repo-grid">' + items.map(r => {
+      const langColor = langColors[r.language] || '#8b5cf6';
+      const topics = r.topics.slice(0, 4).map(t => '<span class="repo-topic">' + escapeHtml(t) + '</span>').join('');
+      return '<div class="repo-card" data-tags="' + escapeHtml(r.topics.join(',')) + '">' +
+        '<div class="repo-card-top"><span class="repo-lang-dot" style="background:' + langColor + '"></span><a class="repo-name" href="' + escapeHtml(r.url) + '" target="_blank" title="' + escapeHtml(r.fullName) + '">' + escapeHtml(r.name) + '</a></div>' +
+        '<div class="repo-desc">' + escapeHtml(r.description) + '</div>' +
+        '<div class="repo-stats"><span class="repo-stat repo-stars">&#9733; ' + formatStars(r.stars) + '</span><span class="repo-stat">' + escapeHtml(r.language || '—') + '</span><span class="repo-stat">更新 ' + timeAgo(r.pushedAt) + '</span></div>' +
+        (topics ? '<div class="repo-topics">' + topics + '</div>' : '') +
+      '</div>';
+    }).join('') + '</div>';
+    if (typeof addSearchableItem === 'function') {
+      document.querySelectorAll('#' + containerId + ' .repo-card').forEach(el => addSearchableItem(el));
+    }
+  }
+
+  // ---------- AI Research Frontier ----------
+  async function fetchFrontier() {
+    const key = 'frontier';
+    const containerId = 'news-frontier-content';
+    if (pendingRequests[key]) return;
+    pendingRequests[key] = true;
+
+    const cached = getCache(key);
+    if (cached) {
+      renderFrontier(containerId, cached);
+      delete pendingRequests[key];
+      return;
+    }
+
+    showLoading(containerId);
+    const queries = [
+      { query: 'cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=5', label: 'NLP' },
+      { query: 'cat:cs.CV&sortBy=submittedDate&sortOrder=descending&max_results=5', label: 'CV' }
+    ];
+
+    try {
+      const results = await Promise.allSettled(queries.map(async q => {
+        const url = 'https://export.arxiv.org/api/query?search_query=' + q.query;
+        const resp = await fetch(url);
+        const text = await resp.text();
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(text, 'text/xml');
+        const entries = xml.querySelectorAll('entry');
+        return Array.from(entries).map(entry => {
+          const title = entry.querySelector('title')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+          const authors = [];
+          entry.querySelectorAll('author name').forEach((n, i) => { if (i < 2) authors.push(n.textContent); });
+          const authorStr = authors.length >= 2 ? authors.join(', ') + ' et al.' : authors.join(', ');
+          const summary = (entry.querySelector('summary')?.textContent?.replace(/\s+/g, ' ').trim() || '').substring(0, 180);
+          const published = entry.querySelector('published')?.textContent || '';
+          const link = entry.querySelector('id')?.textContent || '';
+          return { title, authors: authorStr, summary, published, link, label: q.label };
+        });
+      }));
+
+      let allItems = [];
+      results.forEach(r => { if (r.status === 'fulfilled') allItems = allItems.concat(r.value); });
+      allItems.sort((a, b) => new Date(b.published) - new Date(a.published));
+      allItems = allItems.slice(0, 12);
+
+      if (!allItems.length) { showEmpty(containerId, '暂无前沿研究数据'); delete pendingRequests[key]; return; }
+      setCache(key, allItems);
+      renderFrontier(containerId, allItems);
+    } catch (err) {
+      showError(containerId, '前沿研究加载失败: ' + err.message);
+    }
+    delete pendingRequests[key];
+  }
+
+  function renderFrontier(containerId, items) {
+    if (!items || !items.length) { showEmpty(containerId); return; }
+    const labelBadge = { 'NLP': 'badge-cyan', 'CV': 'badge-purple' };
+    document.getElementById(containerId).innerHTML = '<div class="news-cards">' + items.map(p => {
+      const badgeCls = labelBadge[p.label] || 'badge-blue';
+      return '<div class="news-card" data-tags="frontier,' + escapeHtml(p.label).toLowerCase() + ',research">' +
+        '<div class="news-card-header"><span class="news-card-badge ' + badgeCls + '">' + escapeHtml(p.label) + '</span><div class="news-card-title"><a href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener">' + escapeHtml(p.title) + '</a></div></div>' +
+        '<div class="news-card-meta"><span class="news-card-meta-item">&#128100; ' + escapeHtml(p.authors) + '</span><span class="news-card-meta-item">&#128197; ' + timeAgo(p.published) + '</span></div>' +
+        '<div class="news-card-desc">' + escapeHtml(p.summary) + '...</div>' +
+      '</div>';
+    }).join('') + '</div>';
+    if (typeof addSearchableItem === 'function') {
+      document.querySelectorAll('#' + containerId + ' .news-card').forEach(el => addSearchableItem(el));
+    }
+  }
+
+  // ---------- Init ----------
+  function init() {
+    fetchArxiv();
+    fetchHN();
+    fetchRSS();
+    fetchTools();
+    fetchFrontier();
+    buildSearchIndex();
+  }
+
+  function refresh(source) {
+    const clearCacheKey = source;
+    try { localStorage.removeItem(CACHE_KEY + '_' + clearCacheKey); } catch {}
+    const map = { arxiv: fetchArxiv, hn: fetchHN, rss: fetchRSS, tools: fetchTools, frontier: fetchFrontier };
+    if (map[source]) map[source]();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  return { refresh };
 })();
 
 </script>
