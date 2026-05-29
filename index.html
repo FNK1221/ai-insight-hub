@@ -345,6 +345,49 @@ body {
 .news-card-tag.tag-genai { background:rgba(245,158,11,0.1); color:var(--accent-amber); }
 .news-card-tag.tag-mcp { background:rgba(249,115,22,0.1); color:var(--accent-orange); }
 
+/* ===== Fullscreen Overlay ===== */
+.section-expand-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:13px; font-weight:600; cursor:pointer; transition:var(--transition); margin-left:12px; }
+.section-expand-btn:hover { border-color:var(--accent-cyan); color:var(--accent-cyan); background:rgba(6,182,212,0.08); }
+.fullscreen-overlay { position:fixed; top:0; left:0; right:0; bottom:0; z-index:2000; background:var(--bg-primary); overflow-y:auto; display:none; animation:overlayIn 0.3s ease; }
+.fullscreen-overlay.active { display:block; }
+@keyframes overlayIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+.overlay-header { position:sticky; top:0; z-index:10; background:rgba(10,14,26,0.95); backdrop-filter:blur(20px); border-bottom:1px solid var(--border-color); padding:16px 24px; display:flex; align-items:center; justify-content:space-between; }
+.overlay-close { padding:10px 20px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:14px; font-weight:600; cursor:pointer; transition:var(--transition); display:flex; align-items:center; gap:6px; }
+.overlay-close:hover { border-color:var(--accent-rose); color:var(--accent-rose); background:rgba(244,63,94,0.08); }
+.overlay-title { font-size:20px; font-weight:800; }
+.overlay-body { max-width:1200px; margin:0 auto; padding:40px 24px 80px; }
+.overlay-body .cards-grid, .overlay-body .tools-grid, .overlay-body .workflow-grid, .overlay-body .scenario-grid, .overlay-body .repo-grid { grid-template-columns:repeat(auto-fill, minmax(400px, 1fr)); }
+@media (max-width:768px) { .overlay-body .cards-grid, .overlay-body .tools-grid, .overlay-body .workflow-grid, .overlay-body .scenario-grid, .overlay-body .repo-grid { grid-template-columns:1fr; } }
+/* Tool visit button */
+.tool-visit-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 18px; border-radius:50px; border:1px solid var(--accent-cyan); background:rgba(6,182,212,0.1); color:var(--accent-cyan); font-size:13px; font-weight:700; cursor:pointer; transition:var(--transition); text-decoration:none; margin-top:10px; }
+.tool-visit-btn:hover { background:var(--accent-cyan); color:#fff; }
+/* Smart Prompt Category */
+.prompt-category-tabs { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
+.prompt-cat-btn { padding:10px 20px; border-radius:50px; border:1px solid var(--border-color); background:var(--bg-secondary); color:var(--text-secondary); font-size:14px; font-weight:600; cursor:pointer; transition:var(--transition); }
+.prompt-cat-btn:hover { border-color:var(--accent-green); color:var(--text-primary); }
+.prompt-cat-btn.active { background:rgba(16,185,129,0.15); border-color:var(--accent-green); color:var(--accent-green); }
+.prompt-cat-content { display:none; }
+.prompt-cat-content.active { display:block; }
+/* Smart prompt card */
+.smart-prompt-card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); padding:24px; margin-bottom:20px; transition:var(--transition); }
+.smart-prompt-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); border-color:rgba(16,185,129,0.3); }
+.smart-prompt-header { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
+.smart-prompt-icon { width:48px; height:48px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; font-size:26px; flex-shrink:0; }
+.smart-prompt-title { font-size:18px; font-weight:700; }
+.smart-prompt-desc { font-size:14px; color:var(--text-secondary); margin-bottom:16px; line-height:1.6; }
+.smart-prompt-scenarios { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+.smart-prompt-scenario { padding:6px 14px; border-radius:50px; font-size:12px; font-weight:600; background:rgba(59,130,246,0.1); color:var(--accent-blue); border:1px solid rgba(59,130,246,0.15); }
+.smart-prompt-box { background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.2); border-radius:var(--radius-sm); padding:16px; margin:12px 0; position:relative; }
+.smart-prompt-label { font-size:11px; font-weight:700; color:var(--accent-green); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; }
+.smart-prompt-box pre { font-family:'Cascadia Code','Fira Code','Consolas',monospace; font-size:13px; line-height:1.7; color:var(--accent-cyan); white-space:pre-wrap; word-break:break-word; margin:0; }
+.smart-prompt-box .copy-btn { position:absolute; top:12px; right:12px; padding:4px 12px; border-radius:4px; border:1px solid rgba(16,185,129,0.3); background:rgba(16,185,129,0.1); color:var(--accent-green); font-size:11px; cursor:pointer; transition:var(--transition); }
+.smart-prompt-box .copy-btn:hover { background:rgba(16,185,129,0.25); }
+.smart-prompt-box .copy-btn.copied { background:var(--accent-green); color:#fff; }
+.smart-prompt-before { background:rgba(244,63,94,0.06); border:1px solid rgba(244,63,94,0.15); border-radius:var(--radius-sm); padding:12px 16px; margin:12px 0; }
+.smart-prompt-after { background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.15); border-radius:var(--radius-sm); padding:12px 16px; margin:12px 0; }
+.smart-prompt-label-bad { font-size:11px; font-weight:700; color:var(--accent-rose); margin-bottom:6px; }
+.smart-prompt-label-good { font-size:11px; font-weight:700; color:var(--accent-green); margin-bottom:6px; }
+.smart-prompt-compare { font-size:13px; color:var(--text-secondary); line-height:1.6; }
 /* ===== Enhanced Search ===== */
 .search-result-item .sr-context { font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.5; }
 .search-result-item .sr-context mark { background:rgba(6,182,212,0.25); color:var(--accent-cyan); border-radius:2px; padding:0 2px; }
@@ -423,7 +466,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(59,130,246,0.15);color:var(--accent-blue);">&#129302;</div>
     <div>
-      <div class="section-title">AI 知识分层</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">AI 知识分层 <button class="section-expand-btn" onclick="openOverlay('ai-knowledge')" title="全屏查看此板块">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">从零基础到前沿研究，基于 NVIDIA / Google / OpenAI / Anthropic 最新公开资料</div>
     </div>
   </div>
@@ -865,7 +908,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(6,182,212,0.15);color:var(--accent-cyan);">&#128218;</div>
     <div>
-      <div class="section-title">AI 术语实操图鉴</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">AI 术语实操图鉴 <button class="section-expand-btn" onclick="openOverlay('ai-glossary')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">每个热词：是什么 → 用在哪 → 普通人怎么用。不是背术语，是能上手。</div>
     </div>
   </div>
@@ -1351,7 +1394,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(244,63,94,0.15);color:var(--accent-rose);">&#127471;&#127477;</div>
     <div>
-      <div class="section-title">日本如何度过人口老龄化——完整历程</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">日本如何度过人口老龄化——完整历程 <button class="section-expand-btn" onclick="openOverlay('japan-aging')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">不是"日本做了什么"的标题，而是"哪年做了什么、效果如何、对中国意味着什么"的实操参考</div>
     </div>
   </div>
@@ -1569,7 +1612,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(16,185,129,0.15);color:var(--accent-green);">&#127793;</div>
     <div>
-      <div class="section-title">青年实操路线——不是鸡汤，是路线图</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">青年实操路线——不是鸡汤，是路线图 <button class="section-expand-btn" onclick="openOverlay('youth-survival')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">基于 IMF / WEF / 达拉斯联储 / OECD / 人社部2026最新数据 | 每条建议都有具体工具和步骤</div>
     </div>
   </div>
@@ -1901,7 +1944,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(249,115,22,0.15);color:var(--accent-orange);">&#128295;</div>
     <div>
-      <div class="section-title">AI 实操手册——工具+工作流</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">AI 实操手册——工具+工作流 <button class="section-expand-btn" onclick="openOverlay('ai-toolkit')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">不是"推荐你用XX"，是"手把手教你怎么用、怎么组合、怎么省钱"</div>
     </div>
   </div>
@@ -1937,6 +1980,7 @@ body {
           <div class="tool-section-title">国内替代</div>
           <p>Kimi（kimi.moonshot.cn）——免费、支持长文档、无需翻墙</p>
         </div>
+        <a class="tool-visit-btn" href="https://chatgpt.com" target="_blank" rel="noopener">&#128279; 立即使用 ChatGPT</a>
       </div>
 
       <div class="tool-card">
@@ -1959,6 +2003,7 @@ body {
           <div class="tool-section-title">⚠️ 注意</div>
           <p>账号超敏感！共享号/低质环境容易被封——别贪便宜，用正规渠道</p>
         </div>
+        <a class="tool-visit-btn" href="https://claude.ai" target="_blank" rel="noopener">&#128279; 立即使用 Claude</a>
       </div>
 
       <div class="tool-card">
@@ -1981,6 +2026,8 @@ body {
           <div class="tool-section-title">国内免费替代</div>
           <p>即梦AI（jimeng.jianying.com）——字节跳动出品，免费额度多</p>
         </div>
+        <a class="tool-visit-btn" href="https://www.midjourney.com" target="_blank" rel="noopener">&#128279; 立即使用 Midjourney</a>
+        <a class="tool-visit-btn" href="https://jimeng.jianying.com" target="_blank" rel="noopener" style="margin-left:8px;border-color:var(--accent-purple);color:var(--accent-purple);background:rgba(139,92,246,0.1);">&#128279; 即梦AI（免费）</a>
       </div>
 
       <div class="tool-card">
@@ -2000,6 +2047,7 @@ body {
           <div class="tool-section-title">怎么用</div>
           <p>1. 访问 gamma.app 注册<br>2. 选"生成"→输入你的PPT大纲<br>3. AI自动生成排版+配图→你微调内容→导出PPT/PDF</p>
         </div>
+        <a class="tool-visit-btn" href="https://gamma.app" target="_blank" rel="noopener">&#128279; 立即使用 Gamma</a>
       </div>
 
       <div class="tool-card">
@@ -2018,6 +2066,7 @@ body {
           <div class="tool-section-title">怎么用</div>
           <p>1. 访问 perplexity.ai<br>2. 输入问题，如"2026年中国新能源汽车市场份额"<br>3. 每条回答都带引用链接→点击验证→复制引用到你的报告</p>
         </div>
+        <a class="tool-visit-btn" href="https://www.perplexity.ai" target="_blank" rel="noopener">&#128279; 立即使用 Perplexity</a>
       </div>
 
       <div class="tool-card">
@@ -2036,6 +2085,7 @@ body {
           <div class="tool-section-title">怎么用</div>
           <p>1. 下载 cursor.com 安装<br>2. 打开后按Ctrl+K输入需求，如"帮我写一个待办事项网页"<br>3. AI自动写代码→你按运行→看到效果→继续提需求修改</p>
         </div>
+        <a class="tool-visit-btn" href="https://cursor.com" target="_blank" rel="noopener">&#128279; 下载 Cursor</a>
       </div>
 
     </div>
@@ -2257,375 +2307,520 @@ body {
   </div>
 </section>
 
-<!-- ========== Module F: AI Practice — 落地实践 ========== -->
+<!-- ========== Module F: AI Practice — 落地实践（高级Prompt工程） ========== -->
 <section class="section" id="ai-practice">
   <div class="section-header">
     <div class="section-icon" style="background:rgba(16,185,129,0.15);color:var(--accent-green);">&#127919;</div>
     <div>
-      <div class="section-title">AI 落地实践——照着做就行</div>
-      <div class="section-subtitle">不是"推荐你用XX"，而是"打开这个工具→复制这段话→改这两个地方→得到结果" | 每个场景都有可复制Prompt</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">AI 落地实践——让AI真正听懂你 <button class="section-expand-btn" onclick="openOverlay('ai-practice')">&#9974; 全屏展开</button></div>
+      <div class="section-subtitle">不是"复制粘贴"，而是学会和AI高效沟通——每个场景都有对比示范：普通说法 vs 高效说法，差距巨大</div>
     </div>
   </div>
   <div class="data-banner">
     <span class="data-banner-icon">&#9889;</span>
-    <span>以下8个场景覆盖90%的日常AI使用需求。每个Prompt都可以直接复制使用——把<strong>[方括号]</strong>里的内容换成你的实际情况。</span>
+    <span>核心原则：<strong>你和AI的对话质量 = 你获得结果的质量</strong>。以下Prompt模板经过实战验证，把[方括号]内容换成你的实际情况即可直接使用。</span>
   </div>
 
-  <div class="scenario-grid">
-
-    <!-- 场景1：写周报/工作汇报 -->
-    <div class="scenario-card" data-keywords="周报 汇报 工作总结 写报告 进度报告">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(59,130,246,0.15);">&#128221;</div>
-        <div class="scenario-title">用AI写周报/工作汇报</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT/Kimi</span>
-        <span class="scenario-tag">5分钟完成</span>
-        <span class="scenario-tag">零基础</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>打开</strong> ChatGPT（chat.openai.com）或 Kimi（kimi.moonshot.cn）</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>复制</strong>下面的Prompt，把 [本周工作] 换成你做的事情（可以是流水账）</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>发送</strong>→得到结构化周报→微调即可</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>你是我的工作助理。根据以下流水账工作记录，写一份结构化周报：
-
-输出格式要求：
-1. 本周完成（按优先级排列，每项一行，含关键数据）
-2. 遇到的问题（如无则省略）
-3. 下周计划（3-5条，含预期完成时间）
-4. 需要的资源/支持（如无则省略）
-
-语气要求：专业简洁，用数据说话，避免空话。
-
-我的本周工作：
-[本周工作]</pre>
-      </div>
-      <div class="practical-box">
-        <div class="pb-title">&#128161; 进阶技巧</div>
-        <div class="pb-step">如果AI写的太"官方"，追加一句："请用更口语化的风格重写，像跟主管面对面汇报一样"</div>
-        <div class="pb-step">如果需要突出某个成果："请重点突出第X项工作的成果，加上具体数据"</div>
-      </div>
-    </div>
-
-    <!-- 场景2：做PPT -->
-    <div class="scenario-card" data-keywords="PPT 幻灯片 演示 汇报 slide 演讲">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(139,92,246,0.15);">&#127913;</div>
-        <div class="scenario-title">用AI做PPT——5分钟出初稿</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">Gamma/ChatGPT</span>
-        <span class="scenario-tag">免费</span>
-        <span class="scenario-tag">全自动</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>方法A（全自动）</strong>：打开 gamma.app → 点击"新建" → 输入主题 → AI自动生成完整PPT</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>方法B（先出大纲）</strong>：用ChatGPT生成大纲 → 复制到PPT工具排版</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>调整</strong>：改配色/换图片/调整顺序 → 导出PDF或直接演示</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我要做一个[10]页的PPT，主题是"[你的主题]"。
-
-请输出每一页的：
-- 标题（简短有力）
-- 核心要点（2-3条，每条不超过15字）
-- 讲解词（口语化，30秒能说完）
-- 建议配图关键词
-
-风格要求：[专业商务/活泼创意/极简科技]
-受众：[领导/客户/同事]</pre>
-      </div>
-      <div class="practical-box">
-        <div class="pb-title">&#128161; 工具选择</div>
-        <div class="pb-step">Gamma（gamma.app）——最快，AI自动排版+配图，免费版够用</div>
-        <div class="pb-step">ChatGPT + WPS —— 先用AI出大纲，再复制到WPS美化</div>
-        <div class="pb-step">Cursor + reveal.js —— 适合程序员，代码级PPT</div>
-      </div>
-    </div>
-
-    <!-- 场景3：写方案/商业计划 -->
-    <div class="scenario-card" data-keywords="方案 计划书 BP 商业计划 策划 需求文档">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(249,115,22,0.15);">&#128203;</div>
-        <div class="scenario-title">用AI写方案/商业计划</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT/Claude</span>
-        <span class="scenario-tag">15分钟</span>
-        <span class="scenario-tag">需迭代</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>描述你的想法</strong>：用1-2句话说你想做什么</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>AI生成大纲</strong>→你补充细节→AI扩展→反复迭代</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>用"红蓝军"</strong>让AI扮演反对者，找出你方案的漏洞</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我想做 [一句话描述你的项目/想法]。
-
-请帮我输出一份完整方案，包含：
-1. 问题与机会（为什么做？目标用户是谁？市场多大？）
-2. 解决方案（怎么做？核心功能3-5个）
-3. 竞品分析（列出3个竞品，对比差异）
-4. 商业模式（怎么赚钱？定价策略？）
-5. 执行计划（0-3个月/3-6个月/6-12个月分别做什么）
-6. 风险与对策（最大3个风险+应对方案）
-
-请用表格、列表等结构化格式输出。</pre>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我提交以上方案，请你扮演"红军"（强力反对者），从以下3个角度各列3条致命问题：
-1. 市场需求是否真实？
-2. 执行是否有可行性风险？
-3. 财务模型是否过于乐观？
-请不留情面，越尖锐越好。</pre>
-      </div>
-    </div>
-
-    <!-- 场景4：数据分析 -->
-    <div class="scenario-card" data-keywords="数据 分析 Excel 表格 图表 趋势 异常 SQL">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(6,182,212,0.15);">&#128202;</div>
-        <div class="scenario-title">用AI做数据分析</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT/Claude</span>
-        <span class="scenario-tag">含Excel公式</span>
-        <span class="scenario-tag">含SQL</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>粘贴数据</strong>：把Excel数据复制粘贴给AI（或截图上传）</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>提出问题</strong>：想看什么趋势/找什么异常/做什么对比</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>得到结果</strong>：AI给出分析+Excel公式/SQL+可视化建议</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>以下是[Q1销售/用户/运营]数据：
-
-[粘贴你的数据，或上传Excel/CSV文件]
-
-请帮我：
-1. 找出TOP3异常点（偏离趋势的数据），说明可能原因
-2. 分析整体趋势（环比/同比变化）
-3. 给3条可操作的改进建议
-4. 如果需要更深入分析，告诉我还需要什么数据
-
-额外：给我对应的Excel公式，让我可以在自己的表格里复现。</pre>
-      </div>
-      <div class="practical-box">
-        <div class="pb-title">&#128161; 小技巧</div>
-        <div class="pb-step">ChatGPT Plus可以直接上传Excel/CSV文件分析（Data Analysis功能）</div>
-        <div class="pb-step">免费版也可以用：复制几行数据→让AI分析→用AI给的Excel公式在本地操作</div>
-        <div class="pb-step">想画图表：把数据给AI后追加"请给我Python代码画出趋势图"→复制到Google Colab运行</div>
-      </div>
-    </div>
-
-    <!-- 场景5：做自媒体内容 -->
-    <div class="scenario-card" data-keywords="自媒体 小红书 抖音 公众号 内容创作 文案 爆款">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(244,63,94,0.15);">&#127752;</div>
-        <div class="scenario-title">用AI做自媒体内容</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT+Midjourney</span>
-        <span class="scenario-tag">全流程</span>
-        <span class="scenario-tag">变现路径</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>选题</strong>：AI帮你分析热门话题+生成选题</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>写文案</strong>：AI写初稿→你加个人观点和真实经历→比纯AI好10倍</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>做配图</strong>：Midjourney/即梦AI出图→Canva排版</span></div>
-        <div class="scenario-step"><span class="step-num-badge">4</span><span><strong>发布</strong>：小红书/公众号/B站</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我想在小红书发一篇关于[AI工具推荐/职场技能/学习方法]的笔记。
-
-目标受众：[大学生/职场新人/宝妈/自由职业者]
-风格：[干货型/故事型/测评型]
-
-请输出：
-1. 标题（3个备选，含1个数字+1个痛点词）
-2. 正文（300-500字，每段不超过3行，适当使用emoji）
-3. 标签（5-8个，含1个热门标签+2个精准标签）
-4. 引导互动的结尾（提问式，让人想评论）
-
-关键：必须包含至少1个我的个人真实经历或观点，让内容有"人味"。</pre>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>小红书配图Prompt（用于Midjourney/即梦AI）：
-
-扁平化插画风格，[主题]场景，[暖色调/冷色调]，简洁干净的背景，适合手机竖屏9:16比例，中文排版风格，[现代感/温馨感]</pre>
-      </div>
-      <div class="practical-box">
-        <div class="pb-title">&#128161; 关键法则</div>
-        <div class="pb-step">纯AI生成内容 → 平台限流 → 必须加"你"的真实经历/观点/拍摄</div>
-        <div class="pb-step">先用AI出10个选题→选3个你最有感觉的→AI帮你扩展→你加料</div>
-        <div class="pb-step">变现路径：粉丝>1000 → 接广告；粉丝>5000 → 知识付费/社群</div>
-      </div>
-    </div>
-
-    <!-- 场景6：简历+面试 -->
-    <div class="scenario-card" data-keywords="简历 面试 求职 HR offer 找工作 优化">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(245,158,11,0.15);">&#128188;</div>
-        <div class="scenario-title">用AI做简历+面试准备</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT</span>
-        <span class="scenario-tag">求职全流程</span>
-        <span class="scenario-tag">STAR结构</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>优化简历</strong>：用STAR结构重写工作经历→量化每个成果</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>模拟面试</strong>：AI扮演面试官→按JD提问→你回答→AI给反馈</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>写求职信</strong>：AI根据JD生成→你微调→投递</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>你是资深HR总监。请优化以下简历的工作经历部分，使用STAR结构：
-- S（情境）：什么背景？
-- T（任务）：你要做什么？
-- A（行动）：你具体做了什么？（用动词开头）
-- R（结果）：量化成果（数字、百分比、对比）
-
-要求：每段工作经历只保留2-3个最有亮点的项目，删除空洞的描述。
-
-我的简历原文：
-[粘贴你的简历工作经历部分]</pre>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>你是[公司名]的面试官，正在面试[岗位名]职位。
-
-这是JD的核心要求：[粘贴JD关键要求]
-
-请：
-1. 基于JD提出5个面试问题（1个自我介绍引导+2个技术/专业+1个行为+1个开放）
-2. 我逐一回答后，你给反馈：回答是否到位？哪里可以更好？给出优化版本
-3. 每轮追问1个深度问题
-
-开始吧，请出第1题。</pre>
-      </div>
-    </div>
-
-    <!-- 场景7：学新技能 -->
-    <div class="scenario-card" data-keywords="学习 技能 自学 路线 课程 入门 提升费曼">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(16,185,129,0.15);">&#127891;</div>
-        <div class="scenario-title">用AI学新技能——效率提升5倍</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">ChatGPT/Claude</span>
-        <span class="scenario-tag">费曼学习法</span>
-        <span class="scenario-tag">6个月路线</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>生成学习路线</strong>：AI根据你的时间和目标定制路径</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>不理解的概念</strong>：用费曼法让AI讲到你懂为止</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>做题检验</strong>：AI出题→你回答→AI批改→针对弱点加强</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我想从0自学[Python/数据分析/产品经理/设计/...]。
-
-我的情况：
-- 每周可投入：[X]小时
-- 基础：[完全零基础/有一点点了解/...]
-- 目标：[能找工作/做副业/个人兴趣/...]
-
-请规划一份[6个月]学习路径：
-- 每周具体学什么（精确到主题）
-- 每个阶段推荐1-2个免费资源（课程/书/网站）
-- 每个阶段结束的检验标准（我如何知道我学会了？）
-- 3个最容易放弃的节点+如何克服</pre>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我不理解[概念名]。请用费曼学习法教我：
-1. 用最简单的话向10岁小孩解释，用1个生活类比
-2. 给1个我能立刻动手试的例子
-3. 如果我还是不懂，用另一个完全不同的类比再解释
-4. 检验我的理解：出1道题考我</pre>
-      </div>
-    </div>
-
-    <!-- 场景8：写代码（零基础） -->
-    <div class="scenario-card" data-keywords="编程 代码 开发 小程序 网页 Cursor 零基础 零代码">
-      <div class="scenario-header">
-        <div class="scenario-icon" style="background:rgba(139,92,246,0.15);">&#128187;</div>
-        <div class="scenario-title">用AI写代码——不会编程也能做产品</div>
-      </div>
-      <div class="scenario-tags">
-        <span class="scenario-tag">Cursor/ChatGPT</span>
-        <span class="scenario-tag">零基础可入</span>
-        <span class="scenario-tag">接单赚钱</span>
-      </div>
-      <div class="scenario-steps">
-        <div class="scenario-step"><span class="step-num-badge">1</span><span><strong>用中文描述你要什么</strong>：AI帮你翻译成代码</span></div>
-        <div class="scenario-step"><span class="step-num-badge">2</span><span><strong>Cursor</strong>（cursor.com）：AI编程编辑器，边写边提示，免费版够用</span></div>
-        <div class="scenario-step"><span class="step-num-badge">3</span><span><strong>常见项目</strong>：个人网页/待办清单/数据看板/小工具</span></div>
-        <div class="scenario-step"><span class="step-num-badge">4</span><span><strong>接单路径</strong>：帮小商家做网站（2000-10000元/个）</span></div>
-      </div>
-      <div class="prompt-box">
-        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>我是编程零基础，请帮我做一个[个人简历网页/待办事项App/数据看板]。
-
-要求：
-1. 使用最简单的技术栈（HTML+CSS+JS，或Python）
-2. 每个文件完整给出，告诉我文件名和放在哪里
-3. 每行关键代码加中文注释
-4. 给我启动运行的完整步骤（复制粘贴就能跑）
-5. 如果出错了，告诉我怎么排查
-
-我想要的样式/功能：
-[描述你想要的样子和功能]</pre>
-      </div>
-      <div class="practical-box">
-        <div class="pb-title">&#128161; 零基础路径</div>
-        <div class="pb-step">第1周：用AI做一个静态网页（HTML+CSS）→ 看到"我也能做"的效果</div>
-        <div class="pb-step">第2-3周：加交互功能（JS）→ 做一个能用的工具</div>
-        <div class="pb-step">第4周+：用Cursor做更复杂的项目→开始接单</div>
-        <div class="pb-step">核心心法：你不需要"学会编程"——你需要"学会用AI帮你写代码"</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- 通用Prompt技巧 -->
-  <div class="card" data-keywords="Prompt 提示词 技巧 公式 模板 优化" style="margin-top:32px;">
+  <!-- 核心心法卡片 -->
+  <div class="card" data-keywords="Prompt 提示词 技巧 公式 模板 优化 沟通 对话" style="margin-bottom:28px;">
     <div class="card-header">
-      <span class="card-badge badge-green">核心</span>
-      <div class="card-title">万能Prompt公式——所有场景通用</div>
+      <span class="card-badge badge-amber">心法</span>
+      <div class="card-title">万能Prompt六要素公式——学会这个，AI输出质量提升5倍</div>
     </div>
-    <div class="card-preview">不管你让AI做什么，套用这个公式，效果提升3倍以上。</div>
-    <div class="card-detail" style="display:block;">
-      <p><strong>6要素公式：角色 + 任务 + 背景 + 格式 + 约束 + 示例</strong></p>
-      <div class="prompt-box">
+    <div class="card-preview">不管你让AI做什么，套用这个公式。大多数人的问题是"信息太少"而不是"AI不够聪明"。</div>
+    <div class="card-detail">
+      <p><strong>&#127919; 六要素：角色 + 任务 + 背景 + 格式 + 约束 + 示例</strong></p>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">公式模板（可复制）</div>
         <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
-        <pre>【角色】你是一个[资深产品经理/10年经验的文案/数据分析专家]。
-【任务】请帮我[写一份XX报告/分析一组数据/设计一个方案]。
-【背景】我的情况是[1-2句话说清楚]。
-【格式】请用[表格/列表/分段/Markdown]输出。
-【约束】[字数300以内/只用中文/避免行业黑话/必须包含量化数据]。
-【示例】参考这种风格：[给一个你满意的例子或链接]</pre>
+        <pre>【角色】你是一个[资深产品经理 / 10年经验的文案 / 数据分析专家]。
+【任务】请帮我[写一份XX报告 / 分析一组数据 / 设计一个方案]。
+【背景】我的情况是[1-2句话说清楚你的处境]。
+【格式】请用[表格 / 列表 / 分段 / Markdown]输出。
+【约束】[字数300以内 / 只用中文 / 避免行业黑话 / 必须包含量化数据]。
+【示例】参考这种风格：[给一个你满意的例子]</pre>
       </div>
-      <p style="margin-top:12px;"><strong>3个必须记住的优化技巧：</strong></p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
+        <div class="smart-prompt-before">
+          <div class="smart-prompt-label-bad">&#10060; 普通人说法</div>
+          <div class="smart-prompt-compare">"帮我写个方案"</div>
+        </div>
+        <div class="smart-prompt-after">
+          <div class="smart-prompt-label-good">&#10003; 高效说法</div>
+          <div class="smart-prompt-compare">"你是一个有8年经验的SaaS产品经理。请帮我写一份面向中小企业的AI客服系统选型方案，3000字以内，包含3个竞品对比表格、价格区间、实施周期预估。语气专业但不晦涩。"</div>
+        </div>
+      </div>
+      <p style="margin-top:16px;"><strong>3个必须记住的优化技巧：</strong></p>
       <ol>
         <li><strong>不满意不要重新开始</strong>——追加"请基于以上回答，修改[具体哪里]"，比重新提问效果好3倍</li>
         <li><strong>让AI自我审查</strong>——追加"请审视你的回答，从逻辑严谨性、案例真实性、用户可执行性三个角度找出不足并改进"</li>
         <li><strong>拆分复杂任务</strong>——不要一次让AI做5件事，分5次每次做1件，效果更好</li>
       </ol>
-      <div class="source-tag">🌐 来源：ChatGPT中文指南2026 / PromptRefine / 实战验证</div>
+    </div>
+    <button class="card-toggle"><span class="arrow">&#9660;</span> 展开详情</button>
+  </div>
+
+  <!-- 按场景分类的Prompt模板 -->
+  <div class="prompt-category-tabs" id="promptCatTabs">
+    <button class="prompt-cat-btn active" data-pcat="cat-work">职场办公</button>
+    <button class="prompt-cat-btn" data-pcat="cat-content">内容创作</button>
+    <button class="prompt-cat-btn" data-pcat="cat-data">数据分析</button>
+    <button class="prompt-cat-btn" data-pcat="cat-learn">学习研究</button>
+    <button class="prompt-cat-btn" data-pcat="cat-code">技术编程</button>
+    <button class="prompt-cat-btn" data-pcat="cat-life">生活效率</button>
+  </div>
+
+  <!-- 分类1：职场办公 -->
+  <div class="prompt-cat-content active" id="cat-work">
+    <div class="smart-prompt-card" data-keywords="周报 汇报 工作总结 进度报告">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(59,130,246,0.15);">&#128221;</div>
+        <div class="smart-prompt-title">周报 / 工作汇报</div>
+      </div>
+      <div class="smart-prompt-desc">不用自己组织语言，AI帮你把流水账变成结构清晰的汇报。关键是给出<strong>足够具体的背景信息</strong>。</div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">周报</span>
+        <span class="smart-prompt-scenario">月度汇报</span>
+        <span class="smart-prompt-scenario">项目总结</span>
+      </div>
+      <div class="smart-prompt-before">
+        <div class="smart-prompt-label-bad">&#10060; 普通说法（AI输出：空洞套话）</div>
+        <div class="smart-prompt-compare">"帮我写周报，我这周做了XX功能开发和bug修复"</div>
+      </div>
+      <div class="smart-prompt-after">
+        <div class="smart-prompt-label-good">&#10003; 高效说法（AI输出：有数据有结构有亮点）</div>
+        <div class="smart-prompt-compare">"你是我的工作助理。根据以下流水账，写一份面向[直属领导/项目组]的结构化周报：\n\n输出格式：\n1. 本周完成（按优先级排列，每项含关键数据和耗时）\n2. 遇到的问题及解决方案\n3. 下周计划（3-5条，含预期完成时间）\n4. 需协调的资源（如无则省略）\n\n语气要求：专业简洁，用数据说话，每项不超过2行。\n我的本周工作：\n1. 完成了用户管理模块的UI开发，涉及5个页面，耗时3天\n2. 修复了3个P1级bug：登录超时、数据不刷新、图片上传失败\n3. 和后端联调了订单接口，跑通了完整流程\n4. 参加了需求评审会，提出了2个优化建议被采纳"</div>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 进阶技巧Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>如果AI写的太"官方"，追加这句：
+"请用更口语化的风格重写，像跟主管面对面汇报一样，把'完成了XX的推进工作'改成'做完了XX'。"</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="PPT 幻灯片 演示 汇报">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(139,92,246,0.15);">&#127913;</div>
+        <div class="smart-prompt-title">PPT / 演示文稿</div>
+      </div>
+      <div class="smart-prompt-desc">让AI先出大纲和逐页讲解词，再用Gamma一键生成PPT。比从头自己做快10倍。</div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">方案汇报</span>
+        <span class="smart-prompt-scenario">培训课件</span>
+        <span class="smart-prompt-scenario">述职答辩</span>
+      </div>
+      <div class="smart-prompt-before">
+        <div class="smart-prompt-label-bad">&#10060; 普通说法</div>
+        <div class="smart-prompt-compare">"帮我做个关于AI的PPT"</div>
+      </div>
+      <div class="smart-prompt-after">
+        <div class="smart-prompt-label-good">&#10003; 高效说法</div>
+        <div class="smart-prompt-compare">"我要做一个[12]页的PPT，主题是'[你公司]Q2季度AI工具推广方案'。\n\n请输出每一页的：\n- 标题（简短有力，不超过12字）\n- 核心要点（2-3条，每条不超过15字）\n- 演讲者备注（口语化，每页30秒能讲完）\n- 配图建议（具体描述场景，不要写'配一张图'）\n\n风格：专业商务，配色以深蓝+白色为主\n受众：公司VP级别管理层，他们关心ROI和落地可行性\n重点页面：第1页必须一句话说清核心结论，第10页是详细预算表格"</div>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 工具链搭配</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>第1步：用上面的Prompt在ChatGPT生成完整大纲
+第2步：复制大纲 → 打开 gamma.app → 选"粘贴文本" → AI自动排版配图
+第3步：在Gamma里微调 → 导出PDF
+如果Gamma免费额度不够 → 用ChatGPT生成Markdown → 粘贴到Marp或Slidev → 导出PPT</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="方案 计划书 BP 商业计划 策划">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(249,115,22,0.15);">&#128203;</div>
+        <div class="smart-prompt-title">方案 / 商业计划</div>
+      </div>
+      <div class="smart-prompt-desc">AI最擅长把模糊想法结构化。关键是<strong>让AI扮演反对者来挑战你的方案</strong>，找到你自己看不到的盲点。</div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">创业方案</span>
+        <span class="smart-prompt-scenario">项目策划</span>
+        <span class="smart-prompt-scenario">需求文档</span>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 三步法Prompt链</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>=== 第1步：让AI帮你出方案 ===
+"你是一个有10年经验的[行业]产品经理。我想做[一句话描述]。请输出一份完整方案，包含：
+1. 问题与机会（目标用户、痛点、市场规模）
+2. 解决方案（核心功能3-5个，按MVP优先级排列）
+3. 竞品分析（3个竞品对比表格）
+4. 商业模式（收入来源+定价策略）
+5. 执行计划（0-3月/3-6月/6-12月里程碑）
+6. 最大3个风险+应对方案
+用表格和列表输出，避免纯文字。"
+
+=== 第2步：让AI扮演"红军"找漏洞 ===
+"我提交以上方案，请你扮演'红军'（强力反对者），从以下角度各列3条致命问题：
+1. 市场需求是否真实？用户真的愿意付费吗？
+2. 执行可行性：技术难度、资源需求、时间线是否现实？
+3. 财务模型：成本结构是否低估？收入预测是否过于乐观？
+请不留情面，越尖锐越好。"
+
+=== 第3步：基于反馈迭代 ===
+"针对红军提出的问题，帮我逐一设计应对方案。对于无法解决的问题，给我3个备选方向。"</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="简历 面试 求职 HR offer">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(245,158,11,0.15);">&#128188;</div>
+        <div class="smart-prompt-title">简历优化 + 面试准备</div>
+      </div>
+      <div class="smart-prompt-desc">AI能把你的简历从"简历海"里捞出来。关键是<strong>用STAR结构量化每个成果</strong>，让HR一眼看到价值。</div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">简历STAR重写</span>
+        <span class="smart-prompt-scenario">模拟面试</span>
+        <span class="smart-prompt-scenario">求职信</span>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 简历优化Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"你是资深HR总监，在[互联网/AI/金融]行业有15年招聘经验。
+请用STAR结构重写以下简历中的工作经历：
+- S（情境）：什么背景？什么规模的项目/团队？
+- T（任务）：你要达成什么目标？遇到什么挑战？
+- A（行动）：你具体做了什么？用什么方法？决策依据是什么？
+- R（结果）：量化成果（数字、百分比、对比、节省的时间/成本）
+
+规则：
+1. 每段经历只保留2-3个最有亮点的项目
+2. 删除所有空洞描述（'负责''参与''协助'）
+3. 开头用动词（'主导''搭建''优化''实现'）
+4. 结果必须有数字
+
+我应聘的岗位：[岗位名]，核心要求：[粘贴JD]
+我的简历原文：
+[粘贴简历]"</pre>
+      </div>
     </div>
   </div>
+
+  <!-- 分类2：内容创作 -->
+  <div class="prompt-cat-content" id="cat-content">
+    <div class="smart-prompt-card" data-keywords="自媒体 小红书 抖音 公众号 文案 内容创作">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(244,63,94,0.15);">&#127752;</div>
+        <div class="smart-prompt-title">自媒体内容创作</div>
+      </div>
+      <div class="smart-prompt-desc">AI写文案最大的问题是"太AI了"——没人味。解决方法是<strong>把你的真实经历/观点强制注入</strong>。</div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">小红书笔记</span>
+        <span class="smart-prompt-scenario">公众号文章</span>
+        <span class="smart-prompt-scenario">短视频脚本</span>
+      </div>
+      <div class="smart-prompt-before">
+        <div class="smart-prompt-label-bad">&#10060; 普通说法（AI写出来千篇一律）</div>
+        <div class="smart-prompt-compare">"帮我写一篇小红书关于AI工具推荐的笔记"</div>
+      </div>
+      <div class="smart-prompt-after">
+        <div class="smart-prompt-label-good">&#10003; 高效说法（AI写出有个人风格的爆款）</div>
+        <div class="smart-prompt-compare">"我要在小红书发一篇AI工具推荐笔记。
+
+我的真实情况（必须融入内容）：
+- 我是[产品经理/大学生/自由职业者]，用了AI工具3个月
+- 最推荐ChatGPT和即梦AI，因为[你的真实体验]
+- 之前踩过的坑：[你的真实失败经历]
+
+目标受众：[25-35岁职场新人]
+风格要求：
+1. 第一段必须是个人真实场景（'上个月我被领导要求做PPT...'）
+2. 语气像朋友聊天，不要用'众所周知''首先其次最后'
+3. 每个推荐必须包含：我真实用它做了什么 + 效果对比
+4. 结尾提问引导互动
+
+请输出：标题（3个备选）、正文300-500字、5个标签"</div>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 公众号长文Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我要写一篇[1500字]的公众号文章，主题是[主题]。
+
+文章结构：
+1. 开头（个人故事引入，200字）——用'去年这个时候，我...'开头
+2. 核心观点（300字）——提出一个反直觉但站得住脚的观点
+3. 3个论据（每个300字）——每个论据配一个真实案例或数据
+4. 行动清单（200字）——读者看完立刻能做的3件事
+5. 结尾（100字）——金句收尾
+
+语气：说人话，不要用'赋能''抓手''底层逻辑'这种词
+目标：让读者看完想转发朋友圈"</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="写作 论文 报告 长文 方案 文案">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(59,130,246,0.15);">&#9997;</div>
+        <div class="smart-prompt-title">专业写作（报告/论文/方案）</div>
+      </div>
+      <div class="smart-prompt-desc">长文写作的关键是<strong>先出框架再填内容</strong>，不要让AI一次性写完——那样质量很差。</div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 链式写作法（先搭框架）</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>=== Prompt 1: 出大纲 ===
+"我要写一篇[3000字]的[调研报告/技术文档/产品方案]，主题是[主题]。
+请先输出详细大纲（只输出大纲，不要写正文），包含：
+- 每个章节的标题和核心要点（2-3句话）
+- 每个章节的预估字数
+- 哪些部分需要数据支撑、哪些部分需要举例
+- 逻辑流向（为什么A在B前面）"
+
+=== Prompt 2: 逐章填充（在大纲基础上） ===
+"基于上面的大纲，请写第一章[章节名]的完整内容。
+要求：
+- 开头用一段场景描写或数据引入（不要用'随着...的发展'开头）
+- 每个论点后面紧跟一个具体例子或数据
+- 段落之间用过渡句连接
+- 本节字数控制在[600]字左右
+- 如果需要引用数据，标注'需要核实'提醒我"
+
+=== Prompt 3: 润色 ===
+"请对以上全文做深度润色：
+1. 删除所有'废话'（'众所周知''不可忽视''综上所述'等套话）
+2. 把长句拆成短句（超过40字的必须拆）
+3. 检查数据前后是否一致
+4. 第一段和最后一段重写，确保开头有吸引力、结尾有余味
+5. 标出3处你觉得最可能有事实错误的地方，让我核实"</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分类3：数据分析 -->
+  <div class="prompt-cat-content" id="cat-data">
+    <div class="smart-prompt-card" data-keywords="数据 分析 Excel 表格 图表 SQL">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(6,182,212,0.15);">&#128202;</div>
+        <div class="smart-prompt-title">数据分析与处理</div>
+      </div>
+      <div class="smart-prompt-desc">让AI做数据分析时，关键是<strong>先定义分析目标，再给数据</strong>。不要上来就贴数据。</div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 数据分析Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"你是一个数据分析师。我要分析以下数据，请帮我：
+
+我的分析目标：
+1. 找出TOP3异常数据点（偏离趋势的），分析可能原因
+2. 整体趋势（环比/同比变化，用百分比描述）
+3. 给出3条可操作的改进建议（每条建议必须包含：做什么、预期效果、需要什么数据支撑）
+
+数据来源：[Q1销售/月度运营/用户增长]
+数据格式：[表格形式/CSV/截图说明]
+
+[粘贴数据或描述数据]
+
+额外需求：
+- 给我对应的Excel公式，让我可以在自己的表格里复现分析
+- 如果数据不够支撑结论，明确告诉我'还需要XX数据才能确认YY'，不要编数据"</pre>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 批量数据处理</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我有一批Excel数据需要批量处理，请帮我写Python脚本：
+
+文件结构：
+- 文件位置：[桌面/某个文件夹]
+- 文件格式：[xlsx/csv]
+- 每个文件包含[描述字段]
+
+处理需求：
+1. [合并所有文件到一个表]
+2. [删除重复行]
+3. [按某列排序]
+4. [添加一列计算字段]
+5. [导出为新文件]
+
+要求：
+1. 给我完整的Python代码，包含文件路径配置和注释
+2. 处理过程中打印进度（'正在处理第X个文件...'）
+3. 如果出错打印具体文件名和错误原因
+4. 我用Python 3.x，pandas已安装"</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分类4：学习研究 -->
+  <div class="prompt-cat-content" id="cat-learn">
+    <div class="smart-prompt-card" data-keywords="学习 技能 自学 路线 费曼 教程">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(16,185,129,0.15);">&#127891;</div>
+        <div class="smart-prompt-title">高效学习新技能</div>
+      </div>
+      <div class="smart-prompt-desc">让AI当你私教时，关键是用<strong>费曼学习法</strong>——让AI用最简单的话解释，直到你懂为止。</div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 零基础学习路线Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我想从0自学[Python/数据分析/产品经理/视频剪辑]。
+
+我的情况：
+- 每周可投入：[X]小时
+- 基础：[完全零基础/了解一点点/...]
+- 学习方式偏好：[看视频/动手实践/看文档]
+- 最终目标：[能找工作/做副业/个人项目]
+
+请规划一份[3个月]学习路径：
+- 按周排列，每周具体学什么（精确到知识点）
+- 每周推荐1个免费资源（B站/YouTube/官网文档）
+- 每周结束时给我一个小项目练手（我能实际做出东西来验证）
+- 标出3个最容易放弃的节点，以及怎么克服
+- 第1周的内容要足够简单，让我'第1天就有成就感'</pre>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 费曼学习法Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我不理解[Transformer/贝叶斯定理/TCP三次握手]。请用费曼学习法教我：
+
+第1层：用一句话+1个生活类比解释（像给10岁小孩讲一样）
+第2层：如果我理解了，给我1个我能立刻动手试的小例子
+第3层：如果我还不懂，换一个完全不同的类比再解释
+第4层：出1道选择题考我（4个选项，其中一个常见错误答案）
+
+重要：如果我在第1层就说不理解，不要跳到第2层，而是换一个更简单的类比重新讲第1层。"</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="调研 报告 竞品分析 深度研究">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(139,92,246,0.15);">&#128218;</div>
+        <div class="smart-prompt-title">深度调研 / 竞品分析</div>
+      </div>
+      <div class="smart-prompt-desc">让AI帮你做调研时，关键是<strong>要求每句话标注来源</strong>，这样你才能验证信息准确性。</div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 调研Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我要对[行业/公司/技术]做深度调研。
+
+调研范围：
+1. 市场概况（规模、增长率、头部玩家）
+2. 技术现状（主流方案、技术路线对比）
+3. 竞争格局（Top5公司对比：产品/融资/团队/差异化）
+4. 发展趋势（未来3年，每条趋势附数据来源）
+5. 进入壁垒和机会
+
+严格要求：
+- 每个数据点必须标注来源URL或报告名称
+- 如果某个数据你不确定，明确写'此数据需要进一步核实'
+- 做一张对比表格（Markdown格式）
+- 语气客观，不要用'巨大''爆发式'这类夸张词
+- 最后给出3个我需要进一步验证的疑点"</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分类5：技术编程 -->
+  <div class="prompt-cat-content" id="cat-code">
+    <div class="smart-prompt-card" data-keywords="编程 代码 开发 零基础 Cursor AI写代码">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(139,92,246,0.15);">&#128187;</div>
+        <div class="smart-prompt-title">用AI写代码（零基础也能做）</div>
+      </div>
+      <div class="smart-prompt-desc">你不需要学编程，你需要学会<strong>精确描述你要什么</strong>，让AI帮你翻译成代码。</div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 零基础开发Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"我是编程零基础，请帮我做一个[个人简历网页/待办事项App/数据看板]。
+
+要求（严格遵守）：
+1. 技术栈：[HTML+CSS+JS单文件 / Python脚本]
+2. 每个文件给出完整代码，告诉我文件名叫什么、保存在哪里
+3. 每行关键代码加中文注释（解释这行在做什么）
+4. 给我从0开始运行的步骤（每一步都是'打开XX→粘贴YY→点击ZZ'这种级别）
+5. 预期效果描述（做完之后应该看到什么）
+6. 常见出错排查指南（如果出现XX错误→做YY）
+
+我想要的效果：
+- [描述页面上要有什么：按钮、输入框、列表、图表等]
+- [描述交互：点击按钮发生什么、输入什么显示什么]
+- [样式偏好：深色/浅色、什么配色]
+
+重要：如果代码超过200行，请分步骤给我，不要一次性丢出来。"</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分类6：生活效率 -->
+  <div class="prompt-cat-content" id="cat-life">
+    <div class="smart-prompt-card" data-keywords="邮件 写作 翻译 总结 会议 记录">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(6,182,212,0.15);">&#128231;</div>
+        <div class="smart-prompt-title">日常效率（邮件/翻译/总结）</div>
+      </div>
+      <div class="smart-prompt-scenarios">
+        <span class="smart-prompt-scenario">专业邮件</span>
+        <span class="smart-prompt-scenario">翻译润色</span>
+        <span class="smart-prompt-scenario">会议纪要</span>
+        <span class="smart-prompt-scenario">旅行规划</span>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 邮件写作Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"帮我写一封[道歉/催款/邀约/拒绝]邮件给[收件人身份]。
+
+背景：
+- 我和对方的关系：[客户/上级/同事/供应商]
+- 事情经过：[2-3句话说清楚]
+- 我希望对方做什么：[明确的动作]
+
+语气：[正式/友好/紧迫/委婉]
+语言：[中文/英文]
+长度：[不超过200字/不限]
+
+规则：
+1. 开头直奔主题，不要'你好感谢来信'
+2. 每段不超过3行
+3. 结尾明确告诉对方下一步该做什么
+4. 不要用'望您回复'之类的客套话，直接说'请在X月X日前回复'</pre>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#128424; 会议纪要Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"请整理以下会议内容为标准会议纪要：
+1. 会议主题（一句话）
+2. 参会人员
+3. 决议事项（每条带负责人+Deadline+验收标准）
+4. 待跟进事项（每条带优先级P0/P1/P2）
+5. 争议点（如有，列出双方观点+后续处理方式）
+6. 下次会议时间（如有）
+
+[粘贴会议记录或语音转写文字]"</pre>
+      </div>
+    </div>
+
+    <div class="smart-prompt-card" data-keywords="旅行 规划 行程 预算 攻略">
+      <div class="smart-prompt-header">
+        <div class="smart-prompt-icon" style="background:rgba(249,115,22,0.15);">&#9992;&#65039;</div>
+        <div class="smart-prompt-title">旅行规划</div>
+      </div>
+      <div class="smart-prompt-box">
+        <div class="smart-prompt-label">&#127919; 旅行规划Prompt</div>
+        <button class="copy-btn" onclick="copyPrompt(this)">复制</button>
+        <pre>"帮我规划一次[目的地]旅行。
+
+我的情况：
+- 出发地：[城市]
+- 日期：[X月X日 - X月X日，共X天]
+- 人数：[X人]，[有无小孩/老人]
+- 预算：[总预算]（含机票/住宿/餐饮/门票）
+- 偏好：[自然风光/城市体验/美食/文化/购物]
+- 不能接受的：[如：不想太赶、不想住青旅]
+
+请输出：
+1. 每日行程（上午/下午/晚上各安排什么，标注交通方式和耗时）
+2. 住宿推荐（具体酒店名+参考价格+推荐理由，2-3个选择）
+3. 美食推荐（当地必吃，标注人均价格）
+4. 预算分配表（交通/住宿/餐饮/门票/备用金各占多少）
+5. 必备物品清单
+6. 当地注意事项（签证/天气/交通卡/语言）
+
+要求：
+- 每天不超过3个主要活动，留出休息和自由探索时间
+- 景点之间考虑实际距离，不要安排不合理路线
+- 标注哪些景点需要提前预约"</pre>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- ========== Module F.5: AI Complex Task Decomposition ========== -->
@@ -2633,7 +2828,7 @@ body {
   <div class="section-header">
     <div class="section-icon" style="background:rgba(139,92,246,0.15);color:var(--accent-purple);">&#129504;</div>
     <div>
-      <div class="section-title">AI 复杂任务拆解——教AI替你干活</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">AI 复杂任务拆解——教AI替你干活 <button class="section-expand-btn" onclick="openOverlay('ai-complex')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">不是"给AI一个大需求然后祈祷"，而是"把复杂工作拆成AI能一步步执行的指令链" | 每个案例都有完整Prompt链</div>
     </div>
   </div>
@@ -3108,7 +3303,7 @@ docker run -d --name n8n -p 5678:5678 n8nio/n8n
   <div class="section-header">
     <div class="section-icon" style="background:rgba(245,158,11,0.15);color:#F59E0B;">&#129302;</div>
     <div>
-      <div class="section-title">打造你的个人AI助手——从零到部署</div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">打造你的个人AI助手——从零到部署 <button class="section-expand-btn" onclick="openOverlay('local-ai')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">不需要花一分钱，不需要高配电脑，按步骤操作就能拥有一个完全属于你、了解你、帮你处理90%日常事务的本地AI</div>
     </div>
   </div>
@@ -3672,7 +3867,7 @@ docker compose up -d</pre></div></li>
   <div class="section-header">
     <div class="section-icon" style="background:rgba(59,130,246,0.15);color:var(--accent-blue);">&#128240;</div>
     <div>
-      <div class="section-title">实时资讯 <span class="update-badge"><span class="update-dot"></span>动态抓取</span></div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">实时资讯 <span class="update-badge"><span class="update-dot"></span>动态抓取</span> <button class="section-expand-btn" onclick="openOverlay('realtime-news')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">实时抓取 arXiv、Hacker News、行业RSS、GitHub 等信源，保持你的AI前沿感知</div>
     </div>
   </div>
@@ -3725,7 +3920,7 @@ docker compose up -d</pre></div></li>
   <div class="section-header">
     <div class="section-icon" style="background:rgba(139,92,246,0.15);color:var(--accent-purple);">&#128187;</div>
     <div>
-      <div class="section-title">GitHub 热门 AI 项目 <span class="update-badge"><span class="update-dot"></span>实时数据</span></div>
+      <div class="section-title" style="display:flex;align-items:center;gap:8px;">GitHub 热门 AI 项目 <span class="update-badge"><span class="update-dot"></span>实时数据</span> <button class="section-expand-btn" onclick="openOverlay('github-trending')">&#9974; 全屏展开</button></div>
       <div class="section-subtitle">基于 GitHub Search API 实时拉取，按 Star 数排序 | 点击项目名直接访问</div>
     </div>
   </div>
@@ -3761,6 +3956,15 @@ docker compose up -d</pre></div></li>
 <!-- Back to Top -->
 <button class="back-to-top" id="backToTop" title="返回顶部">&#9650;</button>
 
+<!-- Fullscreen Overlay Container -->
+<div class="fullscreen-overlay" id="fullscreenOverlay">
+  <div class="overlay-header">
+    <div class="overlay-title" id="overlayTitle"></div>
+    <button class="overlay-close" onclick="closeOverlay()">&#10005; 返回</button>
+  </div>
+  <div class="overlay-body" id="overlayBody"></div>
+</div>
+
 <script>
 // ===== FAQ Toggle =====
 document.querySelectorAll('.faq-q').forEach(q => {
@@ -3776,6 +3980,68 @@ function toggleWorkflow(btn) {
   detail.classList.toggle('active');
   btn.innerHTML = detail.classList.contains('active') ? '&#9650; 收起详细步骤' : '&#9660; 查看详细操作步骤';
 }
+
+// ===== Fullscreen Overlay =====
+function openOverlay(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+  const overlay = document.getElementById('fullscreenOverlay');
+  const titleEl = section.querySelector('.section-title');
+  const body = document.getElementById('overlayBody');
+  body.innerHTML = '';
+  const children = section.children;
+  for (let i = 0; i < children.length; i++) {
+    if (!children[i].classList.contains('section-header')) {
+      body.appendChild(children[i].cloneNode(true));
+    }
+  }
+  document.getElementById('overlayTitle').textContent = titleEl ? titleEl.childNodes[0].textContent.trim() : '';
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  body.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const box = this.closest('.prompt-box, .smart-prompt-box');
+      const pre = box ? box.querySelector('pre') : null;
+      if (pre) {
+        navigator.clipboard.writeText(pre.textContent).then(() => {
+          this.textContent = '已复制!'; this.classList.add('copied');
+          setTimeout(() => { this.textContent = '复制'; this.classList.remove('copied'); }, 2000);
+        });
+      }
+    });
+  });
+  body.querySelectorAll('.card-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.card');
+      card.classList.toggle('expanded');
+      this.innerHTML = card.classList.contains('expanded') ? '<span class="arrow">&#9650;</span> 收起详情' : '<span class="arrow">&#9660;</span> 展开详情';
+    });
+  });
+  body.querySelectorAll('.workflow-toggle').forEach(btn => {
+    btn.addEventListener('click', function() { toggleWorkflow(this); });
+  });
+  body.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', function() { this.closest('.faq-item').classList.toggle('open'); });
+  });
+  overlay.scrollTop = 0;
+}
+function closeOverlay() {
+  document.getElementById('fullscreenOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
+
+// ===== Prompt Category Tabs =====
+document.querySelectorAll('.prompt-cat-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.prompt-cat-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.prompt-cat-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    const targetId = btn.dataset.pcat;
+    const target = document.getElementById(targetId);
+    if (target) target.classList.add('active');
+  });
+});
 
 // ===== Copy Prompt =====
 function copyPrompt(btn) {
