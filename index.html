@@ -3,7 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Insight Hub · AI洞察站</title>
+<title>AI Insight Hub · AI洞察站 — 2026最全AI知识库与实战教程</title>
+<meta name="description" content="AI洞察站：涵盖AI知识分层、术语图鉴、日本老龄化启示、青年生存指南、AI实操手册、Prompt工程、本地大模型部署、热门教程（Cursor/DeepSeek/MCP/RAG/Agent/ComfyUI）及实时资讯。基于国际权威信源，写给认真想弄懂AI时代的你。">
+<meta name="keywords" content="AI,人工智能,大模型,LLM,GPT,Claude,DeepSeek,MCP,RAG,Agent,Cursor,ComfyUI,Prompt工程,本地部署,ChatGPT,Ollama,AI教程">
+<meta name="author" content="FNK1221">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fnk1221.github.io/ai-insight-hub/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Insight Hub · AI洞察站">
+<meta property="og:description" content="2026最全AI知识库与实战教程：涵盖AI知识分层、Prompt工程、本地部署、热门项目教程及实时资讯。">
+<meta property="og:url" content="https://fnk1221.github.io/ai-insight-hub/">
+<meta property="og:site_name" content="AI Insight Hub">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Insight Hub · AI洞察站">
+<meta name="twitter:description" content="2026最全AI知识库与实战教程">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://api.github.com" crossorigin>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 <style>
 :root {
@@ -34,13 +50,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   background: var(--bg-primary); color: var(--text-primary); line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+/* Scrollbar */
+::-webkit-scrollbar { width:8px; height:8px; }
+::-webkit-scrollbar-track { background:var(--bg-primary); }
+::-webkit-scrollbar-thumb { background:rgba(100,116,139,0.3); border-radius:4px; }
+::-webkit-scrollbar-thumb:hover { background:rgba(100,116,139,0.5); }
+/* Selection */
+::selection { background:rgba(6,182,212,0.25); color:#fff; }
+::-moz-selection { background:rgba(6,182,212,0.25); color:#fff; }
 /* Navbar */
 .navbar { position:fixed; top:0; left:0; right:0; z-index:1000; background:rgba(10,14,26,0.85); backdrop-filter:blur(20px); border-bottom:1px solid var(--border-color); transition:var(--transition); }
 .navbar-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:64px; }
 .logo { font-size:20px; font-weight:800; color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:8px; }
 .logo-icon { font-size:24px; }
-.nav-links { display:flex; gap:4px; }
+.nav-links { display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; }
+.nav-links::-webkit-scrollbar { display:none; }
 .nav-link { padding:8px 16px; border-radius:var(--radius-sm); color:var(--text-secondary); text-decoration:none; font-size:14px; font-weight:500; transition:var(--transition); }
 .nav-link:hover, .nav-link.active { color:var(--accent-cyan); background:rgba(6,182,212,0.1); }
 .hamburger { display:none; background:none; border:none; color:var(--text-primary); font-size:24px; cursor:pointer; }
@@ -50,11 +76,13 @@ body {
 /* Hero */
 .hero { padding:100px 24px 60px; text-align:center; background:var(--gradient-hero); position:relative; overflow:hidden; }
 .hero::before { content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:radial-gradient(circle at 20% 50%, rgba(59,130,246,0.08) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(139,92,246,0.08) 0%, transparent 50%); }
+.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, rgba(6,182,212,0.3), transparent); }
 .hero h1 { font-size:clamp(28px,5vw,48px); font-weight:900; margin-bottom:12px; position:relative; }
 .hero h1 span { background:linear-gradient(135deg, var(--accent-cyan), var(--accent-blue), var(--accent-purple)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 .hero p { color:var(--text-secondary); font-size:16px; max-width:680px; margin:0 auto 32px; position:relative; }
 .search-box { position:relative; max-width:520px; margin:0 auto; }
-.search-box input { width:100%; padding:14px 20px 14px 48px; border-radius:50px; border:1px solid var(--border-color); background:rgba(26,34,53,0.8); color:var(--text-primary); font-size:15px; outline:none; transition:var(--transition); backdrop-filter:blur(10px); }
+.search-box input { width:100%; padding:14px 20px 14px 48px; border-radius:50px; border:1px solid var(--border-color); background:rgba(26,34,53,0.8); color:var(--text-primary); font-size:15px; outline:none; transition:var(--transition); backdrop-filter:blur(10px); font-family:inherit; }
+.search-box input::placeholder { color:var(--text-muted); }
 .search-box input:focus { border-color:var(--accent-cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
 .search-icon { position:absolute; left:18px; top:50%; transform:translateY(-50%); font-size:18px; color:var(--text-muted); }
 .search-results { position:absolute; top:calc(100% + 8px); left:0; right:0; background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); max-height:300px; overflow-y:auto; display:none; z-index:100; box-shadow:var(--shadow-card); }
@@ -65,7 +93,8 @@ body {
 .search-result-item .sr-title { font-size:14px; font-weight:600; color:var(--text-primary); }
 .search-result-item .sr-section { font-size:12px; color:var(--accent-cyan); margin-top:2px; }
 /* Section */
-.section { max-width:1200px; margin:0 auto; padding:60px 24px; }
+.section { max-width:1200px; margin:0 auto; padding:60px 24px; opacity:0; transform:translateY(30px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.section.visible { opacity:1; transform:translateY(0); }
 .section-header { display:flex; align-items:center; gap:16px; margin-bottom:32px; }
 .section-icon { width:48px; height:48px; border-radius:var(--radius); display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0; }
 .section-title { font-size:24px; font-weight:800; }
@@ -90,7 +119,10 @@ body {
 /* Cards */
 .cards-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
 .card { background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border-color); overflow:hidden; transition:var(--transition); cursor:pointer; position:relative; }
-.card:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); border-color:rgba(59,130,246,0.3); }
+.card:hover { transform:translateY(-3px); box-shadow:0 8px 32px rgba(0,0,0,0.35); border-color:rgba(59,130,246,0.3); }
+#hot-tutorials .card:hover { border-color:rgba(244,63,94,0.3); }
+#ai-practice .card:hover { border-color:rgba(16,185,129,0.3); }
+#ai-glossary .card:hover { border-color:rgba(6,182,212,0.3); }
 .card::after { content:'点击查看详情'; position:absolute; top:8px; right:8px; padding:4px 10px; border-radius:50px; font-size:11px; font-weight:600; background:rgba(6,182,212,0.12); color:var(--accent-cyan); border:1px solid rgba(6,182,212,0.2); opacity:0; transition:var(--transition); pointer-events:none; }
 .card:hover::after { opacity:1; }
 .card .card-toggle { position:relative; z-index:2; }
@@ -313,6 +345,11 @@ body {
 .tag-cloud-item:nth-child(19) { animation-delay:0.95s; }
 .tag-cloud-item:nth-child(20) { animation-delay:1.0s; }
 @keyframes tagFadeIn { to { opacity:1; transform:translateY(0); } }
+/* ===== Toast Notification ===== */
+.toast { position:fixed; bottom:90px; right:32px; padding:12px 24px; border-radius:var(--radius); background:var(--bg-card); border:1px solid var(--accent-green); color:var(--accent-green); font-size:14px; font-weight:600; z-index:9999; transform:translateY(20px); opacity:0; transition:var(--transition); pointer-events:none; box-shadow:0 4px 20px rgba(0,0,0,0.4); }
+.toast.show { transform:translateY(0); opacity:1; }
+/* ===== Smooth Scroll Progress ===== */
+.scroll-progress { position:fixed; top:64px; left:0; height:2px; background:linear-gradient(90deg, var(--accent-cyan), var(--accent-blue), var(--accent-purple)); z-index:999; width:0; transition:width 0.1s linear; }
 
 /* ===== Real-time News Section ===== */
 .news-tabs { display:flex; gap:6px; margin-bottom:20px; flex-wrap:wrap; }
@@ -422,6 +459,8 @@ body {
 </style>
 </head>
 <body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="toast" id="toast"></div>
 
 <!-- Navbar -->
 <nav class="navbar" id="navbar">
@@ -463,7 +502,7 @@ body {
   <p>不是标题党，是干货库——每个术语讲透、每条路径可走、每步操作能抄。基于国际权威信源，写给认真想弄懂AI时代的你。</p>
   <div class="search-box">
     <span class="search-icon">&#128269;</span>
-    <input type="text" id="searchInput" placeholder="搜索知识点：MoE、介护保险、副业、ChatGPT..." autocomplete="off">
+    <input type="text" id="searchInput" placeholder="搜索：MoE、Cursor、RAG、Agent、ComfyUI、DeepSeek..." autocomplete="off">
     <div class="search-results" id="searchResults"></div>
   </div>
   <div class="tag-cloud" id="tagCloud">
@@ -487,6 +526,15 @@ body {
     <span class="tag-cloud-item" data-tag="ComfyUI">ComfyUI</span>
     <span class="tag-cloud-item" data-tag="论文解读">论文解读</span>
     <span class="tag-cloud-item" data-tag="Agent">Agent</span>
+    <span class="tag-cloud-item" data-tag="Cursor">Cursor</span>
+    <span class="tag-cloud-item" data-tag="LoRA">LoRA</span>
+    <span class="tag-cloud-item" data-tag="Gradio">Gradio</span>
+    <span class="tag-cloud-item" data-tag="AI编程">AI编程</span>
+    <span class="tag-cloud-item" data-tag="声音克隆">声音克隆</span>
+    <span class="tag-cloud-item" data-tag="图像生成">图像生成</span>
+    <span class="tag-cloud-item" data-tag="知识图谱">知识图谱</span>
+    <span class="tag-cloud-item" data-tag="向量数据库">向量数据库</span>
+    <span class="tag-cloud-item" data-tag="Transformer">Transformer</span>
   </div>
 </section>
 
@@ -3445,7 +3493,7 @@ wmic path win32_videocontroller get name
 
         <p style="margin-top:20px;"><strong>&#128073; 第1步：安装 Ollama（3分钟）</strong></p>
         <ol style="line-height:2.2;">
-          <li>打开浏览器，访问 <a href="https://ollama.com/download" target="_blank" style="color:var(--accent-cyan);">ollama.com/download</a></li>
+          <li>打开浏览器，访问 <a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">ollama.com/download</a></li>
           <li>点击 Windows 图标（大蓝色按钮）→ 下载 OllamaSetup.exe（约 500MB）</li>
           <li>下载完成后，双击 OllamaSetup.exe → 点击 "Install" → 等待进度条走完 → 点击 "Close"</li>
           <li>安装成功标志：屏幕右下角任务栏出现一个 <strong>羊驼图标</strong>（Ollama 在后台运行了）</li>
@@ -3501,7 +3549,7 @@ ollama run qwen2.5:32b</pre>
         <p>如果你觉得 cmd 黑窗口太丑，安装 <strong>Open WebUI</strong>，它长得和 ChatGPT 一模一样。</p>
         <p><strong>方案 A：Docker 方式（推荐，但需要先装 Docker）</strong></p>
         <ol style="line-height:2;">
-          <li>先安装 Docker Desktop：<a href="https://www.docker.com/products/docker-desktop/" target="_blank" style="color:var(--accent-cyan);">docker.com</a> → 下载 → 安装 → 重启电脑</li>
+          <li>先安装 Docker Desktop：<a href="https://www.docker.com/products/docker-desktop/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">docker.com</a> → 下载 → 安装 → 重启电脑</li>
           <li>打开 cmd，输入：</li>
         </ol>
         <div class="prompt-box">
@@ -3509,7 +3557,7 @@ ollama run qwen2.5:32b</pre>
           <pre>docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main</pre>
         </div>
         <li>等待镜像下载（首次约 5-10 分钟）</li>
-        <li>浏览器打开 <a href="http://localhost:3000" target="_blank" style="color:var(--accent-cyan);">http://localhost:3000</a></li>
+        <li>浏览器打开 <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">http://localhost:3000</a></li>
         <li>看到登录页面 → 点 "Sign Up" → 随便填用户名密码（本地用，不需要真实信息）</li>
         <li>登录后 → 左上角选模型 → 应该能看到你刚才下载的 qwen2.5:7b → 点击 → 开始对话！</li>
 
@@ -3522,12 +3570,12 @@ open-webui serve</pre>
         </div>
         <p>同样打开 http://localhost:8080 即可使用。</p>
         <p style="margin-top:16px;"><strong>方案 C：桌面版（最简单，零命令行）</strong></p>
-        <p>访问 <a href="https://openwebui.com/" target="_blank" style="color:var(--accent-cyan);">openwebui.com</a> → 下载 Windows/Mac 桌面版 → 安装 → 打开 → 自动检测 Ollama → 直接用。</p>
+        <p>访问 <a href="https://openwebui.com/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">openwebui.com</a> → 下载 Windows/Mac 桌面版 → 安装 → 打开 → 自动检测 Ollama → 直接用。</p>
 
         <p style="margin-top:20px;"><strong>&#128073; 第4步：新手终极替代——LM Studio（全程鼠标操作，零命令行）</strong></p>
         <p>如果你完全不想碰命令行，用 LM Studio：</p>
         <ol style="line-height:2.2;">
-          <li>打开 <a href="https://lmstudio.ai/" target="_blank" style="color:var(--accent-cyan);">lmstudio.ai</a> → 点击 "Download" → 安装</li>
+          <li>打开 <a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">lmstudio.ai</a> → 点击 "Download" → 安装</li>
           <li>打开 LM Studio → 点击顶部 "搜索" 图标（放大镜）</li>
           <li>搜索 <code>Qwen 2.5 7B GGUF</code> → 在结果中找 <code>qwen2.5-7b-instruct-q4_k_m.gguf</code>（这是推荐的量化版本）</li>
           <li>点击 "Download" → 等待下载完成（约 4.5GB）</li>
@@ -3697,7 +3745,7 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli webui</pre>
         <p style="margin-top:20px;"><strong>&#128073; 方案一：AnythingLLM + Ollama（零代码，最推荐，30分钟搞定）</strong></p>
         <ol style="line-height:2.2;">
           <li><strong>前置条件：</strong>你已经装好了 Ollama 并下载了模型（见安装部署tab）。确保 Ollama 正在运行。</li>
-          <li><strong>安装 AnythingLLM 桌面版：</strong>访问 <a href="https://anythingllm.com" target="_blank" style="color:var(--accent-cyan);">anythingllm.com</a> → Download → Windows/Mac 版 → 安装</li>
+          <li><strong>安装 AnythingLLM 桌面版：</strong>访问 <a href="https://anythingllm.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">anythingllm.com</a> → Download → Windows/Mac 版 → 安装</li>
           <li><strong>首次配置：</strong>
             <ol style="line-height:2;margin-top:8px;margin-left:20px;">
               <li>打开 AnythingLLM → 首次会要求创建管理员账号（用户名+密码）</li>
@@ -4018,7 +4066,7 @@ docker compose up -d</pre></div></li>
           <div class="tree-layer layer-trunk">
             <div class="tree-layer-title">&#9881; 安装步骤</div>
             <ol>
-              <li>访问 <a href="https://cursor.sh" target="_blank" style="color:var(--accent-cyan)">cursor.sh</a> 下载对应系统版本</li>
+              <li>访问 <a href="https://cursor.sh" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">cursor.sh</a> 下载对应系统版本</li>
               <li>Windows 用户需要安装 <span class="highlight">Git</span> 和 <span class="highlight">Node.js</span> 环境</li>
               <li>首次启动时选择编辑器设置：<span class="tip">推荐从 VS Code 迁移</span>，自动导入所有扩展</li>
               <li>登录账号（支持 Google / GitHub / 邮箱注册）</li>
@@ -4096,7 +4144,7 @@ docker compose up -d</pre></div></li>
           <div class="tree-layer layer-trunk">
             <div class="tree-layer-title">&#9881; 配置步骤</div>
             <ol>
-              <li>访问 <a href="https://platform.deepseek.com" target="_blank" style="color:var(--accent-cyan)">platform.deepseek.com</a> 注册并获取 API Key</li>
+              <li>访问 <a href="https://platform.deepseek.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">platform.deepseek.com</a> 注册并获取 API Key</li>
               <li>Cursor → Settings → Models → OpenAI API Key → 输入 DeepSeek API Key</li>
               <li>Override OpenAI Base URL 改为：<span class="highlight">https://api.deepseek.com</span></li>
               <li>Model ID 填：<span class="highlight">deepseek-chat</span>（即 V3）或 <span class="highlight">deepseek-reasoner</span>（即 R1 推理版）</li>
@@ -4149,9 +4197,9 @@ docker compose up -d</pre></div></li>
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128279; 官方资源</div>
             <ul>
-              <li><span class="highlight">在线对话</span>：<a href="https://chat.deepseek.com" target="_blank" style="color:var(--accent-cyan)">chat.deepseek.com</a>（免费）</li>
-              <li><span class="highlight">API 平台</span>：<a href="https://platform.deepseek.com" target="_blank" style="color:var(--accent-cyan)">platform.deepseek.com</a></li>
-              <li><span class="highlight">开源仓库</span>：<a href="https://github.com/deepseek-ai" target="_blank" style="color:var(--accent-cyan)">github.com/deepseek-ai</a></li>
+              <li><span class="highlight">在线对话</span>：<a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">chat.deepseek.com</a>（免费）</li>
+              <li><span class="highlight">API 平台</span>：<a href="https://platform.deepseek.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">platform.deepseek.com</a></li>
+              <li><span class="highlight">开源仓库</span>：<a href="https://github.com/deepseek-ai" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">github.com/deepseek-ai</a></li>
               <li><span class="highlight">技术报告</span>：DeepSeek-V3 Technical Report（arXiv 可搜到）</li>
             </ul>
           </div>
@@ -4228,7 +4276,7 @@ for chunk in stream:
           <div class="tree-layer layer-trunk">
             <div class="tree-layer-title">&#9881; 安装步骤</div>
             <ol>
-              <li>安装 Ollama：<a href="https://ollama.com/download" target="_blank" style="color:var(--accent-cyan)">ollama.com/download</a></li>
+              <li>安装 Ollama：<a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">ollama.com/download</a></li>
               <li>终端运行：<span class="highlight">ollama run deepseek-r1:8b</span></li>
               <li>等待下载完成后即可对话，完全离线运行</li>
               <li>更多选择：<span class="highlight">ollama run deepseek-r1:14b</span>（更强但需要更多内存）</li>
@@ -4405,9 +4453,9 @@ async def call_tool(name, args):
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128214; 更多资源</div>
             <ul>
-              <li><span class="highlight">官方文档</span>：<a href="https://modelcontextprotocol.io" target="_blank" style="color:var(--accent-cyan)">modelcontextprotocol.io</a></li>
-              <li><span class="highlight">示例仓库</span>：<a href="https://github.com/anthropics/mcp-servers" target="_blank" style="color:var(--accent-cyan)">github.com/anthropics/mcp-servers</a></li>
-              <li><span class="highlight">社区 Server 列表</span>：<a href="https://github.com/punkpeye/awesome-mcp-servers" target="_blank" style="color:var(--accent-cyan)">awesome-mcp-servers</a></li>
+              <li><span class="highlight">官方文档</span>：<a href="https://modelcontextprotocol.io" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">modelcontextprotocol.io</a></li>
+              <li><span class="highlight">示例仓库</span>：<a href="https://github.com/anthropics/mcp-servers" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">github.com/anthropics/mcp-servers</a></li>
+              <li><span class="highlight">社区 Server 列表</span>：<a href="https://github.com/punkpeye/awesome-mcp-servers" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">awesome-mcp-servers</a></li>
             </ul>
           </div>
         </div>
@@ -4534,9 +4582,9 @@ print(response)</pre><button class="copy-btn" onclick="copyPrompt(this)">复制<
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128214; 相关教程链接</div>
             <ul>
-              <li>AnythingLLM：<a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank" style="color:var(--accent-cyan)">GitHub</a> | <a href="https://useanything.com" target="_blank" style="color:var(--accent-cyan)">官网</a></li>
-              <li>Dify：<a href="https://github.com/langgenius/dify" target="_blank" style="color:var(--accent-cyan)">GitHub</a> | <a href="https://dify.ai" target="_blank" style="color:var(--accent-cyan)">官网</a></li>
-              <li>RAGFlow：<a href="https://github.com/infiniflow/ragflow" target="_blank" style="color:var(--accent-cyan)">GitHub</a></li>
+              <li>AnythingLLM：<a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">GitHub</a> | <a href="https://useanything.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">官网</a></li>
+              <li>Dify：<a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">GitHub</a> | <a href="https://dify.ai" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">官网</a></li>
+              <li>RAGFlow：<a href="https://github.com/infiniflow/ragflow" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">GitHub</a></li>
             </ul>
           </div>
         </div>
@@ -4695,7 +4743,7 @@ result = app.invoke({"question": "2026年最火AI框架有哪些？", "need_sear
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128214; 学习资源</div>
             <ul>
-              <li><span class="highlight">官方教程</span>：<a href="https://langchain-ai.github.io/langgraph/tutorials/" target="_blank" style="color:var(--accent-cyan)">LangGraph Tutorials</a></li>
+              <li><span class="highlight">官方教程</span>：<a href="https://langchain-ai.github.io/langgraph/tutorials/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">LangGraph Tutorials</a></li>
               <li><span class="highlight">中文社区</span>：LangChain 中文文档、B站搜索"LangGraph 教程"</li>
               <li><span class="highlight">实战项目</span>：GitHub 搜索 "langgraph agent example"</li>
             </ul>
@@ -4732,7 +4780,7 @@ result = app.invoke({"question": "2026年最火AI框架有哪些？", "need_sear
             <div class="tree-layer-title">&#9881; 安装步骤</div>
             <ol>
               <li>安装 NVIDIA 驱动（需要 CUDA 支持）</li>
-              <li>下载整合包：<a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" style="color:var(--accent-cyan)">ComfyUI 官方仓库</a> 或 ComfyUI Desktop（一键安装）</li>
+              <li>下载整合包：<a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">ComfyUI 官方仓库</a> 或 ComfyUI Desktop（一键安装）</li>
               <li>下载模型文件（放入 models/checkpoints/）：
                 <ul>
                   <li><span class="highlight">SDXL</span>：Stable Diffusion XL，通用图片生成</li>
@@ -4780,9 +4828,9 @@ result = app.invoke({"question": "2026年最火AI框架有哪些？", "need_sear
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128214; 工作流资源</div>
             <ul>
-              <li><span class="highlight">Comfyworkflows</span>：<a href="https://comfyworkflows.com" target="_blank" style="color:var(--accent-cyan)">comfyworkflows.com</a>（在线工作流分享）</li>
-              <li><span class="highlight">OpenArt</span>：<a href="https://openart.ai/workflows" target="_blank" style="color:var(--accent-cyan)">openart.ai/workflows</a></li>
-              <li><span class="highlight">C站</span>：<a href="https://civitai.com" target="_blank" style="color:var(--accent-cyan)">civitai.com</a>（模型/LoRA 下载）</li>
+              <li><span class="highlight">Comfyworkflows</span>：<a href="https://comfyworkflows.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">comfyworkflows.com</a>（在线工作流分享）</li>
+              <li><span class="highlight">OpenArt</span>：<a href="https://openart.ai/workflows" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">openart.ai/workflows</a></li>
+              <li><span class="highlight">C站</span>：<a href="https://civitai.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">civitai.com</a>（模型/LoRA 下载）</li>
             </ul>
           </div>
         </div>
@@ -4864,9 +4912,9 @@ watercolor style, soft focus, detailed</pre><button class="copy-btn" onclick="co
           <div class="tree-layer layer-root">
             <div class="tree-layer-title">&#128214; 官方资源</div>
             <ul>
-              <li>ChatTTS：<a href="https://github.com/2noise/ChatTTS" target="_blank" style="color:var(--accent-cyan)">github.com/2noise/ChatTTS</a></li>
-              <li>GPT-SoVITS：<a href="https://github.com/RVC-Boss/GPT-SoVITS" target="_blank" style="color:var(--accent-cyan)">github.com/RVC-Boss/GPT-SoVITS</a></li>
-              <li>Fish Speech：<a href="https://github.com/fishaudio/fish-speech" target="_blank" style="color:var(--accent-cyan)">github.com/fishaudio/fish-speech</a></li>
+              <li>ChatTTS：<a href="https://github.com/2noise/ChatTTS" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">github.com/2noise/ChatTTS</a></li>
+              <li>GPT-SoVITS：<a href="https://github.com/RVC-Boss/GPT-SoVITS" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">github.com/RVC-Boss/GPT-SoVITS</a></li>
+              <li>Fish Speech：<a href="https://github.com/fishaudio/fish-speech" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">github.com/fishaudio/fish-speech</a></li>
             </ul>
           </div>
         </div>
@@ -4938,7 +4986,7 @@ asyncio.run(text_to_speech(
           <div class="tree-layer layer-trunk">
             <div class="tree-layer-title">&#9881; 使用步骤</div>
             <ol>
-              <li>克隆仓库：<a href="https://github.com/RVC-Boss/GPT-SoVITS" target="_blank" style="color:var(--accent-cyan)">GPT-SoVITS GitHub</a></li>
+              <li>克隆仓库：<a href="https://github.com/RVC-Boss/GPT-SoVITS" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan)">GPT-SoVITS GitHub</a></li>
               <li>运行 <span class="highlight">go-webui.bat</span>（Windows）打开 Web 界面</li>
               <li><span class="highlight">零样本模式</span>：上传参考音频 → 填入参考文本 → 输入要合成的文本 → 生成</li>
               <li><span class="highlight">微调模式</span>（效果更好）：准备 1 分钟训练音频 → 自动训练 → 合成</li>
@@ -4964,9 +5012,19 @@ asyncio.run(text_to_speech(
 
 <!-- Footer -->
 <footer class="footer">
-  <p>AI Insight Hub &copy; 2026 &mdash; 不是标题党，是干货库 | 内容每周自动更新</p>
-  <p style="margin-top:8px;">信源：NVIDIA / Google DeepMind / OpenAI / Anthropic / IMF / 世界经济论坛 / Nature / 达拉斯联储 / OECD / McKinsey / 人社部 / 国家发改委 / CrewAI / GitHub API</p>
-  <p style="margin-top:8px;"><a href="https://github.com/FNK1221/ai-insight-hub" target="_blank">GitHub 仓库</a> · <span id="lastUpdate">最近更新：加载中...</span></p>
+  <p style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:12px;">AI Insight Hub &copy; 2026</p>
+  <p>不是标题党，是干货库 &mdash; 每个术语讲透、每条路径可走、每步操作能抄。内容每周自动更新。</p>
+  <p style="margin-top:12px;color:var(--text-secondary);font-size:12px;">
+    涵盖 <strong style="color:var(--accent-cyan);">11</strong> 大板块 · <strong style="color:var(--accent-green);">70+</strong> 张知识卡片 · <strong style="color:var(--accent-purple);">21</strong> 篇实战教程 · <strong style="color:var(--accent-amber);">5</strong> 个实时数据源
+  </p>
+  <p style="margin-top:12px;font-size:12px;color:var(--text-muted);">
+    信源：NVIDIA / Google DeepMind / OpenAI / Anthropic / GitHub API / arXiv / Hacker News / CrewAI / McKinsey / Nature
+  </p>
+  <p style="margin-top:12px;">
+    <a href="https://github.com/FNK1221/ai-insight-hub" target="_blank" rel="noopener noreferrer">&#128187; GitHub 仓库</a> ·
+    <span id="lastUpdate">最近更新：加载中...</span> ·
+    按 <kbd style="padding:2px 6px;border-radius:4px;background:var(--bg-secondary);border:1px solid var(--border-color);font-size:11px;">/</kbd> 快速搜索
+  </p>
 </footer>
 
 <!-- Back to Top -->
@@ -5113,34 +5171,7 @@ document.querySelectorAll('.prompt-cat-btn').forEach(btn => {
   });
 });
 
-// ===== Copy Prompt =====
-function copyPrompt(btn) {
-  const box = btn.closest('.prompt-box');
-  const pre = box.querySelector('pre');
-  const text = pre.textContent;
-  navigator.clipboard.writeText(text).then(() => {
-    btn.textContent = '已复制!';
-    btn.classList.add('copied');
-    setTimeout(() => {
-      btn.textContent = '复制';
-      btn.classList.remove('copied');
-    }, 2000);
-  }).catch(() => {
-    // fallback
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-    btn.textContent = '已复制!';
-    btn.classList.add('copied');
-    setTimeout(() => {
-      btn.textContent = '复制';
-      btn.classList.remove('copied');
-    }, 2000);
-  });
-}
+// ===== Card Toggle =====
 
 // ===== Tab Switching =====
 document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -5913,6 +5944,69 @@ const NewsManager = (function() {
   return { refresh };
 })();
 
-</script>
+// ===== Scroll Progress Bar =====
+(function() {
+  const bar = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h * 100) : 0) + '%';
+  }, { passive: true });
+})();
+
+// ===== Section Fade-In on Scroll =====
+(function() {
+  const sections = document.querySelectorAll('.section');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.05 });
+  sections.forEach(s => obs.observe(s));
+})();
+
+// ===== Toast Notification =====
+function showToast(msg, duration) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), duration || 2500);
+}
+
+// ===== Copy Prompt (enhanced with Toast) =====
+function copyPrompt(btn) {
+  const box = btn.closest('.prompt-box, .smart-prompt-box');
+  const pre = box?.querySelector('pre');
+  if (!pre) return;
+  const text = pre.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '已复制 ✓';
+    btn.classList.add('copied');
+    showToast('已复制到剪贴板');
+    setTimeout(() => { btn.textContent = '复制'; btn.classList.remove('copied'); }, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = '已复制 ✓'; btn.classList.add('copied');
+    showToast('已复制到剪贴板');
+    setTimeout(() => { btn.textContent = '复制'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// ===== Keyboard Shortcut: / to Focus Search =====
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+    e.preventDefault();
+    document.getElementById('searchInput')?.focus();
+  }
+});
+
+// ===== Navbar Scroll Effect =====
+(function() {
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.style.borderBottomColor = window.scrollY > 50 ? 'rgba(30,41,59,0.8)' : 'var(--border-color)';
+  }, { passive: true });
+})();
 </body>
 </html>
