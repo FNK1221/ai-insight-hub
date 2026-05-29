@@ -65,11 +65,19 @@ body {
 .navbar-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:64px; }
 .logo { font-size:20px; font-weight:800; color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:8px; }
 .logo-icon { font-size:24px; }
-.nav-links { display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; }
+.nav-links { display:flex; gap:2px; align-items:center; }
 .nav-links::-webkit-scrollbar { display:none; }
 .nav-link { padding:8px 16px; border-radius:var(--radius-sm); color:var(--text-secondary); text-decoration:none; font-size:14px; font-weight:500; transition:var(--transition); }
 .nav-link:hover, .nav-link.active { color:var(--accent-cyan); background:rgba(6,182,212,0.1); }
 .hamburger { display:none; background:none; border:none; color:var(--text-primary); font-size:24px; cursor:pointer; }
+/* ===== PC Navbar Enhancement ===== */
+@media (min-width: 1024px) {
+  .nav-links { gap: 4px; }
+  .nav-link { padding: 8px 18px; font-size: 14px; position: relative; }
+  .nav-link::after { content:''; position:absolute; bottom:2px; left:50%; width:0; height:2px; background:var(--accent-cyan); border-radius:1px; transition:all 0.3s ease; transform:translateX(-50%); }
+  .nav-link:hover::after, .nav-link.active::after { width: 60%; }
+}
+
 .mobile-menu { display:none; flex-direction:column; padding:8px 16px 16px; background:rgba(10,14,26,0.95); backdrop-filter:blur(20px); border-bottom:1px solid var(--border-color); }
 .mobile-menu.open { display:flex; }
 .mobile-menu .nav-link { padding:12px 16px; }
@@ -260,9 +268,166 @@ body {
 .tools-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
 /* Workflow grid */
 .workflow-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
+
+
+/* ===== Hero Enhancement ===== */
+@media (min-width: 1024px) {
+  .hero { min-height: 420px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .hero h1 { font-size: clamp(36px, 4vw, 56px); letter-spacing: -0.02em; }
+  .hero p { font-size: 18px; line-height: 1.8; }
+}
+@media (min-width: 1440px) {
+  .hero { min-height: 480px; }
+  .hero h1 { font-size: clamp(40px, 4vw, 64px); }
+}
+
+
+/* ===== PC Visual Enhancement ===== */
+/* Subtle dot grid background */
+body::before { content:''; position:fixed; top:0; left:0; right:0; bottom:0; background-image:radial-gradient(circle, rgba(100,116,139,0.06) 1px, transparent 1px); background-size:32px 32px; pointer-events:none; z-index:0; }
+body > * { position:relative; z-index:1; }
+
+/* Section dividers */
+.section { border-top:1px solid rgba(30,41,59,0.5); }
+.section:first-of-type { border-top:none; }
+
+/* Better navbar glassmorphism */
+@media (min-width: 1024px) {
+  .navbar { background:rgba(10,14,26,0.88); backdrop-filter:blur(24px) saturate(180%); }
+}
+
+/* Enhanced card glass effect */
+@media (min-width: 1024px) {
+  .card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .tool-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .workflow-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .scenario-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .smart-prompt-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .repo-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+  .news-card { background:rgba(26,34,53,0.85); backdrop-filter:blur(8px); }
+}
+
+/* Better section icon on PC */
+@media (min-width: 1024px) {
+  .section-icon { width:56px; height:56px; font-size:28px; border-radius:14px; }
+}
+
+/* Smooth card expand animation */
+.card-detail { overflow:hidden; }
+
+/* Better tag cloud on PC */
+@media (min-width: 1024px) {
+  .tag-cloud { gap:10px; max-width:800px; }
+  .tag-cloud-item { padding:8px 18px; font-size:14px; }
+}
+
+/* Enhanced scroll progress bar on PC */
+@media (min-width: 1024px) {
+  .scroll-progress { height:3px; }
+}
+
+/* Better search box on PC */
+@media (min-width: 1024px) {
+  .search-box input { padding:16px 24px 16px 52px; font-size:16px; }
+  .search-icon { left:20px; font-size:20px; }
+  .search-results { border-radius:14px; }
+  .search-result-item { padding:14px 24px; }
+  .search-result-item .sr-title { font-size:15px; }
+}
+
+/* Section header enhancement on PC */
+@media (min-width: 1024px) {
+  .section-header { margin-bottom:40px; gap:20px; }
+  .section-header .section-expand-btn { opacity:0.7; transition:var(--transition); }
+  .section-header:hover .section-expand-btn { opacity:1; }
+}
+
+/* News tabs better spacing on PC */
+@media (min-width: 1024px) {
+  .news-tabs { gap:8px; margin-bottom:24px; }
+  .news-tab-btn { padding:10px 20px; font-size:14px; }
+}
+
+/* Overlay body wider on PC */
+@media (min-width: 1440px) {
+  .overlay-body { padding:48px 64px 100px; }
+  .overlay-header { padding:18px 64px; }
+}
+
+/* Better back-to-top on PC */
+@media (min-width: 1024px) {
+  .back-to-top { width:48px; height:48px; font-size:22px; right:40px; bottom:40px; }
+}
+/* ===== PC Wide Screen Optimization ===== */
+@media (min-width: 1440px) {
+  :root { --container-max: 1400px; }
+  .section, .navbar-inner, .overlay-body { max-width: var(--container-max); }
+  .hero { padding: 120px 48px 80px; }
+  .hero p { max-width: 780px; }
+  .search-box { max-width: 600px; }
+  .section { padding: 80px 48px; }
+  .section-title { font-size: 28px; }
+  .card-title { font-size: 18px; }
+  .card-preview { font-size: 15px; }
+  .card-header { padding: 24px 28px 0; }
+  .card-preview { padding: 12px 28px 22px; }
+  .card-detail { padding: 0 28px 24px; font-size: 15px; }
+  .overlay-body .cards-grid, .overlay-body .tools-grid, .overlay-body .workflow-grid, .overlay-body .scenario-grid, .overlay-body .repo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1800px) {
+  :root { --container-max: 1600px; }
+  .section, .navbar-inner, .overlay-body { max-width: var(--container-max); }
+  .hero { padding: 140px 64px 100px; }
+  .search-box { max-width: 680px; }
+  .section { padding: 100px 64px; }
+}
+
+
+/* ===== PC Card Enhancement ===== */
+@media (min-width: 1024px) {
+  .card { border-radius: 14px; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+  .tool-card { border-radius: 14px; padding: 24px 28px; }
+  .tool-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  .workflow-card { border-radius: 14px; padding: 24px 28px; }
+  .workflow-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  .scenario-card { border-radius: 14px; padding: 28px; }
+  .scenario-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  .smart-prompt-card { border-radius: 14px; padding: 28px; }
+  .repo-card { border-radius: 14px; padding: 24px 28px; }
+  .repo-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  .news-card { border-radius: 14px; padding: 22px 24px; }
+  .news-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  .card-overlay-card { border-radius: 16px; }
+}
+@media (min-width: 1440px) {
+  .card-overlay-inner { max-width: 1000px; }
+  .card-overlay-card .card-title { font-size: 24px; }
+  .card-overlay-card .card-preview, .card-overlay-card .card-detail { font-size: 16px; }
+  .card-overlay-card .card-header { padding: 32px 40px 0; }
+  .card-overlay-card .card-preview { padding: 16px 40px 24px; }
+  .card-overlay-card .card-detail { padding: 0 40px 32px; }
+}
+/* ===== PC Grid Optimization ===== */
+@media (min-width: 1024px) {
+  .cards-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .workflow-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .scenario-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .repo-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .news-cards { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+}
+@media (min-width: 1440px) {
+  .cards-grid { grid-template-columns: repeat(3, 1fr); }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .workflow-grid { grid-template-columns: repeat(3, 1fr); }
+  .scenario-grid { grid-template-columns: repeat(3, 1fr); }
+  .repo-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .news-cards { grid-template-columns: repeat(3, 1fr); }
+}
 /* Responsive */
 @media (max-width:768px) {
-  .nav-links { display:none; }
+  .nav-links { display:none; overflow-x:auto; }
   .hamburger { display:block; }
   .cards-grid, .tools-grid, .workflow-grid, .repo-grid { grid-template-columns:1fr; }
   .tabs { width:100%; overflow-x:auto; }
@@ -452,6 +617,165 @@ body {
 .smart-prompt-label-bad { font-size:11px; font-weight:700; color:var(--accent-rose); margin-bottom:6px; }
 .smart-prompt-label-good { font-size:11px; font-weight:700; color:var(--accent-green); margin-bottom:6px; }
 .smart-prompt-compare { font-size:13px; color:var(--text-secondary); line-height:1.6; }
+
+
+
+
+/* ===== Final Polish ===== */
+/* Better focus styles for accessibility */
+@media (min-width: 1024px) {
+  :focus-visible { outline:2px solid var(--accent-cyan); outline-offset:2px; }
+  .tab-btn:focus-visible, .nav-link:focus-visible, .news-tab-btn:focus-visible { outline-offset:2px; }
+}
+
+/* Smoother card hover */
+@media (min-width: 1024px) {
+  .card, .tool-card, .workflow-card, .scenario-card, .repo-card, .news-card, .smart-prompt-card {
+    transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1), border-color 0.3s ease;
+  }
+}
+
+/* Better card toggle on PC */
+@media (min-width: 1024px) {
+  .card-toggle { padding:14px 28px; font-size:14px; }
+}
+
+/* Enhanced data banner on PC */
+@media (min-width: 1024px) {
+  .data-banner { border-radius:14px; }
+}
+
+/* Better code blocks on PC */
+@media (min-width: 1024px) {
+  .prompt-box { border-radius:10px; padding:18px 20px; }
+  .smart-prompt-box { border-radius:10px; padding:20px; }
+  .practical-box { border-radius:10px; padding:16px 20px; }
+}
+
+/* Better workflow steps on PC */
+@media (min-width: 1024px) {
+  .workflow-step { padding:10px 18px; font-size:14px; }
+  .workflow-detail-step .wds-title { font-size:15px; }
+  .workflow-detail-step p { font-size:14px; }
+}
+
+/* Better tree layer on PC */
+@media (min-width: 1024px) {
+  .tree-layer { padding:18px 20px; margin:16px 0; }
+}
+
+/* FAQ better on PC */
+@media (min-width: 1024px) {
+  .faq-item { border-radius:10px; }
+}
+
+/* Source tag better on PC */
+@media (min-width: 1024px) {
+  .source-tag { font-size:12px; padding:3px 10px; }
+}
+
+/* Person card better on PC */
+@media (min-width: 1024px) {
+  .person-card { padding:14px 18px; }
+  .person-avatar { width:42px; height:42px; font-size:18px; }
+}
+
+/* Print styles */
+@media print {
+  .navbar, .scroll-progress, .toast, .back-to-top, .toc-sidebar, .hamburger, .mobile-menu, .card-toggle, .section-expand-btn, .search-box, .tag-cloud { display:none !important; }
+  body { background:#fff; color:#000; }
+  .section { opacity:1; transform:none; padding:20px 0; max-width:100%; }
+  .card { break-inside:avoid; border:1px solid #ddd; box-shadow:none; }
+  .card:hover { transform:none; }
+  .card-detail { display:block !important; }
+  .card::after { display:none; }
+  a { color:#0066cc; text-decoration:underline; }
+  .hero { padding:20px 0; background:none; }
+}
+
+/* Better tab buttons on PC */
+@media (min-width: 1024px) {
+  .repo-cat-btn { padding:10px 20px; font-size:14px; }
+  .prompt-cat-btn { padding:10px 22px; font-size:14px; }
+}
+
+/* Loading spinner bigger on PC */
+@media (min-width: 1024px) {
+  .repo-loading .spinner { width:44px; height:44px; border-width:4px; }
+  .news-loading .spinner { width:40px; height:40px; border-width:4px; }
+}
+/* ===== PC Footer Enhancement ===== */
+.footer { border-top:1px solid var(--border-color); background:rgba(10,14,26,0.5); }
+.footer-inner { max-width:1200px; margin:0 auto; padding:48px 24px 32px; }
+@media (min-width: 1024px) {
+  .footer-inner { max-width:1400px; padding:56px 48px 36px; }
+  .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:40px; }
+}
+@media (min-width: 1440px) {
+  .footer-inner { max-width:1600px; padding:64px 64px 40px; }
+  .footer-grid { gap:56px; }
+}
+@media (max-width:1023px) {
+  .footer-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-bottom:32px; }
+}
+@media (max-width:640px) {
+  .footer-grid { grid-template-columns:1fr; gap:24px; margin-bottom:24px; }
+}
+.footer-brand { font-size:22px; font-weight:800; color:var(--text-primary); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.footer-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; margin-bottom:20px; max-width:400px; }
+.footer-stats { display:flex; gap:24px; }
+.footer-stat { display:flex; flex-direction:column; align-items:center; }
+.footer-stat-num { font-size:24px; font-weight:800; color:var(--accent-cyan); }
+.footer-stat-label { font-size:12px; color:var(--text-muted); margin-top:2px; }
+.footer-col-title { font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:16px; text-transform:uppercase; letter-spacing:0.5px; }
+.footer-link { display:block; font-size:14px; color:var(--text-secondary); text-decoration:none; padding:6px 0; transition:var(--transition); }
+.footer-link:hover { color:var(--accent-cyan); transform:translateX(4px); }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; padding-top:24px; border-top:1px solid var(--border-color); font-size:13px; color:var(--text-muted); flex-wrap:wrap; gap:12px; }
+.footer-bottom kbd { background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:4px; padding:1px 6px; font-size:12px; font-family:inherit; color:var(--accent-cyan); }
+/* ===== PC Typography Enhancement ===== */
+@media (min-width: 1024px) {
+  body { font-size: 16px; line-height: 1.75; }
+  .section-title { font-size: 26px; letter-spacing: -0.01em; }
+  .section-subtitle { font-size: 15px; }
+  .card-title { font-size: 18px; line-height: 1.5; }
+  .card-preview { font-size: 15px; line-height: 1.7; }
+  .card-detail { font-size: 15px; line-height: 1.85; }
+  .tree-layer p, .tree-layer li { font-size: 14px; line-height: 1.8; }
+  .tree-layer-title { font-size: 13px; }
+  .practical-box .pb-step { font-size: 14px; }
+  .tool-name { font-size: 19px; }
+  .workflow-title { font-size: 18px; }
+  .overlay-title { font-size: 24px; }
+  .smart-prompt-title { font-size: 20px; }
+  .smart-prompt-desc { font-size: 15px; }
+  .smart-prompt-box pre { font-size: 14px; }
+  .faq-q { font-size: 15px; padding: 14px 20px; }
+  .faq-a { font-size: 14px; }
+  .prompt-box pre { font-size: 13px; }
+  .news-card-title { font-size: 16px; }
+  .news-card-desc { font-size: 14px; line-height: 1.7; }
+  .repo-name { font-size: 17px; }
+  .repo-desc { font-size: 14px; line-height: 1.6; }
+  .data-banner { font-size: 14px; padding: 18px 24px; }
+  .tab-btn { padding: 10px 22px; font-size: 14px; }
+  .section-expand-btn { padding: 8px 18px; font-size: 13px; }
+}
+@media (min-width: 1440px) {
+  .section-title { font-size: 28px; }
+  .card-title { font-size: 19px; }
+  .news-card-title { font-size: 17px; }
+  .overlay-title { font-size: 26px; }
+}
+/* ===== PC TOC Sidebar ===== */
+.toc-sidebar { display:none; }
+@media (min-width: 1200px) {
+  .toc-sidebar { display:block; position:fixed; right:24px; top:50%; transform:translateY(-50%); z-index:900; }
+  .toc-dot { width:8px; height:8px; border-radius:50%; background:var(--border-color); margin:10px 0; cursor:pointer; transition:var(--transition); position:relative; }
+  .toc-dot:hover { background:var(--accent-cyan); transform:scale(1.4); }
+  .toc-dot.active { background:var(--accent-cyan); box-shadow:0 0 8px rgba(6,182,212,0.5); transform:scale(1.4); }
+  .toc-dot .toc-tooltip { position:absolute; right:calc(100% + 12px); top:50%; transform:translateY(-50%); padding:4px 12px; border-radius:6px; background:var(--bg-card); border:1px solid var(--border-color); color:var(--text-primary); font-size:12px; font-weight:600; white-space:nowrap; opacity:0; pointer-events:none; transition:var(--transition); box-shadow:var(--shadow-card); }
+  .toc-dot:hover .toc-tooltip { opacity:1; }
+}
 /* ===== Enhanced Search ===== */
 .search-result-item .sr-context { font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.5; }
 .search-result-item .sr-context mark { background:rgba(6,182,212,0.25); color:var(--accent-cyan); border-radius:2px; padding:0 2px; }
@@ -461,6 +785,22 @@ body {
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
 <div class="toast" id="toast"></div>
+<!-- PC TOC Sidebar -->
+<nav class="toc-sidebar" id="tocSidebar">
+  <div class="toc-dot active" data-target="hero"><span class="toc-tooltip">&#9889; 首页</span></div>
+  <div class="toc-dot" data-target="ai-knowledge"><span class="toc-tooltip">&#129302; AI知识</span></div>
+  <div class="toc-dot" data-target="ai-glossary"><span class="toc-tooltip">&#128218; 术语图鉴</span></div>
+  <div class="toc-dot" data-target="japan-aging"><span class="toc-tooltip">&#127471;&#127477; 日本历程</span></div>
+  <div class="toc-dot" data-target="youth-survival"><span class="toc-tooltip">&#127891; 青年实操</span></div>
+  <div class="toc-dot" data-target="ai-toolkit"><span class="toc-tooltip">&#128295; AI手册</span></div>
+  <div class="toc-dot" data-target="ai-practice"><span class="toc-tooltip">&#127793; 落地实践</span></div>
+  <div class="toc-dot" data-target="ai-complex"><span class="toc-tooltip">&#128640; 任务拆解</span></div>
+  <div class="toc-dot" data-target="local-ai"><span class="toc-tooltip">&#128187; 本地AI</span></div>
+  <div class="toc-dot" data-target="github-trending"><span class="toc-tooltip">&#11088; GitHub</span></div>
+  <div class="toc-dot" data-target="hot-tutorials"><span class="toc-tooltip">&#128218; 教程</span></div>
+  <div class="toc-dot" data-target="realtime-news"><span class="toc-tooltip">&#128240; 资讯</span></div>
+</nav>
+
 
 <!-- Navbar -->
 <nav class="navbar" id="navbar">
@@ -5012,19 +5352,44 @@ asyncio.run(text_to_speech(
 
 <!-- Footer -->
 <footer class="footer">
-  <p style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:12px;">AI Insight Hub &copy; 2026</p>
-  <p>不是标题党，是干货库 &mdash; 每个术语讲透、每条路径可走、每步操作能抄。内容每周自动更新。</p>
-  <p style="margin-top:12px;color:var(--text-secondary);font-size:12px;">
-    涵盖 <strong style="color:var(--accent-cyan);">11</strong> 大板块 · <strong style="color:var(--accent-green);">70+</strong> 张知识卡片 · <strong style="color:var(--accent-purple);">21</strong> 篇实战教程 · <strong style="color:var(--accent-amber);">5</strong> 个实时数据源
-  </p>
-  <p style="margin-top:12px;font-size:12px;color:var(--text-muted);">
-    信源：NVIDIA / Google DeepMind / OpenAI / Anthropic / GitHub API / arXiv / Hacker News / CrewAI / McKinsey / Nature
-  </p>
-  <p style="margin-top:12px;">
-    <a href="https://github.com/FNK1221/ai-insight-hub" target="_blank" rel="noopener noreferrer">&#128187; GitHub 仓库</a> ·
-    <span id="lastUpdate">最近更新：加载中...</span> ·
-    按 <kbd style="padding:2px 6px;border-radius:4px;background:var(--bg-secondary);border:1px solid var(--border-color);font-size:11px;">/</kbd> 快速搜索
-  </p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-brand">&#9889; AI Insight Hub</div>
+        <p class="footer-desc">2026 最全 AI 知识库与实战教程，基于国际权威信源，写给认真想弄懂 AI 时代的你。</p>
+        <div class="footer-stats">
+          <div class="footer-stat"><span class="footer-stat-num">11</span><span class="footer-stat-label">大板块</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">70+</span><span class="footer-stat-label">知识卡片</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">21</span><span class="footer-stat-label">实战教程</span></div>
+          <div class="footer-stat"><span class="footer-stat-num">5</span><span class="footer-stat-label">实时数据源</span></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">知识模块</div>
+        <a href="#ai-knowledge" class="footer-link">AI 知识分层</a>
+        <a href="#ai-glossary" class="footer-link">术语图鉴</a>
+        <a href="#japan-aging" class="footer-link">日本历程</a>
+        <a href="#youth-survival" class="footer-link">青年实操</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">实战工具</div>
+        <a href="#ai-toolkit" class="footer-link">AI 实操手册</a>
+        <a href="#ai-practice" class="footer-link">落地实践</a>
+        <a href="#ai-complex" class="footer-link">任务拆解</a>
+        <a href="#local-ai" class="footer-link">本地 AI 助手</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">动态与教程</div>
+        <a href="#github-trending" class="footer-link">GitHub 热门</a>
+        <a href="#hot-tutorials" class="footer-link">热门教程</a>
+        <a href="#realtime-news" class="footer-link">实时资讯</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>按 <kbd>/</kbd> 快速搜索</span>
+      <span>&#169; 2026 AI Insight Hub · Built with &#10084;&#65039;</span>
+    </div>
+  </div>
 </footer>
 
 <!-- Back to Top -->
@@ -6001,6 +6366,32 @@ document.addEventListener('keydown', e => {
   }
 });
 
+
+// ===== PC TOC Sidebar =====
+(function() {
+  const dots = document.querySelectorAll('.toc-dot');
+  const sections = document.querySelectorAll('.section, .hero');
+  if (!dots.length) return;
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const target = dot.dataset.target;
+      const el = document.getElementById(target) || document.querySelector('.hero');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      const top = s.offsetTop - 120;
+      if (window.scrollY >= top) current = s.id || 'hero';
+    });
+    dots.forEach(d => {
+      d.classList.toggle('active', d.dataset.target === current);
+    });
+  }, { passive: true });
+})();
 // ===== Navbar Scroll Effect =====
 (function() {
   const nav = document.getElementById('navbar');
