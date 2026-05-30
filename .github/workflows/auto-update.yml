@@ -53,7 +53,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/cache_ai_tools.py»
+          python scripts/cache_ai_tools.py
 
       - name: Fetch latest AI news & update content
         env:
