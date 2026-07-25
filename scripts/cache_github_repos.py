@@ -11,7 +11,7 @@ import time
 import urllib.request
 from datetime import datetime, timezone
 
-GITHUB_PAT = os.environ.get("GITHUB_PAT", "")
+GITHUB_PAT = os.environ.get("GITHUB_PAT") or os.environ.get("GITHUB_TOKEN") or ""
 
 # Category definitions matching the frontend buttons
 CATEGORIES = [
@@ -91,11 +91,26 @@ def main():
         "categories": {},
     }
 
+    # 读取旧数据：某分类本次抓取失败时保留旧条目，避免空分类顶掉可用数据
+    old_categories = {}
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, encoding="utf-8") as f:
+                old_categories = json.load(f).get("categories", {})
+        except Exception:
+            pass
+
     for cat in CATEGORIES:
         items = fetch_category(cat["id"], PER_PAGE)
+        normalized = [normalize_item(i) for i in items]
+        if not normalized and cat["id"] in old_categories:
+            old_items = old_categories[cat["id"]].get("items", [])
+            if old_items:
+                print(f"  keep old data for {cat['id']} ({len(old_items)} items)")
+                normalized = old_items
         result["categories"][cat["id"]] = {
             "label": cat["label"],
-            "items": [normalize_item(i) for i in items],
+            "items": normalized,
         }
         time.sleep(2)  # Be gentle with rate limits
 

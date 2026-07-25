@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-07-25T13:27:32.960870+00:00",
+  "count": 20,
+  "papers": [
+    {
+      "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+      "authors": "Wenhao Li, Xueying Jiang, Quanhao Qian et al.",
+      "summary": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reason",
+      "published": "2026-07-23T17:59:59Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.21595v1"
+    },
+    {
+      "title": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
+      "authors": "Sicheng Mo, Yuheng Li, Ziyang Leng et al.",
+      "summary": "Multi-agent interactive world models should not only generate consistent observations, but also maintain world states that persist across agents and evolve across views. Existing autoregressive video ",
+      "published": "2026-07-23T17:59:58Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21594v1"
+    },
+    {
+      "title": "Unified Video Dense Prediction from Disjoint Data",
+      "authors": "Yihong Sun, Seoung Wug Oh, Jiahui Huang et al.",
+      "summary": "Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets",
+      "published": "2026-07-23T17:59:50Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21592v1"
+    },
+    {
+      "title": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
+      "authors": "Rogerio Guimaraes, Pietro Perona",
+      "summary": "Diffusion and flow-matching models dominate conditional image generation, yet inference-time scaling for these models is far less developed than for autoregressive language models. Because final quali",
+      "published": "2026-07-23T17:59:46Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21591v1"
+    },
+    {
+      "title": "Expanding Flow Maps",
+      "authors": "Sophia Tang, Pranam Chatterjee",
+      "summary": "Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed d",
+      "published": "2026-07-23T17:57:38Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.21585v1"
+    },
+    {
+      "title": "Scale Up Strategically: Learning Compositional Generalization via Bias-Aware Evaluation and Data Collection for Robotic Manipulation",
+      "authors": "Yu Qi, Zhang Ye, Xinyi Xu et al.",
+      "summary": "Compositional generalization is essential for robot to follow diverse instructions. However, pretrained policies are known to take shortcuts, deferring to salient cues rather than grounding language. ",
+      "published": "2026-07-23T17:57:09Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21582v1"
+    },
+    {
+      "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+      "authors": "Vedant Shah, Onkar Susladkar, Tushar Prakash et al.",
+      "summary": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movem",
+      "published": "2026-07-23T17:56:30Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.21580v1"
+    },
+    {
+      "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+      "authors": "Dawei Li, Xiaotian Jiang, Mingyi Hong et al.",
+      "summary": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is",
+      "published": "2026-07-23T17:56:05Z",
+      "categories": [
+        "math.OC",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.21579v1"
+    },
+    {
+      "title": "Synthetic data generation framework for quality control automation in gravure printing",
+      "authors": "Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali et al.",
+      "summary": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-",
+      "published": "2026-07-23T17:55:21Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21577v1"
+    },
+    {
+      "title": "Self-Supervised Learning of Structured Dynamics from Videos",
+      "authors": "Lukas Knobel, Andrew Zisserman, Yuki M. Asano et al.",
+      "summary": "Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remain",
+      "published": "2026-07-23T17:55:07Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21576v1"
+    },
+    {
+      "title": "Surprisal Theory is Tautological (without Rational Grounding)",
+      "authors": "Ryan Cotterell",
+      "summary": "Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without ",
+      "published": "2026-07-23T17:54:37Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.21574v1"
+    },
+    {
+      "title": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+      "authors": "Hongnan Ma, Yiwei Shi, Mengyue Yang et al.",
+      "summary": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, e",
+      "published": "2026-07-23T17:52:01Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.21573v1"
+    },
+    {
+      "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
+      "authors": "Qian Wu, Xinrong Zhou, Zizhan Ma et al.",
+      "summary": "Large Language Models (LLMs) show promise for medical education, but most existing systems focus on localized interactions such as question answering or single-turn feedback, rather than organizing an",
+      "published": "2026-07-23T17:50:28Z",
+      "categories": [
+        "cs.CL",
+        "cs.HC"
+      ],
+      "link": "http://arxiv.org/abs/2607.21570v1"
+    },
+    {
+      "title": "Scene Parameter Saliency via Differentiable Light Transport",
+      "authors": "Linas Beresna, Eugene Fiume",
+      "summary": "Gradient-based saliency methods reveal which input features most influence a neural network's output, and are a standard tool for model interpretability. We observe that differentiable renderers, whic",
+      "published": "2026-07-23T17:46:26Z",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "link": "http://arxiv.org/abs/2607.21562v1"
+    },
+    {
+      "title": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
+      "authors": "Aaron Feller, Kris Deibler, Maxim Secor et al.",
+      "summary": "Molecular property prediction from structure often uses a single representative conformation, even though many molecules exist as conformational ensembles in solution. We introduce EnsembleEGNN, a mol",
+      "published": "2026-07-23T17:42:51Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "link": "http://arxiv.org/abs/2607.21561v1"
+    },
+    {
+      "title": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
+      "authors": "T. Ansah-Narh, Y. Asare Afrane",
+      "summary": "A consensus anomaly detection framework was applied to monthly malaria surveillance data from Ghana (2014-2023) to identify atypical transmission patterns. Anomalies were highly structured in space an",
+      "published": "2026-07-23T17:40:51Z",
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.ET",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2607.21559v1"
+    },
+    {
+      "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+      "authors": "Baihui Wang, Bernard Koch",
+      "summary": "Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must d",
+      "published": "2026-07-23T17:40:07Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.21558v1"
+    },
+    {
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "authors": "Xiao Yu, Baolin Peng, Ruize Xu et al.",
+      "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex h",
+      "published": "2026-07-23T17:38:30Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.21557v1"
+    },
+    {
+      "title": "Visual Contrastive Self-Distillation",
+      "authors": "Yijun Liang, Yunjie Tian, Yijiang Li et al.",
+      "summary": "On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to en",
+      "published": "2026-07-23T17:37:37Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.21556v1"
+    },
+    {
+      "title": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
+      "authors": "Junsong Chen, Jincheng Yu, Yitong Li et al.",
+      "summary": "We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SA",
+      "published": "2026-07-23T17:36:05Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.21553v1"
+    }
+  ]
+}

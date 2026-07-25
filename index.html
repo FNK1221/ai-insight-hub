@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#0a0e1a">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://api.github.com" crossorigin>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
 <style>
 :root {
   --bg-primary: #0a0e1a;
@@ -5586,6 +5586,8 @@ const searchResults = document.getElementById('searchResults');
 let fuseInstance = null;
 
 function buildSearchIndex() {
+  // fuse.js CDN 加载失败时优雅降级，不中断页面其他功能
+  if (typeof Fuse === 'undefined') { console.warn('[Search] fuse.js not loaded, search disabled'); return; }
   const items = [];
   document.querySelectorAll('.card, .tool-card, .workflow-card, .scenario-card, .news-card').forEach(el => {
     const titleEl = el.querySelector('.card-title, .tool-name, .workflow-title, .scenario-title, .news-card-title');
@@ -5647,6 +5649,11 @@ searchInput.addEventListener('input', () => {
   const q = searchInput.value.trim();
   if (!q) { searchResults.classList.remove('visible'); return; }
   if (!fuseInstance) buildSearchIndex();
+  if (!fuseInstance) {
+    searchResults.innerHTML = '<div style="padding:16px 20px;color:var(--text-muted);">搜索组件加载失败，请刷新重试</div>';
+    searchResults.classList.add('visible');
+    return;
+  }
 
   const results = fuseInstance.search(q, { limit: 8 });
   if (results.length === 0) {
@@ -5744,7 +5751,8 @@ document.querySelectorAll('.mobile-menu .nav-link').forEach(l => {
 });
 
 // ===== Last Update Time =====
-document.getElementById('lastUpdate').textContent = '最近更新：' + new Date().toLocaleDateString('zh-CN', { year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+// 初始为占位文案，数据 JSON 加载成功后由真实抓取时间覆盖（避免用访客本地时间冒充更新时间）
+document.getElementById('lastUpdate').textContent = '数据加载中…';
 
 // ===== GitHub Trending Repos =====
 (function() {
@@ -5938,6 +5946,23 @@ const NewsManager = (function() {
     } catch { /* storage full */ }
   }
 
+  // 静态 JSON 优先加载：数据由 GitHub Actions 在服务器端每日抓取并存到本站 data/ 目录，
+  // 同域请求不受国内访问外网 API 限制影响；直连外网 API 仅作为兜底
+  async function loadStaticJson(file) {
+    const url = new URL('data/' + file, window.location.href).href;
+    const resp = await fetch(url, { cache: 'no-cache' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    return await resp.json();
+  }
+
+  function appendUpdateNote(containerId, timestamp) {
+    if (!timestamp) return;
+    const ts = new Date(timestamp);
+    const dateStr = ts.toLocaleDateString('zh-CN', { month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+    document.getElementById(containerId).insertAdjacentHTML('beforeend',
+      '<div style="text-align:center;padding:8px 0 0;font-size:11px;color:var(--text-muted);">数据更新于 ' + dateStr + ' · 服务器每日自动抓取</div>');
+  }
+
   function timeAgo(dateStr) {
     if (!dateStr) return '';
     const diff = Date.now() - new Date(dateStr).getTime();
@@ -5979,6 +6004,20 @@ const NewsManager = (function() {
     if (pendingRequests[key]) return;
     pendingRequests[key] = true;
 
+    showLoading(containerId);
+
+    // 1) 静态 JSON 优先（服务器抓好的数据，国内可直接访问）
+    try {
+      const staticData = await loadStaticJson('arxiv-papers.json');
+      if (staticData.papers && staticData.papers.length) {
+        renderArxiv(containerId, staticData.papers);
+        appendUpdateNote(containerId, staticData.timestamp);
+        delete pendingRequests[key];
+        return;
+      }
+    } catch (e) { console.warn('[arXiv] static JSON unavailable:', e.message); }
+
+    // 2) localStorage 缓存
     const cached = getCache(key);
     if (cached) {
       renderArxiv(containerId, cached);
@@ -5986,7 +6025,7 @@ const NewsManager = (function() {
       return;
     }
 
-    showLoading(containerId);
+    // 3) 直连 arXiv API 兜底
     try {
       const url = 'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.CV+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=20';
       const resp = await fetch(url);
@@ -6054,6 +6093,20 @@ const NewsManager = (function() {
     if (pendingRequests[key]) return;
     pendingRequests[key] = true;
 
+    showLoading(containerId);
+
+    // 1) 静态 JSON 优先
+    try {
+      const staticData = await loadStaticJson('hn-stories.json');
+      if (staticData.stories && staticData.stories.length) {
+        renderHN(containerId, staticData.stories);
+        appendUpdateNote(containerId, staticData.timestamp);
+        delete pendingRequests[key];
+        return;
+      }
+    } catch (e) { console.warn('[HN] static JSON unavailable:', e.message); }
+
+    // 2) localStorage 缓存
     const cached = getCache(key);
     if (cached) {
       renderHN(containerId, cached);
@@ -6061,7 +6114,7 @@ const NewsManager = (function() {
       return;
     }
 
-    showLoading(containerId);
+    // 3) 直连 API 兜底
     try {
       const url = 'https://hn.algolia.com/api/v1/search?query=AI+artificial+intelligence+LLM&tags=story&hitsPerPage=20&numericFilters=points>50';
       const resp = await fetch(url);
@@ -6103,6 +6156,20 @@ const NewsManager = (function() {
     if (pendingRequests[key]) return;
     pendingRequests[key] = true;
 
+    showLoading(containerId);
+
+    // 1) 静态 JSON 优先
+    try {
+      const staticData = await loadStaticJson('rss-news.json');
+      if (staticData.items && staticData.items.length) {
+        renderRSS(containerId, staticData.items);
+        appendUpdateNote(containerId, staticData.timestamp);
+        delete pendingRequests[key];
+        return;
+      }
+    } catch (e) { console.warn('[RSS] static JSON unavailable:', e.message); }
+
+    // 2) localStorage 缓存
     const cached = getCache(key);
     if (cached) {
       renderRSS(containerId, cached);
@@ -6110,7 +6177,7 @@ const NewsManager = (function() {
       return;
     }
 
-    showLoading(containerId);
+    // 3) rss2json 代理兜底
     const feeds = [
       'https://techcrunch.com/category/artificial-intelligence/feed/',
       'https://www.technologyreview.com/feed/',
@@ -6152,7 +6219,7 @@ const NewsManager = (function() {
   function renderRSS(containerId, items) {
     if (!items || !items.length) { showEmpty(containerId); return; }
     document.getElementById(containerId).innerHTML = '<div class="news-cards">' + items.map(r => {
-      const imgHtml = r.thumbnail ? '<div style="margin-top:8px;"><img src="' + escapeHtml(r.thumbnail) + '" alt="" style="width:100%;height:140px;object-fit:cover;border-radius:var(--radius-sm);background:var(--bg-secondary);" onerror="this.style.display=\'none\'"></div>' : '';
+      const imgHtml = r.thumbnail ? '<div style="margin-top:8px;"><img src="' + escapeHtml(r.thumbnail) + '" alt="" loading="lazy" style="width:100%;height:140px;object-fit:cover;border-radius:var(--radius-sm);background:var(--bg-secondary);" onerror="this.parentNode.style.display=\'none\'"></div>' : '';
       return '<div class="news-card" data-tags="rss,industry,news,' + escapeHtml(r.source) + '">' +
         '<div class="news-card-header"><span class="news-card-badge badge-cyan">' + escapeHtml(r.source) + '</span><div class="news-card-title"><a href="' + escapeHtml(r.link) + '" target="_blank" rel="noopener">' + escapeHtml(r.title) + '</a></div></div>' +
         '<div class="news-card-meta"><span class="news-card-meta-item">&#128197; ' + timeAgo(r.pubDate) + '</span></div>' +
@@ -6171,6 +6238,30 @@ const NewsManager = (function() {
     if (pendingRequests[key]) return;
     pendingRequests[key] = true;
 
+    showLoading(containerId);
+
+    // 1) 静态 JSON 优先（api.github.com 国内经常无法访问，这是主通道）
+    try {
+      const staticData = await loadStaticJson('ai-tools.json');
+      if (staticData.tools && staticData.tools.length) {
+        const mapped = staticData.tools.map(r => ({
+          name: r.name || '',
+          fullName: r.full_name || '',
+          description: r.description || '',
+          stars: r.stars || 0,
+          language: r.language || '',
+          pushedAt: r.pushed_at || '',
+          url: r.html_url || '',
+          topics: r.topics || []
+        }));
+        renderTools(containerId, mapped);
+        appendUpdateNote(containerId, staticData.timestamp);
+        delete pendingRequests[key];
+        return;
+      }
+    } catch (e) { console.warn('[Tools] static JSON unavailable:', e.message); }
+
+    // 2) localStorage 缓存
     const cached = getCache(key);
     if (cached) {
       renderTools(containerId, cached);
@@ -6178,7 +6269,7 @@ const NewsManager = (function() {
       return;
     }
 
-    showLoading(containerId);
+    // 3) 直连 GitHub API 兜底（国内大概率失败，将落入 demo 数据）
     try {
       const url = 'https://api.github.com/search/repositories?q=ai+assistant+OR+llm+OR+chatbot+OR+rag+OR+agent&sort=stars&order=desc&per_page=15';
       const resp = await fetch(url);
@@ -6234,6 +6325,30 @@ const NewsManager = (function() {
     if (pendingRequests[key]) return;
     pendingRequests[key] = true;
 
+    showLoading(containerId);
+
+    // 1) 静态 JSON 优先：复用服务器抓好的 arXiv 数据，按 NLP/CV 分类过滤
+    try {
+      const staticData = await loadStaticJson('arxiv-papers.json');
+      if (staticData.papers && staticData.papers.length) {
+        const frontierItems = staticData.papers
+          .filter(p => (p.categories || []).some(c => c === 'cs.CL' || c === 'cs.CV'))
+          .slice(0, 12)
+          .map(p => ({
+            title: p.title, authors: p.authors, summary: (p.summary || '').substring(0, 180),
+            published: p.published, link: p.link,
+            label: (p.categories || []).includes('cs.CL') ? 'NLP' : 'CV'
+          }));
+        if (frontierItems.length) {
+          renderFrontier(containerId, frontierItems);
+          appendUpdateNote(containerId, staticData.timestamp);
+          delete pendingRequests[key];
+          return;
+        }
+      }
+    } catch (e) { console.warn('[Frontier] static JSON unavailable:', e.message); }
+
+    // 2) localStorage 缓存
     const cached = getCache(key);
     if (cached) {
       renderFrontier(containerId, cached);
@@ -6241,7 +6356,7 @@ const NewsManager = (function() {
       return;
     }
 
-    showLoading(containerId);
+    // 3) 直连 arXiv API 兜底
     const queries = [
       { query: 'cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=5', label: 'NLP' },
       { query: 'cat:cs.CV&sortBy=submittedDate&sortOrder=descending&max_results=5', label: 'CV' }

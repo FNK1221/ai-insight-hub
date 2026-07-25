@@ -31,31 +31,45 @@ jobs:
         run: |
           pip install requests beautifulsoup4 feedparser
 
+      # 注意：所有抓取步骤都加 continue-on-error，
+      # 单个数据源挂掉不影响其他数据的提交（此前 ai_tools 403 导致全线停更近两个月）
       - name: Cache arXiv papers
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cache_arxiv.py
 
       - name: Cache Hacker News stories
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cache_hn_stories.py
 
       - name: Cache GitHub trending repos (PAT for higher rate limit)
+        continue-on-error: true
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cache_github_repos.py
 
       - name: Cache AI tools from GitHub
+        continue-on-error: true
         env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cache_ai_tools.py
 
+      - name: Cache RSS industry news
+        continue-on-error: true
+        run: |
+          python scripts/cache_rss.py
+
       - name: Fetch latest AI news & update content
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
