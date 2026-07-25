@@ -14,6 +14,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write  # 允许 dispatch deploy.yml（bot 推送不会自动触发其他 workflow）
 
 jobs:
   update:
