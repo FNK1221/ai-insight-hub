@@ -1,230 +1,226 @@
 {
-  "timestamp": "2026-07-28T02:28:59.447263+00:00",
+  "timestamp": "2026-07-30T02:21:04.248543+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Data Pyramid for Embodied Manipulation",
-      "authors": "Yifan Ye, Yankai Fu, Yaoxu Lv et al.",
-      "summary": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states ",
-      "published": "2026-07-27T17:59:58Z",
+      "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
+      "authors": "Hao Tan, Jun Lan, Zichang Tan et al.",
+      "summary": "The growing capability of image generation models has made synthetic images a routine presence in open media, making robust and generalizable AI-Generated Image (AIGI) detection increasingly essential",
+      "published": "2026-07-29T16:43:59Z",
       "categories": [
-        "cs.RO",
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2607.24744v1"
+      "link": "http://arxiv.org/abs/2607.27113v1"
     },
     {
-      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
-      "authors": "Hangjie Yuan, Yichen Qian, Zhiwei Tang et al.",
-      "summary": "Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must ab",
-      "published": "2026-07-27T17:59:49Z",
+      "title": "FreqForcing: Autoregressive Long Video Generation via Spectral Self-Anchoring",
+      "authors": "Jiatong Li, Leo Liang, Linghe Kong et al.",
+      "summary": "Autoregressive video diffusion models enable real-time streaming video generation. However, errors introduced during self-rollout accumulate over long horizons, manifesting as color drift, motion stag",
+      "published": "2026-07-29T16:38:47Z",
       "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2607.24743v1"
+      "link": "http://arxiv.org/abs/2607.27110v1"
     },
     {
-      "title": "Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport",
-      "authors": "Xinyang Wen",
-      "summary": "Dynamic applications, including optimal-transport Flow Matching, repeatedly solve related entropic optimal transport problems, yet conventional distributed Sinkhorn processes frames sequentially and s",
-      "published": "2026-07-27T17:59:36Z",
+      "title": "MMAC: A Massive Multi-dimensional Benchmark for Audio Captioning",
+      "authors": "Weijie Wu, Junbo Li, Lin Li et al.",
+      "summary": "With the development of audio large language models (AudioLLMs), audio captioning needs to move from brief descriptions toward open-ended and fine-grained free-form descriptions. Existing evaluations ",
+      "published": "2026-07-29T16:38:08Z",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.27109v1"
+    },
+    {
+      "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
+      "authors": "Filipa Lino, Bárbara Tavares, Carlos Santiago et al.",
+      "summary": "Emergency Departments (EDs) are critical access points in healthcare systems, yet they face persistent pressure from unpredictable patient demand, seasonal surges, and non-urgent visits. Effective ED ",
+      "published": "2026-07-29T16:33:18Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.27106v1"
+    },
+    {
+      "title": "Detecting seizure onset and offset times using human intelligence: A critical-transitions-based approach",
+      "authors": "Andrew Flynn, Cian McCafferty, Klaus Lehnertz et al.",
+      "summary": "Most existing seizure detection algorithms require extensive pre-processing of the data and rely on heuristic or currently unexplainable machine learning approaches. These approaches often struggle wi",
+      "published": "2026-07-29T16:31:53Z",
+      "categories": [
+        "math.DS",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.27105v1"
+    },
+    {
+      "title": "Sky sphere representation in language models",
+      "authors": "Aleksandr Berdnikov, Yevgeny Liokumovich",
+      "summary": "We analyze whether language models of size ~100B have a representation of the night sky map that is decodable from their residual stream. We find that most of the considered open-source models do have",
+      "published": "2026-07-29T16:19:43Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.27092v1"
+    },
+    {
+      "title": "InferScale: GPU-Native KV Injection for Personalized LLM Serving",
+      "authors": "Peter Li, Prashant Pandey",
+      "summary": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests. ",
+      "published": "2026-07-29T16:18:22Z",
       "categories": [
         "cs.DC",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2607.24741v1"
+      "link": "http://arxiv.org/abs/2607.27090v1"
     },
     {
-      "title": "Learning Distributions from Multiple Data Providers",
-      "authors": "Jon Kleinberg, Amin Saberi, Xizhi Tan et al.",
-      "summary": "Motivated by learning from heterogeneous and overlapping data providers, we study a stylized model of distribution learning from restricted conditional samples. The goal is to learn an unknown distrib",
-      "published": "2026-07-27T17:57:16Z",
+      "title": "Step-Attention Refinement of DINOv3 Features for Efficient Anterior Eye Segmentation",
+      "authors": "Philippe Baumstimler, Jean-Mathieu Gagnon, Sébastien Gagné et al.",
+      "summary": "Anterior eye segment (AES) segmentation is a key component of both ocular biometrics and emerging clinical image analysis applications. However, heterogeneous acquisition conditions and limited annota",
+      "published": "2026-07-29T16:11:11Z",
       "categories": [
-        "cs.DS",
-        "cs.GT",
-        "cs.LG",
-        "stat.ML"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2607.24732v1"
+      "link": "http://arxiv.org/abs/2607.27087v1"
     },
     {
-      "title": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
-      "authors": "Bingnan Li, Haozhe Wang, Haozhong Xiong et al.",
-      "summary": "On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories generated by the current student, but how it should behave under classifier-free guidance (CFG), a default",
-      "published": "2026-07-27T17:57:02Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.24731v1"
-    },
-    {
-      "title": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
-      "authors": "Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V. et al.",
-      "summary": "Computer vision models have become highly effective for medical applications, yet their black-box nature continues to undermine clinician trust. In clinical workflows, chest X-ray classifiers are incr",
-      "published": "2026-07-27T17:57:02Z",
+      "title": "SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context",
+      "authors": "Zihan Deng, Chuanzhi Xu, Huiqi Liang et al.",
+      "summary": "Scientific images are the core elements of presenting experimental conclusions, elaborating system architecture, and supporting comparative arguments in scientific papers. However, existing image qual",
+      "published": "2026-07-29T16:07:44Z",
       "categories": [
         "cs.CV",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2607.24730v1"
+      "link": "http://arxiv.org/abs/2607.27084v1"
     },
     {
-      "title": "MicroZoom: Structure-Preserving Detail Synthesis at Extreme Scale",
-      "authors": "Huy Huynh, Jingwei Ma, Brian Curless et al.",
-      "summary": "We introduce MicroZoom, a generative framework for gigapixel image synthesis at the microscopic scale. Given a standard photograph and a sparse set of consumer-grade microscope close-ups, MicroZoom sy",
-      "published": "2026-07-27T17:57:00Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24729v1"
-    },
-    {
-      "title": "Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives",
-      "authors": "Sajad Amiri, Pardis Afshar, Elham Anjomshoa et al.",
-      "summary": "Background. Pediatric musculoskeletal trauma represents up to 18% of pediatric ED visits, yet diagnosis still depends on ionizing radiography. Cumulative low-dose radiation in early life raises lifeti",
-      "published": "2026-07-27T17:56:53Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24727v1"
-    },
-    {
-      "title": "Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs",
-      "authors": "Justin Sirignano, Konstantinos Spiliopoulos, Samuel Cohen et al.",
-      "summary": "The Deep Galerkin Method (DGM) and Physics Informed Neural Networks (PINNs) have become widely-used methods for solving partial differential equations (PDEs) in the rapidly growing field of scientific",
-      "published": "2026-07-27T17:56:37Z",
+      "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
+      "authors": "Yicheng Feng, Yan Zhang, Yan Cheng et al.",
+      "summary": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools l",
+      "published": "2026-07-29T16:07:37Z",
       "categories": [
         "cs.LG",
-        "math.NA"
-      ],
-      "link": "http://arxiv.org/abs/2607.24726v1"
-    },
-    {
-      "title": "DreamStyle3D: Efficient 3D Stylized Asset Generation via Dual-Attention Disentanglement",
-      "authors": "Kai Wang, Ziheng Ouyang, Xuying Zhang et al.",
-      "summary": "With the growth of gaming, animation, and virtual reality industries, the demand for efficient generation of stylized 3D assets is rapidly increasing. However, existing approaches still struggle to jo",
-      "published": "2026-07-27T17:55:21Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24721v1"
-    },
-    {
-      "title": "The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation",
-      "authors": "Tianyi Men, Zhuoran Jin, Kang Liu et al.",
-      "summary": "Multi-turn long-horizon planning is critical for foundation model agents, yet how to fundamentally improve it remains unclear. Existing models are trained on uncontrollable and opaque Internet data, m",
-      "published": "2026-07-27T17:55:03Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.24720v1"
-    },
-    {
-      "title": "DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data",
-      "authors": "Zhen Huang, Yikun Wang, Shijie Xia et al.",
-      "summary": "Pretraining data processing is critical to the downstream performance of Large Language Models (LLMs). However, many existing approaches define a fixed processing strategy at the corpus or domain leve",
-      "published": "2026-07-27T17:54:12Z",
-      "categories": [
-        "cs.CL",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2607.24717v1"
+      "link": "http://arxiv.org/abs/2607.27083v1"
     },
     {
-      "title": "Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures",
-      "authors": "Fabian Kreppel, Reza Salkhordeh, Ferdinand Schmidt-Kaler et al.",
-      "summary": "Trapped-ion quantum computers rely on shuttling compilers, which cast an input algorithm into a sequence of ion-qubit movements within a given architecture. We present the first study in which a singl",
-      "published": "2026-07-27T17:51:18Z",
-      "categories": [
-        "quant-ph",
-        "cs.AI",
-        "cs.ET"
-      ],
-      "link": "http://arxiv.org/abs/2607.24714v1"
-    },
-    {
-      "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
-      "authors": "Ali Ansari, Yasmin Mohammadi, Farnoush Nili et al.",
-      "summary": "Entity-Relationship Diagrams (ERDs) are central to conceptual database design, yet they are typically available only as rendered images rather than machine-readable schemas, limiting AI-assisted datab",
-      "published": "2026-07-27T17:46:43Z",
+      "title": "On-Policy Distillation for LLM Safety: A Routing Approach to Template-Robust Realignment",
+      "authors": "Yongjian Guo, Wanlun Ma, Lingyu Shen et al.",
+      "summary": "Fine-tuning is the dominant paradigm for specializing large language models (LLMs), yet it exposes a critical vulnerability: malicious data providers can embed harmful behaviors into downstream corpor",
+      "published": "2026-07-29T16:07:19Z",
       "categories": [
         "cs.AI",
-        "cs.CV",
-        "cs.DB"
-      ],
-      "link": "http://arxiv.org/abs/2607.24707v1"
-    },
-    {
-      "title": "SADe: Sparse-Atom Support Decontamination for Few-Shot Segmentation with Weak Support Annotations",
-      "authors": "Hang Xing, Guangjun Liu, Yan Xia et al.",
-      "summary": "Few-shot segmentation (FSS) commonly assumes clean pixel-level support masks, yet practical support supervision often uses boxes, scribbles, coarse masks, or pseudo-masks. These weak annotations may i",
-      "published": "2026-07-27T17:46:18Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24706v1"
-    },
-    {
-      "title": "Panda: Unsupervised Pelvic Anomaly Detection for Real-Time MR Imaging",
-      "authors": "Anika Knupfer, Maximilian Lindholz, Johanna Paula Müller et al.",
-      "summary": "Female pelvic diseases remain an under researched area characterized by often delayed diagnosis. While pelvic MRI offers superior soft-tissue contrast for diagnosis and image-guided procedures, real-t",
-      "published": "2026-07-27T17:44:29Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24703v1"
-    },
-    {
-      "title": "Spatio-Temporal Conditional Denoising Transformer for Modality-Missing RGBT Tracking",
-      "authors": "Andong Lu, Ziyi Zha, Jiandong Jin et al.",
-      "summary": "Missing modalities in RGBT tracking often lead to incomplete and unstable multimodal feature representations that greatly degrade the performance. Existing methods typically attempt to recover missing",
-      "published": "2026-07-27T17:44:00Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.24701v1"
-    },
-    {
-      "title": "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines",
-      "authors": "Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica et al.",
-      "summary": "Inference systems increasingly combine a fast path that returns predictions within the application's latency deadline together with a higher-accuracy slow path that runs higher-compute methods on stro",
-      "published": "2026-07-27T17:34:09Z",
-      "categories": [
-        "cs.NI",
-        "cs.AI",
+        "cs.CL",
         "cs.CR",
-        "cs.DC"
-      ],
-      "link": "http://arxiv.org/abs/2607.24692v1"
-    },
-    {
-      "title": "Beyond Scale and Generation: Understanding Language Model-based Entity Matching",
-      "authors": "Zeyu Zhang, Xue Li, Iacer Calixto et al.",
-      "summary": "Entity matching identifies records that refer to the same real-world entity. Language models can be adapted to this task through bi-encoder, cross-encoder, and generative matcher architectures. Howeve",
-      "published": "2026-07-27T17:29:18Z",
-      "categories": [
-        "cs.DB",
-        "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2607.24688v1"
+      "link": "http://arxiv.org/abs/2607.27081v1"
     },
     {
-      "title": "Stacking the Deck: Tunable Trainability in Stacked LCUs",
-      "authors": "Nikhil Khatri, Stefan Zohren, Gabriel Matos et al.",
-      "summary": "Variational quantum circuits have been central to many proposed near-term applications of quantum computing, but a growing body of evidence suggests that trainability and quantum advantage are fundame",
-      "published": "2026-07-27T17:25:14Z",
+      "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+      "authors": "Xuanze Chen, Xukang Xie, Wentao Fu et al.",
+      "summary": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist. A malicious instruction crafted by an attacker may be stored in lon",
+      "published": "2026-07-29T16:06:54Z",
       "categories": [
-        "quant-ph",
+        "cs.CR",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.27080v1"
+    },
+    {
+      "title": "Field Codes for Distributed Coupling Samplers and Certified Empirical Transport",
+      "authors": "Hung Mai, Hai Nguyen, Luong Doan et al.",
+      "summary": "In this paper, we formulate three communication tasks for empirical optimal transport: distributed coupling sampling, cost-evaluable coupling output, and scalar value-certified sampling. Our main resu",
+      "published": "2026-07-29T16:03:59Z",
+      "categories": [
+        "cs.CC",
+        "cs.IT",
+        "cs.LG",
+        "math.OC"
+      ],
+      "link": "http://arxiv.org/abs/2607.27078v1"
+    },
+    {
+      "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
+      "authors": "Nicolas Béreux, Aurélien Decelle, Cyril Furtlehner et al.",
+      "summary": "Energy-Based Models (EBMs) provide an interpretable framework for generative modeling of scientific data, but poor Markov Chain Monte Carlo mixing often limits their reliability. We introduce a traini",
+      "published": "2026-07-29T16:00:59Z",
+      "categories": [
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2607.24686v1"
+      "link": "http://arxiv.org/abs/2607.27077v1"
+    },
+    {
+      "title": "Single-Beat Cuffless Blood Pressure Estimation Using Ear-PPG and ECG with a Lightweight Hybrid Learning Framework",
+      "authors": "Kindeep K. Dhatt, Tengyue Wu, Hanbang Hua et al.",
+      "summary": "Continuous cuffless blood pressure (BP) monitoring remains challenging due to motion artifacts, physiological variability, and the limited robustness of conventional pulse transit time (PTT) models un",
+      "published": "2026-07-29T16:00:39Z",
+      "categories": [
+        "cs.LG",
+        "eess.SP",
+        "eess.SY"
+      ],
+      "link": "http://arxiv.org/abs/2607.27076v1"
+    },
+    {
+      "title": "Parameter-Free Dynamic Regret for Online Convex Optimization under Heavy-Tailed Noise",
+      "authors": "Vaneet Aggarwal",
+      "summary": "We study online convex optimization (OCO) in non-stationary environments under heavy-tailed noise, where the stochastic gradient oracle admits only a finite $p$-th central moment for some $p \\in (1, 2",
+      "published": "2026-07-29T15:58:18Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "link": "http://arxiv.org/abs/2607.27073v1"
+    },
+    {
+      "title": "Visual Credit Audit for Multimodal Spatial Reasoning",
+      "authors": "Feixiang Liu, Qiang Qiu, Lanbo Sun et al.",
+      "summary": "Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a fixed forced-choice interface, Visual Credit Audit (VCA) separate",
+      "published": "2026-07-29T15:55:31Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.27069v1"
+    },
+    {
+      "title": "SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence",
+      "authors": "Chuanzhi Xu, Zihan Deng, Huiqi Liang et al.",
+      "summary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually legible, faithfully support the manuscript's claims, and communicate ",
+      "published": "2026-07-29T15:54:14Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.27066v1"
+    },
+    {
+      "title": "ScratchSim: A Procedural Synthetic Data Pipeline for Surface Scratch Detection",
+      "authors": "Paul Julius Kühn, Saptarshi Neil Sinha, Tiago Kleist et al.",
+      "summary": "While automated defect detection such as the detection of surface scratched is an important aspect in industrial quality control, the scarcity of annotated defect data make this task challenging. This",
+      "published": "2026-07-29T15:54:01Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.27065v1"
+    },
+    {
+      "title": "PIKS: Universal Physics-Informed Kernel Methods",
+      "authors": "Joachim Bona-Pellissier, Giacomo Meanti, Matteo Santacesaria et al.",
+      "summary": "Physics-informed machine learning incorporates physical principles --often expressed via differential operators-- into data-driven models. While physics-informed neural networks (PINNs) dominate empir",
+      "published": "2026-07-29T15:53:03Z",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.27062v1"
     }
   ]
 }
