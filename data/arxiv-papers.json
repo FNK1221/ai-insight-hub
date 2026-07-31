@@ -1,226 +1,225 @@
 {
-  "timestamp": "2026-07-30T02:21:04.248543+00:00",
+  "timestamp": "2026-07-31T02:44:42.823187+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
-      "authors": "Hao Tan, Jun Lan, Zichang Tan et al.",
-      "summary": "The growing capability of image generation models has made synthetic images a routine presence in open media, making robust and generalizable AI-Generated Image (AIGI) detection increasingly essential",
-      "published": "2026-07-29T16:43:59Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.27113v1"
-    },
-    {
-      "title": "FreqForcing: Autoregressive Long Video Generation via Spectral Self-Anchoring",
-      "authors": "Jiatong Li, Leo Liang, Linghe Kong et al.",
-      "summary": "Autoregressive video diffusion models enable real-time streaming video generation. However, errors introduced during self-rollout accumulate over long horizons, manifesting as color drift, motion stag",
-      "published": "2026-07-29T16:38:47Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.27110v1"
-    },
-    {
-      "title": "MMAC: A Massive Multi-dimensional Benchmark for Audio Captioning",
-      "authors": "Weijie Wu, Junbo Li, Lin Li et al.",
-      "summary": "With the development of audio large language models (AudioLLMs), audio captioning needs to move from brief descriptions toward open-ended and fine-grained free-form descriptions. Existing evaluations ",
-      "published": "2026-07-29T16:38:08Z",
-      "categories": [
-        "cs.SD",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27109v1"
-    },
-    {
-      "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
-      "authors": "Filipa Lino, Bárbara Tavares, Carlos Santiago et al.",
-      "summary": "Emergency Departments (EDs) are critical access points in healthcare systems, yet they face persistent pressure from unpredictable patient demand, seasonal surges, and non-urgent visits. Effective ED ",
-      "published": "2026-07-29T16:33:18Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27106v1"
-    },
-    {
-      "title": "Detecting seizure onset and offset times using human intelligence: A critical-transitions-based approach",
-      "authors": "Andrew Flynn, Cian McCafferty, Klaus Lehnertz et al.",
-      "summary": "Most existing seizure detection algorithms require extensive pre-processing of the data and rely on heuristic or currently unexplainable machine learning approaches. These approaches often struggle wi",
-      "published": "2026-07-29T16:31:53Z",
-      "categories": [
-        "math.DS",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27105v1"
-    },
-    {
-      "title": "Sky sphere representation in language models",
-      "authors": "Aleksandr Berdnikov, Yevgeny Liokumovich",
-      "summary": "We analyze whether language models of size ~100B have a representation of the night sky map that is decodable from their residual stream. We find that most of the considered open-source models do have",
-      "published": "2026-07-29T16:19:43Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27092v1"
-    },
-    {
-      "title": "InferScale: GPU-Native KV Injection for Personalized LLM Serving",
-      "authors": "Peter Li, Prashant Pandey",
-      "summary": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests. ",
-      "published": "2026-07-29T16:18:22Z",
-      "categories": [
-        "cs.DC",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27090v1"
-    },
-    {
-      "title": "Step-Attention Refinement of DINOv3 Features for Efficient Anterior Eye Segmentation",
-      "authors": "Philippe Baumstimler, Jean-Mathieu Gagnon, Sébastien Gagné et al.",
-      "summary": "Anterior eye segment (AES) segmentation is a key component of both ocular biometrics and emerging clinical image analysis applications. However, heterogeneous acquisition conditions and limited annota",
-      "published": "2026-07-29T16:11:11Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.27087v1"
-    },
-    {
-      "title": "SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context",
-      "authors": "Zihan Deng, Chuanzhi Xu, Huiqi Liang et al.",
-      "summary": "Scientific images are the core elements of presenting experimental conclusions, elaborating system architecture, and supporting comparative arguments in scientific papers. However, existing image qual",
-      "published": "2026-07-29T16:07:44Z",
+      "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+      "authors": "Yao Xiao, Reuben Tan, Zhen Zhu et al.",
+      "summary": "Long visual context poses a challenge for vision-language models: performance degrades as the number of distractors grows, and processing all tokens at once is computationally infeasible under GPU mem",
+      "published": "2026-07-30T17:59:56Z",
       "categories": [
         "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27084v1"
-    },
-    {
-      "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
-      "authors": "Yicheng Feng, Yan Zhang, Yan Cheng et al.",
-      "summary": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools l",
-      "published": "2026-07-29T16:07:37Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27083v1"
-    },
-    {
-      "title": "On-Policy Distillation for LLM Safety: A Routing Approach to Template-Robust Realignment",
-      "authors": "Yongjian Guo, Wanlun Ma, Lingyu Shen et al.",
-      "summary": "Fine-tuning is the dominant paradigm for specializing large language models (LLMs), yet it exposes a critical vulnerability: malicious data providers can embed harmful behaviors into downstream corpor",
-      "published": "2026-07-29T16:07:19Z",
-      "categories": [
         "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28627v1"
+    },
+    {
+      "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
+      "authors": "Yukang Cao, Haozhe Xie, Beichen Wen et al.",
+      "summary": "Embodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as",
+      "published": "2026-07-30T17:59:50Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28625v1"
+    },
+    {
+      "title": "PhiZero: A World Model Built Around Physical Language",
+      "authors": "Shuyao Shang, Yuqi Wang, Ruopeng Gao et al.",
+      "summary": "We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future video",
+      "published": "2026-07-30T17:59:46Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28624v1"
+    },
+    {
+      "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+      "authors": "Lizhi Yang, Junheng Li, Aaron D. Ames et al.",
+      "summary": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ba",
+      "published": "2026-07-30T17:59:35Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.28623v1"
+    },
+    {
+      "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+      "authors": "Bing Yan, Gregory Wolfe, Stefano Martiniani et al.",
+      "summary": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a resul",
+      "published": "2026-07-30T17:59:11Z",
+      "categories": [
         "cs.CL",
-        "cs.CR",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27081v1"
-    },
-    {
-      "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
-      "authors": "Xuanze Chen, Xukang Xie, Wentao Fu et al.",
-      "summary": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist. A malicious instruction crafted by an attacker may be stored in lon",
-      "published": "2026-07-29T16:06:54Z",
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27080v1"
-    },
-    {
-      "title": "Field Codes for Distributed Coupling Samplers and Certified Empirical Transport",
-      "authors": "Hung Mai, Hai Nguyen, Luong Doan et al.",
-      "summary": "In this paper, we formulate three communication tasks for empirical optimal transport: distributed coupling sampling, cost-evaluable coupling output, and scalar value-certified sampling. Our main resu",
-      "published": "2026-07-29T16:03:59Z",
-      "categories": [
-        "cs.CC",
-        "cs.IT",
-        "cs.LG",
-        "math.OC"
-      ],
-      "link": "http://arxiv.org/abs/2607.27078v1"
-    },
-    {
-      "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
-      "authors": "Nicolas Béreux, Aurélien Decelle, Cyril Furtlehner et al.",
-      "summary": "Energy-Based Models (EBMs) provide an interpretable framework for generative modeling of scientific data, but poor Markov Chain Monte Carlo mixing often limits their reliability. We introduce a traini",
-      "published": "2026-07-29T16:00:59Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.27077v1"
-    },
-    {
-      "title": "Single-Beat Cuffless Blood Pressure Estimation Using Ear-PPG and ECG with a Lightweight Hybrid Learning Framework",
-      "authors": "Kindeep K. Dhatt, Tengyue Wu, Hanbang Hua et al.",
-      "summary": "Continuous cuffless blood pressure (BP) monitoring remains challenging due to motion artifacts, physiological variability, and the limited robustness of conventional pulse transit time (PTT) models un",
-      "published": "2026-07-29T16:00:39Z",
-      "categories": [
-        "cs.LG",
-        "eess.SP",
-        "eess.SY"
-      ],
-      "link": "http://arxiv.org/abs/2607.27076v1"
-    },
-    {
-      "title": "Parameter-Free Dynamic Regret for Online Convex Optimization under Heavy-Tailed Noise",
-      "authors": "Vaneet Aggarwal",
-      "summary": "We study online convex optimization (OCO) in non-stationary environments under heavy-tailed noise, where the stochastic gradient oracle admits only a finite $p$-th central moment for some $p \\in (1, 2",
-      "published": "2026-07-29T15:58:18Z",
-      "categories": [
-        "cs.LG",
         "cs.AI",
-        "math.OC"
-      ],
-      "link": "http://arxiv.org/abs/2607.27073v1"
-    },
-    {
-      "title": "Visual Credit Audit for Multimodal Spatial Reasoning",
-      "authors": "Feixiang Liu, Qiang Qiu, Lanbo Sun et al.",
-      "summary": "Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a fixed forced-choice interface, Visual Credit Audit (VCA) separate",
-      "published": "2026-07-29T15:55:31Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27069v1"
-    },
-    {
-      "title": "SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence",
-      "authors": "Chuanzhi Xu, Zihan Deng, Huiqi Liang et al.",
-      "summary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually legible, faithfully support the manuscript's claims, and communicate ",
-      "published": "2026-07-29T15:54:14Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27066v1"
-    },
-    {
-      "title": "ScratchSim: A Procedural Synthetic Data Pipeline for Surface Scratch Detection",
-      "authors": "Paul Julius Kühn, Saptarshi Neil Sinha, Tiago Kleist et al.",
-      "summary": "While automated defect detection such as the detection of surface scratched is an important aspect in industrial quality control, the scarcity of annotated defect data make this task challenging. This",
-      "published": "2026-07-29T15:54:01Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.27065v1"
-    },
-    {
-      "title": "PIKS: Universal Physics-Informed Kernel Methods",
-      "authors": "Joachim Bona-Pellissier, Giacomo Meanti, Matteo Santacesaria et al.",
-      "summary": "Physics-informed machine learning incorporates physical principles --often expressed via differential operators-- into data-driven models. While physics-informed neural networks (PINNs) dominate empir",
-      "published": "2026-07-29T15:53:03Z",
-      "categories": [
-        "stat.ML",
+        "cs.IR",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2607.27062v1"
+      "link": "http://arxiv.org/abs/2607.28618v1"
+    },
+    {
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "authors": "Qixun Wang, Yang Shi, Letian Cheng et al.",
+      "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet",
+      "published": "2026-07-30T17:46:55Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28595v1"
+    },
+    {
+      "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "authors": "Haomin Qi, Xingliang Wang, Xuanqi Gao et al.",
+      "summary": "Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation. Each task must couple a realistic software state with a specification, deve",
+      "published": "2026-07-30T17:44:31Z",
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28591v1"
+    },
+    {
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "authors": "Kangning Zhang, Yixing Li, Shuai Shao et al.",
+      "summary": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher. Yet its next-token corrections are source-",
+      "published": "2026-07-30T17:43:46Z",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.28590v1"
+    },
+    {
+      "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+      "authors": "Manyi Wang, Junjielong Xu, Pinjia He et al.",
+      "summary": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue",
+      "published": "2026-07-30T17:42:44Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.28587v1"
+    },
+    {
+      "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+      "authors": "Xiao Luo, Mingyang Du, Xin Zhou et al.",
+      "summary": "High-fidelity 3D generation predominantly relies on scaling model capacity and data, which incurs prohibitive computational costs. This paradigm typically requires learning geometry from scratch and o",
+      "published": "2026-07-30T17:40:08Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28581v1"
+    },
+    {
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "authors": "Jiacheng Tao, Qingyun Sun, Haonan Yuan et al.",
+      "summary": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instanc",
+      "published": "2026-07-30T17:40:05Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.28580v1"
+    },
+    {
+      "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
+      "authors": "Iliya Mirzaei",
+      "summary": "Methods that make a language model plan, criticise and rewrite its own answer, reflect on mistakes, pick the best of several attempts, or debate with copies of itself nearly all make it generate far m",
+      "published": "2026-07-30T17:38:23Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28576v1"
+    },
+    {
+      "title": "Algorithms for Structured Elections under Thiele Voting Rules",
+      "authors": "Alexandra Lassota, Krzysztof Sornat",
+      "summary": "We study the computational complexity of winner determination problems in approval-based committee elections under Thiele voting rules. These form a class of rules parameterized by a fixed weight vect",
+      "published": "2026-07-30T17:37:14Z",
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.DS",
+        "cs.MA"
+      ],
+      "link": "http://arxiv.org/abs/2607.28575v1"
+    },
+    {
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": "Junlin Yang, Che Jiang, Yu Fu et al.",
+      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this c",
+      "published": "2026-07-30T17:34:01Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.28568v1"
+    },
+    {
+      "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+      "authors": "Yunzhan Fu, Xiangyu Shen, Yifei Sun et al.",
+      "summary": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing methods typically apply uniform fusion rules globally, lacking ",
+      "published": "2026-07-30T17:30:21Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28565v1"
+    },
+    {
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "authors": "Albert Gong, Kyuseong Choi, Abhineet Agarwal et al.",
+      "summary": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from am",
+      "published": "2026-07-30T17:14:07Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "link": "http://arxiv.org/abs/2607.28545v1"
+    },
+    {
+      "title": "ScaFE: Data-Efficient Scar Classification with LLM-Generated Clinical Feature Programs",
+      "authors": "Ruman Wang, Hangting Ye",
+      "summary": "Classifying pathological scars from clinical photographs requires distinguishing keloids from hypertrophic scars despite limited expert-labeled data and substantial acquisition variation across hospit",
+      "published": "2026-07-30T17:05:20Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28538v1"
+    },
+    {
+      "title": "AI systems and the reproduction of (standard) language ideologies in World Englishes",
+      "authors": "Kingsley Ugwuanyi",
+      "summary": "The rapid growth of large language models (LLMs) has resurrected age-old questions in sociolinguistics and world Englishes, such as who decides what counts as legitimate English, whose English is susp",
+      "published": "2026-07-30T17:01:58Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.28528v1"
+    },
+    {
+      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+      "authors": "Mao-xun Huang, Jerry Wang, Yi-Cheng Lai et al.",
+      "summary": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization, information exchange, and intermediate validation. However, existing sy",
+      "published": "2026-07-30T17:01:27Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.28527v1"
+    },
+    {
+      "title": "What to Remove, What to Preserve: Dual-Ambiguity Rectification for All-in-One Image Restoration",
+      "authors": "Cencen Liu, Wen Yin, Dongyang Zhang et al.",
+      "summary": "All-in-one image restoration aims to handle diverse degradations within a unified framework. Existing methods commonly encode heterogeneous degradation conditions in a shared latent space, where degra",
+      "published": "2026-07-30T17:01:24Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2607.28526v1"
     }
   ]
 }
