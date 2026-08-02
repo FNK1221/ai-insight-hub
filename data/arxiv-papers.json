@@ -1,7 +1,20 @@
 {
-  "timestamp": "2026-07-31T02:44:42.823187+00:00",
+  "timestamp": "2026-08-02T02:42:25.011255+00:00",
   "count": 20,
   "papers": [
+    {
+      "title": "Learning to Trace Seiberg Dualities",
+      "authors": "Jonathan J. Heckman, Shani Meynet, Alessandro Mininno et al.",
+      "summary": "Dualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems. In practice, though, it can often be computationally challenging to establ",
+      "published": "2026-07-30T17:59:56Z",
+      "categories": [
+        "hep-th",
+        "cs.AI",
+        "cs.LG",
+        "hep-ph"
+      ],
+      "link": "http://arxiv.org/abs/2607.28628v1"
+    },
     {
       "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
       "authors": "Yao Xiao, Reuben Tan, Zhen Zhu et al.",
@@ -59,6 +72,62 @@
       "link": "http://arxiv.org/abs/2607.28618v1"
     },
     {
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "authors": "Xiangning Lin, Shenzhe Zhu, Shu Yang et al.",
+      "summary": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to t",
+      "published": "2026-07-30T17:58:58Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "link": "http://arxiv.org/abs/2607.28617v1"
+    },
+    {
+      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+      "authors": "Chongjian Ge, Hanwen Jiang, Tianyu Wang et al.",
+      "summary": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full attention prohibitive. We introduce Chimera, a hybrid visual diff",
+      "published": "2026-07-30T17:58:02Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28611v1"
+    },
+    {
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "authors": "Qiushi Sun, Kanzhi Cheng, Yian Wang et al.",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is",
+      "published": "2026-07-30T17:57:41Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2607.28609v1"
+    },
+    {
+      "title": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
+      "authors": "Sparsh Roy, Samuel Girmachew, Nishita Chavan et al.",
+      "summary": "Clinical risk models routinely achieve strong aggregate performance while producing materially different error rates across patient subgroups. Audit pipelines have been proposed to catch this, but the",
+      "published": "2026-07-30T17:57:18Z",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "link": "http://arxiv.org/abs/2607.28608v1"
+    },
+    {
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "authors": "Junsol Kim, Winnie Street, Roberta Rocca et al.",
+      "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We",
+      "published": "2026-07-30T17:57:10Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2607.28607v1"
+    },
+    {
       "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
       "authors": "Qixun Wang, Yang Shi, Letian Cheng et al.",
       "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet",
@@ -92,6 +161,17 @@
       "link": "http://arxiv.org/abs/2607.28590v1"
     },
     {
+      "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+      "authors": "Md. Mehrab Hossain Opi, Robiul Islam Ryad, Md. Umar Faruk et al.",
+      "summary": "Post-training quantization (PTQ) has emerged as an effective solution for deploying Vision Transformers (ViTs) on resource-constrained devices. However, existing PTQ methods typically employ uniform b",
+      "published": "2026-07-30T17:43:36Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28589v1"
+    },
+    {
       "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
       "authors": "Manyi Wang, Junjielong Xu, Pinjia He et al.",
       "summary": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue",
@@ -101,6 +181,16 @@
         "cs.AI"
       ],
       "link": "http://arxiv.org/abs/2607.28587v1"
+    },
+    {
+      "title": "$β$-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
+      "authors": "Jiawei Xu, Minghui Liu, Juzheng Zhang et al.",
+      "summary": "On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effo",
+      "published": "2026-07-30T17:41:16Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2607.28582v1"
     },
     {
       "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
@@ -133,93 +223,6 @@
         "cs.LG"
       ],
       "link": "http://arxiv.org/abs/2607.28576v1"
-    },
-    {
-      "title": "Algorithms for Structured Elections under Thiele Voting Rules",
-      "authors": "Alexandra Lassota, Krzysztof Sornat",
-      "summary": "We study the computational complexity of winner determination problems in approval-based committee elections under Thiele voting rules. These form a class of rules parameterized by a fixed weight vect",
-      "published": "2026-07-30T17:37:14Z",
-      "categories": [
-        "cs.GT",
-        "cs.AI",
-        "cs.DS",
-        "cs.MA"
-      ],
-      "link": "http://arxiv.org/abs/2607.28575v1"
-    },
-    {
-      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-      "authors": "Junlin Yang, Che Jiang, Yu Fu et al.",
-      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this c",
-      "published": "2026-07-30T17:34:01Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2607.28568v1"
-    },
-    {
-      "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
-      "authors": "Yunzhan Fu, Xiangyu Shen, Yifei Sun et al.",
-      "summary": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing methods typically apply uniform fusion rules globally, lacking ",
-      "published": "2026-07-30T17:30:21Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2607.28565v1"
-    },
-    {
-      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
-      "authors": "Albert Gong, Kyuseong Choi, Abhineet Agarwal et al.",
-      "summary": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from am",
-      "published": "2026-07-30T17:14:07Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "link": "http://arxiv.org/abs/2607.28545v1"
-    },
-    {
-      "title": "ScaFE: Data-Efficient Scar Classification with LLM-Generated Clinical Feature Programs",
-      "authors": "Ruman Wang, Hangting Ye",
-      "summary": "Classifying pathological scars from clinical photographs requires distinguishing keloids from hypertrophic scars despite limited expert-labeled data and substantial acquisition variation across hospit",
-      "published": "2026-07-30T17:05:20Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2607.28538v1"
-    },
-    {
-      "title": "AI systems and the reproduction of (standard) language ideologies in World Englishes",
-      "authors": "Kingsley Ugwuanyi",
-      "summary": "The rapid growth of large language models (LLMs) has resurrected age-old questions in sociolinguistics and world Englishes, such as who decides what counts as legitimate English, whose English is susp",
-      "published": "2026-07-30T17:01:58Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2607.28528v1"
-    },
-    {
-      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
-      "authors": "Mao-xun Huang, Jerry Wang, Yi-Cheng Lai et al.",
-      "summary": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization, information exchange, and intermediate validation. However, existing sy",
-      "published": "2026-07-30T17:01:27Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.28527v1"
-    },
-    {
-      "title": "What to Remove, What to Preserve: Dual-Ambiguity Rectification for All-in-One Image Restoration",
-      "authors": "Cencen Liu, Wen Yin, Dongyang Zhang et al.",
-      "summary": "All-in-one image restoration aims to handle diverse degradations within a unified framework. Existing methods commonly encode heterogeneous degradation conditions in a shared latent space, where degra",
-      "published": "2026-07-30T17:01:24Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2607.28526v1"
     }
   ]
 }
