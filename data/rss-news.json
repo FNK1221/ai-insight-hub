@@ -1,7 +1,28 @@
 {
-  "timestamp": "2026-08-02T02:42:58.718835+00:00",
+  "timestamp": "2026-08-03T02:44:06.932722+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Sam Altman and AI’s decel debate",
+      "link": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "pubDate": "2026-08-02T20:54:22+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Fender’s CEO seems to think your bandmates are just analog AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
+      "pubDate": "2026-08-02T19:36:08+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Is paying artists enough to convince them to embrace AI?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
+      "pubDate": "2026-08-02T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
       "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
@@ -94,13 +115,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Siri AI could come with a paywall for power users",
-      "link": "https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users/",
-      "pubDate": "2026-07-31T16:08:18+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "It’s time to panic about AI safety",
       "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
       "pubDate": "2026-07-31T14:03:04+00:00",
@@ -139,20 +153,6 @@
       "title": "The loss of Situational Awareness",
       "link": "https://www.theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
       "pubDate": "2026-07-30T20:46:25+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "LinkedIn actually adds a ‘seems like AI slop’ button",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
-      "pubDate": "2026-07-30T18:43:26+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Google DeepMind’s new AI model can control a robot’s entire body",
-      "link": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
-      "pubDate": "2026-07-30T17:18:45+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
