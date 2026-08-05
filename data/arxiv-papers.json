@@ -1,216 +1,219 @@
 {
-  "timestamp": "2026-08-04T02:27:12.395439+00:00",
+  "timestamp": "2026-08-05T02:26:51.426337+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Trustworthy AI in Digital Health: A Comprehensive Review of Robustness and Explainability",
-      "authors": "Abdullah Mamun, Shovito Barua Soumma, Hassan Ghasemzadeh et al.",
-      "summary": "Ensuring trust in AI systems is essential for the safe and ethical integration of machine learning systems into high-stakes domains such as digital health. Key dimensions, including robustness, explai",
-      "published": "2026-08-03T13:51:12Z",
+      "title": "Computing Actual Causes for Neural Network Predictions under Structured Causal Inputs",
+      "authors": "Jannick Strobel, Muqsit Azeem, Stefan Leue et al.",
+      "summary": "Explaining the predictions of neural networks is a central challenge in trustworthy AI. Existing explanation methods, such as those based on feature attribution or minimal sufficient sets, typically t",
+      "published": "2026-08-04T14:57:06Z",
       "categories": [
         "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.02238v1"
-    },
-    {
-      "title": "GenPrior: Unleashing Text-to-Motion Generative Priors for Zero-Shot Skeleton-based Action Recognition",
-      "authors": "Jidong Kuang, Hongsong Wang, Jie Gui et al.",
-      "summary": "Zero-shot skeleton-based action recognition (ZSAR) aims to recognize unseen action categories by aligning skeleton features with textual semantics. However, existing methods rely on text-derived proto",
-      "published": "2026-08-03T13:49:13Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02236v1"
-    },
-    {
-      "title": "Domain-Specific Evaluation of Text-to-Speech Systems: A Multi-Metric Benchmarking Study",
-      "authors": "Ali Jafar, Amal Sarmad, Shifa Yousaf et al.",
-      "summary": "Recent advances in neural text-to-speech (TTS) systems have substantially improved speech naturalness and intelligibility across many languages. However, comprehensive evaluation methodologies that jo",
-      "published": "2026-08-03T13:49:11Z",
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.02235v1"
-    },
-    {
-      "title": "Constrained Co-Design for Photonic Bayesian Neural Networks",
-      "authors": "Hendrik Borras, Xiao Wang, Bernhard Klein et al.",
-      "summary": "Classical neural networks frequently produce overconfident predictions on ambiguous or out-of-distribution (OOD) data, a liability that grows with each AI system deployed in safety-critical real-world",
-      "published": "2026-08-03T13:47:48Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.02229v1"
-    },
-    {
-      "title": "CRIP: Channel Level Representation Injection for Personalized One-Shot Federated Learning",
-      "authors": "Zijian Jiang, Chaoli Sun, Handing Wang et al.",
-      "summary": "One-shot federated learning (OSFL) has emerged as a promising collaborative model learning framework with only a single round of communication, offering significant advantages in communication efficie",
-      "published": "2026-08-03T13:41:07Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.02222v1"
-    },
-    {
-      "title": "PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs",
-      "authors": "Haojie Hu, Chenhao Dang, Yaojia Liu et al.",
-      "summary": "Scientific poster construction compresses a long multimodal paper into a readable, editable canvas. Existing systems hide request-level failures by scoring only completed outputs; direct image generat",
-      "published": "2026-08-03T13:39:25Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.02218v1"
-    },
-    {
-      "title": "VC-Tooler: Learning Compositional and Adaptive Visual Tool Use",
-      "authors": "Yizheng Wu, Jiashen Hua, Bing Deng et al.",
-      "summary": "Agentic multimodal reasoning extends passive image understanding by allowing VLMs to actively acquire and refine visual evidence through visual tool interactions. Effective visual tool use requires th",
-      "published": "2026-08-03T13:38:37Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02217v1"
-    },
-    {
-      "title": "Local Margin Restoration for Test-Time Adaptation of Vision-Language Models",
-      "authors": "Yan Huang, Guowei Wang, Xu Wang et al.",
-      "summary": "Vision-language models (VLMs) such as CLIP exhibit remarkable zero-shot capabilities, yet their performance frequently degrades sharply under unexpected test-time distribution shifts. While Test-Time ",
-      "published": "2026-08-03T13:38:11Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02216v1"
-    },
-    {
-      "title": "VARPose: Flexible 2D Pose Densification via Visual Autoregressive Modeling for Enhanced 3D Lifting",
-      "authors": "Kaiyuan Pu, Tiantian Yang, Dan Zeng et al.",
-      "summary": "Visual AutoRegressive Modeling (VAR) has excelled in natural image generation via next-scale prediction, but its use on topology-structured data like human skeletons is still unexplored. VARPose is pr",
-      "published": "2026-08-03T13:36:24Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02214v1"
-    },
-    {
-      "title": "Fast Discovery of Inclusion Dependencies with Desbordante",
-      "authors": "Alexander Smirnov, Anton Chizhov, Ilya Shchuckin et al.",
-      "summary": "Inclusion dependency is a relation between attributes of tables that indicates possible Primary Key-Foreign Key references. Automatic discovery of inclusion dependencies is a relevant problem for both",
-      "published": "2026-08-03T13:35:33Z",
-      "categories": [
-        "cs.DB",
-        "cs.AI",
-        "cs.DC",
         "cs.LG",
-        "cs.PF"
-      ],
-      "link": "http://arxiv.org/abs/2608.02213v1"
-    },
-    {
-      "title": "Self-supervised DXA representations encode multi-system disease risk, biological aging and heritability",
-      "authors": "Gil Sasson, Zachary Levine, Smadar Shilo et al.",
-      "summary": "Whole-body dual-energy X-ray absorptiometry (DXA) scans are routinely acquired to measure bone density and regional body composition, leaving their spatial structure largely unused. Here, we show that",
-      "published": "2026-08-03T13:33:04Z",
-      "categories": [
-        "cs.CV",
-        "q-bio.QM"
-      ],
-      "link": "http://arxiv.org/abs/2608.02208v1"
-    },
-    {
-      "title": "CLEAR: Conflict-aware Learning via Evidence-guided Adaptive Routing for Unified Sparse-View 3D Gaussian Super-Resolution",
-      "authors": "Hantang Li, Qiang Zhu, Xiandong Meng et al.",
-      "summary": "Sparse-view 3D Gaussian Splatting Super-resolution is highly challenging since the sparse and low-resolution (LR) inputs lack sufficient geometric and high-frequency information for accurate reconstru",
-      "published": "2026-08-03T13:31:53Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02206v1"
-    },
-    {
-      "title": "RSC-GestureNet: Reliability-Aware Selective Causal Recognition of Chinese Traffic Police Gestures",
-      "authors": "Cheng Li, Renjun Gao, Boyi Fu et al.",
-      "summary": "Traffic police gestures are safety-critical perception cues for autonomous driving. A deployable recognizer must infer commands causally from continuous full-frame video, remain stable around transiti",
-      "published": "2026-08-03T13:25:25Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02200v1"
-    },
-    {
-      "title": "MEGRAG: Multi-Granular Evidence Graphs for Answer-Aware Multi-Hop RAG",
-      "authors": "Weidong Bao, Yingying Sun, Jun Yang et al.",
-      "summary": "Multi-hop question answering is a fundamental challenge in retrieval-augmented generation (RAG), because deriving an answer requires integrating dispersed evidence. Iterative RAG (iRAG) is widely used",
-      "published": "2026-08-03T13:17:49Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.02195v1"
-    },
-    {
-      "title": "T$^2$exture: Sparsely Perturbed Thermal-to-Texture Imaging",
-      "authors": "Jiashuo Chen, Cheng Dai, Yanan Hu et al.",
-      "summary": "Thermal imaging remains effective under adverse illumination, yet passive long-wave infrared (LWIR) measurements often lack fine texture. Existing thermal texture imaging approaches commonly rely on s",
-      "published": "2026-08-03T13:16:39Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02192v1"
-    },
-    {
-      "title": "DerainSplat: Feed-Forward Clean 3D Gaussian Splatting from Sparse Rainy Views",
-      "authors": "Fuzhen Jiang, Changyue Shi, Chuxiao Yang et al.",
-      "summary": "Although image deraining has advanced substantially, existing methods mainly focus on 2D image restoration. As spatial intelligence applications such as embodied AI and autonomous driving continue to ",
-      "published": "2026-08-03T13:15:37Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02191v1"
-    },
-    {
-      "title": "Disentangled Contrastive Learning for Zero-Shot Multilingual Dense Retrieval",
-      "authors": "Chao Huang, Yufeng Chen, Changhao Guan et al.",
-      "summary": "Multilingual dense retrieval aims to handle queries and documents across different languages based on a unified retriever model. The challenge lies in enabling robust retrieval transfer to low-resourc",
-      "published": "2026-08-03T13:13:15Z",
-      "categories": [
-        "cs.IR",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.02189v1"
-    },
-    {
-      "title": "SPIRIT: Spatio-temporal Pairwise Relational Modeling of Instrument-Tissue Interactions for Surgical Action Triplet Recognition",
-      "authors": "Saurav Sharma, Lorenzo Arboit, Nabani Banik et al.",
-      "summary": "Fine-grained understanding of surgical activity is essential for context-aware assistance in the operating room, including safety monitoring, adverse event identification, and skill assessment. Surgic",
-      "published": "2026-08-03T13:12:45Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.02188v1"
-    },
-    {
-      "title": "PAC Approximation and DIRECT Optimization for Parametric Markov Models",
-      "authors": "Zhiming Chi, Ying Liu, Andrea Turrini et al.",
-      "summary": "In this paper, we consider the parameter synthesis and optimization problem for parametric Markov decision processes (pMDPs), the extension of classical MDPs where exact probability values are replace",
-      "published": "2026-08-03T13:07:59Z",
-      "categories": [
-        "cs.AI",
-        "cs.FL",
         "cs.LO"
       ],
-      "link": "http://arxiv.org/abs/2608.02184v1"
+      "link": "http://arxiv.org/abs/2608.03772v1"
     },
     {
-      "title": "SWINSleepNet: A Hierarchical Context-Aware Framework for Sleep Staging (v2)",
-      "authors": "Chongjian Wang, Junjie Gao",
-      "summary": "Automatic sleep staging is a critical role in sleep disorder diagnosis, sleep quality assessment, and long-term health monitoring; however, existing approaches suffer poor performance on ambiguous and",
-      "published": "2026-08-03T13:07:49Z",
+      "title": "MDLMPE: Distribution Aware Positional Encoding for Masked Diffusion Language Models",
+      "authors": "Tong Ling, Hang Lei, Feng Xiao et al.",
+      "summary": "Masked diffusion language models (MDLMs) enable parallel generation and bidirectional context modeling, but their positional context differs fundamentally from that of autoregressive (AR) models. Wher",
+      "published": "2026-08-04T14:54:14Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03769v1"
+    },
+    {
+      "title": "GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks",
+      "authors": "Leijun Zhou, Zhihao Liu, Xiang Qu et al.",
+      "summary": "Agent self-evolution updates an agent's persistent state from prior experience and reuses it to solve related tasks more effectively. Evaluating self-evolution is difficult: existing benchmarks provid",
+      "published": "2026-08-04T14:51:56Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03764v1"
+    },
+    {
+      "title": "TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding",
+      "authors": "Qingxi Du, Junbo Wang, Yuke Li et al.",
+      "summary": "Zero-shot 3D visual grounding aims to localize specific objects based on textual descriptions and 3D visual input. However, the effectiveness of existing methods is significantly hindered by the ambig",
+      "published": "2026-08-04T14:51:15Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.02183v1"
+      "link": "http://arxiv.org/abs/2608.03763v1"
+    },
+    {
+      "title": "Unsupervised Adversarial Domain Adaptation for Uterine layer Segmentation: From Labeled Cine to Unlabeled Dynamic EPI MRI",
+      "authors": "Smiti Tripathy, Milauni Desai, Jordina Aviles Verdera et al.",
+      "summary": "Uterine peristalsis is a key physiological phenomenon responsible for various functions across the menstrual cycle, intimately linked to uterine wall microstructure. Alterations in uterine motion and ",
+      "published": "2026-08-04T14:50:37Z",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.03762v1"
+    },
+    {
+      "title": "Risky Business: Measuring The Faithfulness-Safety Tension",
+      "authors": "Dominik Meier, Luca Joshua Francis, Marco Bernhard Kaiser et al.",
+      "summary": "Chain-of-Thought (CoT) reasoning offers a promising window into model monitoring. However, monitoring relies on faithfulness, i.e., the model output strictly derives from its reasoning trace. We ident",
+      "published": "2026-08-04T14:38:06Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.03745v1"
+    },
+    {
+      "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+      "authors": "Sebastián Andrés Cajas Ordóñez, Agastya Munnangi, Aldo Marzullo et al.",
+      "summary": "Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards bu",
+      "published": "2026-08-04T14:37:16Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03744v1"
+    },
+    {
+      "title": "Can LLMs Test Terminal User Interfaces?",
+      "authors": "Chao Peng, Ruida Hu, Ajitha Rajan et al.",
+      "summary": "Terminal User Interfaces (TUIs) combine the stateful, screen-oriented behaviour of GUIs with terminal deployment and are now common in developer tools. Yet they lack a dedicated testing methodology. W",
+      "published": "2026-08-04T14:36:44Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.03743v1"
+    },
+    {
+      "title": "AI-Based Sound Effect Generation: A Narrative Review of Generative Models Across Input Modalities",
+      "authors": "Sandy Abdo, Bill Kapralos, Priyamvada Tripathi et al.",
+      "summary": "Sound effects play a crucial role in conveying actions, events, and environmental cues across digital applications, often requiring a high degree of variation and contextual adaptability. Artificial i",
+      "published": "2026-08-04T14:36:34Z",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03742v1"
+    },
+    {
+      "title": "MissClick: Exploiting Digit-Serialized Coordinates to Attack GUI Grounding Models",
+      "authors": "Yu Ran, Wentao Zhao, Xin Zhang et al.",
+      "summary": "Recent GUI visual grounding models generate screen coordinates as sequences of digit tokens that are parsed into numerical values and mapped to executable clicks. The security implications of this coo",
+      "published": "2026-08-04T14:34:41Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03740v1"
+    },
+    {
+      "title": "AgenticECO: An Agentic Framework for ECO on 3D Integrated Circuits",
+      "authors": "Shuo Ren, Yaohui Han, Libo Shen et al.",
+      "summary": "As Moore's law slows, the industry is turning to three-dimensional integration; yet in merged 3D-IC flows, routed designs expose bond-level defects with no 2D analogue, and post-route engineering chan",
+      "published": "2026-08-04T14:32:43Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03738v1"
+    },
+    {
+      "title": "An Actionable Diagnosis of Multilingual, Multi-Agent Planning Failures",
+      "authors": "Vikas Pahuja, Jonathan Brokman, Omer Hofman et al.",
+      "summary": "Multilingual multi-agent systems exhibit substantial degradation beyond English, yet prior work rarely identifies how task-critical information is lost when user requests are converted into executable",
+      "published": "2026-08-04T14:29:14Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.03735v1"
+    },
+    {
+      "title": "Failure-Informed Image Self-Augmentation for Multimodal Large Language Model Self-Improvement",
+      "authors": "Chunyang Jiang, Pingping Zhang, Yuzhi Zhao et al.",
+      "summary": "Multimodal large language models (MLLMs) have achieved remarkable performance across vision-language tasks, but their progress depends heavily on large-scale, high-quality multimodal data that are cos",
+      "published": "2026-08-04T14:28:42Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03733v1"
+    },
+    {
+      "title": "CARE-Bench: Benchmarking Patient-Facing LLM Triage",
+      "authors": "Yining Hua, Hongbin Na, Cyrus Ayubcha et al.",
+      "summary": "Patient-facing medical LLMs and agents increasingly answer symptom questions before clinician contact, where the key safety question is what action the user should take next. We introduce CARE-Bench, ",
+      "published": "2026-08-04T14:26:45Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03731v1"
+    },
+    {
+      "title": "GPTKB 2.0: Direct Construction of Disambiguated Knowledge Bases from Large Language Models",
+      "authors": "Yujia Hu, Tuan-Phong Nguyen, Simon Razniewski et al.",
+      "summary": "Automated Knowledge Base Construction (AKBC) is a core NLP task, and recent work proposes generating knowledge bases directly from large language models (LLMs), treating the model itself as the knowle",
+      "published": "2026-08-04T14:25:47Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "link": "http://arxiv.org/abs/2608.03729v1"
+    },
+    {
+      "title": "SAT-Edge-Agent: Hardware-in-the-Loop Edge-Agent Orchestration for Onboard Satellite Intelligence",
+      "authors": "Longji He, Jeto Xu",
+      "summary": "Onboard satellite intelligence requires a task layer that translates mission intent into local tool calls, exposes execution state, and returns machine-consumable artifacts under communication and pow",
+      "published": "2026-08-04T14:25:27Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.03728v1"
+    },
+    {
+      "title": "Towards Reliable and Reproducible Fetal Brain Biometry: A Deep Learning Approach Using MRI",
+      "authors": "Francesca Maccarone, Marina Di Stefano, Giorgio Longari et al.",
+      "summary": "Fetal brain biometry is essential for quantitative assessment of brain development, supporting gestational age estimation, developmental monitoring, and detection of abnormalities. In clinical practic",
+      "published": "2026-08-04T14:20:40Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.03724v1"
+    },
+    {
+      "title": "When Outputs Disperse, Does Epistemic Revision Follow? A Black-Box Coupling Diagnostic for Machine Collectives",
+      "authors": "Molood Arman",
+      "summary": "Collective intelligence research treats disagreement as evidence of epistemic diversity: if agents express different views, the group should retain capacity to revise. In LLM collectives this proxy ca",
+      "published": "2026-08-04T14:19:59Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.03722v1"
+    },
+    {
+      "title": "Detecting Hallucinations and Recovering Verified Answers in Arabic Islamic Question Answering",
+      "authors": "Khaled Ziani",
+      "summary": "Large language models can generate fluent responses to Islamic questions while introducing factual errors that are difficult to identify. This paper presents our system for \\textsc{HalluScoring 2026} ",
+      "published": "2026-08-04T14:19:53Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.03720v1"
+    },
+    {
+      "title": "Amortized Interventional Forecasting for Multivariate CIR Processes",
+      "authors": "Andreas Sauter, Sumit Sourabh, Drona Kandhai et al.",
+      "summary": "Mean-reverting dynamics are pervasive in finance, and the Cox--Ingersoll--Ross (CIR) process is a standard model for the time series they produce, from short rates to credit default swap (CDS) spreads",
+      "published": "2026-08-04T14:17:35Z",
+      "categories": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "link": "http://arxiv.org/abs/2608.03715v1"
     }
   ]
 }
