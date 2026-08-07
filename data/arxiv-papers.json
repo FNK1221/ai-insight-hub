@@ -1,219 +1,226 @@
 {
-  "timestamp": "2026-08-05T02:26:51.426337+00:00",
+  "timestamp": "2026-08-07T02:36:42.528890+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Computing Actual Causes for Neural Network Predictions under Structured Causal Inputs",
-      "authors": "Jannick Strobel, Muqsit Azeem, Stefan Leue et al.",
-      "summary": "Explaining the predictions of neural networks is a central challenge in trustworthy AI. Existing explanation methods, such as those based on feature attribution or minimal sufficient sets, typically t",
-      "published": "2026-08-04T14:57:06Z",
+      "title": "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning",
+      "authors": "Farzana Nasrin",
+      "summary": "Persistence diagrams (PDs) provide stable and interpretable summaries of multiscale topological structure. While substantial progress has been made in the statistical analysis of PDs, existing literat",
+      "published": "2026-08-06T17:05:19Z",
       "categories": [
-        "cs.AI",
+        "stat.ML",
         "cs.LG",
-        "cs.LO"
+        "math.AT"
       ],
-      "link": "http://arxiv.org/abs/2608.03772v1"
+      "link": "http://arxiv.org/abs/2608.06276v1"
     },
     {
-      "title": "MDLMPE: Distribution Aware Positional Encoding for Masked Diffusion Language Models",
-      "authors": "Tong Ling, Hang Lei, Feng Xiao et al.",
-      "summary": "Masked diffusion language models (MDLMs) enable parallel generation and bidirectional context modeling, but their positional context differs fundamentally from that of autoregressive (AR) models. Wher",
-      "published": "2026-08-04T14:54:14Z",
+      "title": "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN",
+      "authors": "Arash Nedaei, Henna Tiensuu, Elina Väyrynen et al.",
+      "summary": "Oral health issues affect billions globally, but the cost and limited access to professional dental care hinder preventive oral healthcare. Research relies on clinical-grade radiographs or intraoral c",
+      "published": "2026-08-06T17:03:05Z",
       "categories": [
-        "cs.CL",
+        "cs.CV",
+        "eess.IV"
+      ],
+      "link": "http://arxiv.org/abs/2608.06275v1"
+    },
+    {
+      "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
+      "authors": "Zhiheng Wang, Bo Peng, Lai Wei et al.",
+      "summary": "The \"thinking-with-images\" paradigm equips multimodal LLMs with active visual operations such as crop-and-zoom. However, models using these operations often achieve only marginal or negative gains ove",
+      "published": "2026-08-06T17:01:08Z",
+      "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.03769v1"
+      "link": "http://arxiv.org/abs/2608.06270v1"
     },
     {
-      "title": "GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks",
-      "authors": "Leijun Zhou, Zhihao Liu, Xiang Qu et al.",
-      "summary": "Agent self-evolution updates an agent's persistent state from prior experience and reuses it to solve related tasks more effectively. Evaluating self-evolution is difficult: existing benchmarks provid",
-      "published": "2026-08-04T14:51:56Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03764v1"
-    },
-    {
-      "title": "TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding",
-      "authors": "Qingxi Du, Junbo Wang, Yuke Li et al.",
-      "summary": "Zero-shot 3D visual grounding aims to localize specific objects based on textual descriptions and 3D visual input. However, the effectiveness of existing methods is significantly hindered by the ambig",
-      "published": "2026-08-04T14:51:15Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.03763v1"
-    },
-    {
-      "title": "Unsupervised Adversarial Domain Adaptation for Uterine layer Segmentation: From Labeled Cine to Unlabeled Dynamic EPI MRI",
-      "authors": "Smiti Tripathy, Milauni Desai, Jordina Aviles Verdera et al.",
-      "summary": "Uterine peristalsis is a key physiological phenomenon responsible for various functions across the menstrual cycle, intimately linked to uterine wall microstructure. Alterations in uterine motion and ",
-      "published": "2026-08-04T14:50:37Z",
-      "categories": [
-        "eess.IV",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.03762v1"
-    },
-    {
-      "title": "Risky Business: Measuring The Faithfulness-Safety Tension",
-      "authors": "Dominik Meier, Luca Joshua Francis, Marco Bernhard Kaiser et al.",
-      "summary": "Chain-of-Thought (CoT) reasoning offers a promising window into model monitoring. However, monitoring relies on faithfulness, i.e., the model output strictly derives from its reasoning trace. We ident",
-      "published": "2026-08-04T14:38:06Z",
+      "title": "Improving the Realism of Synthetic Clinical Benchmarks Under Utility Constraints",
+      "authors": "Omid Bazgir, Md Nasir, Jacob Hoffman et al.",
+      "summary": "Synthetic clinical benchmarks for enterprise AI agents can pass existing utility checks and still remain structurally unrealistic, especially in privacy-sensitive healthcare settings where operational",
+      "published": "2026-08-06T16:56:44Z",
       "categories": [
         "cs.AI",
-        "cs.CL"
+        "cs.DB",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.03745v1"
+      "link": "http://arxiv.org/abs/2608.06265v1"
     },
     {
-      "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
-      "authors": "Sebastián Andrés Cajas Ordóñez, Agastya Munnangi, Aldo Marzullo et al.",
-      "summary": "Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards bu",
-      "published": "2026-08-04T14:37:16Z",
+      "title": "OTLesMix: Wasserstein Barycenter and Optimal Transport Map for Synthetic Lesion Generation with Diverse Shapes and Locations",
+      "authors": "Robin Trombetta, Carole Lartizien",
+      "summary": "The development of deep learning over the past decade has revolutionized medical imaging segmentation, allowing the extraction of precise descriptors from large volumes to characterize pathologies. Da",
+      "published": "2026-08-06T16:54:15Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "link": "http://arxiv.org/abs/2608.06264v1"
+    },
+    {
+      "title": "Hypothesis Testing with Conditional Queries: Learnability and the Value of Interaction",
+      "authors": "Zonghuan Xu",
+      "summary": "Model evaluations may fix all tests before observing any responses or select later tests using earlier responses. We study this choice in a conditional-query model on a finite outcome space $\\mathcal{",
+      "published": "2026-08-06T16:54:10Z",
+      "categories": [
+        "cs.LG",
+        "math.ST"
+      ],
+      "link": "http://arxiv.org/abs/2608.06262v1"
+    },
+    {
+      "title": "RxnCLF: Contrastive Transformation-Aware Reaction Foundation Model for Improved Reactivity Prediction",
+      "authors": "Yiting Zheng, Cheng Fang, Anthony Donofrio et al.",
+      "summary": "Reaction yield prediction remains challenging because labeled data are scarce and reaction space is both combinatorially large and sparsely populated, limiting the generalization of existing reaction ",
+      "published": "2026-08-06T16:51:23Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06259v1"
+    },
+    {
+      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
+      "authors": "Ziqi Cai, Siqi Yang, Yimu Wang et al.",
+      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scala",
+      "published": "2026-08-06T16:47:24Z",
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "link": "http://arxiv.org/abs/2608.06257v1"
+    },
+    {
+      "title": "MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction",
+      "authors": "Dohyun Ku, Min Gu Kwak, Francisco J. Pasquel et al.",
+      "summary": "Metabolomics knowledge is distributed across heterogeneous resources and remains difficult to translate into predictive representations. We developed MetaboLLM, a metabolomics-specialized large langua",
+      "published": "2026-08-06T16:42:34Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06253v1"
+    },
+    {
+      "title": "Toward Deployable Bangla Sign Language Recognition with Expert-Validated Data and a Lightweight Attention-Based Model",
+      "authors": "Saad Ahmed, Md Khalid Syfullaha",
+      "summary": "Deaf and hard-of-hearing people in Bangladesh communicate mainly through Bangla Sign Language (BdSL). Automatic BdSL recognition on personal devices could widen access to education and services. Exist",
+      "published": "2026-08-06T16:41:22Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06252v1"
+    },
+    {
+      "title": "Minimax Optimal Early-Stopped Gradient Descent for Gaussian Mixture Classification",
+      "authors": "Alex Buna, Shirley Xiaoqi Liu, Patrick Rebeschini et al.",
+      "summary": "In overparameterised classification, training data can be linearly separable even when the underlying distribution is not. In this setting, gradient descent (GD) on the logistic loss diverges in norm ",
+      "published": "2026-08-06T16:41:00Z",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06250v1"
+    },
+    {
+      "title": "A Six-Dimensional Taxonomy of Post-Training Adaptation Techniques with Applications in AI Governance",
+      "authors": "Fardin Afdideh, Fernando Seoane, Farhad Abtahi et al.",
+      "summary": "Post-training adaptation has become central to modern machine learning practice and includes techniques such as retraining, fine-tuning, parameter-efficient adaptation, alignment, retrieval augmentati",
+      "published": "2026-08-06T16:32:26Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06246v1"
+    },
+    {
+      "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
+      "authors": "ZhiYan Hou, Xinyu Tang, Hongyan An et al.",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models using automatically verifiable outcome signals, but these signals are typically spars",
+      "published": "2026-08-06T16:29:24Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.03744v1"
+      "link": "http://arxiv.org/abs/2608.06243v1"
     },
     {
-      "title": "Can LLMs Test Terminal User Interfaces?",
-      "authors": "Chao Peng, Ruida Hu, Ajitha Rajan et al.",
-      "summary": "Terminal User Interfaces (TUIs) combine the stateful, screen-oriented behaviour of GUIs with terminal deployment and are now common in developer tools. Yet they lack a dedicated testing methodology. W",
-      "published": "2026-08-04T14:36:44Z",
+      "title": "Timestep-Conditioned Transformers for Global Weather Forecasting",
+      "authors": "Sam Levang, Fran Bartolic, Ty Dickinson et al.",
+      "summary": "Existing machine-learning weather forecasting models rely on predetermined and fixed autoregressive timesteps. The choice of model timestep involves a fundamental trade-off: shorter timesteps (e.g. 1 ",
+      "published": "2026-08-06T16:27:54Z",
       "categories": [
-        "cs.SE",
+        "cs.LG",
+        "cs.OS"
+      ],
+      "link": "http://arxiv.org/abs/2608.06241v1"
+    },
+    {
+      "title": "PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation",
+      "authors": "Elad Yoshai, Natan T. Shaked",
+      "summary": "Unpaired image-to-image translation must decide, per image, what to change and what to preserve without paired supervision. Many diffusion-based unpaired translators control preservation through a sin",
+      "published": "2026-08-06T16:26:43Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06240v1"
+    },
+    {
+      "title": "Depth-Guided Video Object Counting in Crowded Scenes",
+      "authors": "Yuanjing Xu, Xinyan Liu, Weidong Chen et al.",
+      "summary": "Our primary objective is to advance video object counting in crowded scenes, aiming to robustly count all instances of a target category based on given text or visual prompts. Existing methods rely on",
+      "published": "2026-08-06T16:24:41Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06236v1"
+    },
+    {
+      "title": "EmoWorld: A Decoupled Affective Field for Controllable Emotional Video Generation",
+      "authors": "Bingyuan Wang, Baistan Zhyldyzbekov, Kunyu Feng et al.",
+      "summary": "Emotion shapes how viewers interpret a scene, yet existing video generators entangle global atmosphere, affect-bearing semantic cues, and temporal progression within a single text condition. We presen",
+      "published": "2026-08-06T16:20:23Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.06231v1"
+    },
+    {
+      "title": "From Passive Mirrors to Active Agents: Holonic Digital Twins for Physical AI over Networks",
+      "authors": "Christo Kurisummoottil Thomas, Omar Hashash, Walid Saad et al.",
+      "summary": "Despite advances in artificial intelligence (AI) across multiple sectors, today's AI tools, including deep learning and generative AI, still fail when embedded into physical systems, such as robots an",
+      "published": "2026-08-06T16:17:43Z",
+      "categories": [
+        "cs.NI",
+        "cs.AI",
+        "cs.IT",
+        "eess.SY"
+      ],
+      "link": "http://arxiv.org/abs/2608.06227v1"
+    },
+    {
+      "title": "TS-RAG: Retrieval Augmented Generation for Time Series Forecasting",
+      "authors": "Yixiong Xiao, Congxi Xiao, Jingbo Zhou et al.",
+      "summary": "While deep learning models, particularly transformer-based architectures, have shown impressive performance in time series forecasting, the application of retrieval-augmented generation (RAG) in this ",
+      "published": "2026-08-06T16:12:57Z",
+      "categories": [
         "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.03743v1"
+      "link": "http://arxiv.org/abs/2608.06223v1"
     },
     {
-      "title": "AI-Based Sound Effect Generation: A Narrative Review of Generative Models Across Input Modalities",
-      "authors": "Sandy Abdo, Bill Kapralos, Priyamvada Tripathi et al.",
-      "summary": "Sound effects play a crucial role in conveying actions, events, and environmental cues across digital applications, often requiring a high degree of variation and contextual adaptability. Artificial i",
-      "published": "2026-08-04T14:36:34Z",
+      "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
+      "authors": "Alperen Kenan, Paul Bremner, Manuel Giuliani et al.",
+      "summary": "Learning from demonstration (LfD) provides a developmental framework through which robots can develop motor skills by observing and imitating human dynamics, reducing reliance on explicit programming ",
+      "published": "2026-08-06T16:12:18Z",
       "categories": [
-        "cs.SD",
-        "cs.AI"
+        "cs.RO",
+        "cs.HC",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.03742v1"
-    },
-    {
-      "title": "MissClick: Exploiting Digit-Serialized Coordinates to Attack GUI Grounding Models",
-      "authors": "Yu Ran, Wentao Zhao, Xin Zhang et al.",
-      "summary": "Recent GUI visual grounding models generate screen coordinates as sequences of digit tokens that are parsed into numerical values and mapped to executable clicks. The security implications of this coo",
-      "published": "2026-08-04T14:34:41Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03740v1"
-    },
-    {
-      "title": "AgenticECO: An Agentic Framework for ECO on 3D Integrated Circuits",
-      "authors": "Shuo Ren, Yaohui Han, Libo Shen et al.",
-      "summary": "As Moore's law slows, the industry is turning to three-dimensional integration; yet in merged 3D-IC flows, routed designs expose bond-level defects with no 2D analogue, and post-route engineering chan",
-      "published": "2026-08-04T14:32:43Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03738v1"
-    },
-    {
-      "title": "An Actionable Diagnosis of Multilingual, Multi-Agent Planning Failures",
-      "authors": "Vikas Pahuja, Jonathan Brokman, Omer Hofman et al.",
-      "summary": "Multilingual multi-agent systems exhibit substantial degradation beyond English, yet prior work rarely identifies how task-critical information is lost when user requests are converted into executable",
-      "published": "2026-08-04T14:29:14Z",
-      "categories": [
-        "cs.MA",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.03735v1"
-    },
-    {
-      "title": "Failure-Informed Image Self-Augmentation for Multimodal Large Language Model Self-Improvement",
-      "authors": "Chunyang Jiang, Pingping Zhang, Yuzhi Zhao et al.",
-      "summary": "Multimodal large language models (MLLMs) have achieved remarkable performance across vision-language tasks, but their progress depends heavily on large-scale, high-quality multimodal data that are cos",
-      "published": "2026-08-04T14:28:42Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03733v1"
-    },
-    {
-      "title": "CARE-Bench: Benchmarking Patient-Facing LLM Triage",
-      "authors": "Yining Hua, Hongbin Na, Cyrus Ayubcha et al.",
-      "summary": "Patient-facing medical LLMs and agents increasingly answer symptom questions before clinician contact, where the key safety question is what action the user should take next. We introduce CARE-Bench, ",
-      "published": "2026-08-04T14:26:45Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03731v1"
-    },
-    {
-      "title": "GPTKB 2.0: Direct Construction of Disambiguated Knowledge Bases from Large Language Models",
-      "authors": "Yujia Hu, Tuan-Phong Nguyen, Simon Razniewski et al.",
-      "summary": "Automated Knowledge Base Construction (AKBC) is a core NLP task, and recent work proposes generating knowledge bases directly from large language models (LLMs), treating the model itself as the knowle",
-      "published": "2026-08-04T14:25:47Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.DB"
-      ],
-      "link": "http://arxiv.org/abs/2608.03729v1"
-    },
-    {
-      "title": "SAT-Edge-Agent: Hardware-in-the-Loop Edge-Agent Orchestration for Onboard Satellite Intelligence",
-      "authors": "Longji He, Jeto Xu",
-      "summary": "Onboard satellite intelligence requires a task layer that translates mission intent into local tool calls, exposes execution state, and returns machine-consumable artifacts under communication and pow",
-      "published": "2026-08-04T14:25:27Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.03728v1"
-    },
-    {
-      "title": "Towards Reliable and Reproducible Fetal Brain Biometry: A Deep Learning Approach Using MRI",
-      "authors": "Francesca Maccarone, Marina Di Stefano, Giorgio Longari et al.",
-      "summary": "Fetal brain biometry is essential for quantitative assessment of brain development, supporting gestational age estimation, developmental monitoring, and detection of abnormalities. In clinical practic",
-      "published": "2026-08-04T14:20:40Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.03724v1"
-    },
-    {
-      "title": "When Outputs Disperse, Does Epistemic Revision Follow? A Black-Box Coupling Diagnostic for Machine Collectives",
-      "authors": "Molood Arman",
-      "summary": "Collective intelligence research treats disagreement as evidence of epistemic diversity: if agents express different views, the group should retain capacity to revise. In LLM collectives this proxy ca",
-      "published": "2026-08-04T14:19:59Z",
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.03722v1"
-    },
-    {
-      "title": "Detecting Hallucinations and Recovering Verified Answers in Arabic Islamic Question Answering",
-      "authors": "Khaled Ziani",
-      "summary": "Large language models can generate fluent responses to Islamic questions while introducing factual errors that are difficult to identify. This paper presents our system for \\textsc{HalluScoring 2026} ",
-      "published": "2026-08-04T14:19:53Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.03720v1"
-    },
-    {
-      "title": "Amortized Interventional Forecasting for Multivariate CIR Processes",
-      "authors": "Andreas Sauter, Sumit Sourabh, Drona Kandhai et al.",
-      "summary": "Mean-reverting dynamics are pervasive in finance, and the Cox--Ingersoll--Ross (CIR) process is a standard model for the time series they produce, from short rates to credit default swap (CDS) spreads",
-      "published": "2026-08-04T14:17:35Z",
-      "categories": [
-        "cs.LG",
-        "cs.CE"
-      ],
-      "link": "http://arxiv.org/abs/2608.03715v1"
+      "link": "http://arxiv.org/abs/2608.06221v1"
     }
   ]
 }
