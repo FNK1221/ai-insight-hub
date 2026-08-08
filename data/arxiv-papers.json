@@ -1,226 +1,229 @@
 {
-  "timestamp": "2026-08-07T02:36:42.528890+00:00",
+  "timestamp": "2026-08-08T01:27:37.183027+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning",
-      "authors": "Farzana Nasrin",
-      "summary": "Persistence diagrams (PDs) provide stable and interpretable summaries of multiscale topological structure. While substantial progress has been made in the statistical analysis of PDs, existing literat",
-      "published": "2026-08-06T17:05:19Z",
+      "title": "Learning When to Trust via Selective Context Preference Optimization",
+      "authors": "Xian Sun, Wei Chow, Yingshuo Wang et al.",
+      "summary": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides",
+      "published": "2026-08-06T17:59:58Z",
       "categories": [
-        "stat.ML",
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06377v1"
+    },
+    {
+      "title": "The Bitter Lesson of Tool Calling",
+      "authors": "Ishan Patel, Sahil Sen, Elias Lumer et al.",
+      "summary": "Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that ch",
+      "published": "2026-08-06T17:58:32Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.06370v1"
+    },
+    {
+      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+      "authors": "Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.",
+      "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure",
+      "published": "2026-08-06T17:57:37Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.06366v1"
+    },
+    {
+      "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+      "authors": "George Grispos, Sajda Qureshi",
+      "summary": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about dig",
+      "published": "2026-08-06T17:57:28Z",
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06364v1"
+    },
+    {
+      "title": "An Optimal Agnostic PAC Algorithm",
+      "authors": "Markus Engelund Mathiasen, Jian Qian, Nikita Zhivotovskiy et al.",
+      "summary": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk boun",
+      "published": "2026-08-06T17:57:25Z",
+      "categories": [
         "cs.LG",
-        "math.AT"
+        "cs.AI",
+        "cs.DS",
+        "math.ST"
       ],
-      "link": "http://arxiv.org/abs/2608.06276v1"
+      "link": "http://arxiv.org/abs/2608.06363v1"
     },
     {
-      "title": "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN",
-      "authors": "Arash Nedaei, Henna Tiensuu, Elina Väyrynen et al.",
-      "summary": "Oral health issues affect billions globally, but the cost and limited access to professional dental care hinder preventive oral healthcare. Research relies on clinical-grade radiographs or intraoral c",
-      "published": "2026-08-06T17:03:05Z",
+      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+      "authors": "Boning Li, Yu Chen, Longbo Huang et al.",
+      "summary": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed",
+      "published": "2026-08-06T17:57:11Z",
       "categories": [
-        "cs.CV",
-        "eess.IV"
+        "cs.GT",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
       ],
-      "link": "http://arxiv.org/abs/2608.06275v1"
+      "link": "http://arxiv.org/abs/2608.06362v1"
     },
     {
-      "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
-      "authors": "Zhiheng Wang, Bo Peng, Lai Wei et al.",
-      "summary": "The \"thinking-with-images\" paradigm equips multimodal LLMs with active visual operations such as crop-and-zoom. However, models using these operations often achieve only marginal or negative gains ove",
-      "published": "2026-08-06T17:01:08Z",
+      "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+      "authors": "Sarvesh Baskar, Zikui Cai, Shayan Shabihi et al.",
+      "summary": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic",
+      "published": "2026-08-06T17:57:06Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.06270v1"
+      "link": "http://arxiv.org/abs/2608.06361v1"
     },
     {
-      "title": "Improving the Realism of Synthetic Clinical Benchmarks Under Utility Constraints",
-      "authors": "Omid Bazgir, Md Nasir, Jacob Hoffman et al.",
-      "summary": "Synthetic clinical benchmarks for enterprise AI agents can pass existing utility checks and still remain structurally unrealistic, especially in privacy-sensitive healthcare settings where operational",
-      "published": "2026-08-06T16:56:44Z",
+      "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+      "authors": "Praphul Chandra, Sujit Gujar, Ganesh Ghalme et al.",
+      "summary": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through r",
+      "published": "2026-08-06T17:53:24Z",
       "categories": [
+        "cs.GT",
         "cs.AI",
-        "cs.DB",
-        "cs.LG"
+        "cs.MA"
       ],
-      "link": "http://arxiv.org/abs/2608.06265v1"
+      "link": "http://arxiv.org/abs/2608.06353v1"
     },
     {
-      "title": "OTLesMix: Wasserstein Barycenter and Optimal Transport Map for Synthetic Lesion Generation with Diverse Shapes and Locations",
-      "authors": "Robin Trombetta, Carole Lartizien",
-      "summary": "The development of deep learning over the past decade has revolutionized medical imaging segmentation, allowing the extraction of precise descriptors from large volumes to characterize pathologies. Da",
-      "published": "2026-08-06T16:54:15Z",
+      "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+      "authors": "Fanzhe Meng, Guoxin Chen, Jiale Zhao et al.",
+      "summary": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not ",
+      "published": "2026-08-06T17:53:18Z",
       "categories": [
-        "cs.CV",
         "cs.LG",
-        "eess.IV"
+        "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.06264v1"
+      "link": "http://arxiv.org/abs/2608.06352v1"
     },
     {
-      "title": "Hypothesis Testing with Conditional Queries: Learnability and the Value of Interaction",
-      "authors": "Zonghuan Xu",
-      "summary": "Model evaluations may fix all tests before observing any responses or select later tests using earlier responses. We study this choice in a conditional-query model on a finite outcome space $\\mathcal{",
-      "published": "2026-08-06T16:54:10Z",
+      "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+      "authors": "Jerzy Stefanowski",
+      "summary": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias de",
+      "published": "2026-08-06T17:53:10Z",
       "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06351v1"
+    },
+    {
+      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
+      "authors": "Xinye Wang, Junxiao Liu, Shujian Huang et al.",
+      "summary": "Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have",
+      "published": "2026-08-06T17:52:06Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.06347v1"
+    },
+    {
+      "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+      "authors": "Yunjia Qi, Zehua Yin, Xintong Shi et al.",
+      "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest",
+      "published": "2026-08-06T17:51:20Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06346v1"
+    },
+    {
+      "title": "Scalable estimation of VARMA models",
+      "authors": "Daniel Paulin, Victor Elvira",
+      "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equival",
+      "published": "2026-08-06T17:49:58Z",
+      "categories": [
+        "stat.ML",
         "cs.LG",
         "math.ST"
       ],
-      "link": "http://arxiv.org/abs/2608.06262v1"
+      "link": "http://arxiv.org/abs/2608.06340v1"
     },
     {
-      "title": "RxnCLF: Contrastive Transformation-Aware Reaction Foundation Model for Improved Reactivity Prediction",
-      "authors": "Yiting Zheng, Cheng Fang, Anthony Donofrio et al.",
-      "summary": "Reaction yield prediction remains challenging because labeled data are scarce and reaction space is both combinatorially large and sparsely populated, limiting the generalization of existing reaction ",
-      "published": "2026-08-06T16:51:23Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06259v1"
-    },
-    {
-      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
-      "authors": "Ziqi Cai, Siqi Yang, Yimu Wang et al.",
-      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scala",
-      "published": "2026-08-06T16:47:24Z",
-      "categories": [
-        "cs.CV",
-        "cs.HC"
-      ],
-      "link": "http://arxiv.org/abs/2608.06257v1"
-    },
-    {
-      "title": "MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction",
-      "authors": "Dohyun Ku, Min Gu Kwak, Francisco J. Pasquel et al.",
-      "summary": "Metabolomics knowledge is distributed across heterogeneous resources and remains difficult to translate into predictive representations. We developed MetaboLLM, a metabolomics-specialized large langua",
-      "published": "2026-08-06T16:42:34Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06253v1"
-    },
-    {
-      "title": "Toward Deployable Bangla Sign Language Recognition with Expert-Validated Data and a Lightweight Attention-Based Model",
-      "authors": "Saad Ahmed, Md Khalid Syfullaha",
-      "summary": "Deaf and hard-of-hearing people in Bangladesh communicate mainly through Bangla Sign Language (BdSL). Automatic BdSL recognition on personal devices could widen access to education and services. Exist",
-      "published": "2026-08-06T16:41:22Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06252v1"
-    },
-    {
-      "title": "Minimax Optimal Early-Stopped Gradient Descent for Gaussian Mixture Classification",
-      "authors": "Alex Buna, Shirley Xiaoqi Liu, Patrick Rebeschini et al.",
-      "summary": "In overparameterised classification, training data can be linearly separable even when the underlying distribution is not. In this setting, gradient descent (GD) on the logistic loss diverges in norm ",
-      "published": "2026-08-06T16:41:00Z",
+      "title": "Optimal Rates for Learning with Monotone Adversaries",
+      "authors": "Anay Mehrotra",
+      "summary": "A monotone adversary observes an i.i.d. labeled sample and appends a finite number of further examples of its choice, every one of them labeled correctly by the target hypothesis. The learner sees a u",
+      "published": "2026-08-06T17:45:32Z",
       "categories": [
         "stat.ML",
-        "cs.LG"
+        "cs.DS",
+        "cs.LG",
+        "math.ST"
       ],
-      "link": "http://arxiv.org/abs/2608.06250v1"
+      "link": "http://arxiv.org/abs/2608.06337v1"
     },
     {
-      "title": "A Six-Dimensional Taxonomy of Post-Training Adaptation Techniques with Applications in AI Governance",
-      "authors": "Fardin Afdideh, Fernando Seoane, Farhad Abtahi et al.",
-      "summary": "Post-training adaptation has become central to modern machine learning practice and includes techniques such as retraining, fine-tuning, parameter-efficient adaptation, alignment, retrieval augmentati",
-      "published": "2026-08-06T16:32:26Z",
+      "title": "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data",
+      "authors": "Donna Hooshmand, Shubham Shahi, Cameron Barrie et al.",
+      "summary": "From natural-language query interfaces to automated report generation, data analysis tools need a description of the data: the real-world entities it contains, which columns function as measures or id",
+      "published": "2026-08-06T17:40:26Z",
       "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06246v1"
-    },
-    {
-      "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
-      "authors": "ZhiYan Hou, Xinyu Tang, Hongyan An et al.",
-      "summary": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models using automatically verifiable outcome signals, but these signals are typically spars",
-      "published": "2026-08-06T16:29:24Z",
-      "categories": [
+        "cs.DB",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.06243v1"
+      "link": "http://arxiv.org/abs/2608.06331v1"
     },
     {
-      "title": "Timestep-Conditioned Transformers for Global Weather Forecasting",
-      "authors": "Sam Levang, Fran Bartolic, Ty Dickinson et al.",
-      "summary": "Existing machine-learning weather forecasting models rely on predetermined and fixed autoregressive timesteps. The choice of model timestep involves a fundamental trade-off: shorter timesteps (e.g. 1 ",
-      "published": "2026-08-06T16:27:54Z",
+      "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
+      "authors": "Noam Koren, Roy Bar-Haim, Abigail Goldsteen et al.",
+      "summary": "Task-oriented conversational agents are evaluated using curated or automatically generated benchmarks, yet benchmark quality is rarely assessed. Poor benchmarks may contain inconsistent tasks, simplis",
+      "published": "2026-08-06T17:39:21Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06329v1"
+    },
+    {
+      "title": "Benchmarking and Enhancing LLMs for Rule-Intensive Review of National Standard Documents",
+      "authors": "Tao Wang, Qihao Yang, Rongjiao Liang et al.",
+      "summary": "Large language models (LLMs) increasingly support complex professional tasks, yet their capabilities in rule-intensive document review remain insufficiently evaluated. National standard documents, suc",
+      "published": "2026-08-06T17:27:23Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.06312v1"
+    },
+    {
+      "title": "Does FLAIR super-resolution erase or hallucinate small white-matter lesions?",
+      "authors": "Zahra Khodakarami, Yue Li, Pulkit Khandelwal et al.",
+      "summary": "White matter hyperintensities (WMH), bright regions on Fluid-attenuated Inversion Recovery (FLAIR) scans are associated with cerebrovascular pathology and neurodegeneration. FLAIR is usually acquired ",
+      "published": "2026-08-06T17:26:01Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.06311v1"
+    },
+    {
+      "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
+      "authors": "Chenglong Wang, Ziming Zhu, Yifu Huo et al.",
+      "summary": "Recent advances in reward modeling show a paradigm shift from discriminative reward models to generative reward models. However, despite their strong capabilities in response ranking, generative rewar",
+      "published": "2026-08-06T17:24:36Z",
       "categories": [
         "cs.LG",
-        "cs.OS"
+        "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.06241v1"
+      "link": "http://arxiv.org/abs/2608.06310v1"
     },
     {
-      "title": "PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation",
-      "authors": "Elad Yoshai, Natan T. Shaked",
-      "summary": "Unpaired image-to-image translation must decide, per image, what to change and what to preserve without paired supervision. Many diffusion-based unpaired translators control preservation through a sin",
-      "published": "2026-08-06T16:26:43Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06240v1"
-    },
-    {
-      "title": "Depth-Guided Video Object Counting in Crowded Scenes",
-      "authors": "Yuanjing Xu, Xinyan Liu, Weidong Chen et al.",
-      "summary": "Our primary objective is to advance video object counting in crowded scenes, aiming to robustly count all instances of a target category based on given text or visual prompts. Existing methods rely on",
-      "published": "2026-08-06T16:24:41Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06236v1"
-    },
-    {
-      "title": "EmoWorld: A Decoupled Affective Field for Controllable Emotional Video Generation",
-      "authors": "Bingyuan Wang, Baistan Zhyldyzbekov, Kunyu Feng et al.",
-      "summary": "Emotion shapes how viewers interpret a scene, yet existing video generators entangle global atmosphere, affect-bearing semantic cues, and temporal progression within a single text condition. We presen",
-      "published": "2026-08-06T16:20:23Z",
+      "title": "UQ-Loc: Uncertainty-Aware LiDAR Scene Coordinate Regression",
+      "authors": "Jacek Komorowski",
+      "summary": "LiDAR-based Scene Coordinate Regression (SCR) maps point clouds directly to 3D scene coordinates, enabling precise 6-DoF localisation without explicit map retrieval. However, existing methods produce ",
+      "published": "2026-08-06T17:23:17Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.06231v1"
-    },
-    {
-      "title": "From Passive Mirrors to Active Agents: Holonic Digital Twins for Physical AI over Networks",
-      "authors": "Christo Kurisummoottil Thomas, Omar Hashash, Walid Saad et al.",
-      "summary": "Despite advances in artificial intelligence (AI) across multiple sectors, today's AI tools, including deep learning and generative AI, still fail when embedded into physical systems, such as robots an",
-      "published": "2026-08-06T16:17:43Z",
-      "categories": [
-        "cs.NI",
-        "cs.AI",
-        "cs.IT",
-        "eess.SY"
-      ],
-      "link": "http://arxiv.org/abs/2608.06227v1"
-    },
-    {
-      "title": "TS-RAG: Retrieval Augmented Generation for Time Series Forecasting",
-      "authors": "Yixiong Xiao, Congxi Xiao, Jingbo Zhou et al.",
-      "summary": "While deep learning models, particularly transformer-based architectures, have shown impressive performance in time series forecasting, the application of retrieval-augmented generation (RAG) in this ",
-      "published": "2026-08-06T16:12:57Z",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06223v1"
-    },
-    {
-      "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
-      "authors": "Alperen Kenan, Paul Bremner, Manuel Giuliani et al.",
-      "summary": "Learning from demonstration (LfD) provides a developmental framework through which robots can develop motor skills by observing and imitating human dynamics, reducing reliance on explicit programming ",
-      "published": "2026-08-06T16:12:18Z",
-      "categories": [
-        "cs.RO",
-        "cs.HC",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06221v1"
+      "link": "http://arxiv.org/abs/2608.06307v1"
     }
   ]
 }
