@@ -1,7 +1,28 @@
 {
-  "timestamp": "2026-08-08T01:28:10.606384+00:00",
+  "timestamp": "2026-08-09T01:41:08.952152+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+      "pubDate": "2026-08-08T21:24:02+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI acquires presentation startup NextSlide",
+      "link": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+      "pubDate": "2026-08-08T19:41:13+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "An Amazon data center could have the worst polluting power plant in the country",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+      "pubDate": "2026-08-08T17:53:34+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "OpenAI says it slowed Astra model development over security concerns",
       "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
@@ -115,25 +136,11 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "Naïve raises $28.5M to automate the grunt work of setting up and running a company",
-      "link": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/",
-      "pubDate": "2026-08-06T17:00:37+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "OpenAI is giving ChatGPT free users unlimited text chats",
       "link": "https://www.theverge.com/ai-artificial-intelligence/976239/openai-chatgpt-free-go-text-chats",
       "pubDate": "2026-08-06T17:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Gen Z dating apps like Ditto ditch swiping in favor of AI matchmaking",
-      "link": "https://techcrunch.com/2026/08/06/gen-z-dating-apps-like-ditto-ditch-swiping-in-favor-of-ai-matchmaking/",
-      "pubDate": "2026-08-06T15:53:03+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "SoftBank donated $50 million to Trump’s library months before federal data center deal",
@@ -146,13 +153,6 @@
       "title": "The left and right agree on one thing: no data centers",
       "link": "https://www.theverge.com/podcast/971855/ai-data-center-backlash-protests-florida-bipartisan",
       "pubDate": "2026-08-06T14:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The messy politics behind Google’s big AI shakeup",
-      "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
-      "pubDate": "2026-08-06T13:26:42+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
