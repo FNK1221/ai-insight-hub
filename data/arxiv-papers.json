@@ -1,229 +1,226 @@
 {
-  "timestamp": "2026-08-08T01:27:37.183027+00:00",
+  "timestamp": "2026-08-12T01:51:41.117906+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Learning When to Trust via Selective Context Preference Optimization",
-      "authors": "Xian Sun, Wei Chow, Yingshuo Wang et al.",
-      "summary": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides",
-      "published": "2026-08-06T17:59:58Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06377v1"
-    },
-    {
-      "title": "The Bitter Lesson of Tool Calling",
-      "authors": "Ishan Patel, Sahil Sen, Elias Lumer et al.",
-      "summary": "Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that ch",
-      "published": "2026-08-06T17:58:32Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.06370v1"
-    },
-    {
-      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-      "authors": "Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.",
-      "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure",
-      "published": "2026-08-06T17:57:37Z",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.06366v1"
-    },
-    {
-      "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
-      "authors": "George Grispos, Sajda Qureshi",
-      "summary": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about dig",
-      "published": "2026-08-06T17:57:28Z",
-      "categories": [
-        "cs.CY",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06364v1"
-    },
-    {
-      "title": "An Optimal Agnostic PAC Algorithm",
-      "authors": "Markus Engelund Mathiasen, Jian Qian, Nikita Zhivotovskiy et al.",
-      "summary": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk boun",
-      "published": "2026-08-06T17:57:25Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.DS",
-        "math.ST"
-      ],
-      "link": "http://arxiv.org/abs/2608.06363v1"
-    },
-    {
-      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
-      "authors": "Boning Li, Yu Chen, Longbo Huang et al.",
-      "summary": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed",
-      "published": "2026-08-06T17:57:11Z",
-      "categories": [
-        "cs.GT",
-        "cs.AI",
-        "cs.CL",
-        "cs.LG",
-        "cs.MA"
-      ],
-      "link": "http://arxiv.org/abs/2608.06362v1"
-    },
-    {
-      "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
-      "authors": "Sarvesh Baskar, Zikui Cai, Shayan Shabihi et al.",
-      "summary": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic",
-      "published": "2026-08-06T17:57:06Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06361v1"
-    },
-    {
-      "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
-      "authors": "Praphul Chandra, Sujit Gujar, Ganesh Ghalme et al.",
-      "summary": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through r",
-      "published": "2026-08-06T17:53:24Z",
-      "categories": [
-        "cs.GT",
-        "cs.AI",
-        "cs.MA"
-      ],
-      "link": "http://arxiv.org/abs/2608.06353v1"
-    },
-    {
-      "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
-      "authors": "Fanzhe Meng, Guoxin Chen, Jiale Zhao et al.",
-      "summary": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not ",
-      "published": "2026-08-06T17:53:18Z",
-      "categories": [
-        "cs.LG",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.06352v1"
-    },
-    {
-      "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
-      "authors": "Jerzy Stefanowski",
-      "summary": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias de",
-      "published": "2026-08-06T17:53:10Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06351v1"
-    },
-    {
-      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
-      "authors": "Xinye Wang, Junxiao Liu, Shujian Huang et al.",
-      "summary": "Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have",
-      "published": "2026-08-06T17:52:06Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.06347v1"
-    },
-    {
-      "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
-      "authors": "Yunjia Qi, Zehua Yin, Xintong Shi et al.",
-      "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest",
-      "published": "2026-08-06T17:51:20Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06346v1"
-    },
-    {
-      "title": "Scalable estimation of VARMA models",
-      "authors": "Daniel Paulin, Victor Elvira",
-      "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equival",
-      "published": "2026-08-06T17:49:58Z",
-      "categories": [
-        "stat.ML",
-        "cs.LG",
-        "math.ST"
-      ],
-      "link": "http://arxiv.org/abs/2608.06340v1"
-    },
-    {
-      "title": "Optimal Rates for Learning with Monotone Adversaries",
-      "authors": "Anay Mehrotra",
-      "summary": "A monotone adversary observes an i.i.d. labeled sample and appends a finite number of further examples of its choice, every one of them labeled correctly by the target hypothesis. The learner sees a u",
-      "published": "2026-08-06T17:45:32Z",
-      "categories": [
-        "stat.ML",
-        "cs.DS",
-        "cs.LG",
-        "math.ST"
-      ],
-      "link": "http://arxiv.org/abs/2608.06337v1"
-    },
-    {
-      "title": "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data",
-      "authors": "Donna Hooshmand, Shubham Shahi, Cameron Barrie et al.",
-      "summary": "From natural-language query interfaces to automated report generation, data analysis tools need a description of the data: the real-world entities it contains, which columns function as measures or id",
-      "published": "2026-08-06T17:40:26Z",
-      "categories": [
-        "cs.DB",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06331v1"
-    },
-    {
-      "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
-      "authors": "Noam Koren, Roy Bar-Haim, Abigail Goldsteen et al.",
-      "summary": "Task-oriented conversational agents are evaluated using curated or automatically generated benchmarks, yet benchmark quality is rarely assessed. Poor benchmarks may contain inconsistent tasks, simplis",
-      "published": "2026-08-06T17:39:21Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06329v1"
-    },
-    {
-      "title": "Benchmarking and Enhancing LLMs for Rule-Intensive Review of National Standard Documents",
-      "authors": "Tao Wang, Qihao Yang, Rongjiao Liang et al.",
-      "summary": "Large language models (LLMs) increasingly support complex professional tasks, yet their capabilities in rule-intensive document review remain insufficiently evaluated. National standard documents, suc",
-      "published": "2026-08-06T17:27:23Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.06312v1"
-    },
-    {
-      "title": "Does FLAIR super-resolution erase or hallucinate small white-matter lesions?",
-      "authors": "Zahra Khodakarami, Yue Li, Pulkit Khandelwal et al.",
-      "summary": "White matter hyperintensities (WMH), bright regions on Fluid-attenuated Inversion Recovery (FLAIR) scans are associated with cerebrovascular pathology and neurodegeneration. FLAIR is usually acquired ",
-      "published": "2026-08-06T17:26:01Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.06311v1"
-    },
-    {
-      "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
-      "authors": "Chenglong Wang, Ziming Zhu, Yifu Huo et al.",
-      "summary": "Recent advances in reward modeling show a paradigm shift from discriminative reward models to generative reward models. However, despite their strong capabilities in response ranking, generative rewar",
-      "published": "2026-08-06T17:24:36Z",
-      "categories": [
-        "cs.LG",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.06310v1"
-    },
-    {
-      "title": "UQ-Loc: Uncertainty-Aware LiDAR Scene Coordinate Regression",
-      "authors": "Jacek Komorowski",
-      "summary": "LiDAR-based Scene Coordinate Regression (SCR) maps point clouds directly to 3D scene coordinates, enabling precise 6-DoF localisation without explicit map retrieval. However, existing methods produce ",
-      "published": "2026-08-06T17:23:17Z",
+      "title": "Perception Before Supervision: Self-Contained Visual Distillation from Counterfactual Blind Spots",
+      "authors": "Shravan Venkatraman, Omkar Thawakar, Ritesh Thawkar et al.",
+      "summary": "Self-improvement for multimodal large language models (MLLMs) is typically driven by reward-based methods that provide only coarse scalar feedback. Distillation offers a richer alternative through den",
+      "published": "2026-08-10T17:59:56Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.06307v1"
+      "link": "http://arxiv.org/abs/2608.09931v1"
+    },
+    {
+      "title": "Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions",
+      "authors": "Oluwanifemi Bamgbose, Simon Rosen, Jash Shah et al.",
+      "summary": "Automated Text-to-Speech (TTS) evaluation methods (Mean Opinion Score (MOS) predictors and Audio Large Language Models (Audio-LLM) judges) are expected to reflect human perception, yet it is unclear h",
+      "published": "2026-08-10T17:59:51Z",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.09930v1"
+    },
+    {
+      "title": "Multimodal Model Diffing for Feature Discovery and Control",
+      "authors": "Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.",
+      "summary": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to ",
+      "published": "2026-08-10T17:59:30Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.09928v1"
+    },
+    {
+      "title": "Learning How the World Evolves: Extrapolative Video World Models via Latent Dynamics Reasoning",
+      "authors": "Haodong Li, Shaoteng Liu, Tianyu Wang et al.",
+      "summary": "The world evolves following its dynamics, i.e., its laws of motion. However, leading video diffusion models largely fit the pixels without modeling how the pixels transit over time. Thus, they render ",
+      "published": "2026-08-10T17:59:19Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.09926v1"
+    },
+    {
+      "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+      "authors": "Laurens Samson, Iva Gornishka, Gossa Lô et al.",
+      "summary": "Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requiremen",
+      "published": "2026-08-10T17:59:05Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.09925v1"
+    },
+    {
+      "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+      "authors": "Alban Puech, Matteo Mazzonelli, Tamara R. Govindasamy et al.",
+      "summary": "Foundation models are transforming business workflows and boosting productivity, yet they remain largely absent from engineering domains such as power system analysis, where strict physical consistenc",
+      "published": "2026-08-10T17:57:49Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.09921v1"
+    },
+    {
+      "title": "Overcoming Data Scarcity and Confidentiality in Hardware Assurance via Synthetic Generation",
+      "authors": "Gijung Lee, Ronald Wilson, Damon L. Woodard et al.",
+      "summary": "Hardware assurance relies on scanning electron microscopy (SEM) to verify nanoscale structures, but assembling the large, high-quality datasets required for automated analysis is impeded by time-inten",
+      "published": "2026-08-10T17:56:03Z",
+      "categories": [
+        "cs.CR",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.09914v1"
+    },
+    {
+      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+      "authors": "Wenti Yin, Xiang Wang, Huaxin Zhang et al.",
+      "summary": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substa",
+      "published": "2026-08-10T17:52:51Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.09908v1"
+    },
+    {
+      "title": "DistMoE: Private-data Rehearsal-free Routing in Mixture-of-Experts for Distributed Instruction Tuning",
+      "authors": "Mainak Singha, Niccolò Biondi, Elisa Ricci et al.",
+      "summary": "Multimodal Large Language Models (MLLMs) have shown strong multimodal instruction-following ability, but adapting them to diverse visual-language domains typically assumes centralized data access and ",
+      "published": "2026-08-10T17:52:14Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.09907v1"
+    },
+    {
+      "title": "DSLE: A Learning Environment for Dark Souls Boss Encounters",
+      "authors": "Derin Gezgin, Jim O'Connor, Tanner Goodwin et al.",
+      "summary": "We introduce the Dark Souls Learning Environment (DSLE), a containerized platform that presents all 22 boss encounters of Dark Souls: Remastered as game-playing agent benchmarks through a Gymnasium-st",
+      "published": "2026-08-10T17:48:45Z",
+      "categories": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "link": "http://arxiv.org/abs/2608.09902v1"
+    },
+    {
+      "title": "Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness",
+      "authors": "Tadanobu Chuyo Kamijo, Ori Rottenstreich, Javier Conde et al.",
+      "summary": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corrido",
+      "published": "2026-08-10T17:47:24Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.09900v1"
+    },
+    {
+      "title": "Fairness in Link Prediction Beyond Demographic Parity: A Reproducibility Study",
+      "authors": "Valentijn Oldenburg, Floris de Kam, Stef de Wildt et al.",
+      "summary": "In fair ranked link prediction, demographic parity ($Δ_\\mathrm{DP}$) is a common fairness metric. Yet, Mattos et al. (2025) argue that it fails to detect exposure bias because it ignores where links a",
+      "published": "2026-08-10T17:47:19Z",
+      "categories": [
+        "cs.LG",
+        "cs.SI"
+      ],
+      "link": "http://arxiv.org/abs/2608.09899v1"
+    },
+    {
+      "title": "Consilience for Verifier-Free Test-Time Scaling",
+      "authors": "Lecheng Kong, Like Hui, Haitao Mao et al.",
+      "summary": "Test-time scaling often uses an external verifier, such as compilers and test cases in coding or trained value functions in robotics applications, to obtain high-quality rollouts. Verifier-free test-t",
+      "published": "2026-08-10T17:45:44Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.09898v1"
+    },
+    {
+      "title": "Fusion Training for Mathematical Generalization in Large Language Models",
+      "authors": "Congfeng Cao, Pengyu Zhang, Jelke Bloem et al.",
+      "summary": "Thinking Mode Fusion (TMF) enables large language models to support both concise responses and long-form reasoning by unifying a non-thinking mode and a thinking mode within a single model. However, i",
+      "published": "2026-08-10T17:41:19Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.09893v1"
+    },
+    {
+      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+      "authors": "Björn Engdahl, Adrian Kosowski, Jan Chorowski et al.",
+      "summary": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model",
+      "published": "2026-08-10T17:39:16Z",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2608.09888v1"
+    },
+    {
+      "title": "Space-Creating versus Dead Possession: An Off-Ball Possession-Quality Index for Broadcast Football",
+      "authors": "Seongjin Choi",
+      "summary": "Ball possession is the most-cited and most-misleading number in football: 60% recycled in one's own half is not 60% spent pinning the opponent back. Existing event-based possession-value frameworks (e",
+      "published": "2026-08-10T17:39:05Z",
+      "categories": [
+        "cs.CV",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.09887v1"
+    },
+    {
+      "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+      "authors": "Wanying Qu, Qinghua Mao, Yu Li et al.",
+      "summary": "The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control. Existing safety m",
+      "published": "2026-08-10T17:35:08Z",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.09885v1"
+    },
+    {
+      "title": "Financial Numerical Prediction and Allocation as Token Generation",
+      "authors": "Xu Ouyang, Moontae Lee",
+      "summary": "Financial prediction typically relies on task-specific regression, ranking, or policy heads, separating the language model from the numerical object ultimately evaluated. We investigate whether a caus",
+      "published": "2026-08-10T17:33:10Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.09880v1"
+    },
+    {
+      "title": "Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning",
+      "authors": "Yapeng Liu, Yuanzhao Zhai, Bo Ding et al.",
+      "summary": "Physically consistent motion planning remains a fundamental challenge in embodied AI, as generated trajectories must strictly conform to real-world execution dynamics. While latent world models offer ",
+      "published": "2026-08-10T17:31:18Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.09876v1"
+    },
+    {
+      "title": "ArchAgent v2: A Case Study with the Data Prefetching Championship",
+      "authors": "Abraham Gonzalez, Raghav Gupta, Akanksha Jain et al.",
+      "summary": "Agentic artificial intelligence has shown great promise in automating algorithm design, but scaling similar techniques to computer microarchitecture discovery remains challenging due to vast search sp",
+      "published": "2026-08-10T17:28:05Z",
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "link": "http://arxiv.org/abs/2608.09874v1"
     }
   ]
 }
