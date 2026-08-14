@@ -1,225 +1,214 @@
 {
-  "timestamp": "2026-08-13T01:54:08.811285+00:00",
+  "timestamp": "2026-08-14T01:51:39.621705+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "AdvFD: Boosting Visual Generation via Adversarial Fr'echet Distance Loss",
-      "authors": "Mingju Gao, Jingkai Zhou, Kun Gai et al.",
-      "summary": "Fréchet distance has recently emerged as an effective distribution-level objective for generator post-training, complementing the conventional sample-level diffusion and flow-matching losses. However,",
-      "published": "2026-08-11T17:59:56Z",
+      "title": "Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes",
+      "authors": "Aimilios Hadjiliasi, Louis Nisiotis",
+      "summary": "Embodied intelligent virtual agents are expected to operate as persistent, adaptive, and context-aware entities within complex virtual and Metaverse worlds. However, implementing cognitively capable a",
+      "published": "2026-08-13T16:12:52Z",
       "categories": [
-        "cs.CV"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.11205v1"
+      "link": "http://arxiv.org/abs/2608.13420v1"
     },
     {
-      "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
-      "authors": "Wenrui Bao, Tianyun Jiang, Zhiben Chen et al.",
-      "summary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics ar",
-      "published": "2026-08-11T17:59:13Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.11204v1"
-    },
-    {
-      "title": "Capturing Uncertainty in Human Motion for Representation Learning in Soccer",
-      "authors": "Yizhou Xu, Lars Bretzner, Tiesheng Wang et al.",
-      "summary": "This paper presents a self-supervised representation learning framework for understanding 3D skeleton-based human motion in soccer, using future motion prediction as the learning objective. Since huma",
-      "published": "2026-08-11T17:59:10Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.11203v1"
-    },
-    {
-      "title": "VidForensics-M1: Meta-Detection Reinforcement Learning with Verifiable Temporal Grounding for AI-Generated Video Forensics",
-      "authors": "Bowei Liu, Zheng Lu, Yuhan Bian et al.",
-      "summary": "Recent advances in video generation models have significantly improved the realism of synthetic videos, blurring the boundary between generated and authentic content and raising concerns about misinfo",
-      "published": "2026-08-11T17:58:10Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.11201v1"
-    },
-    {
-      "title": "ConVAWG: A Retrieval-Grounded Framework for Controlled Synthetic Dialogue Generation in Violence Against Women and Girls",
-      "authors": "Chen Lyu, Xingwei Tan, Simon Cullen et al.",
-      "summary": "Synthetic dialogue generation offers a way to study conversational dynamics in sensitive domains where real data are difficult to access, release, or annotate. The underlying abuse may occur online or",
-      "published": "2026-08-11T17:57:34Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11200v1"
-    },
-    {
-      "title": "Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders",
-      "authors": "Nikolai Bolik, Lennart Stöpler, Artur Andrzejak et al.",
-      "summary": "Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure. Their analysis uses cosine similarity over dens",
-      "published": "2026-08-11T17:55:59Z",
-      "categories": [
-        "cs.LG",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.11197v1"
-    },
-    {
-      "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-      "authors": "Alan Li, Rahul Saha, Anton Xue et al.",
-      "summary": "AI agents are increasingly used in mathematics research, but it is often unclear how to use them effectively. Towards this, we present an extensive case study of how AI was used to improve bounds on t",
-      "published": "2026-08-11T17:53:48Z",
-      "categories": [
-        "cs.AI",
-        "cs.CC",
-        "cs.HC",
-        "math.FA"
-      ],
-      "link": "http://arxiv.org/abs/2608.11195v1"
-    },
-    {
-      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
-      "authors": "Shiyu Xuan, Zechao Li",
-      "summary": "GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although rece",
-      "published": "2026-08-11T17:50:25Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.11191v1"
-    },
-    {
-      "title": "How to Verify Consistency of Probabilistic Claims",
-      "authors": "Orr Paradise, Oliver Richardson, Yoshua Bengio et al.",
-      "summary": "When a probabilistic predictor answers many conditional-probability queries, are its answers self-consistent, and can this be verified in polynomial time? This problem is of interest for AI safety, wh",
-      "published": "2026-08-11T17:41:39Z",
-      "categories": [
-        "cs.CC",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11181v1"
-    },
-    {
-      "title": "A Quantum Roadmap for Softmax Attention: Exact Born-Rule Analogs for Softmax Attention on the Probability Simplex",
-      "authors": "Eric A. F. Reinhardt, Adam J. Hauser",
-      "summary": "The attention mechanism forms the foundation of many modern AI models such as the Transformer. In one subclass of problems where attention is used, inputs and outputs are bound to the probability simp",
-      "published": "2026-08-11T17:32:30Z",
-      "categories": [
-        "quant-ph",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11173v1"
-    },
-    {
-      "title": "From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop",
-      "authors": "Rahul Gupta, Abhinav Mohanty, Anaelia Ovalle et al.",
-      "summary": "The Workshop on Trustworthy Natural Language Processing (TrustNLP), co-located with major ACL conferences since 2021, has grown from 8 proceedings papers to 41 over six editions, documenting a field-w",
-      "published": "2026-08-11T17:30:16Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CY"
-      ],
-      "link": "http://arxiv.org/abs/2608.11171v1"
-    },
-    {
-      "title": "MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment",
-      "authors": "Changhao Xiang, Shangyu Xing, Zhen Wu et al.",
-      "summary": "Existing Multimodal Large Language Models (MLLMs) predominantly rely on image-text pairs for modality alignment pretraining, mapping global image representations to long textual descriptions. However,",
-      "published": "2026-08-11T17:28:52Z",
-      "categories": [
-        "cs.CV",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11167v1"
-    },
-    {
-      "title": "Hierarchical Empirical-Bayes Naive Bayes: Minimax Smoothing and Calibration with AODE Extension",
-      "authors": "Nguyen Thai Anh, Truong Viet Vu, Tran Thien Thanh et al.",
-      "summary": "The Naive Bayes (NB) classifier remains a standard choice for categorical data, yet its widely used smoothing rules, such as Laplace, Lidstone, Krichevsky-Trofimov, and the $m$-estimate, all prescribe",
-      "published": "2026-08-11T17:21:31Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11162v1"
-    },
-    {
-      "title": "Conditional Independence Tests for Constraint-Based Causal Discovery: A Survey",
-      "authors": "Pavel Averin, Theodoros Moysiadis, Ioannis Katakis et al.",
-      "summary": "Conditional Independence (CI) tests are the statistical engine of constraint-based causal discovery: in algorithms such as PC (Peter-Clark) and FCI (Fast Causal Inference), skeleton pruning and key or",
-      "published": "2026-08-11T17:13:52Z",
+      "title": "Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning",
+      "authors": "Yikai Xu, Zhao Chen, Jian Huang et al.",
+      "summary": "Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population distribution. To this end, we propose Wasserstein Filtering (WF), a novel sample",
+      "published": "2026-08-13T16:12:28Z",
       "categories": [
         "stat.ML",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.11156v1"
+      "link": "http://arxiv.org/abs/2608.13418v1"
     },
     {
-      "title": "DACRI: Decision-Aware Causal Intervention Ranking for Critical Supply Chains",
-      "authors": "Shiqi Huang, Jiani He, Dingyan Shang et al.",
-      "summary": "Detecting or attributing a supply-chain disruption is not the same as selecting the intervention that maximizes recoverable net value. We present CriticalSCM-Bench v1, a controlled synthetic benchmark",
-      "published": "2026-08-11T17:12:08Z",
+      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan et al.",
+      "summary": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however",
+      "published": "2026-08-13T16:11:22Z",
       "categories": [
-        "cs.LG"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.11154v1"
+      "link": "http://arxiv.org/abs/2608.13417v1"
     },
     {
-      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
-      "authors": "Zetao Hong, Song Yuan, Yuanhao Ding et al.",
-      "summary": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing ",
-      "published": "2026-08-11T17:10:50Z",
-      "categories": [
-        "cs.DC",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.11152v1"
-    },
-    {
-      "title": "CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian Splatting",
-      "authors": "Jiayu Ding, Meilu Song, Yun Chen et al.",
-      "summary": "While 3D Gaussian Splatting (3DGS) has advanced open vocabulary scene understanding, existing methods remain confined to explicit queries. They struggle to interpret implicit intents, complex spatial ",
-      "published": "2026-08-11T17:09:49Z",
+      "title": "StreamTTT: Reconciling Real-Time Perception and Long-Term Memory in Streaming VLMs",
+      "authors": "Joya Chen, Zeyun Zhong, Mike Zheng Shou et al.",
+      "summary": "Humans effortlessly perceive the present while remembering the past, yet streaming VLMs often trade off real-time perception against long-term memory. Prior work shows that shortening the context can ",
+      "published": "2026-08-13T16:10:33Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.11150v1"
+      "link": "http://arxiv.org/abs/2608.13416v1"
     },
     {
-      "title": "PRMU: A Corpus-Free Benchmark for Person-Centric Knowledge Unlearning in Multimodal Large Language Models",
-      "authors": "Huafeng Chen, Yueming Lyu, Ziyuan Chen et al.",
-      "summary": "Multimodal large language models (MLLMs) have demonstrated remarkable capabilities in storing and recalling rich person-related knowledge, raising increasing concerns about reliable knowledge removal.",
-      "published": "2026-08-11T17:09:28Z",
+      "title": "Deliberate Practice: Learning Robot Skills under a Budget",
+      "authors": "Shivam Vats, Sudarshan Harithas, Mete Tuluhan Akbulut et al.",
+      "summary": "We consider the problem of autonomously learning robot skills under a limited practice budget for sequential tasks. We propose an active skill learning algorithm, \\emph{Deliberate Practice (DP)}, that",
+      "published": "2026-08-13T16:09:25Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13415v1"
+    },
+    {
+      "title": "Who Speaks Matters: Authority-Aware Multi-View RAG over Italian Parliamentary Proceedings",
+      "authors": "Mirko Tritella, Riccardo Pozzi, Matteo Palmonari et al.",
+      "summary": "Parliamentary proceedings are a primary record of democratic deliberation, yet their volume and fragmentation make multi-perspective access difficult for citizens, journalists, and researchers. Applyi",
+      "published": "2026-08-13T16:07:23Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13410v1"
+    },
+    {
+      "title": "Jointly Predicting Courses and Grades Using a Transformer-Based Model",
+      "authors": "Paul Savala",
+      "summary": "Existing predictive models in learning analytics often treat student academic history as a simple sequence, overlooking the concurrent nature of courses taken within a semester. This simplification ca",
+      "published": "2026-08-13T16:05:22Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13409v1"
+    },
+    {
+      "title": "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks",
+      "authors": "Muhammad Hannan Akram, Muhammad Abubakar Rashid, Wassi Haider Kabir et al.",
+      "summary": "6G networks will not be serving as communication infrastructures only; rather, they are expected to evolve into intelligent systems, where thousands of autonomous artificial intelligence (AI) agents a",
+      "published": "2026-08-13T15:53:15Z",
+      "categories": [
+        "eess.SP",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "link": "http://arxiv.org/abs/2608.13394v1"
+    },
+    {
+      "title": "Context-Matched Distillation: Teacher Causality for Autoregressive Video Distillation",
+      "authors": "Hmrishav Bandyopadhyay, Xuanchi Ren, Zijian Huang et al.",
+      "summary": "Interactive autoregressive video generation demands both low-latency rollouts and precise online control. Few-step distillation accelerates generation by reducing denoising steps, while online control",
+      "published": "2026-08-13T15:51:31Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.11149v1"
+      "link": "http://arxiv.org/abs/2608.13391v1"
     },
     {
-      "title": "The Illusion of Cross-Lingual Safety in Low-Resource Languages",
-      "authors": "Abigail Oppong, P Sam Sahil, Tadesse Destaw Belay et al.",
-      "summary": "Safety alignment in large language models (LLMs) is largely developed in English, assuming these safeguards generalize across multilingual settings. However, this assumption remains underexplored and ",
-      "published": "2026-08-11T17:05:26Z",
+      "title": "TopoIntent: Compiling Security Intent into Executable, Compliance-Checked Network Topologies",
+      "authors": "Xiaokang Qu, Jianliang Ma, Zao Fan et al.",
+      "summary": "Enterprise security topology design requires translating business intent, regulatory requirements, and risk assumptions into zones, boundary devices, inter-zone paths, and access-control policies. Exi",
+      "published": "2026-08-13T15:49:37Z",
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.NI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13389v1"
+    },
+    {
+      "title": "CROP: Task Relevance via Counterfactuals for Selective On-Policy Distillation",
+      "authors": "Enhan Li, Junhao He, Hongyang Du et al.",
+      "summary": "On-policy distillation (OPD) supervises a student language model on trajectories sampled from its current policy, but assigns equal credit to response tokens with unequal supervision value. Selective ",
+      "published": "2026-08-13T15:48:16Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.11146v1"
+      "link": "http://arxiv.org/abs/2608.13387v1"
     },
     {
-      "title": "A Recommendation System Approach for Interference-Robust Sensor Subset Selection",
-      "authors": "Kaan Buyukkalayci, Kyle Pak, Merve Karakas et al.",
-      "summary": "This paper develops a method for sensor-subset selection for tracking. Prior work showed that low-cost acoustic Received Signal Strength Indicator (RSSI) measurements can be used to recommend subsets ",
-      "published": "2026-08-11T17:01:44Z",
+      "title": "When Is a Task Vector Enough? An Empirical Theory of Implicit Multimodal ICL",
+      "authors": "Jiaqian Li",
+      "summary": "Implicit multimodal in-context learning compresses demonstrations into internal interventions, ranging from static task vectors to query-conditioned transformations and attention routing. Despite thei",
+      "published": "2026-08-13T15:46:50Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.13385v1"
+    },
+    {
+      "title": "Reconstructing Historical Manuscripts through MSI: The Potential of Contrast in Assessing Image Quality and Legibility",
+      "authors": "Anna Breger",
+      "summary": "Digital restoration of historical manuscript images aims to improve readability while preserving the authenticity of cultural heritage documents. However, evaluating quality of restored manuscripts re",
+      "published": "2026-08-13T15:41:29Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.13381v1"
+    },
+    {
+      "title": "Sign Language Video Synthesis via Loss-Guided Multi-Expert GANs",
+      "authors": "Dingzhan Nong, Zhihao Ren, Ziqi Li et al.",
+      "summary": "This preliminary technical report presents a framework for sign language video synthesis using a loss-guided multi-expert Generative Adversarial Network (GAN) to enhance communication for individuals ",
+      "published": "2026-08-13T15:32:40Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13368v1"
+    },
+    {
+      "title": "When Local Variance Optimality Is Not Enough: RoPE-Aligned Q/K Rotations for Dynamic 4-Bit Quantisation",
+      "authors": "Shuhan Wang, Yilin Luo, Nan Xu et al.",
+      "summary": "Rotation-based post-training quantisation commonly applies an orthogonal transform across an entire attention head to reduce outlier-induced error. RoPE instead partitions each head into two-dimension",
+      "published": "2026-08-13T15:31:01Z",
       "categories": [
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.11143v1"
+      "link": "http://arxiv.org/abs/2608.13365v1"
+    },
+    {
+      "title": "Rules or Character? Scaling Laws for AI Safety Design",
+      "authors": "Satoshi Takahashi, Nobuji Kouno, Masaaki Komatsu et al.",
+      "summary": "Artificial Intelligence (AI) safety systems combine character shaping (e.g., Reinforcement Learning from Human Feedback [RLHF], Constitutional AI), which modifies behavioral distributions at training ",
+      "published": "2026-08-13T15:15:09Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13345v1"
+    },
+    {
+      "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
+      "authors": "Yupan Ding, Jing Xiao, Zhenyuan Zhang et al.",
+      "summary": "Long-horizon Earth observation reasoning requires models to organize multi-stage geographic evolution, localize spatial changes, detect temporal anomalies, and infer future from extended image sequenc",
+      "published": "2026-08-13T15:14:59Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13344v1"
+    },
+    {
+      "title": "AmalthAI: An Open-Source Computer Vision Platform for Cultural Heritage",
+      "authors": "Christos Chatzisavvas, Stelios Alvanos, Efstratios Politis et al.",
+      "summary": "Computer vision (CV) and machine learning (ML) offer new tools for cultural heritage (CH) artifact analysis, but the CV/ML pipeline remains largely inaccessible to CH domain experts, who lack the back",
+      "published": "2026-08-13T15:14:48Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.13343v1"
+    },
+    {
+      "title": "Simulation-to-real transfer learning for infrared spectroscopic chemical sensing and analysis from molecules to complex samples",
+      "authors": "Yusen Tan, Yixuan Chen, Zheng Fang et al.",
+      "summary": "Infrared (IR) spectroscopy is widely used for chemical sensing, but extracting reliable chemical information from spectra remains challenging. Conventional interpretation is labor-intensive, relies on",
+      "published": "2026-08-13T15:11:50Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.13341v1"
+    },
+    {
+      "title": "Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation",
+      "authors": "Valentin Noël",
+      "summary": "Sparse autoencoders are meant to name the things a language model computes, and the usual way to check that a latent matters is to switch it off and see what changes. But a latent fires at many tokens",
+      "published": "2026-08-13T15:06:56Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.13337v1"
     }
   ]
 }
