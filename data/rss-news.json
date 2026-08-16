@@ -1,7 +1,35 @@
 {
-  "timestamp": "2026-08-15T01:10:33.226761+00:00",
+  "timestamp": "2026-08-16T01:14:36.610682+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+      "link": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
+      "pubDate": "2026-08-15T21:29:19+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Have a laugh at AI’s expense by roleplaying as a chatbot",
+      "link": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
+      "pubDate": "2026-08-15T20:45:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Anthropic shares more details about how Claude’s new watermarks will work",
+      "link": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+      "pubDate": "2026-08-15T18:58:39+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "pubDate": "2026-08-15T16:30:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
     {
       "title": "Mark Zuckerberg has an Instagzam",
       "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
@@ -122,27 +150,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
-      "link": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-      "pubDate": "2026-08-13T19:22:40+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "IBM partners with OpenAI to bolster enterprise AI push",
-      "link": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
-      "pubDate": "2026-08-13T19:19:49+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
-      "link": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
-      "pubDate": "2026-08-13T18:28:14+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Building a practical path to post-quantum cryptography",
       "link": "https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/",
       "pubDate": "2026-08-13T18:11:42+00:00",
@@ -160,13 +167,6 @@
       "title": "I looked inside an AI generated movie, and the best parts were all human",
       "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
       "pubDate": "2026-08-13T15:30:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Does Google even want to win at AI?",
-      "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
-      "pubDate": "2026-08-13T14:10:31+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     }
