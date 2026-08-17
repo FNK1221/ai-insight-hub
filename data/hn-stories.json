@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-16T01:14:01.732023+00:00",
-  "count": 5,
+  "timestamp": "2026-08-17T01:11:26.892747+00:00",
+  "count": 6,
   "stories": [
     {
       "title": "Yann LeCun, Pioneer of AI, Thinks Today's LLM's Are Nearly Obsolete",
@@ -41,6 +41,14 @@
       "points": 136,
       "comments": 72,
       "time": "2008-05-09T09:33:38Z"
+    },
+    {
+      "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
+      "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
+      "domain": "futurism.com",
+      "points": 78,
+      "comments": 56,
+      "time": "2026-08-16T21:34:06Z"
     }
   ]
 }
