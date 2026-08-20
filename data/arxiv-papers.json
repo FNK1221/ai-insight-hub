@@ -1,227 +1,226 @@
 {
-  "timestamp": "2026-08-19T01:10:25.252003+00:00",
+  "timestamp": "2026-08-20T01:09:40.226358+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
-      "authors": "Bingxin Xu, Yuzhang Shang, Emilio Ferrara et al.",
-      "summary": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: err",
-      "published": "2026-08-17T17:59:57Z",
+      "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+      "authors": "Xingjian Wang, Zhao Wang, Taihang Hu et al.",
+      "summary": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A cen",
+      "published": "2026-08-18T17:59:01Z",
       "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
+        "cs.CV",
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.16889v1"
+      "link": "http://arxiv.org/abs/2608.18076v1"
     },
     {
-      "title": "Q-based Variational Inverse Reinforcement Learning",
-      "authors": "Ondrej Bajgar, Peter Tisnikar, Alessandro Abate et al.",
-      "summary": "The development of safe and beneficial AI requires that systems can learn and act in accordance with human preferences. However, explicitly specifying these preferences by hand is often infeasible. In",
-      "published": "2026-08-17T17:59:55Z",
+      "title": "Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation",
+      "authors": "Iryna Hartsock, Cesar Lam, Christopher Otteni et al.",
+      "summary": "Purpose: To develop and evaluate a locally deployed multi-agent AI system for radiology report structuring and quality assurance. Materials and Methods: This retrospective study included 638 radiology",
+      "published": "2026-08-18T17:57:08Z",
       "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.18072v1"
+    },
+    {
+      "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+      "authors": "Qinyuan Ye, Yu Li, Yada Pruksachatkun et al.",
+      "summary": "Memory-based self-improving agents--those that learn from an online stream of tasks and improve over time by maintaining a textual memory bank--have shown great promise in recent literature. However, ",
+      "published": "2026-08-18T17:55:07Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.16888v1"
+      "link": "http://arxiv.org/abs/2608.18066v1"
     },
     {
-      "title": "An Empirical Study of Training Pixel-Space Text-to-Image Diffusion Models",
-      "authors": "Dengyang Jiang, Ruoyi Du, Zhennan Chen et al.",
-      "summary": "This paper investigates an increasingly important topic in generative modeling: pixel-space diffusion models. Although numerous studies have explored this topic, most focus on small-scale or class-con",
-      "published": "2026-08-17T17:59:25Z",
+      "title": "EDITBRIDGE: Towards Faithful and Efficient Ultra-High-Resolution Image Editing",
+      "authors": "Jiayi Song, Shijie Huang, Fangtai Wu et al.",
+      "summary": "High-resolution image editing is increasingly demanded in professional workflows, yet existing diffusion-based models remain constrained to resolutions below 1K due to quadratic attention complexity a",
+      "published": "2026-08-18T17:53:16Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.16887v1"
+      "link": "http://arxiv.org/abs/2608.18063v1"
     },
     {
-      "title": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
-      "authors": "Emilien Dupont, Marvin Eisenberger, Borislav Kozlovskii et al.",
-      "summary": "The current best bounds on the matrix multiplication exponent $ω$ are obtained through a refinement of the laser method called combination loss analysis (Duan et al., 2022; Williams et al., 2024; Alma",
-      "published": "2026-08-17T17:59:05Z",
+      "title": "TokEval: A Tokenizer Evaluation Suite",
+      "authors": "Clara Meister",
+      "summary": "Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities. This can be partly attributed to a limited unde",
+      "published": "2026-08-18T17:52:52Z",
       "categories": [
-        "cs.DS",
-        "cs.AI",
-        "cs.CC",
+        "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.16884v1"
+      "link": "http://arxiv.org/abs/2608.18062v1"
     },
     {
-      "title": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
-      "authors": "Yunbum Kook, Santosh S. Vempala",
-      "summary": "For any convex body $\\mathcal{K}\\subset\\mathbb{R}^{n}$ containing a unit ball, the spectral gap of Hit-and-Run is $Ω(1/(n^2 C_{\\mathsf{PI}}))$, where $C_{\\mathsf{PI}}$ is the Poincaré constant of the ",
-      "published": "2026-08-17T17:57:11Z",
+      "title": "The concentration game: Bayesian updating, regret, and information",
+      "authors": "Akshay Balsubramani",
+      "summary": "We give a two-player zero-sum repeated game between a learner and nature whose value identity generates Bayesian updating and an exact accounting of exponential-weights regret at once, and supplies th",
+      "published": "2026-08-18T17:52:26Z",
       "categories": [
-        "cs.DS",
         "cs.LG",
+        "cs.GT",
         "math.PR",
         "math.ST"
       ],
-      "link": "http://arxiv.org/abs/2608.16878v1"
+      "link": "http://arxiv.org/abs/2608.18061v1"
     },
     {
-      "title": "AutoSR: Automatic Symbolic Regression by Searching Research States",
-      "authors": "Kejia Zhang, Youran Sun, Xinyu Ren et al.",
-      "summary": "We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolate",
-      "published": "2026-08-17T17:55:26Z",
-      "categories": [
-        "cs.SC",
-        "cs.AI",
-        "cs.LG",
-        "math.NA"
-      ],
-      "link": "http://arxiv.org/abs/2608.16876v1"
-    },
-    {
-      "title": "An Analytical-Prior Framework for Data-Efficient Prediction of Sound-Reduction Frequencies in Rectangular Side-Branch Helmholtz Resonators",
-      "authors": "Jiaming Li",
-      "summary": "High-fidelity finite-element simulations can provide accurate numerical predictions for side-branch resonators, but large simulation datasets are expensive to generate and purely data-driven surrogate",
-      "published": "2026-08-17T17:53:14Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.16873v1"
-    },
-    {
-      "title": "Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning",
-      "authors": "Serena Su, Yifan Wang, Senwei Liang et al.",
-      "summary": "Accurate classification of circulating tumor cell (CTC) phenotypes can provide valuable information for assessing metastatic potential. Label free microfluidic devices provide a hydrodynamic obstacle ",
-      "published": "2026-08-17T17:51:49Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.16870v1"
-    },
-    {
-      "title": "Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text",
-      "authors": "Benjamin Belay",
-      "summary": "A language model's output does not by itself provide verifiable evidence about the internal computation that produced it. We study computational provenance: whether generated text can carry detectable",
-      "published": "2026-08-17T17:50:04Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.16868v1"
-    },
-    {
-      "title": "Non-Crossing Deep Quantile Regression for Distributional Survival Prediction",
-      "authors": "Shuai Huang, Zhe Qu, Zhaowei Hua et al.",
-      "summary": "In survival analysis the way covariates act on the risk of an event often differs between early and late failure times, yet hazard- and mean-based summaries collapse this variation into a single numbe",
-      "published": "2026-08-17T17:46:41Z",
-      "categories": [
-        "stat.ML",
-        "cs.LG",
-        "stat.AP"
-      ],
-      "link": "http://arxiv.org/abs/2608.16864v1"
-    },
-    {
-      "title": "SplatGuide: Geometric Priors from 3D Gaussians for Pose-Free Novel View Synthesis",
-      "authors": "Yejun Zhang, Zihan Wang, Xu Ji et al.",
-      "summary": "Generating photorealistic novel views from unposed images requires both 3D geometric understanding and the ability to synthesize unseen content. A natural strategy combines feed-forward 3DGS reconstru",
-      "published": "2026-08-17T17:45:57Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.16863v1"
-    },
-    {
-      "title": "The canonical facets of multi-separator polytopes",
-      "authors": "Bjoern Andres, Silvia Di Gregorio, Jannik Irmai et al.",
-      "summary": "We initiate a polyhedral study of the graph multi-separator problem proposed by Irmai et al. (2024) as an alternative to the lifted multicut problem for application to the task of image segmentation. ",
-      "published": "2026-08-17T17:44:39Z",
-      "categories": [
-        "cs.DM",
-        "cs.LG",
-        "math.CO"
-      ],
-      "link": "http://arxiv.org/abs/2608.16861v1"
-    },
-    {
-      "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
-      "authors": "Weiliang Chen, Haowen Sun, Jun Gao et al.",
-      "summary": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollo",
-      "published": "2026-08-17T17:43:24Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.16859v1"
-    },
-    {
-      "title": "zLend: A Dual-Scope Cash-Flow Reconstruction Framework for On-Chain Credit Underwriting",
-      "authors": "Girish G N, Ashutosh Sahoo, Akshay SP et al.",
-      "summary": "Decentralized lending lacks a credit bureau: a borrower's capacity to repay must be inferred entirely from public on-chain activity, without income verification or a liability record. This paper prese",
-      "published": "2026-08-17T17:39:05Z",
-      "categories": [
-        "q-fin.RM",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.16856v1"
-    },
-    {
-      "title": "Can Unsupervised Methods Outperform Supervised Deep Learning When Ground Truth Is Sparse? A Case Study of Bronchovascular Bundle Segmentation in Low-Dose CT",
-      "authors": "Anna Mrukwa, Marek Socha, Aleksandra Suwalska et al.",
-      "summary": "Background   Lung cancer remains the deadliest cancer worldwide because it is often diagnosed too late. Effective treatment depends on detection at an early screening stage. However, the growing numbe",
-      "published": "2026-08-17T17:38:22Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.16855v1"
-    },
-    {
-      "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
-      "authors": "Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu et al.",
-      "summary": "Regulatory compliance monitoring in deployed language models is increasingly implemented as a legal and audit control, checking model outputs against written rules spanning data protection, healthcare",
-      "published": "2026-08-17T17:37:07Z",
+      "title": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
+      "authors": "Daria Leshchikova, Valentina V. Kuskova, Dmitry Zaytsev et al.",
+      "summary": "Autonomous LLM agents that converse on a user's behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only dele",
+      "published": "2026-08-18T17:51:16Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.16852v1"
+      "link": "http://arxiv.org/abs/2608.18058v1"
     },
     {
-      "title": "Proteus: Incremental Memory Activation for Long-Context Sequence Modeling",
-      "authors": "Reza Bayat, Ali Behrouz, Vahab Mirrokni et al.",
-      "summary": "The quadratic cost of attention-based sequence models for long contexts has motivated a growing line of research on memory-based models that can compress context into a compact state. However, most ex",
-      "published": "2026-08-17T17:30:43Z",
+      "title": "HLSR: Hybrid Live Forecast Selective Dynamic Vehicle Rerouting for Real-Time Congestion Avoidance",
+      "authors": "Xiao Wang, Shun Ren Yang, Hui Nien Hung et al.",
+      "summary": "Urban traffic congestion reduces productivity and increases travel cost and emissions. Network-wide live travel-time shortest-path rerouting can be highly effective in simulation, but assumes that ess",
+      "published": "2026-08-18T17:49:27Z",
       "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.18056v1"
+    },
+    {
+      "title": "Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction",
+      "authors": "Veronika Spieker, Wenqi Huang, Cemre Ariyurek et al.",
+      "summary": "Reliable quantitative analysis of dynamic contrast-enhanced MRI requires high-quality spatiotemporal reconstructions at high undersampling rates. Scan-specific reconstructions using Gaussian and Gabor",
+      "published": "2026-08-18T17:48:22Z",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
         "cs.LG",
-        "cs.AI",
+        "eess.SP",
+        "physics.med-ph"
+      ],
+      "link": "http://arxiv.org/abs/2608.18055v1"
+    },
+    {
+      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "authors": "Yining Hua, Hongbin Na, Yifan Zhou et al.",
+      "summary": "AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they sea",
+      "published": "2026-08-18T17:44:18Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.18050v1"
+    },
+    {
+      "title": "Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation",
+      "authors": "Hollis Robbins",
+      "summary": "Language has two parameters. Count how often words occur together and you estimate amplitude, the strength of association. Word embeddings and attention weights refine that count, which sums every wri",
+      "published": "2026-08-18T17:34:25Z",
+      "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.16844v1"
+      "link": "http://arxiv.org/abs/2608.18041v1"
     },
     {
-      "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
-      "authors": "Langzhe Gu, Chengkai Hou, Meng Li et al.",
-      "summary": "Humanoid robots hold great promise as general-purpose agents in human-centered environments, yet generalist vision-language-action (VLA) foundation models are not readily applicable to humanoid whole-",
-      "published": "2026-08-17T17:22:33Z",
+      "title": "Optimize Your Sampling: Tuned Diffusion Sampling with Bayesian Optimization",
+      "authors": "Travis Zhang, Christian Belardi, Justin Lovelace et al.",
+      "summary": "Sampling from a diffusion model typically requires many forward passes through a large neural network, making generation computationally expensive. While much work has focused on efficient solvers and",
+      "published": "2026-08-18T17:33:00Z",
       "categories": [
-        "cs.RO",
-        "cs.AI"
+        "cs.LG",
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.16837v1"
+      "link": "http://arxiv.org/abs/2608.18040v1"
     },
     {
-      "title": "Model Hypnosis: Strong control of AI via additive subliminal effects",
-      "authors": "Enric Boix-Adsera, Benedict Tessler",
-      "summary": "We demonstrate that AI models are broadly susceptible to a phenomenon we call model hypnosis, in which individually weak and seemingly irrelevant cues in the prompt can be systematically combined to s",
-      "published": "2026-08-17T17:20:10Z",
+      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
+      "authors": "Mahdi Saberi, Yaşar Utku Alçalar, Merve Gülle et al.",
+      "summary": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may ",
+      "published": "2026-08-18T17:31:07Z",
       "categories": [
-        "cs.CL",
-        "cs.AI"
+        "eess.IV",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "physics.med-ph"
       ],
-      "link": "http://arxiv.org/abs/2608.16834v1"
+      "link": "http://arxiv.org/abs/2608.18036v1"
     },
     {
-      "title": "Time-Aware Validation of Machine Learning Fuel Consumption Models: Evidence from 1\\,Hz Operational Data, CCGS \\textit{Sir Wilfrid Laurier}",
-      "authors": "Samarasimha Reddy Chittamuru, Ayhan Akinturk, Allison Kennedy et al.",
-      "summary": "Ship fuel consumption (SFC) prediction supports vessel operation optimisation, emissions estimation, and decision support systems (DSS) for sustainable maritime transportation. Numerous data-driven fu",
-      "published": "2026-08-17T17:18:05Z",
+      "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+      "authors": "Zongzheng Zhang, Jijun Wang, Saining Zhang et al.",
+      "summary": "Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end dr",
+      "published": "2026-08-18T17:29:51Z",
       "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.18035v1"
+    },
+    {
+      "title": "Deep Academic Survey: Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation",
+      "authors": "Zhikai Xu, Zhucun Xue, Teng Hu et al.",
+      "summary": "Academic surveys play a central role in organizing rapidly expanding scholarly literature, yet their construction requires extensive paper analysis, coherent knowledge organization, fine-grained citat",
+      "published": "2026-08-18T17:29:00Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.18034v1"
+    },
+    {
+      "title": "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry",
+      "authors": "Emma Ceccherini, Daniel Lawson, Anjulika Salhan et al.",
+      "summary": "Categorising invoices into the correct General Ledger (GL) code underpins financial reporting and tax compliance. This is a skilled accounting judgement rather than a routine task: the correct categor",
+      "published": "2026-08-18T17:28:01Z",
+      "categories": [
+        "stat.ML",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.16833v1"
+      "link": "http://arxiv.org/abs/2608.18033v1"
+    },
+    {
+      "title": "Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study",
+      "authors": "Simon Weber, Mateo de Mayo, Je Hyeong Hong et al.",
+      "summary": "Initialization-free bundle adjustment (InitFree BA) aims to recover camera poses and scene structure directly from image observations, avoiding the geometric initialization stages of conventional stru",
+      "published": "2026-08-18T17:23:06Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.18028v1"
+    },
+    {
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "authors": "Haoqin Tu, Yunhao Fang, Yizhong Wang et al.",
+      "summary": "Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study",
+      "published": "2026-08-18T17:22:54Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.18027v1"
+    },
+    {
+      "title": "TabNSM: Neural Sparse Mixer for Tabular Regression",
+      "authors": "Ali Eslamian, Qiang Cheng",
+      "summary": "Large-scale, high-dimensional tabular regression remains challenging: tree-based models are robust but lack end-to-end representation learning, while deep models enable flexible feature learning but o",
+      "published": "2026-08-18T17:22:49Z",
+      "categories": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "link": "http://arxiv.org/abs/2608.18026v1"
+    },
+    {
+      "title": "Why GPT-Style Models Do Not Directly Transfer to Symbolic Music: Compression in the Wrong Coordinate System",
+      "authors": "Yi Wang",
+      "summary": "GPT-style models achieve strong performance by representing language with finite vocabularies of reusable discrete tokens. This success has motivated symbolic music tokenizations to treat recurring mu",
+      "published": "2026-08-18T17:20:12Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "link": "http://arxiv.org/abs/2608.18025v1"
     }
   ]
 }
