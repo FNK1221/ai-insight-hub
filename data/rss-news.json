@@ -1,41 +1,139 @@
 {
-  "timestamp": "2026-08-20T01:10:15.431562+00:00",
+  "timestamp": "2026-08-21T01:13:51.315340+00:00",
   "count": 24,
   "items": [
     {
-      "title": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
-      "link": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
-      "pubDate": "2026-08-19T23:32:00+00:00",
+      "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
+      "link": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+      "pubDate": "2026-08-21T00:13:44+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
-      "link": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
-      "pubDate": "2026-08-19T22:10:46+00:00",
+      "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+      "link": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+      "pubDate": "2026-08-20T22:36:37+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
-      "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
-      "pubDate": "2026-08-19T21:51:23+00:00",
+      "title": "ChatGPT can now send texts for you with new Apple Messages plug-in",
+      "link": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+      "pubDate": "2026-08-20T22:09:51+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "AI was supposed to win people over by now — it hasn’t",
-      "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
-      "pubDate": "2026-08-19T19:11:40+00:00",
+      "title": "Google Discover is getting an AI chatbot-tuned feed",
+      "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+      "pubDate": "2026-08-20T21:50:22+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "OK, can we actually cool data centers with our pee?",
+      "link": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
+      "pubDate": "2026-08-20T20:53:13+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Google packs Search and Gemini with new AI study tools",
-      "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
-      "pubDate": "2026-08-19T19:00:00+00:00",
+      "title": "Google gives publishers a new way to fight AI-driven traffic losses",
+      "link": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "pubDate": "2026-08-20T19:18:21+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
+    },
+    {
+      "title": "Runlayer, Rippling drop lawsuits — but the brouhaha is still a cautionary tale for founders",
+      "link": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/",
+      "pubDate": "2026-08-20T19:15:05+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Linkdaze’s smart calendar is built to run a household, not just track a schedule",
+      "link": "https://techcrunch.com/2026/08/20/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/",
+      "pubDate": "2026-08-20T18:20:35+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Grok keeps sending gibberish responses to users",
+      "link": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/",
+      "pubDate": "2026-08-20T17:32:16+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "link": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+      "pubDate": "2026-08-20T17:18:58+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Ramp launches its own AI model router, called Router",
+      "link": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+      "pubDate": "2026-08-20T16:46:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "It’s Greg Brockman’s OpenAI now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+      "pubDate": "2026-08-20T15:45:55+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Debates over AI consciousness are a trap",
+      "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+      "pubDate": "2026-08-20T15:42:39+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Welcome to the AI crisis in math",
+      "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
+      "pubDate": "2026-08-20T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Download: polycrisis support networks and a hydrogen gold rush",
+      "link": "https://www.technologyreview.com/2026/08/20/1142579/the-download-polycrisis-support-networks-underground-hydrogen-gold-rush/",
+      "pubDate": "2026-08-20T12:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Slack is launching collaborative vibe-coding channels",
+      "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+      "pubDate": "2026-08-20T12:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The next big thing in hydrogen could be underground",
+      "link": "https://www.technologyreview.com/2026/08/20/1142512/geologic-hydrogen-hunt/",
+      "pubDate": "2026-08-20T10:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Unlocking hidden revenue streams with market models",
+      "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
+      "pubDate": "2026-08-20T09:47:22+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Support networks aim to help kids through the polycrisis",
+      "link": "https://www.technologyreview.com/2026/08/20/1141686/support-networks-help-kids-polycrisis/",
+      "pubDate": "2026-08-20T09:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
     },
     {
       "title": "Google Gemini is getting a dedicated student hub",
@@ -43,20 +141,6 @@
       "pubDate": "2026-08-19T19:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Researchers say OpenAI revoked their access to limited cyber program",
-      "link": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/",
-      "pubDate": "2026-08-19T18:46:14+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Meet the startup helping Wall Street put a price on AI compute",
-      "link": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/",
-      "pubDate": "2026-08-19T17:26:48+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "OpenAI hit the brakes. Now what?",
@@ -73,20 +157,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "TerraPower’s nuclear reactor has a secret weapon for powering AI data centers",
-      "link": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
-      "pubDate": "2026-08-19T15:44:53+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Amazon makes its AI-powered Alexa+ free on Fire TV, no Prime required",
-      "link": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
-      "pubDate": "2026-08-19T15:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
       "link": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
       "pubDate": "2026-08-19T14:18:12+00:00",
@@ -94,81 +164,11 @@
       "source": "VentureBeat AI"
     },
     {
-      "title": "Calendly throws its hat into meeting note-taker circus",
-      "link": "https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/",
-      "pubDate": "2026-08-19T14:09:39+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "The Download: AI’s self-improvement problem, and what’s driving the heat",
       "link": "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/",
       "pubDate": "2026-08-19T12:10:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
-    },
-    {
-      "title": "Nvidia’s new financial strategy does not compute",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
-      "pubDate": "2026-08-19T12:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Child-monitoring apps might need a reboot",
-      "link": "https://www.technologyreview.com/2026/08/19/1141623/child-monitoring-apps-need-reboot/",
-      "pubDate": "2026-08-19T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
-      "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
-      "pubDate": "2026-08-18T19:48:26+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-      "pubDate": "2026-08-18T19:28:30+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Firefox&#8217;s Smart Window promises a better AI browser",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-      "pubDate": "2026-08-18T13:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The Download: how people really use AI, and Flock’s design choices",
-      "link": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
-      "pubDate": "2026-08-18T12:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Google&#8217;s Pet Memory forgot who my cats are",
-      "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
-      "pubDate": "2026-08-18T12:01:29+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Elon Musk broke the FAA — Palantir is picking up the pieces",
-      "link": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
-      "pubDate": "2026-08-18T11:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "ChatGPT is getting a dedicated mode for teens",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-      "pubDate": "2026-08-18T11:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     }
   ]
 }
