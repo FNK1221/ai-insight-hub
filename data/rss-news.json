@@ -1,7 +1,147 @@
 {
-  "timestamp": "2026-08-25T01:12:20.771207+00:00",
+  "timestamp": "2026-08-26T01:14:31.030014+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Robotics startup Generalist reaches $3B valuation, sources say",
+      "link": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
+      "pubDate": "2026-08-26T00:40:59+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
+      "link": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
+      "pubDate": "2026-08-26T00:06:20+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Addressing a sticking point in sustainable adhesives",
+      "link": "https://www.technologyreview.com/2026/08/25/1140902/addressing-a-sticking-point-in-sustainable-adhesives/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "YouTuber finds niche as college admissions mentor",
+      "link": "https://www.technologyreview.com/2026/08/25/1140905/youtuber-finds-niche-as-college-admissions-mentor/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Launching youth entrepreneurship",
+      "link": "https://www.technologyreview.com/2026/08/25/1140911/launching-youth-entrepreneurship/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "A new stamp on cyberfraud prevention",
+      "link": "https://www.technologyreview.com/2026/08/25/1140914/a-new-stamp-on-cyberfraud-prevention/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "AgeLab research inspires an A I startup",
+      "link": "https://www.technologyreview.com/2026/08/25/1140917/agelab-research-inspires-an-a-i-startup/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Amping up T cells to target cancer",
+      "link": "https://www.technologyreview.com/2026/08/25/1140949/amping-up-t-cells-to-target-cancer/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Taking your temperature from the inside",
+      "link": "https://www.technologyreview.com/2026/08/25/1140952/taking-your-temperature-from-the-inside/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Seeing through murky waters",
+      "link": "https://www.technologyreview.com/2026/08/25/1140955/seeing-through-murky-waters/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Your brain on AI",
+      "link": "https://www.technologyreview.com/2026/08/25/1140958/your-brain-on-ai/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "MIT tech powered the Artemis II livestreams",
+      "link": "https://www.technologyreview.com/2026/08/25/1140961/mit-tech-powered-the-artemis-ii-livestreams/",
+      "pubDate": "2026-08-25T21:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+      "link": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+      "pubDate": "2026-08-25T19:03:47+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Claude Cowork finally remembers what you told the app in chat",
+      "link": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/",
+      "pubDate": "2026-08-25T17:50:33+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Gamma acquires Accel-backed design startup Lica",
+      "link": "https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica/",
+      "pubDate": "2026-08-25T15:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show",
+      "link": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
+      "pubDate": "2026-08-25T14:22:04+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI says its Jalapeño chip can power faster AI responses than the competition",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
+      "pubDate": "2026-08-25T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Accel-backed Keenable is indexing the web for AI agents",
+      "link": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
+      "pubDate": "2026-08-25T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "‘The world seems to be ready’: An interview with OpenAI head of product Thibault Sottiaux",
+      "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+      "pubDate": "2026-08-25T12:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
+      "pubDate": "2026-08-25T09:15:03+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC",
       "link": "https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/",
@@ -13,83 +153,6 @@
       "title": "Trump bought SpaceX shares two weeks after blockbuster IPO",
       "link": "https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/",
       "pubDate": "2026-08-24T21:24:17+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Amjad Masad, CEO and co-founder of Replit, joins the Disrupt Stage at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/",
-      "pubDate": "2026-08-24T19:54:19+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Instinct’s powerful AI assistant is raising privacy and security concerns",
-      "link": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
-      "pubDate": "2026-08-24T18:03:55+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
-      "link": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
-      "pubDate": "2026-08-24T15:24:18+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "OpenAI is building AI agents for everything. Will everyone use them?",
-      "link": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
-      "pubDate": "2026-08-24T15:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "How to encourage smarter AI use in the classroom",
-      "link": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
-      "pubDate": "2026-08-24T14:20:19+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Hugging Face reportedly in talks to be acquired for $13B",
-      "link": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
-      "pubDate": "2026-08-24T13:47:26+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "The Download: kids outlearning AI, and space travel agents",
-      "link": "https://www.technologyreview.com/2026/08/24/1142863/the-download-kids-outlearning-ai-space-travel-agents/",
-      "pubDate": "2026-08-24T12:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Kids outlearn AI—and we still don’t know why",
-      "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
-      "pubDate": "2026-08-24T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
-      "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-      "pubDate": "2026-08-23T20:01:36+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Linkdaze’s smart calendar is built to run a household, not just track a schedule",
-      "link": "https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/",
-      "pubDate": "2026-08-23T19:14:08+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Flock CEO calls for ‘compromise’ as surveillance company faces growing backlash",
-      "link": "https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/",
-      "pubDate": "2026-08-23T15:30:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
@@ -106,69 +169,6 @@
       "pubDate": "2026-08-21T13:37:52+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "The Download: threats from space mirrors and credit for AI drugs",
-      "link": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
-      "pubDate": "2026-08-21T12:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Mother tongue",
-      "link": "https://www.technologyreview.com/2026/08/21/1141726/mother-tongue-fiction/",
-      "pubDate": "2026-08-21T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "When AI designs a drug, who gets the credit?",
-      "link": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
-      "pubDate": "2026-08-21T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
-      "link": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
-      "pubDate": "2026-08-21T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Google Discover is getting an AI chatbot-tuned feed",
-      "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
-      "pubDate": "2026-08-20T21:50:22+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "It’s Greg Brockman’s OpenAI now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-      "pubDate": "2026-08-20T15:45:55+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Debates over AI consciousness are a trap",
-      "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
-      "pubDate": "2026-08-20T15:42:39+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Welcome to the AI crisis in math",
-      "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
-      "pubDate": "2026-08-20T14:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The Download: polycrisis support networks and a hydrogen gold rush",
-      "link": "https://www.technologyreview.com/2026/08/20/1142579/the-download-polycrisis-support-networks-underground-hydrogen-gold-rush/",
-      "pubDate": "2026-08-20T12:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
     }
   ]
 }

@@ -1,223 +1,231 @@
 {
-  "timestamp": "2026-08-25T01:11:45.544110+00:00",
+  "timestamp": "2026-08-26T01:13:56.404367+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
-      "authors": "Xianyun Sun, Chaoyou Fu, Zhengye Zhang et al.",
-      "summary": "Recent omni-modal large language models (Omni-LLMs) show great potential as real-time video assistants, which continuously perceive environments and guide users to achieve specific goals. Unlike tradi",
-      "published": "2026-08-21T17:59:52Z",
+      "title": "How to Train a Critic Stably and Efficiently",
+      "authors": "Penghui Qi, Xiangxin Zhou, Wee Sun Lee et al.",
+      "summary": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token",
+      "published": "2026-08-24T17:59:39Z",
       "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.21360v1"
-    },
-    {
-      "title": "Primal Acceleration of Newton's Method",
-      "authors": "Nikita Doikov",
-      "summary": "We develop a new direct accelerated Newton method for minimizing convex functions with Lipschitz continuous Hessian. The algorithm uses only primal variables and performs just one linear solve per ite",
-      "published": "2026-08-21T17:59:37Z",
-      "categories": [
-        "math.OC",
+        "cs.LG",
         "cs.AI",
-        "cs.LG"
+        "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.21359v1"
+      "link": "http://arxiv.org/abs/2608.23566v1"
     },
     {
-      "title": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
-      "authors": "Elaine Lau, Thanuka Udumulla, Lee Izhaki-Tavor et al.",
-      "summary": "In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform researc",
-      "published": "2026-08-21T17:59:26Z",
+      "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+      "authors": "Zhifei Chen, Luozhou Wang, Guibao Shen et al.",
+      "summary": "An interactive world model must follow the user's actions, remember the places it has shown, and stream in real time. The tension is structural: control wants a short horizon, memory wants an unbounde",
+      "published": "2026-08-24T17:59:05Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.21357v1"
+      "link": "http://arxiv.org/abs/2608.23565v1"
     },
     {
-      "title": "AI with Authority, from Application to Silicon",
-      "authors": "Jason Hickey",
-      "summary": "For sixty years, machine verification has been a major cost overhead, affordable only for exceptional artifacts. Here we report that generative AI inverts this relationship: at AI speed, machine verif",
-      "published": "2026-08-21T17:59:16Z",
+      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "authors": "Deyao Hong, Yizhe Chi, Wenyi Li et al.",
+      "summary": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they ",
+      "published": "2026-08-24T17:59:04Z",
       "categories": [
-        "cs.SE",
+        "cs.CL",
         "cs.AI",
-        "cs.AR",
-        "cs.LO"
+        "cs.SE"
       ],
-      "link": "http://arxiv.org/abs/2608.21356v1"
+      "link": "http://arxiv.org/abs/2608.23564v1"
     },
     {
-      "title": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-      "authors": "Yoshitaka Inoue, Minoh Jeong, Alfred Hero et al.",
-      "summary": "Scarce data and tumor heterogeneity limit patient-level cancer treatment-response prediction. Existing approaches predict response from pretreatment molecular profiles and drug representations, withou",
-      "published": "2026-08-21T17:54:48Z",
+      "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "authors": "Md Thamed Bin Zaman Chowdhury, Moazzem Hossain",
+      "summary": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and th",
+      "published": "2026-08-24T17:58:41Z",
       "categories": [
-        "q-bio.QM",
-        "cs.LG"
+        "cs.CV",
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.21349v1"
+      "link": "http://arxiv.org/abs/2608.23563v1"
     },
     {
-      "title": "Truthful Calibration Measures for Sequential Prediction",
-      "authors": "Anagha Gokul, Jason Hartline, Lunjia Hu et al.",
-      "summary": "Calibration requires probabilistic reports to be conditionally unbiased and reliably interpretable as probabilities. A calibration measure assigns numerical error to miscalibrated reports. Haghtalab e",
-      "published": "2026-08-21T17:54:05Z",
+      "title": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
+      "authors": "Yuanyuan Zhang, Yida Zhang, Jiahui Li et al.",
+      "summary": "Ballistocardiography (BCG) is promising for unobtrusive long-term blood pressure (BP) monitoring in laboratory settings, but traditional BCG signals are vulnerable to the variations in body-bed intera",
+      "published": "2026-08-24T17:58:35Z",
       "categories": [
-        "cs.DS",
-        "cs.GT",
-        "cs.LG"
+        "eess.SP",
+        "cs.AI",
+        "physics.bio-ph"
       ],
-      "link": "http://arxiv.org/abs/2608.21348v1"
+      "link": "http://arxiv.org/abs/2608.23562v1"
     },
     {
-      "title": "Asymmetric Capacity Allocation in Self-Refinement Pipelines",
-      "authors": "Zhuoyi Yang, Ian G. Harris, Salar Hashemitaheri et al.",
-      "summary": "Self-refinement, typically structured as generation, critique, and revision, is a widely adopted paradigm for improving LLM generation and serves as a core mechanism in many LLM agents. While the thre",
-      "published": "2026-08-21T17:52:17Z",
+      "title": "Provably adaptive sampling with uniform and remasking discrete diffusion models",
+      "authors": "Daniil Dmitriev, Zhihan Huang, Yuting Wei et al.",
+      "summary": "Discrete diffusion models offer a promising alternative to autoregressive generation by enabling parallel updates, but their sampling efficiency can depend strongly on the choice of the forward proces",
+      "published": "2026-08-24T17:54:51Z",
       "categories": [
-        "cs.LG"
+        "cs.LG",
+        "cs.IT",
+        "math.ST",
+        "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2608.21345v1"
+      "link": "http://arxiv.org/abs/2608.23554v1"
     },
     {
-      "title": "TurboBias 2.0: Streaming Context-Biasing for Production-Efficient ASR Systems",
-      "authors": "Vladimir Bataev, Lilit Grigoryan, Andrei Andrusenko et al.",
-      "summary": "Contextualization is essential for production automatic speech recognition (ASR) systems, where user-provided phrases must be recognized accurately under strict latency constraints. Although many cont",
-      "published": "2026-08-21T17:50:00Z",
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas et al.",
+      "summary": "Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long",
+      "published": "2026-08-24T17:54:19Z",
       "categories": [
-        "eess.AS",
         "cs.AI",
         "cs.CL",
-        "cs.LG",
-        "cs.SD"
+        "cs.SE"
       ],
-      "link": "http://arxiv.org/abs/2608.21343v1"
+      "link": "http://arxiv.org/abs/2608.23552v1"
     },
     {
-      "title": "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories",
-      "authors": "Pedro Cadahia Delgado",
-      "summary": "Short observational pricing panels can contain many observations while offering only a small number of distinct price movements. This paper studies the inferential consequences of that distinction in ",
-      "published": "2026-08-21T17:40:31Z",
+      "title": "ConvergeFlow: Language Flow with Provable Convergence to Token Embeddings",
+      "authors": "Na Li, Yuchen Jiao, Changxiao Cai et al.",
+      "summary": "Recent advances in continuous diffusion and flow-based language models (LMs) have achieved performance competitive with discrete LMs. However, existing continuous frameworks still rely on decoders sup",
+      "published": "2026-08-24T17:54:14Z",
       "categories": [
-        "cs.LG",
-        "econ.EM"
-      ],
-      "link": "http://arxiv.org/abs/2608.21334v1"
-    },
-    {
-      "title": "Anatomy-Informed Neural Networks: Encoding Anatomic Priors in Loss and Architecture, with an SE(3) Formulation of Guidewire-Induced Aortoiliac Deformation",
-      "authors": "David P. Stonko",
-      "summary": "Deep-learning models of anatomy can be numerically plausible yet anatomically impossible, and they generalize poorly when data are scarce. We introduce Anatomy-Informed Neural Networks (AINN), in whic",
-      "published": "2026-08-21T17:38:42Z",
-      "categories": [
+        "cs.CL",
         "cs.AI",
-        "cs.CV",
-        "cs.RO"
+        "cs.LG",
+        "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2608.21332v1"
+      "link": "http://arxiv.org/abs/2608.23551v1"
     },
     {
-      "title": "Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy",
-      "authors": "Afonso Baldo, Hugo Pitorro, Areti Vassilopoulos et al.",
-      "summary": "Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction. We introduce an ontology of ten therape",
-      "published": "2026-08-21T17:32:38Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.21325v1"
-    },
-    {
-      "title": "Time-Aware Tranformer-Based Prediction Model for AECOPD",
-      "authors": "Weihao Qu, Ling Zheng, Dongyang Wang et al.",
-      "summary": "The rapid symptom change of Acute exacerbation of chronic obstructive pulmonary disease (AECOPD) makes it critical to have time-sensitive prediction models. However, most current machine learning mode",
-      "published": "2026-08-21T17:31:23Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.21324v1"
-    },
-    {
-      "title": "Unified Branch-and-Bound Search for the Steiner Traveling Salesman Problem on Graphs of Convex Sets",
-      "authors": "Jingtao Tang, Hang Ma",
-      "summary": "We formalize the Steiner Traveling Salesman Problem (Steiner-TSP) on Graphs of Convex Sets (GCS), which seeks a minimum-cost closed trajectory through required convex sets while allowing optional tran",
-      "published": "2026-08-21T17:28:03Z",
-      "categories": [
-        "cs.AI",
-        "cs.RO"
-      ],
-      "link": "http://arxiv.org/abs/2608.21319v1"
-    },
-    {
-      "title": "From Regulation to Implementation: A Critical Evaluation of LLM-Assisted Regulatory Compliance in Industry",
-      "authors": "Adriana Watson, Marco Bücheler, Grant Richards et al.",
-      "summary": "The European Union (EU) has emerged as a leading regulatory body in the development of sustainability and privacy regulations. While new regulation requirements vary, many include a documentation arti",
-      "published": "2026-08-21T17:27:13Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.21317v1"
-    },
-    {
-      "title": "Prompt-Model Interaction Reaches the Fixed Points: A deterministic, task-free structural readout -- and the factorizations of it that failed",
-      "authors": "Nicolás Vera Zúñiga",
-      "summary": "That a prompt's effect is not a property of the prompt is established: prompts optimised for one model degrade on another, and rankings reorder under neutral reformatting. That evidence is about task ",
-      "published": "2026-08-21T17:25:18Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2608.21315v1"
-    },
-    {
-      "title": "Rethinking Expressivity and Efficiency in Test-Time Training",
-      "authors": "Zeyun Zhong, Joya Chen, Manuel Martin et al.",
-      "summary": "Test-Time Training (TTT) enables long-context processing via continuous weight updates during inference, but current methods struggle to balance the expressivity of per-token update dynamics with the ",
-      "published": "2026-08-21T17:12:28Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.21308v1"
-    },
-    {
-      "title": "SPARCL: Spectral Partitioned Analytic Continual Learning",
-      "authors": "James Hartley, Zeropy Surio, Daniel Whitmore et al.",
-      "summary": "Analytic continual learning has emerged as a strong exemplar-free alternative to gradient-based class-incremental learning because it replaces iterative optimization with closed-form ridge updates. Ye",
-      "published": "2026-08-21T17:09:48Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.21307v1"
-    },
-    {
-      "title": "Re$^3$Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning",
-      "authors": "Haonan Jia, Shichao Dong, Zenghui Sun et al.",
-      "summary": "Reinforcement Learning (RL) has demonstrated significant gains in image captioning, yet it is still limited in encouraging Large Vision-Language Models (LVLMs) to explore novel reasoning strategies. T",
-      "published": "2026-08-21T17:07:41Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.21305v1"
-    },
-    {
-      "title": "When Adaptation Hurts: Connecting Representational Drift to OOD Failures in MedSAM Fine-Tuning",
-      "authors": "Marko Haralović, Sounic Akkaraju, Carlo Baretta et al.",
-      "summary": "Foundation models for medical image segmentation, like prompt-based MedSAM, generalize well across domains and modalities, often in zero or few-shot setups. However, their performance depends on the q",
-      "published": "2026-08-21T17:01:10Z",
+      "title": "FixAnything: 3D-Consistent Rendering Refinement via Video Generative Priors",
+      "authors": "Khiem Vuong, Deva Ramanan, Srinivasa Narasimhan et al.",
+      "summary": "Rendering views using 3D scene representations such as Gaussian Splatting (3DGS), Neural Radiance Fields (NeRF), meshes, or even point clouds produces artifacts when input views are sparse or target v",
+      "published": "2026-08-24T17:51:33Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.21300v1"
+      "link": "http://arxiv.org/abs/2608.23549v1"
     },
     {
-      "title": "AUSO: Action-Level Unified Skill Optimization from Internalization to Utilization",
-      "authors": "Huizu Lin, Chengkai Huang, Tianqi Gao et al.",
-      "summary": "Skills play different roles as an agent's policy evolves: they should first provide learnable knowledge, then support capability formation, and finally be invoked only when they improve individual dec",
-      "published": "2026-08-21T16:53:27Z",
+      "title": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
+      "authors": "Mustafa Umut Ozbek, Taiwo Ojo, Pooria Madani et al.",
+      "summary": "Machine-learning-based anomaly detection is increasingly used in industrial control systems (ICS), yet most studies assume that detector training data is trustworthy. In practice, training data may be",
+      "published": "2026-08-24T17:49:36Z",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.23547v1"
+    },
+    {
+      "title": "Inertial Manifold Neural Operator for Dissipative Time-Dependent Partial Differential Equations",
+      "authors": "Xiaoyang Xie, Clarence W. Rowley",
+      "summary": "In this paper, we introduce the Inertial Manifold Neural Operator (IMNO) for solving dissipative time-dependent partial differential equations (PDEs). The long-time dynamics of such systems often exhi",
+      "published": "2026-08-24T17:49:30Z",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.DS"
+      ],
+      "link": "http://arxiv.org/abs/2608.23546v1"
+    },
+    {
+      "title": "How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles",
+      "authors": "Shang Wu, Catarina G Belem, Shuyuan Fu et al.",
+      "summary": "While AI assistance can improve human task performance in the short term, it may also undermine the development of skills in the longer term. We examine this tension in a controlled logic-puzzle exper",
+      "published": "2026-08-24T17:46:11Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.21292v1"
+      "link": "http://arxiv.org/abs/2608.23543v1"
+    },
+    {
+      "title": "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams",
+      "authors": "Summer Eunhyung Ann, Haokun Liu, Chenhao Tan et al.",
+      "summary": "Does multi-agent LLM interaction help or hurt? Some work reports gains from debate (Du et al., 2024), critique loops (Chen et al., 2025), and mixture-of-agents synthesis (Wang et al., 2025), while oth",
+      "published": "2026-08-24T17:45:15Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.23541v1"
+    },
+    {
+      "title": "Interpretable AI with Local Distillation",
+      "authors": "Erin Craig, Yiling Huang, Snigdha Panigrahi et al.",
+      "summary": "Modern AI models such as tabular foundation models and gradient-boosted ensembles can outpredict classical methods, but provide little basis for reasoning about their predictions. High-stakes decision",
+      "published": "2026-08-24T17:43:07Z",
+      "categories": [
+        "stat.ME",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2608.23538v1"
+    },
+    {
+      "title": "Adapter-Based Few-Shot Continual Learning for Malicious Packet Recognition",
+      "authors": "Kyle Stein, Guillermo Francia, III Eman El-Sheikh et al.",
+      "summary": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads t",
+      "published": "2026-08-24T17:41:15Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.23536v1"
+    },
+    {
+      "title": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
+      "authors": "Santosh Ray, Pratik K. Mishra, Ali Abedi et al.",
+      "summary": "Older adults recovering after lower-limb fracture or hip replacement may experience complex recovery trajectories. Most of the time, these clinical aspects are studied in isolation, masking their join",
+      "published": "2026-08-24T17:33:17Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.23531v1"
+    },
+    {
+      "title": "Correcting a learned physical invariant improves world-model rollouts",
+      "authors": "Richard Bao",
+      "summary": "World models can predict video without learning dynamics that they reliably preserve. We test whether a frozen DreamerV3 trained only on pendulum video learns a scalar that its own latent transition t",
+      "published": "2026-08-24T17:29:40Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.23526v1"
+    },
+    {
+      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+      "authors": "Zhiqing Cui, Xinxiang Yin, Yihong Tang et al.",
+      "summary": "Earth-system analysis reconstructs changing physical processes from observations that differ in source, scale, timing, and modality. Natural hazards make this work consequential because incomplete evi",
+      "published": "2026-08-24T17:29:16Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.23525v1"
+    },
+    {
+      "title": "The Measurement Revolution? Credible Measurement and Inference in the Age of AI",
+      "authors": "Melissa Dell, Ashesh Rambachan",
+      "summary": "Artificial intelligence (AI) is transforming measurement in economics. AI models convert unstructured data, such as text and images, into structured variables at low cost, making previously prohibitiv",
+      "published": "2026-08-24T17:28:34Z",
+      "categories": [
+        "econ.GN",
+        "cs.AI",
+        "stat.AP"
+      ],
+      "link": "http://arxiv.org/abs/2608.23524v1"
+    },
+    {
+      "title": "Investigating Relational Reasoning in VLMs",
+      "authors": "Adhithya Laxman Ravi Shankar Geetha, Aulia Kharis Rakhmasari, Haleema Ramzan et al.",
+      "summary": "Vision-Language Models (VLMs) achieve strong performance in visual reasoning tasks, but it remains unclear whether they understand visual relations, or simply employ shortcuts such as language cues or",
+      "published": "2026-08-24T17:23:36Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.23518v1"
     }
   ]
 }
