@@ -1,7 +1,15 @@
 {
-  "timestamp": "2026-08-26T01:13:56.810536+00:00",
+  "timestamp": "2026-08-27T07:42:20.818705+00:00",
   "count": 6,
   "stories": [
+    {
+      "title": "Show HN: How much of Hacker News is about AI?",
+      "url": "https://hnstats.com",
+      "domain": "hnstats.com",
+      "points": 69,
+      "comments": 46,
+      "time": "2026-08-26T14:16:05Z"
+    },
     {
       "title": "Yann LeCun, Pioneer of AI, Thinks Today's LLM's Are Nearly Obsolete",
       "url": "https://www.newsweek.com/ai-impact-interview-yann-lecun-artificial-intelligence-2054237",
@@ -41,14 +49,6 @@
       "points": 136,
       "comments": 72,
       "time": "2008-05-09T09:33:38Z"
-    },
-    {
-      "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
-      "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
-      "domain": "futurism.com",
-      "points": 157,
-      "comments": 188,
-      "time": "2026-08-16T21:34:06Z"
     }
   ]
 }

@@ -1,231 +1,240 @@
 {
-  "timestamp": "2026-08-26T01:13:56.404367+00:00",
+  "timestamp": "2026-08-27T07:42:20.368689+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "How to Train a Critic Stably and Efficiently",
-      "authors": "Penghui Qi, Xiangxin Zhou, Wee Sun Lee et al.",
-      "summary": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token",
-      "published": "2026-08-24T17:59:39Z",
+      "title": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
+      "authors": "Junxiang Xu, Ruisi Wang, Fanyi Pu et al.",
+      "summary": "Native visual reasoning treats visual generation as the medium of reasoning itself: visual states (i.e. images and videos) are not merely inputs to be understood or outputs to be rendered, but first-c",
+      "published": "2026-08-26T17:59:51Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM",
+        "cs.RO"
+      ],
+      "link": "http://arxiv.org/abs/2608.26105v1"
+    },
+    {
+      "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
+      "authors": "Jiaming Zhou, Qihang Zhang, Gangwei Xu et al.",
+      "summary": "Zero-shot cross-task generalization, where a policy must execute manipulation tasks never seen during training, remains a central challenge in robot learning. In large language models, a novel task ca",
+      "published": "2026-08-26T17:59:34Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.26103v1"
+    },
+    {
+      "title": "RefVideo-6M: A Reliable Reference-Based Dataset for Instructional Video Editing",
+      "authors": "Bojia Zi, Xiaoyan Yang, Yu Zhou et al.",
+      "summary": "Recent advances in video editing have been largely driven by large-scale instruction-based datasets. However, existing datasets still suffer from two critical limitations. First, target videos are com",
+      "published": "2026-08-26T17:59:19Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.26101v1"
+    },
+    {
+      "title": "A Visual Dependence-Aware Framework for Multimodal Unsupervised Continual Post-Training",
+      "authors": "Kaichen Li, Zhilin Zhu, Jianhao Huang et al.",
+      "summary": "In this paper, we explore a novel task of Multimodal Unsupervised Continual Post-Training (MU-CPT), enabling deployed MLLMs to continually evolve from streaming unlabeled data. Existing unsupervised p",
+      "published": "2026-08-26T17:57:04Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.26095v1"
+    },
+    {
+      "title": "MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching",
+      "authors": "Hao Yin, Paritosh Parmar, Lijun Gu et al.",
+      "summary": "Existing action quality assessment (AQA) datasets and methods rely primarily on visual inputs such as RGB and pose, overlooking physiological dynamics such as muscle mechanics and often modeling actio",
+      "published": "2026-08-26T17:56:33Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.ET",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.26094v1"
+    },
+    {
+      "title": "Agentic Autoresearch for Cell-Edge Power Control: Radically Redefining the Researcher's Role",
+      "authors": "Ahmad Khan, Akram Bin Sediq, Sara Azadegi Naeini et al.",
+      "summary": "Designing machine learning algorithms for wireless resource management is labour-intensive: the architecture, the loss function and the training recipe are all specified by hand. We demonstrate that t",
+      "published": "2026-08-26T17:56:00Z",
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "eess.SY"
+      ],
+      "link": "http://arxiv.org/abs/2608.26093v1"
+    },
+    {
+      "title": "PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans",
+      "authors": "Nabaraj Subedi, Shuvo Dip Datta, Ahmed Abdelaty et al.",
+      "summary": "Civil infrastructure compliance checking has long relied on engineers manually reading legacy 2D plans; however, OCR-based automation strips away the geometry and layout essential for interpreting the",
+      "published": "2026-08-26T17:54:24Z",
+      "categories": [
+        "cs.IR",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.26091v1"
+    },
+    {
+      "title": "Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders",
+      "authors": "Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Inar Timiryasov et al.",
+      "summary": "We present a first application of sparse-autoencoder-based mechanistic interpretability to particle physics. Studying a neutrino foundation model pretrained on IceCube data and fine-tuned for directio",
+      "published": "2026-08-26T17:53:00Z",
+      "categories": [
+        "astro-ph.HE",
+        "cs.AI",
+        "cs.LG",
+        "hep-ex"
+      ],
+      "link": "http://arxiv.org/abs/2608.26090v1"
+    },
+    {
+      "title": "Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings",
+      "authors": "Evelyn Ma, Rama Kumar Pasumarthi, Kishwar Shafin et al.",
+      "summary": "Addressing critical global challenges, from food security and disaster risk to disease outbreaks and socio-economic vulnerability, demands high-fidelity geospatial modeling. However, building predicti",
+      "published": "2026-08-26T17:50:52Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.26088v1"
+    },
+    {
+      "title": "TraceML: An Empirical Analysis of Human-Agent Planning in Machine Learning Development",
+      "authors": "Jiarui Yan, Weiwei Sun, Sijie Li et al.",
+      "summary": "Large language models write correct code for isolated problems but remain far weaker at autonomous machine-learning development, where an agent must revise data pipelines, models, and validation over ",
+      "published": "2026-08-26T17:50:13Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.26086v1"
+    },
+    {
+      "title": "ICON Decomposition: Multivariate Concept-Level Explanations of Deep Representations for Model Auditing",
+      "authors": "Roshan Prakash Rane, Marco Simnacher, Manuel Pfeuffer et al.",
+      "summary": "Deep neural networks often exploit spurious associations in their training data, a failure known as shortcut learning. Concept-based explainability methods screen for shortcuts by testing whether conc",
+      "published": "2026-08-26T17:47:49Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2608.26083v1"
+    },
+    {
+      "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+      "authors": "Subhadeep Pal, Fiona Y. Wang, Markus J. Buehler et al.",
+      "summary": "Collective intelligence can emerge when individuals coordinate through a shared environment, allowing local actions to accumulate into durable social organization. Language-model agents offer a new su",
+      "published": "2026-08-26T17:45:34Z",
+      "categories": [
+        "cs.AI",
+        "cond-mat.mtrl-sci",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2608.26081v1"
+    },
+    {
+      "title": "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving",
+      "authors": "Cong Xu, Ravi Sankar",
+      "summary": "Intent misinterpretation during vehicle interactions causes recurring planning failures. We study a decision layer in which a language-guided intent module reads structured descriptors, computes a smo",
+      "published": "2026-08-26T17:42:03Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2608.26074v1"
+    },
+    {
+      "title": "Prefix Sliding for efficient test-time scaling",
+      "authors": "Niklas Muennighoff, Zhengyang Wang, Zeyi Chen et al.",
+      "summary": "Test-time scaling uses extra test-time compute to improve performance, such as letting language models reason longer when solving a problem. As models keep the entire reasoning trace in memory via ful",
+      "published": "2026-08-26T17:37:15Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.26070v1"
+    },
+    {
+      "title": "Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs",
+      "authors": "Hao Luo, Yiting Yang, Wenyi Zhao et al.",
+      "summary": "Large-kernel Convolutional Neural Networks (CNNs) deliver remarkable performance in vision tasks by significantly expanding receptive fields, yet their quadratic parameter growth critically impedes st",
+      "published": "2026-08-26T17:36:35Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.26069v1"
+    },
+    {
+      "title": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
+      "authors": "Zhe Liu, Jinghua Hou, Yuxiang Lu et al.",
+      "summary": "Vision-Language-Action (VLA) models have demonstrated effectiveness in robot manipulation, yet state-of-the-art models such as pi0.5 operate under a single-frame paradigm, limiting their ability to re",
+      "published": "2026-08-26T17:33:19Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2608.26067v1"
+    },
+    {
+      "title": "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study",
+      "authors": "Leonardo Duart, Tiago Fonseca, Thiago Chacón et al.",
+      "summary": "Automatic Speech Recognition (ASR) technologies have achieved remarkable performance in recent years through the use of large multilingual foundation models. However, most advances remain concentrated",
+      "published": "2026-08-26T17:29:47Z",
+      "categories": [
+        "cs.CL",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2608.26060v1"
+    },
+    {
+      "title": "$R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning",
+      "authors": "Lehong Wu, Yuxiao Qu, Zheyuan Hu et al.",
+      "summary": "Reasoning in language allows foundation models to spend more test-time compute on hard problems, such as those requiring decomposition, constraint tracking, and prediction of future consequences. Whet",
+      "published": "2026-08-26T17:25:10Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2608.26053v1"
+    },
+    {
+      "title": "How Much Rank Does LoRA Need? Rank-Error Bounds for Transformer Attention",
+      "authors": "Gerard Conangla Planes",
+      "summary": "Choosing the rank of a low-rank adaptation (LoRA) update is usually an empirical task. In this paper, we provide a task-dependent theory of the approximation error achievable at each LoRA rank for Tra",
+      "published": "2026-08-26T17:25:03Z",
       "categories": [
         "cs.LG",
         "cs.AI",
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.23566v1"
+      "link": "http://arxiv.org/abs/2608.26052v1"
     },
     {
-      "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
-      "authors": "Zhifei Chen, Luozhou Wang, Guibao Shen et al.",
-      "summary": "An interactive world model must follow the user's actions, remember the places it has shown, and stream in real time. The tension is structural: control wants a short horizon, memory wants an unbounde",
-      "published": "2026-08-24T17:59:05Z",
+      "title": "The Value of Human Expertise",
+      "authors": "Bradley Sturt",
+      "summary": "We consider optimization applications with unknown parameters where the decision maker believes that the optimal value of the nominal problem-the optimization problem they would have solved if the tru",
+      "published": "2026-08-26T17:24:52Z",
       "categories": [
+        "math.OC",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.23565v1"
-    },
-    {
-      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
-      "authors": "Deyao Hong, Yizhe Chi, Wenyi Li et al.",
-      "summary": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they ",
-      "published": "2026-08-24T17:59:04Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "link": "http://arxiv.org/abs/2608.23564v1"
-    },
-    {
-      "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-      "authors": "Md Thamed Bin Zaman Chowdhury, Moazzem Hossain",
-      "summary": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and th",
-      "published": "2026-08-24T17:58:41Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23563v1"
-    },
-    {
-      "title": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
-      "authors": "Yuanyuan Zhang, Yida Zhang, Jiahui Li et al.",
-      "summary": "Ballistocardiography (BCG) is promising for unobtrusive long-term blood pressure (BP) monitoring in laboratory settings, but traditional BCG signals are vulnerable to the variations in body-bed intera",
-      "published": "2026-08-24T17:58:35Z",
-      "categories": [
-        "eess.SP",
-        "cs.AI",
-        "physics.bio-ph"
-      ],
-      "link": "http://arxiv.org/abs/2608.23562v1"
-    },
-    {
-      "title": "Provably adaptive sampling with uniform and remasking discrete diffusion models",
-      "authors": "Daniil Dmitriev, Zhihan Huang, Yuting Wei et al.",
-      "summary": "Discrete diffusion models offer a promising alternative to autoregressive generation by enabling parallel updates, but their sampling efficiency can depend strongly on the choice of the forward proces",
-      "published": "2026-08-24T17:54:51Z",
-      "categories": [
-        "cs.LG",
-        "cs.IT",
-        "math.ST",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2608.23554v1"
-    },
-    {
-      "title": "Prime Agent: A Self-Improving RLM Harness",
-      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas et al.",
-      "summary": "Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long",
-      "published": "2026-08-24T17:54:19Z",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.SE"
-      ],
-      "link": "http://arxiv.org/abs/2608.23552v1"
-    },
-    {
-      "title": "ConvergeFlow: Language Flow with Provable Convergence to Token Embeddings",
-      "authors": "Na Li, Yuchen Jiao, Changxiao Cai et al.",
-      "summary": "Recent advances in continuous diffusion and flow-based language models (LMs) have achieved performance competitive with discrete LMs. However, existing continuous frameworks still rely on decoders sup",
-      "published": "2026-08-24T17:54:14Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2608.23551v1"
-    },
-    {
-      "title": "FixAnything: 3D-Consistent Rendering Refinement via Video Generative Priors",
-      "authors": "Khiem Vuong, Deva Ramanan, Srinivasa Narasimhan et al.",
-      "summary": "Rendering views using 3D scene representations such as Gaussian Splatting (3DGS), Neural Radiance Fields (NeRF), meshes, or even point clouds produces artifacts when input views are sparse or target v",
-      "published": "2026-08-24T17:51:33Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.23549v1"
-    },
-    {
-      "title": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
-      "authors": "Mustafa Umut Ozbek, Taiwo Ojo, Pooria Madani et al.",
-      "summary": "Machine-learning-based anomaly detection is increasingly used in industrial control systems (ICS), yet most studies assume that detector training data is trustworthy. In practice, training data may be",
-      "published": "2026-08-24T17:49:36Z",
-      "categories": [
-        "cs.CR",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.23547v1"
-    },
-    {
-      "title": "Inertial Manifold Neural Operator for Dissipative Time-Dependent Partial Differential Equations",
-      "authors": "Xiaoyang Xie, Clarence W. Rowley",
-      "summary": "In this paper, we introduce the Inertial Manifold Neural Operator (IMNO) for solving dissipative time-dependent partial differential equations (PDEs). The long-time dynamics of such systems often exhi",
-      "published": "2026-08-24T17:49:30Z",
-      "categories": [
-        "math.NA",
-        "cs.LG",
-        "math.DS"
-      ],
-      "link": "http://arxiv.org/abs/2608.23546v1"
-    },
-    {
-      "title": "How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles",
-      "authors": "Shang Wu, Catarina G Belem, Shuyuan Fu et al.",
-      "summary": "While AI assistance can improve human task performance in the short term, it may also undermine the development of skills in the longer term. We examine this tension in a controlled logic-puzzle exper",
-      "published": "2026-08-24T17:46:11Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23543v1"
-    },
-    {
-      "title": "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams",
-      "authors": "Summer Eunhyung Ann, Haokun Liu, Chenhao Tan et al.",
-      "summary": "Does multi-agent LLM interaction help or hurt? Some work reports gains from debate (Du et al., 2024), critique loops (Chen et al., 2025), and mixture-of-agents synthesis (Wang et al., 2025), while oth",
-      "published": "2026-08-24T17:45:15Z",
-      "categories": [
-        "cs.MA",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23541v1"
-    },
-    {
-      "title": "Interpretable AI with Local Distillation",
-      "authors": "Erin Craig, Yiling Huang, Snigdha Panigrahi et al.",
-      "summary": "Modern AI models such as tabular foundation models and gradient-boosted ensembles can outpredict classical methods, but provide little basis for reasoning about their predictions. High-stakes decision",
-      "published": "2026-08-24T17:43:07Z",
-      "categories": [
-        "stat.ME",
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2608.23538v1"
-    },
-    {
-      "title": "Adapter-Based Few-Shot Continual Learning for Malicious Packet Recognition",
-      "authors": "Kyle Stein, Guillermo Francia, III Eman El-Sheikh et al.",
-      "summary": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads t",
-      "published": "2026-08-24T17:41:15Z",
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23536v1"
-    },
-    {
-      "title": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
-      "authors": "Santosh Ray, Pratik K. Mishra, Ali Abedi et al.",
-      "summary": "Older adults recovering after lower-limb fracture or hip replacement may experience complex recovery trajectories. Most of the time, these clinical aspects are studied in isolation, masking their join",
-      "published": "2026-08-24T17:33:17Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.23531v1"
-    },
-    {
-      "title": "Correcting a learned physical invariant improves world-model rollouts",
-      "authors": "Richard Bao",
-      "summary": "World models can predict video without learning dynamics that they reliably preserve. We test whether a frozen DreamerV3 trained only on pendulum video learns a scalar that its own latent transition t",
-      "published": "2026-08-24T17:29:40Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23526v1"
-    },
-    {
-      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
-      "authors": "Zhiqing Cui, Xinxiang Yin, Yihong Tang et al.",
-      "summary": "Earth-system analysis reconstructs changing physical processes from observations that differ in source, scale, timing, and modality. Natural hazards make this work consequential because incomplete evi",
-      "published": "2026-08-24T17:29:16Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.23525v1"
-    },
-    {
-      "title": "The Measurement Revolution? Credible Measurement and Inference in the Age of AI",
-      "authors": "Melissa Dell, Ashesh Rambachan",
-      "summary": "Artificial intelligence (AI) is transforming measurement in economics. AI models convert unstructured data, such as text and images, into structured variables at low cost, making previously prohibitiv",
-      "published": "2026-08-24T17:28:34Z",
-      "categories": [
-        "econ.GN",
-        "cs.AI",
-        "stat.AP"
-      ],
-      "link": "http://arxiv.org/abs/2608.23524v1"
-    },
-    {
-      "title": "Investigating Relational Reasoning in VLMs",
-      "authors": "Adhithya Laxman Ravi Shankar Geetha, Aulia Kharis Rakhmasari, Haleema Ramzan et al.",
-      "summary": "Vision-Language Models (VLMs) achieve strong performance in visual reasoning tasks, but it remains unclear whether they understand visual relations, or simply employ shortcuts such as language cues or",
-      "published": "2026-08-24T17:23:36Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.23518v1"
+      "link": "http://arxiv.org/abs/2608.26051v1"
     }
   ]
 }
