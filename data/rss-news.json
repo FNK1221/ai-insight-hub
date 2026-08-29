@@ -1,7 +1,56 @@
 {
-  "timestamp": "2026-08-28T09:45:18.095137+00:00",
+  "timestamp": "2026-08-29T05:48:37.161823+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "pubDate": "2026-08-28T20:24:11+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+      "pubDate": "2026-08-28T19:30:38+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+      "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+      "pubDate": "2026-08-28T18:19:40+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Trump’s EPA wants to let data centers hide their air pollution",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+      "pubDate": "2026-08-28T16:28:40+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Anthropic gets its first court win over the Pentagon’s supply-chain risk label",
+      "link": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
+      "pubDate": "2026-08-28T12:46:12+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "The Download: a secretive antiaging drug and joining virtual power plants",
+      "link": "https://www.technologyreview.com/2026/08/28/1143113/the-download-antiaging-drug-joining-virtual-power-plants/",
+      "pubDate": "2026-08-28T12:35:27+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
+      "link": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
+      "pubDate": "2026-08-28T12:21:06+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
     {
       "title": "How to sign up for a virtual power plant—and decide whether you should",
       "link": "https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should/",
@@ -73,20 +122,6 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "AI’s memory crunch is coming for Android apps",
-      "link": "https://techcrunch.com/2026/08/27/ais-memory-crunch-is-coming-for-android-apps/",
-      "pubDate": "2026-08-27T14:27:04+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Here’s all the times AI has gone rogue and hacked other companies",
-      "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
-      "pubDate": "2026-08-27T14:01:42+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Enterprise AI's real risk isn't autonomous agents. It's the complexity between them.",
       "link": "https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them",
       "pubDate": "2026-08-27T14:01:00+00:00",
@@ -115,13 +150,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Plaud’s new earphones come with an eSIM-enabled case for talking to AI agents",
-      "link": "https://techcrunch.com/2026/08/27/plauds-new-earphones-come-with-an-esim-enabled-case-for-talking-to-ai-agents/",
-      "pubDate": "2026-08-27T13:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Adobe is adding more AI to Photoshop",
       "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
       "pubDate": "2026-08-27T13:00:00+00:00",
@@ -141,34 +169,6 @@
       "pubDate": "2026-08-27T12:01:00+00:00",
       "thumbnail": "https://images.ctfassets.net/jdtwqhzvc2n1/9VRh8KJhBqcFviSV8ClXc/feea8ec8fe76ffa0bc5cdb3dd95e1492/EDB_hero.jpeg?w=300&q=30",
       "source": "VentureBeat AI"
-    },
-    {
-      "title": "OpenAI to start showing ads on ChatGPT’s free and Go tiers in India",
-      "link": "https://techcrunch.com/2026/08/27/openai-to-start-showing-ads-on-chatgpts-free-and-go-tiers-in-india/",
-      "pubDate": "2026-08-27T11:35:59+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Is Slate Auto’s new electric truck the EV Americans need?",
-      "link": "https://www.technologyreview.com/2026/08/27/1142953/electric-truck-slate-auto/",
-      "pubDate": "2026-08-27T10:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Nvidia closes in on Hugging Face acquisition",
-      "link": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
-      "pubDate": "2026-08-27T06:32:51+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Nvidia is about to be a hundred-billion-dollar-a-quarter company",
-      "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
-      "pubDate": "2026-08-26T21:40:53+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     }
   ]
 }
