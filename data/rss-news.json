@@ -1,7 +1,35 @@
 {
-  "timestamp": "2026-08-30T03:51:34.048140+00:00",
+  "timestamp": "2026-08-31T03:54:01.392184+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
+      "link": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
+      "pubDate": "2026-08-31T02:34:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+      "link": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+      "pubDate": "2026-08-30T16:54:25+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+      "pubDate": "2026-08-30T15:35:10+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "link": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+      "pubDate": "2026-08-30T15:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
     {
       "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
       "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
@@ -10,7 +38,7 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "Sony Music and Warner Chappell are suing Anthropic",
+      "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
       "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
       "pubDate": "2026-08-29T18:19:53+00:00",
       "thumbnail": "",
@@ -80,13 +108,6 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
-      "link": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
-      "pubDate": "2026-08-28T12:21:06+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "How to sign up for a virtual power plant—and decide whether you should",
       "link": "https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should/",
       "pubDate": "2026-08-28T09:00:00+00:00",
@@ -99,20 +120,6 @@
       "pubDate": "2026-08-28T03:14:06+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
-      "pubDate": "2026-08-27T23:16:45+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Barret Zoph, the Thinking Machines co-founder ousted before joining OpenAI, is now at Google",
-      "link": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
-      "pubDate": "2026-08-27T19:52:52+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "A startup claims it’s found a drug to make your blood young",
@@ -160,13 +167,6 @@
       "title": "Plaud is launching AI earbuds",
       "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
       "pubDate": "2026-08-27T13:11:23+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Adobe is adding more AI to Photoshop",
-      "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
-      "pubDate": "2026-08-27T13:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     }
