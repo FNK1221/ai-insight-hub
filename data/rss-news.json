@@ -1,7 +1,28 @@
 {
-  "timestamp": "2026-09-06T03:07:53.898672+00:00",
+  "timestamp": "2026-09-07T03:06:10.928899+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "pubDate": "2026-09-06T23:36:04+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
+      "link": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+      "pubDate": "2026-09-06T20:47:37+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
+      "link": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
+      "pubDate": "2026-09-06T16:45:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
     {
       "title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
       "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
@@ -87,20 +108,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Apple’s Ternus era begins as Nvidia bets on the whole AI stack",
-      "link": "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/",
-      "pubDate": "2026-09-04T16:04:08+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Google’s Gemini Spark can now manage your Google Photos library",
-      "link": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
-      "pubDate": "2026-09-04T14:47:11+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
       "link": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
       "pubDate": "2026-09-04T13:34:12+00:00",
@@ -155,13 +162,6 @@
       "pubDate": "2026-09-04T09:25:19+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
-    },
-    {
-      "title": "OpenAI’s next big AI model has ‘entered the AGI era’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
-      "pubDate": "2026-09-03T18:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     },
     {
       "title": "The Download: rethinking child safety and fossil-fueled farming",
