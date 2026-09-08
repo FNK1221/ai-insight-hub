@@ -1,7 +1,21 @@
 {
-  "timestamp": "2026-09-07T03:06:10.928899+00:00",
+  "timestamp": "2026-09-08T03:15:14.124869+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Opaque recurrence, and other AI terms that you should probably know",
+      "link": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "pubDate": "2026-09-07T19:24:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "The Download: the hunt for underground hydrogen and more rogue OpenAI agents",
+      "link": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
+      "pubDate": "2026-09-07T12:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
     {
       "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
       "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
@@ -52,7 +66,7 @@
       "source": "The Verge AI"
     },
     {
-      "title": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
+      "title": "XDOF, just 3 months out of stealth, is in talks for a Series B at a $1.2B valuation",
       "link": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
       "pubDate": "2026-09-04T23:36:14+00:00",
       "thumbnail": "",
@@ -90,13 +104,6 @@
       "title": "What will Apple’s John Ternus era look like?",
       "link": "https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/",
       "pubDate": "2026-09-04T17:18:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Another swarm of OpenAI agents reached the open internet without the frontier lab’s knowledge",
-      "link": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
-      "pubDate": "2026-09-04T16:21:11+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
@@ -160,13 +167,6 @@
       "title": "Data from drones in Ukraine is fueling a new Wild West marketplace",
       "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
       "pubDate": "2026-09-04T09:25:19+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "The Download: rethinking child safety and fossil-fueled farming",
-      "link": "https://www.technologyreview.com/2026/09/03/1143385/the-download-rethinking-child-safety-online-fossil-fuels-farming/",
-      "pubDate": "2026-09-03T12:10:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
