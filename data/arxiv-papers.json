@@ -1,226 +1,222 @@
 {
-  "timestamp": "2026-08-31T03:53:27.820382+00:00",
+  "timestamp": "2026-09-09T03:16:49.643865+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs",
-      "authors": "Vaibhav Mehandiratta, Saket Ramchandra",
-      "summary": "We propose QGPINNs, a physics-informed neural network framework developed in PyTorch for the numerical solution of nonlocal differential equations on quantum graphs. The framework is designed as a gen",
-      "published": "2026-08-28T17:59:47Z",
+      "title": "Curriculum Learning as Transport: Understanding Curricula with Wasserstein Geodesics",
+      "authors": "Changho Shin, David Alvarez-Melis",
+      "summary": "Curriculum learning is governed by several coupled design choices---how difficulty is defined, how examples are ordered, how much exposure each level receives, and how quickly training moves across le",
+      "published": "2026-09-08T17:39:16Z",
       "categories": [
-        "cs.LG",
-        "math.NA"
-      ],
-      "link": "http://arxiv.org/abs/2608.28589v1"
-    },
-    {
-      "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
-      "authors": "Nan Wang, Mohit Yadav, Jonathan Wulff et al.",
-      "summary": "Tendon-driven hands are anthropomorphic, and moving the actuators off the joints is what makes a hand of this capability affordable to build. Two effects produce that saving. Routing force through a c",
-      "published": "2026-08-28T17:53:48Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2608.28578v1"
+      "link": "http://arxiv.org/abs/2609.09099v1"
     },
     {
-      "title": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
-      "authors": "Chengpiao Huang, Kaizheng Wang",
-      "summary": "Synthetic data can improve statistical inference when real data are scarce, but naively treating synthetic samples as real data can introduce bias and lead to unreliable inference. We develop a genera",
-      "published": "2026-08-28T17:52:33Z",
+      "title": "The Surprising Effectiveness of Approximate Value Iteration in Self-Play",
+      "authors": "Raphael Boige, Amine Boumaza, Bruno Scherrer et al.",
+      "summary": "Combining search with function approximation has driven major advances in game-playing programs, making self-play algorithms more competitive than ever. Still, the computational overhead of the most p",
+      "published": "2026-09-08T17:37:19Z",
       "categories": [
-        "stat.ME",
-        "cs.AI",
-        "cs.LG",
-        "stat.ML"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28576v1"
+      "link": "http://arxiv.org/abs/2609.09094v1"
     },
     {
-      "title": "SignRR: Retrieve and Refine Real Motion for Sign Language Production",
-      "authors": "Fidel Omar Tito Cruz, Angie Sanchez Marquina, Summy Farfan et al.",
-      "summary": "Sign language production (SLP) aims to generate continuous signing motion from spoken language, often through gloss-to-pose generation. Prior work mainly follows two paradigms. Generative models synth",
-      "published": "2026-08-28T17:45:14Z",
+      "title": "Measuring LLM Sycophancy under Sustained Multi-Turn Pressure",
+      "authors": "Leyuan Tang, Kangda Wei, Tianyu Jiang et al.",
+      "summary": "Large language models (LLMs) may abandon correct positions when users push back, exhibiting a failure mode known as sycophancy. Existing evaluations typically use short, pre-specified conversations an",
+      "published": "2026-09-08T17:35:04Z",
       "categories": [
-        "cs.CV"
+        "cs.CL",
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28568v1"
+      "link": "http://arxiv.org/abs/2609.09090v1"
     },
     {
-      "title": "GeBDA: Building Damage Assessment as Text-Based Sequence Prediction",
-      "authors": "Olivier Dietrich, Krishna Sapkota, Konrad Schindler et al.",
-      "summary": "Conventionally, Building Damage Assessment (BDA) is tackled either with dedicated network architectures or by fine-tuning geospatial image foundation models. In this work, we ask whether a general-pur",
-      "published": "2026-08-28T17:44:55Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2608.28567v1"
-    },
-    {
-      "title": "On two proofs of $d^2$ mixing of weighted Dikin walks",
-      "authors": "Yuansi Chen, Yunbum Kook",
-      "summary": "We study the mixing time of weighted Dikin walks for sampling from exponential distributions on polytopes and truncated positive-semidefinite (PSD) cones. Our first result gives a general total-variat",
-      "published": "2026-08-28T17:43:58Z",
-      "categories": [
-        "cs.DS",
-        "cs.LG",
-        "math.OC",
-        "math.PR",
-        "stat.CO"
-      ],
-      "link": "http://arxiv.org/abs/2608.28566v1"
-    },
-    {
-      "title": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
-      "authors": "Lorenzo Rizzi, Arie Wortsman Zurich, Bruno Loureiro et al.",
-      "summary": "We study kernel ridge regression under anisotropic Gaussian data, where the input covariance decays as a power law with exponent $α\\geq 0$ for polynomial inner-product kernels. We derive asymptoticall",
-      "published": "2026-08-28T17:41:53Z",
-      "categories": [
-        "stat.ML",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.28564v1"
-    },
-    {
-      "title": "A Formal Limitation on Learning Human Language From Textual Corpora",
-      "authors": "Emily Cheng, Ryan Cotterell",
-      "summary": "Can a listener recover what a speaker means from the form of an utterance alone? We answer this question information-theoretically, and for a listener given by any featurizer of text, including the hi",
-      "published": "2026-08-28T17:38:24Z",
+      "title": "It's Not RoPE that Creates Sinks: The Role of Self-Concentration and Value-Non-Mixing in Attention",
+      "authors": "Raito Kiya, Satoki Ohashi, Kosuke Sato et al.",
+      "summary": "Large Language Models (LLMs) often exhibit \"Attention Sink\" (AS) and the accompanying \"Massive Activations\" (MAs) at the initial position of a sequence. These phenomena frequently co-occur, and MAs ca",
+      "published": "2026-09-08T17:32:31Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.28560v1"
+      "link": "http://arxiv.org/abs/2609.09085v1"
     },
     {
-      "title": "Blog: Survey of Optimizers",
-      "authors": "Ruoran Xu",
-      "summary": "Neural-network optimization in 2025-2026 is no longer well described as a succession of new Adam variants. The design space has expanded from coordinates to matrices and layers, from fixed training ho",
-      "published": "2026-08-28T17:35:11Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.28557v1"
-    },
-    {
-      "title": "Logos: An Agent Harness on a Cross-Process Bus",
-      "authors": "Hanzhang Jia, Liheng Zeng, Hao Cheng et al.",
-      "summary": "Modern agent systems assemble capabilities at runtime, and this dynamic composition has recently received a complete formal treat ment in the spatiotemporal-composability calculus, in which a capabili",
-      "published": "2026-08-28T17:30:10Z",
-      "categories": [
-        "cs.AI",
-        "cs.MA"
-      ],
-      "link": "http://arxiv.org/abs/2608.28553v1"
-    },
-    {
-      "title": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
-      "authors": "Kia Kazemi-Nia, Harsh Bandhey, Philip J. Freda et al.",
-      "summary": "As a precursor to high-dimensional biomedical data modeling, reliable feature selection can reduce computational expense, improve modeling performance, and yield simpler, more interpretable models. Ho",
-      "published": "2026-08-28T17:28:50Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2608.28552v1"
-    },
-    {
-      "title": "Video Generative Models as Geometry Learner",
-      "authors": "Haosen Yang, Jifei Song, Zhensong Zhang et al.",
-      "summary": "Recent generative approaches to geometry estimation adapt pretrained image diffusion models and treat the task as image-conditioned generation. Leveraging off-the-shelf image diffusion models, they ei",
-      "published": "2026-08-28T17:25:31Z",
+      "title": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
+      "authors": "Thodoris Betsas, Anastasios Doulamis, Andreas Georgopoulos et al.",
+      "summary": "Open vocabulary 3D semantic segmentation methods typically lift CLIP features into 3D. This embeds points in a joint vision-language space known to behave like a bag-of-words on compositional tasks. F",
+      "published": "2026-09-08T17:31:51Z",
       "categories": [
         "cs.CV",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28549v1"
+      "link": "http://arxiv.org/abs/2609.09082v1"
     },
     {
-      "title": "DARTS: Decoder-Aware Representation Tuning via Surgery for Model Merging",
-      "authors": "Aaryan Ajay Sharma, Sai Nishanth Padala, Seganrasan Subramanian et al.",
-      "summary": "Model merging combines multiple task-specific fine-tuned LLMs into a single multi-task model without additional training. However, merged models are known to suffer from representation bias: systemati",
-      "published": "2026-08-28T17:22:47Z",
+      "title": "Everything in Moderation: Per-Domain Coverage Optima and Alignment-Resistant Domain Gaps in Multi-Domain Mid-Training",
+      "authors": "Yunpeng Xu, Kun Zheng",
+      "summary": "Mid-training, the stage between pre-training and alignment, is where a model's per-domain data composition is typically set by data availability rather than principled design. We ask what that decisio",
+      "published": "2026-09-08T17:31:38Z",
       "categories": [
-        "cs.LG"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28547v1"
+      "link": "http://arxiv.org/abs/2609.09081v1"
     },
     {
-      "title": "An Enclosed Mode Is a Gauge Choice: Topology Relative to Reach in Certified Code World Models",
-      "authors": "Javier Aguilar Martín",
-      "summary": "A code world model accepted by a sampling gate can be exactly right on everything the gate can see and arbitrarily wrong beyond it. We characterize what a certified model can know, and what its errors",
-      "published": "2026-08-28T17:14:58Z",
+      "title": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation",
+      "authors": "Yiling Ma, Yilun Zhao, Sihong Wu et al.",
+      "summary": "As LLMs are increasingly used for pre-submission self-review, there is growing demand for feedback that not only identifies weaknesses but also guides authors toward concrete revisions. We study this ",
+      "published": "2026-09-08T17:30:16Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2609.09076v1"
+    },
+    {
+      "title": "ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR",
+      "authors": "Tommy Sha, Skylar Zhai, Siqi Zhao et al.",
+      "summary": "In reinforcement learning with verifiable rewards (RLVR) trained with group relative policy optimization (GRPO), the KL-free reward-advantage term studied here depends on within-group reward variation",
+      "published": "2026-09-08T17:30:12Z",
       "categories": [
         "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28541v1"
+      "link": "http://arxiv.org/abs/2609.09075v1"
     },
     {
-      "title": "InstructMesh: Selective Refinement of Generative 3D Models for Fabrication",
-      "authors": "Faraz Faruqi, Ahmed Katary, Demircan Tas et al.",
-      "summary": "Recent advances in generative AI allow users to create 3D models from text or images. However, these models prioritize visual plausibility over geometric accuracy, often generating results with flaws ",
-      "published": "2026-08-28T17:09:42Z",
+      "title": "ToolLoop: Closed-Loop Tool-Use Data Synthesis via Decomposed Generation and Dynamic Self-Feedback",
+      "authors": "Min Zeng, Yuzhou Liu, Zhenyu Cao et al.",
+      "summary": "High-quality tool-use data is critical for training language models to interact effectively with external tools. However, existing synthetic approaches typically follow a generate-then-filter paradigm",
+      "published": "2026-09-08T17:26:35Z",
       "categories": [
-        "cs.AI"
+        "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2608.28534v1"
+      "link": "http://arxiv.org/abs/2609.09072v1"
     },
     {
-      "title": "Texture Image Classification Using DWT AlexNet Feature Fusion and Deep Neural Networks",
-      "authors": "Arun D. Kulkarni",
-      "summary": "Texture image classification plays a significant role in computer vision applications, including industrial inspection, medical image analysis, remote sensing, and object recognition. Handcrafted feat",
-      "published": "2026-08-28T17:00:48Z",
+      "title": "Performance of Clinical AI System and Physicians and Frontier Language Models in primary care diagnostics",
+      "authors": "Andy Nkansah, Hanna Plotnitskaya, Stanislau Salavei et al.",
+      "summary": "Clinical AI evaluation should encompass diagnosis and management after adaptive information gathering. We compared Doctorina, eight physicians and four standalone frontier language models in 150 synth",
+      "published": "2026-09-08T17:25:47Z",
       "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2608.28524v1"
-    },
-    {
-      "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
-      "authors": "Sihan Jia, Oliver Lemon",
-      "summary": "We investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being ",
-      "published": "2026-08-28T16:55:32Z",
-      "categories": [
-        "cs.AI",
         "cs.CL",
-        "cs.RO"
+        "cs.AI",
+        "cs.HC"
       ],
-      "link": "http://arxiv.org/abs/2608.28518v1"
+      "link": "http://arxiv.org/abs/2609.09070v1"
     },
     {
-      "title": "Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing",
-      "authors": "Keyan Hu, Mingtao Wang, Ziyu Zhou et al.",
-      "summary": "Cross-modal image translation in remote sensing must preserve source-observed content while matching the target-domain distribution. Existing methods jointly learn the target prior and cross-modal dep",
-      "published": "2026-08-28T16:54:19Z",
+      "title": "Rethinking Learned Occupancy in Autonomous Active Mapping with Observation-Gated Filtering",
+      "authors": "Jiahui Zhang, Bonian Han, Gongbo Liang et al.",
+      "summary": "Autonomous 3D active mapping requires a space robot to choose where to sense while building the geometry needed for navigation. Learned occupancy completion extends spatial context beyond the current ",
+      "published": "2026-09-08T17:23:37Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2609.09069v1"
+    },
+    {
+      "title": "Multi-Task Learning for Sparsely-Labeled Time Series: A Case Study on Cold-Hardiness Modeling",
+      "authors": "Aseem Saxena, Paola Pesántez-Cabrera, Jonathan Magby et al.",
+      "summary": "We present a real-world case study of multi-task learning (MTL) for temporal process modeling from limited data with temporally sparse labels. Specifically, we investigate multi-task learning for the ",
+      "published": "2026-09-08T17:17:25Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2609.09062v1"
+    },
+    {
+      "title": "PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games",
+      "authors": "Ryan Truong, Lance Ying, Samuel J. Gershman et al.",
+      "summary": "While many video-game environments (VGEs) have played crucial roles in advancing reinforcement learning (RL), developing novel VGEs or modifying existing ones to support new features, has been a labor",
+      "published": "2026-09-08T17:15:39Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2609.09059v1"
+    },
+    {
+      "title": "Time-Varying Data as Sheaves: an Invitation to Narratives",
+      "authors": "Wilmer Leal, Benjamin Merlin Bumpus, Jana K. Nickel et al.",
+      "summary": "Modern science and engineering increasingly rely on time-varying data, yet the mathematical tools used to model temporal phenomena are often developed within separate disciplines, obscuring common pri",
+      "published": "2026-09-08T17:12:24Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "eess.SY",
+        "math.CT"
+      ],
+      "link": "http://arxiv.org/abs/2609.09056v1"
+    },
+    {
+      "title": "\"World Knowledge\" in the Weights: Reading Concept Circuits of Vision Transformers",
+      "authors": "Yanlin Chen, Tang Li, Xi Peng et al.",
+      "summary": "Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we us",
+      "published": "2026-09-08T17:11:48Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2608.28517v1"
+      "link": "http://arxiv.org/abs/2609.09055v1"
     },
     {
-      "title": "Conformal Uncertainty Quantification Guarantees for Neural Operators",
-      "authors": "Tom Stent, Nicolas Boullé",
-      "summary": "Neural operators provide fast surrogate models for approximating operators between function spaces, but their predictions often lack uncertainty quantification. We develop a split conformal framework ",
-      "published": "2026-08-28T16:50:57Z",
+      "title": "Training-Free Task Vectors for LLM Behavioral Control",
+      "authors": "Gabriel J. Perin, Lucas Boscaini, André Araujo et al.",
+      "summary": "Task vectors enable post-training model editing by identifying semantically meaningful directions in weight space, typically computed as the difference between a fine-tuned model and its pretrained in",
+      "published": "2026-09-08T17:10:28Z",
       "categories": [
-        "math.NA",
-        "cs.AI",
-        "math.PR"
-      ],
-      "link": "http://arxiv.org/abs/2608.28515v1"
-    },
-    {
-      "title": "Training Communication-Efficient Mixture-of-Experts Language Models with Layer Re-Configuration",
-      "authors": "Simeng Sun, Roger Waleffe",
-      "summary": "When training Mixture-of-Experts (MoE) language models with expert parallelism, all-to-all token dispatch and combine collectives can consume a substantial fraction of end-to-end training time. In thi",
-      "published": "2026-08-28T16:44:50Z",
-      "categories": [
+        "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2608.28511v1"
+      "link": "http://arxiv.org/abs/2609.09054v1"
+    },
+    {
+      "title": "The Audit Decides the Verdict: Instrument Effects Rival Demographic Bias in LLM Decision Audits",
+      "authors": "Siddharth Vohra, Manikandan Ravikiran",
+      "summary": "Whether a language model looks demographically biased can depend on how the audit asks its question. A charitable-aid benchmark reports that the same models favor minority applicants when rating reque",
+      "published": "2026-09-08T17:08:53Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "link": "http://arxiv.org/abs/2609.09048v1"
+    },
+    {
+      "title": "Do Reasoning Representations Help Humans Evaluate LLM Outputs?",
+      "authors": "Jaewoo Lim, Sungbok Shin, Sanghyun Hong et al.",
+      "summary": "Reasoning representations are increasingly used as explanations for large language model outputs. Yet they are typically evaluated with model-centric criteria, such as answer accuracy and faithfulness",
+      "published": "2026-09-08T17:03:57Z",
+      "categories": [
+        "cs.LG",
+        "cs.HC"
+      ],
+      "link": "http://arxiv.org/abs/2609.09038v1"
+    },
+    {
+      "title": "Answer-Distribution Trajectories: A Stochastic-Dynamics View of LLM Reasoning",
+      "authors": "Mar Gonzàlez I Català, Haitz Sáez de Ocáriz Borde, Davide Murari et al.",
+      "summary": "Chain-of-thought reasoning provides a structured computation between a model's input and final answer. Yet it is often evaluated through endpoint accuracy, which ignores the path taken to reach that a",
+      "published": "2026-09-08T16:58:40Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2609.09030v1"
+    },
+    {
+      "title": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
+      "authors": "Oleh Kolner, Thomas Ortner, Stanisław Woźniak et al.",
+      "summary": "State-of-the-art vision models process images in their entirety, lacking the ability to selectively zoom in on relevant regions. This limitation is particularly acute in scenarios where processing mus",
+      "published": "2026-09-08T16:54:07Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2609.09025v1"
     }
   ]
 }
