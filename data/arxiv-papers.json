@@ -1,222 +1,226 @@
 {
-  "timestamp": "2026-09-09T03:16:49.643865+00:00",
+  "timestamp": "2026-09-10T03:16:18.651461+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Curriculum Learning as Transport: Understanding Curricula with Wasserstein Geodesics",
-      "authors": "Changho Shin, David Alvarez-Melis",
-      "summary": "Curriculum learning is governed by several coupled design choices---how difficulty is defined, how examples are ordered, how much exposure each level receives, and how quickly training moves across le",
-      "published": "2026-09-08T17:39:16Z",
+      "title": "Programmable World Model",
+      "authors": "Zheng-Hui Huang, Guixu Lin, Jiacheng Lin et al.",
+      "summary": "Recent video world models generate increasingly realistic and interactive visual experiences, yet lack reliable mechanisms for maintaining persistent world state and enforcing programmable rules over ",
+      "published": "2026-09-09T17:59:32Z",
       "categories": [
-        "cs.LG"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2609.09099v1"
+      "link": "http://arxiv.org/abs/2609.10540v1"
     },
     {
-      "title": "The Surprising Effectiveness of Approximate Value Iteration in Self-Play",
-      "authors": "Raphael Boige, Amine Boumaza, Bruno Scherrer et al.",
-      "summary": "Combining search with function approximation has driven major advances in game-playing programs, making self-play algorithms more competitive than ever. Still, the computational overhead of the most p",
-      "published": "2026-09-08T17:37:19Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2609.09094v1"
-    },
-    {
-      "title": "Measuring LLM Sycophancy under Sustained Multi-Turn Pressure",
-      "authors": "Leyuan Tang, Kangda Wei, Tianyu Jiang et al.",
-      "summary": "Large language models (LLMs) may abandon correct positions when users push back, exhibiting a failure mode known as sycophancy. Existing evaluations typically use short, pre-specified conversations an",
-      "published": "2026-09-08T17:35:04Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2609.09090v1"
-    },
-    {
-      "title": "It's Not RoPE that Creates Sinks: The Role of Self-Concentration and Value-Non-Mixing in Attention",
-      "authors": "Raito Kiya, Satoki Ohashi, Kosuke Sato et al.",
-      "summary": "Large Language Models (LLMs) often exhibit \"Attention Sink\" (AS) and the accompanying \"Massive Activations\" (MAs) at the initial position of a sequence. These phenomena frequently co-occur, and MAs ca",
-      "published": "2026-09-08T17:32:31Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2609.09085v1"
-    },
-    {
-      "title": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
-      "authors": "Thodoris Betsas, Anastasios Doulamis, Andreas Georgopoulos et al.",
-      "summary": "Open vocabulary 3D semantic segmentation methods typically lift CLIP features into 3D. This embeds points in a joint vision-language space known to behave like a bag-of-words on compositional tasks. F",
-      "published": "2026-09-08T17:31:51Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2609.09082v1"
-    },
-    {
-      "title": "Everything in Moderation: Per-Domain Coverage Optima and Alignment-Resistant Domain Gaps in Multi-Domain Mid-Training",
-      "authors": "Yunpeng Xu, Kun Zheng",
-      "summary": "Mid-training, the stage between pre-training and alignment, is where a model's per-domain data composition is typically set by data availability rather than principled design. We ask what that decisio",
-      "published": "2026-09-08T17:31:38Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2609.09081v1"
-    },
-    {
-      "title": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation",
+      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
       "authors": "Yiling Ma, Yilun Zhao, Sihong Wu et al.",
-      "summary": "As LLMs are increasingly used for pre-submission self-review, there is growing demand for feedback that not only identifies weaknesses but also guides authors toward concrete revisions. We study this ",
-      "published": "2026-09-08T17:30:16Z",
+      "summary": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of im",
+      "published": "2026-09-09T17:59:04Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2609.09076v1"
+      "link": "http://arxiv.org/abs/2609.10539v1"
     },
     {
-      "title": "ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR",
-      "authors": "Tommy Sha, Skylar Zhai, Siqi Zhao et al.",
-      "summary": "In reinforcement learning with verifiable rewards (RLVR) trained with group relative policy optimization (GRPO), the KL-free reward-advantage term studied here depends on within-group reward variation",
-      "published": "2026-09-08T17:30:12Z",
+      "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
+      "authors": "Phil Assheton",
+      "summary": "We present a simple decomposition of a neural-network-based normalizing flow that naturally uncovers a pivotal statistic (or something close) in the presence of nuisance parameters, based only on a sa",
+      "published": "2026-09-09T17:58:15Z",
+      "categories": [
+        "stat.ME",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2609.10534v1"
+    },
+    {
+      "title": "Guiding Image-to-3D Generation with Test-Time Partial Observations",
+      "authors": "Jerred Chen, Simon Weber, Ronald Clark et al.",
+      "summary": "Image-to-3D models can generate visually compelling 3D assets from a single RGB image, but their geometry is often only loosely constrained by the available observations, limiting their use in applica",
+      "published": "2026-09-09T17:58:04Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2609.10531v1"
+    },
+    {
+      "title": "A positive resolution of the gap-entropy conjecture",
+      "authors": "P. M. Aronow, Nathan Kallus, Patrick Lopatto et al.",
+      "summary": "We prove the gap-entropy conjecture for fixed-confidence best-arm identification with independent unit-variance Gaussian arms, means in $[0,1]$, and a unique optimal arm. For each suboptimal arm $i$, ",
+      "published": "2026-09-09T17:57:11Z",
       "categories": [
         "cs.LG",
-        "cs.AI"
+        "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2609.09075v1"
+      "link": "http://arxiv.org/abs/2609.10529v1"
     },
     {
-      "title": "ToolLoop: Closed-Loop Tool-Use Data Synthesis via Decomposed Generation and Dynamic Self-Feedback",
-      "authors": "Min Zeng, Yuzhou Liu, Zhenyu Cao et al.",
-      "summary": "High-quality tool-use data is critical for training language models to interact effectively with external tools. However, existing synthetic approaches typically follow a generate-then-filter paradigm",
-      "published": "2026-09-08T17:26:35Z",
+      "title": "Characterizing Language Generation in the Limit: Finite Witnesses and a Separation-Width Hierarch",
+      "authors": "Xiaoyu Li, Andi Han, Jiaojiao Jiang et al.",
+      "summary": "Language generation in the limit asks for valid unseen elements from every exhaustive positive presentation of an unknown infinite language. We characterize this task for arbitrary families over a cou",
+      "published": "2026-09-09T17:54:30Z",
       "categories": [
-        "cs.CL"
+        "cs.FL",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2609.09072v1"
+      "link": "http://arxiv.org/abs/2609.10525v1"
     },
     {
-      "title": "Performance of Clinical AI System and Physicians and Frontier Language Models in primary care diagnostics",
-      "authors": "Andy Nkansah, Hanna Plotnitskaya, Stanislau Salavei et al.",
-      "summary": "Clinical AI evaluation should encompass diagnosis and management after adaptive information gathering. We compared Doctorina, eight physicians and four standalone frontier language models in 150 synth",
-      "published": "2026-09-08T17:25:47Z",
+      "title": "Precision in Rice Variety Classification using Stacking-Based Ensemble Learning",
+      "authors": "Md. Masudul Islam, Galib Muhammad Shahriar Himel, Md. Golam Moazzam et al.",
+      "summary": "Rice, a staple food for a significant portion of the global population, exhibits remarkable diversity in its varieties, presenting substantial challenges for accurate identification by consumers, trad",
+      "published": "2026-09-09T17:53:50Z",
       "categories": [
-        "cs.CL",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2609.10524v1"
+    },
+    {
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "authors": "Yanzhe Chen, Zechen Bai, Zhijun Cao et al.",
+      "summary": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harn",
+      "published": "2026-09-09T17:53:38Z",
+      "categories": [
+        "cs.RO",
         "cs.AI",
-        "cs.HC"
+        "cs.CV",
+        "cs.MM"
       ],
-      "link": "http://arxiv.org/abs/2609.09070v1"
+      "link": "http://arxiv.org/abs/2609.10522v1"
     },
     {
-      "title": "Rethinking Learned Occupancy in Autonomous Active Mapping with Observation-Gated Filtering",
-      "authors": "Jiahui Zhang, Bonian Han, Gongbo Liang et al.",
-      "summary": "Autonomous 3D active mapping requires a space robot to choose where to sense while building the geometry needed for navigation. Learned occupancy completion extends spatial context beyond the current ",
-      "published": "2026-09-08T17:23:37Z",
+      "title": "BrainTaskonomy: Learning How to Pretrain and What to Transfer in fMRI Foundation Models",
+      "authors": "Junfeng Xia, Wenhao Ye, Junxiang Zhang et al.",
+      "summary": "fMRI foundation models increasingly aggregate heterogeneous data across brain states, cohorts, and acquisition settings, yet pretraining domains are commonly treated as a flat mixture and downstream t",
+      "published": "2026-09-09T17:50:39Z",
+      "categories": [
+        "cs.CV",
+        "q-bio.NC"
+      ],
+      "link": "http://arxiv.org/abs/2609.10518v1"
+    },
+    {
+      "title": "Optimal Low-Rank Quantum State Tomography with Bounded-Sample Joint Measurements",
+      "authors": "Ashwin Nayak, Xingyu Zhou",
+      "summary": "We determine the optimal sample complexity of low-rank quantum state tomography when each measurement may act jointly on at most $t$ samples. For sufficiently small $\\varepsilon$, estimating an unknow",
+      "published": "2026-09-09T17:48:41Z",
+      "categories": [
+        "quant-ph",
+        "cs.DS",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2609.10514v1"
+    },
+    {
+      "title": "DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation",
+      "authors": "Nisarga Nilavadi, Ralf Römer, Moritz Reuss et al.",
+      "summary": "Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and ro",
+      "published": "2026-09-09T17:41:38Z",
       "categories": [
         "cs.RO",
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2609.09069v1"
+      "link": "http://arxiv.org/abs/2609.10506v1"
     },
     {
-      "title": "Multi-Task Learning for Sparsely-Labeled Time Series: A Case Study on Cold-Hardiness Modeling",
-      "authors": "Aseem Saxena, Paola Pesántez-Cabrera, Jonathan Magby et al.",
-      "summary": "We present a real-world case study of multi-task learning (MTL) for temporal process modeling from limited data with temporally sparse labels. Specifically, we investigate multi-task learning for the ",
-      "published": "2026-09-08T17:17:25Z",
+      "title": "Quantum Feature Engineering for Credit Default Prediction: When and Why IQP Circuits Help Linear Classifiers",
+      "authors": "Menachem Finkelstein, Diana Legziel Levy, Zohar Yakhini et al.",
+      "summary": "Credit default prediction is a tabular classification problem in which modest gains in F1 translate directly into reduced financial exposure. We ask whether Instantaneous Quantum Polynomial-time (IQP)",
+      "published": "2026-09-09T17:41:27Z",
       "categories": [
-        "cs.LG"
+        "cs.LG",
+        "quant-ph"
       ],
-      "link": "http://arxiv.org/abs/2609.09062v1"
+      "link": "http://arxiv.org/abs/2609.10505v1"
     },
     {
-      "title": "PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games",
-      "authors": "Ryan Truong, Lance Ying, Samuel J. Gershman et al.",
-      "summary": "While many video-game environments (VGEs) have played crucial roles in advancing reinforcement learning (RL), developing novel VGEs or modifying existing ones to support new features, has been a labor",
-      "published": "2026-09-08T17:15:39Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2609.09059v1"
-    },
-    {
-      "title": "Time-Varying Data as Sheaves: an Invitation to Narratives",
-      "authors": "Wilmer Leal, Benjamin Merlin Bumpus, Jana K. Nickel et al.",
-      "summary": "Modern science and engineering increasingly rely on time-varying data, yet the mathematical tools used to model temporal phenomena are often developed within separate disciplines, obscuring common pri",
-      "published": "2026-09-08T17:12:24Z",
-      "categories": [
-        "cs.AI",
-        "cs.MA",
-        "eess.SY",
-        "math.CT"
-      ],
-      "link": "http://arxiv.org/abs/2609.09056v1"
-    },
-    {
-      "title": "\"World Knowledge\" in the Weights: Reading Concept Circuits of Vision Transformers",
-      "authors": "Yanlin Chen, Tang Li, Xi Peng et al.",
-      "summary": "Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we us",
-      "published": "2026-09-08T17:11:48Z",
+      "title": "Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts",
+      "authors": "Simon Khan, Laurent Gajny, Jennyfer Lecompte et al.",
+      "summary": "Recovering 3D human pose from monocular sports broadcasts remains challenging when players must be localized in a shared metric world coordinate system rather than only reconstructed relative to their",
+      "published": "2026-09-09T17:35:16Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2609.09055v1"
+      "link": "http://arxiv.org/abs/2609.10498v1"
     },
     {
-      "title": "Training-Free Task Vectors for LLM Behavioral Control",
-      "authors": "Gabriel J. Perin, Lucas Boscaini, André Araujo et al.",
-      "summary": "Task vectors enable post-training model editing by identifying semantically meaningful directions in weight space, typically computed as the difference between a fine-tuned model and its pretrained in",
-      "published": "2026-09-08T17:10:28Z",
+      "title": "Cross-Model Agreement as a Deployment-Time Reliability Signal for Automatic Polyp Segmentation",
+      "authors": "Siddharth Gupta, Jitin Singla",
+      "summary": "In real-time colonoscopy, ground-truth annotations are unavailable at inference, so polyp segmentation models can fail silently. We propose Referee-Based Quality Estimation (RBQE), a reference-free fr",
+      "published": "2026-09-09T17:32:43Z",
       "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2609.09054v1"
-    },
-    {
-      "title": "The Audit Decides the Verdict: Instrument Effects Rival Demographic Bias in LLM Decision Audits",
-      "authors": "Siddharth Vohra, Manikandan Ravikiran",
-      "summary": "Whether a language model looks demographically biased can depend on how the audit asks its question. A charitable-aid benchmark reports that the same models favor minority applicants when rating reque",
-      "published": "2026-09-08T17:08:53Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CY"
-      ],
-      "link": "http://arxiv.org/abs/2609.09048v1"
-    },
-    {
-      "title": "Do Reasoning Representations Help Humans Evaluate LLM Outputs?",
-      "authors": "Jaewoo Lim, Sungbok Shin, Sanghyun Hong et al.",
-      "summary": "Reasoning representations are increasingly used as explanations for large language model outputs. Yet they are typically evaluated with model-centric criteria, such as answer accuracy and faithfulness",
-      "published": "2026-09-08T17:03:57Z",
-      "categories": [
-        "cs.LG",
-        "cs.HC"
-      ],
-      "link": "http://arxiv.org/abs/2609.09038v1"
-    },
-    {
-      "title": "Answer-Distribution Trajectories: A Stochastic-Dynamics View of LLM Reasoning",
-      "authors": "Mar Gonzàlez I Català, Haitz Sáez de Ocáriz Borde, Davide Murari et al.",
-      "summary": "Chain-of-thought reasoning provides a structured computation between a model's input and final answer. Yet it is often evaluated through endpoint accuracy, which ignores the path taken to reach that a",
-      "published": "2026-09-08T16:58:40Z",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.IT",
+        "cs.CV",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2609.09030v1"
+      "link": "http://arxiv.org/abs/2609.10495v1"
     },
     {
-      "title": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
-      "authors": "Oleh Kolner, Thomas Ortner, Stanisław Woźniak et al.",
-      "summary": "State-of-the-art vision models process images in their entirety, lacking the ability to selectively zoom in on relevant regions. This limitation is particularly acute in scenarios where processing mus",
-      "published": "2026-09-08T16:54:07Z",
+      "title": "IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier",
+      "authors": "Blake Stenstrom, Charangan Vasantharajan, Brian Sathianathan et al.",
+      "summary": "Enterprises deploy systems, not checkpoints. Usable capability depends jointly on weights, serving route, precision, output contract, and harness, yet all 18 audited benchmarks score advertised model ",
+      "published": "2026-09-09T17:31:29Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2609.10494v1"
+    },
+    {
+      "title": "Learning with Covariance Matrices: Principal Component Analysis Meets Learning with Graphs",
+      "authors": "Saurabh Sihag, Andrea Cavallo, Elvin Isufi et al.",
+      "summary": "This feature article provides an overview of the theoretical foundations for coVariance neural networks (VNNs), i.e., graph neural networks (GNNs) operating on covariance matrices as graphs. Covarianc",
+      "published": "2026-09-09T17:28:46Z",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "link": "http://arxiv.org/abs/2609.10490v1"
+    },
+    {
+      "title": "Artificial Intelligence Literacy and Sustainable Development: An Ethical Governance and Development Goals Framework",
+      "authors": "Md. Masudul Islam, Mirza Niaz Morshed, Md. Shafiqul Islam et al.",
+      "summary": "AI literacy provides foundational competencies that support ethical, transparent, and sustainable technological development, although higher-order capabilities such as governance, critical evaluation,",
+      "published": "2026-09-09T17:28:08Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2609.09025v1"
+      "link": "http://arxiv.org/abs/2609.10489v1"
+    },
+    {
+      "title": "Nonmaximal sums of maximally monotone operators under Rockafellar's constraint qualification",
+      "authors": "Weifeng Yang",
+      "summary": "We construct counterexamples to Rockafellar's sum conjecture in which two maximally monotone operators satisfy the interior-domain condition but their sum is not maximally monotone. We give one counte",
+      "published": "2026-09-09T17:26:26Z",
+      "categories": [
+        "cs.LG",
+        "math.FA"
+      ],
+      "link": "http://arxiv.org/abs/2609.10487v1"
+    },
+    {
+      "title": "Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems",
+      "authors": "Ian C. Guzmán, Radu Babiceanu, Berker Peköz et al.",
+      "summary": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 6",
+      "published": "2026-09-09T17:19:14Z",
+      "categories": [
+        "eess.SP",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "link": "http://arxiv.org/abs/2609.10479v1"
+    },
+    {
+      "title": "AgroVisNet: A lightweight Convolutional Network and the BD-PlantDX Expert-Validated Benchmark for Radish, Potato and Pointed Gourd Disease Classification",
+      "authors": "Md. Abdullah Mandal, Saad Ahmed, Md. Khalid Syfullah et al.",
+      "summary": "Automated plant disease diagnosis is increasingly deployed on farmer-held devices in regions where agronomic expertise is scarce and network connectivity is unreliable. Three obstacles limit its pract",
+      "published": "2026-09-09T17:12:17Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2609.10469v1"
     }
   ]
 }
