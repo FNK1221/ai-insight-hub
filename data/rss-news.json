@@ -1,7 +1,105 @@
 {
-  "timestamp": "2026-09-11T03:12:40.358143+00:00",
+  "timestamp": "2026-09-12T03:19:12.380790+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+      "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "pubDate": "2026-09-11T22:58:17+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "pubDate": "2026-09-11T20:59:47+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI’s feud with mathematicians is only escalating",
+      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "pubDate": "2026-09-11T20:57:36+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "pubDate": "2026-09-11T20:44:02+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+      "pubDate": "2026-09-11T20:33:18+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
+      "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+      "pubDate": "2026-09-11T20:30:17+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Roundtables: AI’s apocalypse crisis",
+      "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+      "pubDate": "2026-09-11T20:05:06+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "pubDate": "2026-09-11T19:35:54+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
+      "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "pubDate": "2026-09-11T18:41:49+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
+      "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+      "pubDate": "2026-09-11T16:46:25+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Anthropic spent this week in hot water over cybersecurity",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "pubDate": "2026-09-11T16:09:14+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Meta says it&#8217;s changing AI suggestions after posing invasive personal questions",
+      "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "pubDate": "2026-09-11T14:25:21+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Download: biotech’s future and cheaper, cleaner steel",
+      "link": "https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/",
+      "pubDate": "2026-09-11T12:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Meet the under-35s shaping the future of biotech",
+      "link": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
+      "pubDate": "2026-09-11T09:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
     {
       "title": "Jensen Huang explains why Nvidia will grow an astounding 70% next year",
       "link": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
@@ -24,46 +122,11 @@
       "source": "The Verge AI"
     },
     {
-      "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "pubDate": "2026-09-10T20:59:51+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
-      "link": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-      "pubDate": "2026-09-10T20:57:30+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Meta’s AI agent Muse is now the No. 2 app in the US",
-      "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-      "pubDate": "2026-09-10T19:50:04+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Schools are catching on to Big Tech’s playbook",
       "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
       "pubDate": "2026-09-10T19:44:20+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
-      "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-      "pubDate": "2026-09-10T17:54:44+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content",
-      "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-      "pubDate": "2026-09-10T17:45:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "Universal Music is launching an AI music platform with ElevenLabs",
@@ -78,20 +141,6 @@
       "pubDate": "2026-09-10T15:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "AI agents are flooding public services with new requests",
-      "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
-      "pubDate": "2026-09-10T14:53:50+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Maven Robotics wants to steal your robot deployment deal",
-      "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-      "pubDate": "2026-09-10T14:17:37+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "Why the current tech backlash feels different",
@@ -120,55 +169,6 @@
       "pubDate": "2026-09-10T11:00:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
-    },
-    {
-      "title": "This road map could help us decide whether to deploy solar geoengineering",
-      "link": "https://www.technologyreview.com/2026/09/10/1143804/this-road-map-could-help-us-decide-whether-to-deploy-solar-geoengineering/",
-      "pubDate": "2026-09-10T11:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Can the US battery market untangle from China?",
-      "link": "https://www.technologyreview.com/2026/09/10/1143791/us-china-batteries/",
-      "pubDate": "2026-09-10T10:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "God told them to sell crypto. Their investors lost everything.",
-      "link": "https://www.technologyreview.com/2026/09/10/1143588/indxcoin-god-regalados-sell-crypto-investors-lost-everything/",
-      "pubDate": "2026-09-10T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Healthcare AI’s next test is integration",
-      "link": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
-      "pubDate": "2026-09-10T08:58:01+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
-      "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-      "pubDate": "2026-09-10T00:00:37+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Suno releases its first AI music model made with record industry help",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "pubDate": "2026-09-09T21:42:19+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-      "pubDate": "2026-09-09T21:16:34+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     }
   ]
 }
