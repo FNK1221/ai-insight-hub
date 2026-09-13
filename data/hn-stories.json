@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-12T03:18:35.227230+00:00",
-  "count": 6,
+  "timestamp": "2026-09-13T03:22:45.302502+00:00",
+  "count": 7,
   "stories": [
     {
       "title": "Show HN: How much of Hacker News is about AI?",
@@ -49,6 +49,14 @@
       "points": 136,
       "comments": 72,
       "time": "2008-05-09T09:33:38Z"
+    },
+    {
+      "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
+      "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
+      "domain": "futurism.com",
+      "points": 157,
+      "comments": 188,
+      "time": "2026-08-16T21:34:06Z"
     }
   ]
 }
