@@ -1,7 +1,63 @@
 {
-  "timestamp": "2026-09-20T03:36:19.864700+00:00",
+  "timestamp": "2026-09-21T03:31:19.185370+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+      "pubDate": "2026-09-20T21:41:08+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "World model companies are keeping a lot of secrets",
+      "link": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+      "pubDate": "2026-09-20T20:29:07+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Is the AI industry really ready to slow down?",
+      "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+      "pubDate": "2026-09-20T18:56:04+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "No one is surprised that Nvidia&#8217;s Jensen Huang thinks AI fears are overblown.",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
+      "pubDate": "2026-09-20T18:50:18+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "pubDate": "2026-09-20T18:32:52+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "ScrollEd wants to turn textbooks into TikTok",
+      "link": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/",
+      "pubDate": "2026-09-20T18:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Trump now says he wants to form an ‘AI Force’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "pubDate": "2026-09-20T15:39:22+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
+      "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+      "pubDate": "2026-09-20T12:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "Meta’s Muse is creepy, but maybe not for the reasons you think",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
@@ -52,13 +108,6 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "Prices go up in 7 days. Get your Disrupt ticket now.",
-      "link": "https://techcrunch.com/2026/09/19/prices-go-up-in-7-days-get-your-disrupt-ticket-now/",
-      "pubDate": "2026-09-19T14:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
       "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
       "pubDate": "2026-09-19T14:00:00+00:00",
@@ -66,39 +115,11 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
-      "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
-      "pubDate": "2026-09-19T13:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "The AI regulation smackdown isn’t over",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
       "pubDate": "2026-09-19T13:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "India forces caller-ID apps to feed spam reports to telcos",
-      "link": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/",
-      "pubDate": "2026-09-19T01:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
-      "link": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/",
-      "pubDate": "2026-09-19T00:12:07+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
-      "link": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
-      "pubDate": "2026-09-18T23:25:01+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
@@ -122,20 +143,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "What Hollywood thinks about existential AI warnings",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
-      "pubDate": "2026-09-18T16:35:19+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Security researchers used Claude to help them hack into OpenAI",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
-      "pubDate": "2026-09-18T15:30:16+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "The Download: AI’s extinction risk and bioweapons threat",
       "link": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
       "pubDate": "2026-09-18T12:10:00+00:00",
@@ -148,13 +155,6 @@
       "pubDate": "2026-09-18T11:29:22+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
-    },
-    {
-      "title": "Flash floods can strike without warning — this new technology could change that",
-      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-      "pubDate": "2026-09-18T11:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     },
     {
       "title": "The specter of AI-enabled bioweapons is a wake-up call for biotech",
