@@ -1,34 +1,139 @@
 {
-  "timestamp": "2026-09-25T03:38:07.271912+00:00",
+  "timestamp": "2026-09-26T03:43:53.332688+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "At Meta Connect, the company’s smart glasses were everywhere",
+      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "pubDate": "2026-09-26T01:08:57+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+      "pubDate": "2026-09-25T23:11:10+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
+      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+      "pubDate": "2026-09-25T22:20:47+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Meta opens early access program for new Muse features",
+      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
+      "pubDate": "2026-09-25T20:34:53+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "pubDate": "2026-09-25T19:13:38+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
+      "link": "https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
+      "pubDate": "2026-09-25T18:48:33+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
+      "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+      "pubDate": "2026-09-25T18:33:59+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
+      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+      "pubDate": "2026-09-25T18:22:47+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
+      "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
+      "pubDate": "2026-09-25T17:29:46+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Astra and Opus just passed Turing’s other test",
+      "link": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
+      "pubDate": "2026-09-25T17:24:36+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Meta makes the Muse filesystem even more accessible",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
+      "pubDate": "2026-09-25T16:49:53+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Sony and UMG are suing Suno again",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+      "pubDate": "2026-09-25T15:51:56+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "One company is at the center of a wave of rogue AI attacks",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+      "pubDate": "2026-09-25T15:39:48+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
+      "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+      "pubDate": "2026-09-25T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Download: the Pentagon’s AI-powered lie detector and young organ limits",
+      "link": "https://www.technologyreview.com/2026/09/25/1145157/the-download-pentagon-ai-lie-detector-young-organ-limits/",
+      "pubDate": "2026-09-25T12:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+      "pubDate": "2026-09-25T12:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
+      "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "pubDate": "2026-09-25T09:16:25+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Young organs may not be a fountain of youth for recipients",
+      "link": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
+      "pubDate": "2026-09-25T09:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
     {
       "title": "Gemini 3.8 Live with Live Avatar gives Google&#8217;s AI a face",
       "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "pubDate": "2026-09-24T19:59:26+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
-      "link": "https://techcrunch.com/2026/09/24/bring-your-co-founder-partner-or-colleague-and-get-50-off-a-second-techcrunch-disrupt-2026-pass/",
-      "pubDate": "2026-09-24T19:15:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
-      "link": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
-      "pubDate": "2026-09-24T19:00:42+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
-      "link": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
-      "pubDate": "2026-09-24T18:11:44+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "Jensen Huang talks about AI and climate change like a supervillain",
@@ -45,13 +150,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
-      "link": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
-      "pubDate": "2026-09-24T17:39:24+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Muse will apparently let you download its entire filesystem",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
       "pubDate": "2026-09-24T17:14:12+00:00",
@@ -66,107 +164,9 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS",
-      "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
-      "pubDate": "2026-09-24T17:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "It’s sinister that Meta’s Muse AI mascot is so cute",
-      "link": "https://www.theverge.com/column/999999/optimizer-meta-muse-ai-cute",
-      "pubDate": "2026-09-24T17:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "TechCrunch Founder Summit 2026: Everything you need to know",
-      "link": "https://techcrunch.com/2026/09/24/techcrunch-founder-summit-2026-everything-you-need-to-know/",
-      "pubDate": "2026-09-24T16:46:47+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "ElevenLabs’ CEO on margins, IPO timing, and telling customers they’re talking to a bot",
-      "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
-      "pubDate": "2026-09-24T16:35:13+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Gemini can now call businesses for you so you don’t have to wait on hold",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
-      "pubDate": "2026-09-24T16:04:31+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/24/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
-      "pubDate": "2026-09-24T16:03:36+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Google tests letting Gemini call businesses for you",
-      "link": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
-      "pubDate": "2026-09-24T16:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Shield AI, Waabi, and General Motors on building AI when failure is not an option at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/24/shield-ai-waabi-and-general-motors-on-building-ai-when-failure-is-not-an-option-at-techcrunch-disrupt-2026/",
-      "pubDate": "2026-09-24T15:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Why can’t we just keep rogue AIs off the internet?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/999881/why-cant-we-airgap-rogue-ai-agents",
-      "pubDate": "2026-09-24T14:30:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Google is sending an AI satellite into space next week",
-      "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
-      "pubDate": "2026-09-24T14:15:17+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The vibes are bad for Flock in Washington",
-      "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
-      "pubDate": "2026-09-24T14:15:05+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
       "link": "https://www.technologyreview.com/2026/09/24/1145064/the-download-bid-scrap-virtual-wall-ai-climate-week/",
       "pubDate": "2026-09-24T12:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "AI is dominating the conversation at Climate Week",
-      "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
-      "pubDate": "2026-09-24T10:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "A congressional representative just proposed killing America’s border tower program",
-      "link": "https://www.technologyreview.com/2026/09/23/1145002/a-congressional-representative-just-proposed-killing-americas-border-tower-program/",
-      "pubDate": "2026-09-23T17:10:11+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "The Download: India’s smart glasses menace and AI’s trillion-dollar gamble",
-      "link": "https://www.technologyreview.com/2026/09/23/1144966/the-download-india-smart-glasses-ai-trillion-dollar-gamble/",
-      "pubDate": "2026-09-23T12:10:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
