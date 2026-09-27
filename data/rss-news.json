@@ -1,7 +1,42 @@
 {
-  "timestamp": "2026-09-26T03:43:53.332688+00:00",
+  "timestamp": "2026-09-27T03:53:05.337517+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+      "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+      "pubDate": "2026-09-27T01:30:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Insurers claim AI is already increasing healthcare costs",
+      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+      "pubDate": "2026-09-26T21:02:06+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI pauses training of its ‘most capable models’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+      "pubDate": "2026-09-26T16:34:59+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "I created an interactive digital avatar of myself — and you can talk to it",
+      "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+      "pubDate": "2026-09-26T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Can Cloudflare CEO Matthew Prince save the web from AI?",
+      "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
+      "pubDate": "2026-09-26T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "At Meta Connect, the company’s smart glasses were everywhere",
       "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
@@ -48,27 +83,6 @@
       "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
       "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
       "pubDate": "2026-09-25T18:33:59+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
-      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-      "pubDate": "2026-09-25T18:22:47+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
-      "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-      "pubDate": "2026-09-25T17:29:46+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Astra and Opus just passed Turing’s other test",
-      "link": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
-      "pubDate": "2026-09-25T17:24:36+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
@@ -146,20 +160,6 @@
       "title": "Meta is going to let you build games with AI right on your phone",
       "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
       "pubDate": "2026-09-24T17:52:29+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Muse will apparently let you download its entire filesystem",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-      "pubDate": "2026-09-24T17:14:12+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Muse sure looks a lot like OpenClaw",
-      "link": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
-      "pubDate": "2026-09-24T17:10:38+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
