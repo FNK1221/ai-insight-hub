@@ -1,226 +1,222 @@
 {
-  "timestamp": "2026-10-05T04:15:48.454551+00:00",
+  "timestamp": "2026-10-09T04:45:10.446098+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
-      "authors": "Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan et al.",
-      "summary": "This paper examines the role of Novel View Synthesis (NVS) in geometric representation learning. In principle, NVS should reason about 3D scene structure, thereby enabling transferable multi-view geom",
-      "published": "2026-10-02T17:59:14Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.RO"
-      ],
-      "link": "http://arxiv.org/abs/2610.03717v1"
-    },
-    {
-      "title": "MoSE3: Learning World-Space SE(3) at Every Pixel",
-      "authors": "Jiahuan Cheng, Zhiyi Li, Tian Xia et al.",
-      "summary": "Dense 3D point tracking has been a prominent paradigm for modeling motion in dynamic scenes, but a point track is just a 3-DoF translation curve per pixel: it captures where pixels go, not the rotatio",
-      "published": "2026-10-02T17:58:52Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.03716v1"
-    },
-    {
-      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
-      "authors": "Ruihong Shen, Žiga Kovačič, Peter Kulits et al.",
-      "summary": "We introduce 4DCodeBench, a benchmark for 4D inverse graphics through code generation, in which agents reconstruct dynamic scenes from video as executable graphics programs. To accomplish this, agents",
-      "published": "2026-10-02T17:58:49Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.GR"
-      ],
-      "link": "http://arxiv.org/abs/2610.03715v1"
-    },
-    {
-      "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
-      "authors": "Nishit Anand, Ramani Duraiswami, Dinesh Manocha et al.",
-      "summary": "Continual learning treats degradation on previously seen data as evidence of failure, a convention inherited from settings with a stationary prediction target, where a correct label remains correct in",
-      "published": "2026-10-02T17:58:14Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CV",
-        "eess.IV",
-        "eess.SP"
-      ],
-      "link": "http://arxiv.org/abs/2610.03713v1"
-    },
-    {
-      "title": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
-      "authors": "Yiming Huang, Lennart Bastian, Hanqun Cao et al.",
-      "summary": "Ribonucleic acid (RNA) functions through conformational changes that are not fully captured by static structures. However, large-scale standardized RNA dynamics data remain limited, and existing appro",
-      "published": "2026-10-02T17:58:08Z",
-      "categories": [
-        "cs.LG",
-        "physics.bio-ph",
-        "q-bio.BM"
-      ],
-      "link": "http://arxiv.org/abs/2610.03712v1"
-    },
-    {
-      "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
-      "authors": "Kush Hari, Justin Kerr, Nidhya Shivakumar et al.",
-      "summary": "Inspired by human vision, we introduce a framework using active gaze to enable fine-grained bimanual manipulation with only a single stereo camera. EyeRobot 2.0 physically attends to a 3D fixation poi",
-      "published": "2026-10-02T17:57:51Z",
+      "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+      "authors": "Jusuk Lee, Sungha Kim, Yeonsoo Park et al.",
+      "summary": "While learning dexterous manipulation from a single human video offers a promising alternative to costly robot demonstrations, many recent methods predominantly imitate demonstrated motions. Such stri",
+      "published": "2026-10-08T17:59:58Z",
       "categories": [
         "cs.RO",
-        "cs.AI"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03710v1"
+      "link": "http://arxiv.org/abs/2610.12470v1"
     },
     {
-      "title": "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing",
-      "authors": "Kuangyu Ding, Gesualdo Scutari",
-      "summary": "We study the minimization of sums of smooth strongly convex functions over undirected graphs, with each function held by one agent and communication restricted to neighbors in the graph. Existing dece",
-      "published": "2026-10-02T17:57:50Z",
-      "categories": [
-        "math.OC",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.03709v1"
-    },
-    {
-      "title": "LESSER: Post-Training Data Selection with Output-Layer Gradients",
-      "authors": "Lyuxin David Zhang, Eric Wong, Surbhi Goel et al.",
-      "summary": "The choice of post-training data for large language models substantially affects downstream performance. Gradient-based data selection is a popular approach that ranks training data by how well their ",
-      "published": "2026-10-02T17:55:42Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.03702v1"
-    },
-    {
-      "title": "Decoding the Functional Roles of Register and High-Norm Patch Tokens in Vision Transformers",
-      "authors": "Neel Varma, Andrew Rufail, Dipika Khullar et al.",
-      "summary": "Self-supervised Vision Transformers (ViTs), such as DINOv2, learn rich visual representations, but the functions of their internal tokens remain poorly understood. Recent architectures introduce dedic",
-      "published": "2026-10-02T17:55:06Z",
+      "title": "Rubric-CEPR: Self-Evolving Image Editing via Reward-Verified Self-Distillation",
+      "authors": "Ritesh Thawkar, Shubham Patle, Shravan Venkatraman et al.",
+      "summary": "Instruction-guided image editors have become highly capable, yet improving them further still depends on human-edited training pairs or external reward models. Such supervision is costly to obtain and",
+      "published": "2026-10-08T17:59:58Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03698v1"
+      "link": "http://arxiv.org/abs/2610.12469v1"
     },
     {
-      "title": "Language Models that Play Chess and Explain Their Moves",
-      "authors": "Adithya Bhaskar, Jeffrey Cheng, Danqi Chen et al.",
-      "summary": "Modern chess engines are silent experts: they play at a superhuman level, but do not offer explanations for their play. On the other hand, language models (LMs) can generate plausible-sounding explana",
-      "published": "2026-10-02T17:54:22Z",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "authors": "Junyan Li, Ruizhi Li, Yu Liu et al.",
+      "summary": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacl",
+      "published": "2026-10-08T17:59:51Z",
       "categories": [
-        "cs.CL"
+        "cs.RO",
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03695v1"
+      "link": "http://arxiv.org/abs/2610.12468v1"
     },
     {
-      "title": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
-      "authors": "Jungkyu Park, Dhruva Biswas, Joseph Cappadona et al.",
-      "summary": "Scarcity of labeled data limits development of deep learning biomarkers in oncology. We develop a two-stage AI model predicting pathological complete response (pCR) to neoadjuvant therapy in breast ca",
-      "published": "2026-10-02T17:52:57Z",
+      "title": "CSF: Contextual Safety Filtering for Motion Generators",
+      "authors": "Lizhi Yang, Yiling Hou, Yao Tang et al.",
+      "summary": "Text-conditioned motion generators produce trackable whole-body motion, but they have no notion of scene-dependent safety: the same action may target an object or a person. Existing safeguards either ",
+      "published": "2026-10-08T17:59:50Z",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.12467v1"
+    },
+    {
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "authors": "Drew T. Nguyen, William Fithian",
+      "summary": "METR's 50\\% time horizon measures the human completion time of software tasks that an AI solves with 50\\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and",
+      "published": "2026-10-08T17:59:50Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.03693v1"
+      "link": "http://arxiv.org/abs/2610.12466v1"
     },
     {
-      "title": "FlowHMR: Physically Plausible Motion Capture from Video",
-      "authors": "Zhanke Wang, Chengfeng Zhao, Qing Shuai et al.",
-      "summary": "We present FlowHMR, a framework for recovering physically plausible global 3D human motion from monocular video. Previous learning-based methods typically regress human motion directly from video and ",
-      "published": "2026-10-02T17:52:48Z",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "authors": "Octi Zhang, Mateo Guaman Castro, Patrick Yin et al.",
+      "summary": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, c",
+      "published": "2026-10-08T17:59:50Z",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.12465v1"
+    },
+    {
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "authors": "Abbas Raftari",
+      "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research i",
+      "published": "2026-10-08T17:59:49Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.12463v1"
+    },
+    {
+      "title": "What 30,000 Hours of Ego-centric Video Does Not Teach",
+      "authors": "Jiahua Dong, Anurag Bagchi, Yash Jangir et al.",
+      "summary": "World models offer a promising alternative to physics-based simulators, yet remain far from practical deployment. We ask how far scaling ego-centric human video takes them, using a dataset of 30,000 h",
+      "published": "2026-10-08T17:59:49Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03691v1"
+      "link": "http://arxiv.org/abs/2610.12464v1"
     },
     {
-      "title": "SigLIP2 for aerial fire risk classification",
-      "authors": "Yunus Serhat Bıçakçı",
-      "summary": "We examine the transfer of a pretrained SigLIP2 image encoder to seven class fire risk classification from aerial imagery. We introduce a reproducible partition of the public FireRisk training mirror ",
-      "published": "2026-10-02T17:52:34Z",
+      "title": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+      "authors": "You-Zhe Xie, Ting-Wei Chou, Yu-Hsuan Li et al.",
+      "summary": "Recent 3D world models generate photorealistic, explorable scenes that remain frozen in time. OuroWorld is a mask-free framework that turns any static 3D Gaussian Splatting scene into a 3D cinemagraph",
+      "published": "2026-10-08T17:59:46Z",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "link": "http://arxiv.org/abs/2610.12461v1"
+    },
+    {
+      "title": "WorldGuide: Goal-Directed Video World Model for Procedural Task Execution",
+      "authors": "Ankan Deria, Komal Kumar, Hisham Cholakkal et al.",
+      "summary": "Video generators and video-based world models can synthesize plausible visual trajectories, but long-horizon procedural tasks require generation to adapt to what has actually been produced. A model mu",
+      "published": "2026-10-08T17:59:31Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03689v1"
+      "link": "http://arxiv.org/abs/2610.12459v1"
     },
     {
-      "title": "Simulation-Free Learning of Population Dynamics with Wasserstein Lagrangian Residuals",
-      "authors": "Fedor Sergeev, Markus Heinonen, Daniel Waxman et al.",
-      "summary": "The dynamics of cells, organisms, and fluids are often modeled as probability distributions evolving over time. Reconstructing and extrapolating this evolution from unpaired snapshots requires assumpt",
-      "published": "2026-10-02T17:46:52Z",
+      "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+      "authors": "Zhongyu Yang, Jiale Tao, Ruitao Chen et al.",
+      "summary": "Multimodal large language models (MLLMs) are rapidly evolving toward continuous audio--visual reasoning, creating an urgent need for evaluations that expose their capability limits. Audio--visual capt",
+      "published": "2026-10-08T17:59:21Z",
       "categories": [
-        "cs.LG",
-        "stat.ME",
-        "stat.ML"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03679v1"
+      "link": "http://arxiv.org/abs/2610.12458v1"
     },
     {
-      "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
-      "authors": "Hui Chen, Xuan Qi, James Xu Zhao et al.",
-      "summary": "LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically opt",
-      "published": "2026-10-02T17:44:05Z",
+      "title": "Hybrid Cinematography: Previsualizing and Managing Hallucination Risk in Generative Video Reshooting",
+      "authors": "Nhan, Tran, Neal Wadhwa et al.",
+      "summary": "On a film set, the camera move is committed during a take. Generative video reshooting lets filmmakers change it afterward, but may require hallucinating unrecorded content, a gap sometimes discovered",
+      "published": "2026-10-08T17:59:11Z",
       "categories": [
-        "cs.NE",
+        "cs.HC",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.12455v1"
+    },
+    {
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "authors": "Peter Kulits, Yiqing Xu, R. Kenny Jones et al.",
+      "summary": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but",
+      "published": "2026-10-08T17:58:56Z",
+      "categories": [
         "cs.AI",
-        "cs.CL"
+        "cs.CV",
+        "cs.GR"
       ],
-      "link": "http://arxiv.org/abs/2610.03675v1"
+      "link": "http://arxiv.org/abs/2610.12452v1"
     },
     {
-      "title": "Planning to Learn",
-      "authors": "Ian Osband",
-      "summary": "Policy-gradient methods are central to modern reinforcement learning, including LLM post-training. When they struggle, the usual suspects are exploration, credit assignment and action-sampling noise. ",
-      "published": "2026-10-02T17:38:28Z",
+      "title": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
+      "authors": "Boyao Han, Chen Shi, Jingjing Qian et al.",
+      "summary": "Vision-Language-Action (VLA) models have emerged as powerful foundations for robotic manipulation, but their reliance on fixed camera configurations during training makes them brittle to changes in ca",
+      "published": "2026-10-08T17:58:47Z",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "link": "http://arxiv.org/abs/2610.12451v1"
+    },
+    {
+      "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "authors": "Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos et al.",
+      "summary": "In this work, we show that a single Transformer block, applied recurrently, can match the accuracy of a full-depth vision encoder at comparable inference FLOPs without intermediate feature distillatio",
+      "published": "2026-10-08T17:58:36Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.12448v1"
+    },
+    {
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "authors": "Anna Zimmel, Fleur Hendriks, Markus Holzleitner et al.",
+      "summary": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a sing",
+      "published": "2026-10-08T17:58:36Z",
       "categories": [
         "cs.LG",
-        "math.OC",
-        "stat.ML"
+        "cs.AI",
+        "cs.CE",
+        "physics.comp-ph"
       ],
-      "link": "http://arxiv.org/abs/2610.03667v1"
+      "link": "http://arxiv.org/abs/2610.12449v1"
     },
     {
-      "title": "Pivot-SD: Efficient Self-Distillation for Masked Diffusion Language Models",
-      "authors": "Seo Hyun Kim, Sunwoo Hong, Younwoo Choi et al.",
-      "summary": "Masked diffusion language models (dLMs) offer a promising parallel alternative to autoregressive models for complex reasoning. However, they face a distinct credit-assignment challenge, since a few co",
-      "published": "2026-10-02T17:37:51Z",
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "authors": "Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba et al.",
+      "summary": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier m",
+      "published": "2026-10-08T17:58:13Z",
       "categories": [
         "cs.LG",
-        "cs.CL"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.03665v1"
+      "link": "http://arxiv.org/abs/2610.12445v1"
     },
     {
-      "title": "ProAR: Learning Prospective Reasoning with Autoregressive Video Models",
-      "authors": "Linghui Shen, Tinghui Zhu, Sheng Zhang et al.",
-      "summary": "Autoregressive (AR) video models excel at causal generation, but their reliance on next-chunk prediction confines them to a short-sighted, reactive paradigm. This limitation is particularly consequent",
-      "published": "2026-10-02T17:37:47Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.03664v1"
-    },
-    {
-      "title": "Forecasting from Counterfactual Simulator Rollouts: A Sim2Real Evaluation",
-      "authors": "Angel Wang, Dominique Perrault-Joncas, Alvaro Maggiar et al.",
-      "summary": "Deploying a new decision policy creates a cold-start problem for prediction models whose targets depend on the policy's actions: historical observations reflect earlier policies, while real observatio",
-      "published": "2026-10-02T17:37:14Z",
+      "title": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
+      "authors": "Hanyang Li, Shao Tang, Daniel Thomas Braithwaite et al.",
+      "summary": "Quantizing AdamW's optimizer states reduces persistent storage, but quantization errors propagate through the moment recurrences and perturb subsequent adaptive updates. We redesign 4-bit optimizer-st",
+      "published": "2026-10-08T17:58:09Z",
       "categories": [
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.03662v1"
+      "link": "http://arxiv.org/abs/2610.12444v1"
     },
     {
-      "title": "Revisiting Input Time-frequency Representations in Multi-pitch Estimation for Vocal Ensembles",
-      "authors": "Junyoung Koh, Hao-Wen Dong",
-      "summary": "Multi-pitch estimation in vocal ensembles is challenging because singers occupy overlapping pitch ranges and often sing at closely spaced fundamental frequencies, causing their harmonics to overlap in",
-      "published": "2026-10-02T17:35:06Z",
+      "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
+      "authors": "Suhwan Cho, Yonwoo Choi, Soongjin Kim et al.",
+      "summary": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Curr",
+      "published": "2026-10-08T17:58:03Z",
       "categories": [
-        "cs.SD",
-        "cs.AI"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.03656v1"
+      "link": "http://arxiv.org/abs/2610.12442v1"
+    },
+    {
+      "title": "Density Ratio Estimation with Stein Displacement Fields",
+      "authors": "Song Liu",
+      "summary": "Density ratios quantify distribution shift from a probability-mass point of view, whereas displacement fields describe, from a dynamical point of view, how one distribution is transported onto another",
+      "published": "2026-10-08T17:57:33Z",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.12437v1"
     }
   ]
 }
