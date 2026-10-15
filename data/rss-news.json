@@ -1,146 +1,160 @@
 {
-  "timestamp": "2026-10-14T03:42:23.977310+00:00",
+  "timestamp": "2026-10-15T03:23:43.202677+00:00",
   "count": 24,
   "items": [
     {
-      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-      "pubDate": "2026-10-13T23:13:31+00:00",
+      "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+      "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+      "pubDate": "2026-10-15T01:01:32+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
-      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-      "pubDate": "2026-10-13T23:05:34+00:00",
+      "title": "Gudea leverages AI to help organizations prevent social media crises before they erupt",
+      "link": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+      "pubDate": "2026-10-15T00:00:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-      "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-      "pubDate": "2026-10-13T23:00:00+00:00",
+      "title": "McKinsey is making job applicants spar with a fake AI client",
+      "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+      "pubDate": "2026-10-14T22:53:31+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
+      "link": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
+      "pubDate": "2026-10-14T21:30:33+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Cerebras CEO pushes back on AI doomsday warnings",
-      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-      "pubDate": "2026-10-13T22:36:59+00:00",
+      "title": "Eight states sue OpenAI, saying ChatGPT isn&#8217;t safe for kids",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+      "pubDate": "2026-10-14T21:11:28+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The AI race is back on",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+      "pubDate": "2026-10-14T19:06:03+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
+      "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "pubDate": "2026-10-14T18:47:54+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+      "pubDate": "2026-10-14T18:23:46+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-      "pubDate": "2026-10-13T20:45:25+00:00",
+      "title": "YouTube sticks new labels on AI-generated songs",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+      "pubDate": "2026-10-14T18:22:56+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
-      "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
-      "pubDate": "2026-10-13T20:36:44+00:00",
+      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+      "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+      "pubDate": "2026-10-14T18:00:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Shopify opens its catalog up to more AI agents",
-      "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
-      "pubDate": "2026-10-13T19:42:42+00:00",
+      "title": "My AI doppelganger tells me what to eat",
+      "link": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
+      "pubDate": "2026-10-14T17:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-      "link": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
-      "pubDate": "2026-10-13T19:00:48+00:00",
+      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+      "pubDate": "2026-10-14T16:43:24+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
-      "link": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
-      "pubDate": "2026-10-13T18:30:00+00:00",
+      "title": "Microsoft has a new machine learning tool to improve weather forecasts",
+      "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+      "pubDate": "2026-10-14T16:05:21+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Square’s new kiosk lets you talk to AI for help with your order",
+      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+      "pubDate": "2026-10-14T16:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Android is using AI to suss out scammers in Google Messages",
+      "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+      "pubDate": "2026-10-14T16:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Deezer will soon let you filter out AI-generated music",
+      "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+      "pubDate": "2026-10-14T15:16:04+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Facebook is giving users more control over their algorithm",
-      "link": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
-      "pubDate": "2026-10-13T18:05:24+00:00",
+      "title": "Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West",
+      "link": "https://techcrunch.com/2026/10/14/save-50-on-your-techcrunch-disrupt-2026-ticket-and-join-the-last-two-days-in-san-francisco/",
+      "pubDate": "2026-10-14T15:13:24+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
-      "link": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
-      "pubDate": "2026-10-13T18:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
-      "link": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-      "pubDate": "2026-10-13T17:30:00+00:00",
+      "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
+      "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+      "pubDate": "2026-10-14T15:08:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
-      "link": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
-      "pubDate": "2026-10-13T17:18:25+00:00",
+      "title": "Floqer’s AI agents research sales prospects so teams don’t have to",
+      "link": "https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/",
+      "pubDate": "2026-10-14T15:00:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Facebook will let you customize your feed algorithm using AI",
-      "link": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
-      "pubDate": "2026-10-13T17:01:31+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
-      "link": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
-      "pubDate": "2026-10-13T17:00:00+00:00",
+      "title": "TechCrunch Disrupt 2026: Day 2",
+      "link": "https://techcrunch.com/2026/10/14/techcrunch-disrupt-2026-day-2/",
+      "pubDate": "2026-10-14T14:30:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Google makes it easier to launch your vibe-coded apps",
-      "link": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
-      "pubDate": "2026-10-13T17:00:00+00:00",
+      "title": "The Download: faking blood and the future of batteries",
+      "link": "https://www.technologyreview.com/2026/10/14/1146452/the-download-military-fake-blood-future-batteries/",
+      "pubDate": "2026-10-14T12:10:00+00:00",
       "thumbnail": "",
-      "source": "The Verge AI"
+      "source": "MIT Tech Review"
     },
     {
-      "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
-      "pubDate": "2026-10-13T16:42:51+00:00",
+      "title": "The US military’s race to make fake blood",
+      "link": "https://www.technologyreview.com/2026/10/14/1145807/us-military-race-to-make-fake-blood/",
+      "pubDate": "2026-10-14T09:00:00+00:00",
       "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Google finally releases Gemini 4 Argon",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-      "pubDate": "2026-10-13T16:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Epic shifts to &#8216;AI-accelerated development&#8217; for upcoming Disney game",
-      "link": "https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art",
-      "pubDate": "2026-10-13T15:12:59+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "DLSS 5 gets toned down for its Hogwarts Legacy debut next month",
-      "link": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
-      "pubDate": "2026-10-13T13:55:45+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
+      "source": "MIT Tech Review"
     },
     {
       "title": "The Download: open model trade-offs and geothermal power’s promise",
@@ -153,20 +167,6 @@
       "title": "Open models have real benefits. Do they outweigh the risks?",
       "link": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
       "pubDate": "2026-10-13T10:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "AI labs are buying data from dead startups to train their models",
-      "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-      "pubDate": "2026-10-13T09:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "The Download: moon city problems and drone traffic controllers",
-      "link": "https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/",
-      "pubDate": "2026-10-12T12:10:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
