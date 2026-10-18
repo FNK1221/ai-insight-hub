@@ -1,13 +1,41 @@
 {
-  "timestamp": "2026-10-17T03:09:31.585052+00:00",
+  "timestamp": "2026-10-18T03:12:29.718796+00:00",
   "count": 24,
   "items": [
     {
-      "title": "Replit is no longer working with Anthropic, CEO says",
-      "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "pubDate": "2026-10-16T21:22:28+00:00",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "pubDate": "2026-10-17T21:31:32+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
+    },
+    {
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "pubDate": "2026-10-17T20:21:19+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "pubDate": "2026-10-17T18:48:08+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "pubDate": "2026-10-17T15:04:36+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Websites are closing their doors to AI agents",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "pubDate": "2026-10-17T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
     },
     {
       "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
@@ -80,13 +108,6 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-      "pubDate": "2026-10-16T12:55:09+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "The Download: failed social media bans, and extending pets’ lives",
       "link": "https://www.technologyreview.com/2026/10/16/1146864/the-download-failed-social-media-bans-and-extending-pets-lives/",
       "pubDate": "2026-10-16T12:10:00+00:00",
@@ -122,13 +143,6 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-      "link": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "pubDate": "2026-10-15T23:44:56+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "ChatGPT can peek at your Chrome tabs now",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
       "pubDate": "2026-10-15T22:43:23+00:00",
@@ -153,20 +167,6 @@
       "title": "Trump posts AI-edited photo to brag about White House restoration work",
       "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
       "pubDate": "2026-10-15T21:09:33+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Bluesky&#8217;s AI tool now lets you make games and apps to share on social",
-      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
-      "pubDate": "2026-10-15T19:57:16+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-      "pubDate": "2026-10-15T18:15:36+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     }

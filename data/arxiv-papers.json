@@ -1,222 +1,224 @@
 {
-  "timestamp": "2026-10-12T04:31:20.885917+00:00",
+  "timestamp": "2026-10-18T03:11:55.189736+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Can Language Models Play the Wikipedia Game?",
-      "authors": "Alexander Hickey, Joanna Knight, James Bishop et al.",
-      "summary": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowled",
-      "published": "2026-10-09T17:59:56Z",
-      "categories": [
-        "cs.AI",
-        "cs.IR"
-      ],
-      "link": "http://arxiv.org/abs/2610.13948v1"
-    },
-    {
-      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
-      "authors": "Xudong Cai, Ruijie Zhu, Haoliang Shang et al.",
-      "summary": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on p",
-      "published": "2026-10-09T17:59:41Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.13947v1"
-    },
-    {
-      "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation",
-      "authors": "Xiaomeng Ye, Krishna Jaganathan, Gyubeum Lim et al.",
-      "summary": "A user who brings a generalist manipulation policy into their home or office wants it to pick up their objects from their shelves, counters, and tables. Yet even a strong generalist like $π_{0.5}$ ach",
-      "published": "2026-10-09T17:59:06Z",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "authors": "Zhixu Li, Keqian Tang, Litian Gong et al.",
+      "summary": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, person",
+      "published": "2026-10-15T17:59:59Z",
       "categories": [
         "cs.RO",
-        "cs.CV"
+        "cs.AI",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.13945v1"
+      "link": "http://arxiv.org/abs/2610.22372v1"
     },
     {
-      "title": "InstantFusion: A Shared Latent Interface for Heterogeneous Image Generators",
-      "authors": "Xuanlang Dai, Jiazi Bu, Yujie Zhou et al.",
-      "summary": "Diffusion/flow models have emerged as the de facto paradigms for image generation, giving rise to a diverse family of modern generators with increasingly heterogeneous architectures and representation",
-      "published": "2026-10-09T17:59:04Z",
+      "title": "Gen4P: Video Generators are 4D Perceivers",
+      "authors": "Yitong Xia, Zeren Jiang, Chuanxia Zheng et al.",
+      "summary": "We introduce Gen4P, a unified framework for recovering 4D geometry and motion from monocular video. We show that a pretrained video generator can be repurposed into a feed-forward 4D perceiver without",
+      "published": "2026-10-15T17:59:48Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.13944v1"
+      "link": "http://arxiv.org/abs/2610.22371v1"
     },
     {
-      "title": "Images Talk Back: Guiding MMDiTs by Suppressing Image-to-Text Feedback",
-      "authors": "Yucheng Yang, Xiaoxiao Sun, Shusheng Yang et al.",
-      "summary": "Multimodal diffusion transformers (MMDiTs) allow the evolving image to update internal text representations through joint attention. These representations then guide subsequent image updates, raising ",
-      "published": "2026-10-09T17:58:15Z",
+      "title": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation",
+      "authors": "SeungJu Cha, Ye-Chan Kim, HyunGee Kim et al.",
+      "summary": "Token merging has emerged as an effective training-free strategy for accelerating diffusion models by reducing redundant token computation while minimizing generation degradation. A key challenge is d",
+      "published": "2026-10-15T17:59:35Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.13941v1"
+      "link": "http://arxiv.org/abs/2610.22370v1"
     },
     {
-      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
-      "authors": "Bhanu Tokas, Rahul Nair, Rockwell Jackson et al.",
-      "summary": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts",
-      "published": "2026-10-09T17:56:59Z",
+      "title": "SoftCache: Adaptive Step Size Caching for Diffusion Transformers",
+      "authors": "Shimon Malnick, Nadav Orenstein, Ohad Fried et al.",
+      "summary": "Diffusion and flow models generate a sample over iterative steps, each a full pass through a large network, and that pass dominates generation cost. Training-free caching accelerates them by reusing a",
+      "published": "2026-10-15T17:59:34Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.22369v1"
+    },
+    {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "authors": "Andi Gu, Alek H. Kemeny, Susanne F. Yelin et al.",
+      "summary": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the development of effici",
+      "published": "2026-10-15T17:59:20Z",
+      "categories": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.22367v1"
+    },
+    {
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "authors": "Chenyuan Zhou, Yining Hong, Huang Huang et al.",
+      "summary": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly observable nor explicitly specified, from ph",
+      "published": "2026-10-15T17:59:11Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.22364v1"
+    },
+    {
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "authors": "Zirui Wu, Chen Guo, Tianjian Jiang et al.",
+      "summary": "We introduce P$^{3}$-WAM, a unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three compleme",
+      "published": "2026-10-15T17:59:07Z",
       "categories": [
         "cs.CV",
-        "cs.AI",
-        "cs.LG"
+        "cs.RO"
       ],
-      "link": "http://arxiv.org/abs/2610.13935v1"
+      "link": "http://arxiv.org/abs/2610.22363v1"
     },
     {
-      "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
-      "authors": "Kosio Beshkov",
-      "summary": "The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a family of measures particularly suited to understand",
-      "published": "2026-10-09T17:55:33Z",
-      "categories": [
-        "math.AT",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.13931v1"
-    },
-    {
-      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
-      "authors": "Changhao Wang, Jaden Clark, Shuran Song et al.",
-      "summary": "Robot policies often convert sensing and control into fixed-rate observation-action sequences, leaving physical time implicit in sequence position. This assumption breaks when observation rates or del",
-      "published": "2026-10-09T17:55:20Z",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "authors": "Tianjiao Yu, Zhilin Ou, Yifan Shen et al.",
+      "summary": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a p",
+      "published": "2026-10-15T17:59:02Z",
       "categories": [
         "cs.RO",
-        "cs.CV"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.13929v1"
+      "link": "http://arxiv.org/abs/2610.22362v1"
     },
     {
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "authors": "Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas et al.",
-      "summary": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption doe",
-      "published": "2026-10-09T17:55:06Z",
-      "categories": [
-        "cs.LG",
-        "cs.CR"
-      ],
-      "link": "http://arxiv.org/abs/2610.13928v1"
-    },
-    {
-      "title": "Can machines reason non-verbally?",
-      "authors": "Shaheer U. Saeed, Zion Tse, Gregory Slabaugh et al.",
-      "summary": "Modern machines can solve equations, follow logic and reason through language, yet they still struggle with problems that require visual non-verbal reasoning. This is evident even in advanced systems ",
-      "published": "2026-10-09T17:54:36Z",
+      "title": "Grounding Generative Verification in 3D Content",
+      "authors": "Shuanglin Li, Jiaying Lin, Shuquan Ye et al.",
+      "summary": "Recent advances in multimodal large language models (MLLMs) and 3D generation have expanded 3D understanding and synthesis. However, beyond visual fidelity, task-specific correctness grounded in 3D ev",
+      "published": "2026-10-15T17:59:01Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.13925v1"
+      "link": "http://arxiv.org/abs/2610.22360v1"
     },
     {
-      "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
-      "authors": "Tianyi Wu",
-      "summary": "A parallel sampler can choose at random which coordinates to generate together. For a target $p$ and the output law $q_U$ of a schedule $U$ drawn afresh for each output, we compare the schedule-averag",
-      "published": "2026-10-09T17:54:16Z",
+      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+      "authors": "Jiachen Yao, Xiyuan Zhang, Annan Yu et al.",
+      "summary": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of future tra",
+      "published": "2026-10-15T17:58:45Z",
       "categories": [
-        "cs.LG",
-        "cs.IT"
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.13924v1"
+      "link": "http://arxiv.org/abs/2610.22358v1"
     },
     {
-      "title": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
-      "authors": "Sajjad Baghaeea, Aimin Lib, Shanmugarajan Balasubramanian et al.",
-      "summary": "Deep-space communications operate under intermittent connectivity, long propagation delays, and relay storage constraints. In such networks, the Bundle Protocol enables store-carry-forward communicati",
-      "published": "2026-10-09T17:53:46Z",
-      "categories": [
-        "cs.NI",
-        "cs.LG",
-        "eess.SY"
-      ],
-      "link": "http://arxiv.org/abs/2610.13923v1"
-    },
-    {
-      "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
-      "authors": "Daniel Szelogowski",
-      "summary": "Clinical sleep medicine repeatedly documents profound divergences between objective sleep duration and subjective daytime impairment, notably exemplified by sleep state misperception in paradoxical in",
-      "published": "2026-10-09T17:52:23Z",
-      "categories": [
-        "cs.NE",
-        "cs.ET",
-        "cs.LG",
-        "q-bio.NC"
-      ],
-      "link": "http://arxiv.org/abs/2610.13918v1"
-    },
-    {
-      "title": "Designing Protein Structures from Natural Language",
-      "authors": "Joseph Lee, Yanjing Li, Bo Qiang et al.",
-      "summary": "A central challenge in de novo protein design is generating proteins with desired structural and functional properties. Existing design models typically require a dedicated input representation for ea",
-      "published": "2026-10-09T17:51:55Z",
-      "categories": [
-        "cs.LG",
-        "q-bio.BM"
-      ],
-      "link": "http://arxiv.org/abs/2610.13917v1"
-    },
-    {
-      "title": "Where to Look Matters: Rethinking Sub-Volume Sampling in 3D Medical Self-supervised Learning",
-      "authors": "Junkai Liu, Le Zhang",
-      "summary": "Self-supervised learning on 3D medical images commonly relies on random sub-volume sampling during pretraining. However, random cropping implicitly treats all spatial regions as equally worth observin",
-      "published": "2026-10-09T17:51:47Z",
+      "title": "DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models",
+      "authors": "Han Su, Meng Tian, Tianyu Huang et al.",
+      "summary": "Vision-language models still struggle to understand 3D spatial relations across views and update spatial judgments as the observer moves. A common approach fuses 3D reconstruction features into visual",
+      "published": "2026-10-15T17:58:15Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.13915v1"
+      "link": "http://arxiv.org/abs/2610.22356v1"
     },
     {
-      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
-      "authors": "Taoyong Cui, Pinxian Zeng, Wanghan Xu et al.",
-      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies ev",
-      "published": "2026-10-09T17:50:30Z",
+      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+      "authors": "Bowei Liu, Xinchen Zhang, Xuhuan Li et al.",
+      "summary": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements",
+      "published": "2026-10-15T17:58:04Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.13912v1"
+      "link": "http://arxiv.org/abs/2610.22355v1"
     },
     {
-      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
-      "authors": "Shubh Garg, Chen Shani",
-      "summary": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such r",
-      "published": "2026-10-09T17:50:03Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2610.13910v1"
-    },
-    {
-      "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
-      "authors": "Danil Rudenko, Georgii Bulgakov, Nikolay Kartashev et al.",
-      "summary": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Sev",
-      "published": "2026-10-09T17:49:32Z",
+      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "authors": "Bingcong Li, Hao Ma, Michael Muehlebach et al.",
+      "summary": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert segmentation and s",
+      "published": "2026-10-15T17:58:02Z",
       "categories": [
         "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.13909v1"
+      "link": "http://arxiv.org/abs/2610.22353v1"
     },
     {
-      "title": "Hitting-Time Bounds for Asynchronous Q-Learning",
-      "authors": "Yang Peng",
-      "summary": "We study the last iterate of standard asynchronous Q-learning from a single trajectory of a finite Markov decision process. The trajectory follows a fixed behavior policy whose state--action chain is ",
-      "published": "2026-10-09T17:44:10Z",
+      "title": "SUPRA-TEX: 3D Generation with Super-Aligned Texture",
+      "authors": "Chen Yang, Jiemin Fang, Fanpeng Meng et al.",
+      "summary": "Single image 3D generation aims to dress a given 3D mesh with relightable materials while faithfully preserving the visual details of a reference image. Existing methods either introduce artifacts whe",
+      "published": "2026-10-15T17:58:02Z",
       "categories": [
-        "stat.ML",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "link": "http://arxiv.org/abs/2610.22352v1"
+    },
+    {
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "authors": "Dongxu Yang, Hongda Yan, Renxin Wang et al.",
+      "summary": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engin",
+      "published": "2026-10-15T17:57:23Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "link": "http://arxiv.org/abs/2610.22350v1"
+    },
+    {
+      "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
+      "authors": "Hyunwook Choi, Seungryong Kim, Dongyoon Han et al.",
+      "summary": "Few-step autoregressive video generators enable streaming generation, yet they run every token through the final denoising step, regardless of how much refinement it needs. We find this uniform comput",
+      "published": "2026-10-15T17:57:01Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.22347v1"
+    },
+    {
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "authors": "Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.",
+      "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recur",
+      "published": "2026-10-15T17:56:32Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.13901v1"
+      "link": "http://arxiv.org/abs/2610.22344v1"
     },
     {
-      "title": "Structural Automata for Neural Semantic Parsing",
-      "authors": "Xiao Zhang",
-      "summary": "Neural semantic parsers generate meaning representations token by token, yet well-formedness depends on references, scope, and graph relations that unfold during generation. Constrained decoding preve",
-      "published": "2026-10-09T17:42:14Z",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "authors": "Hongchang Liu, Jian Liu, Yujuan Ding et al.",
+      "summary": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these f",
+      "published": "2026-10-15T17:56:18Z",
       "categories": [
-        "cs.CL"
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
       ],
-      "link": "http://arxiv.org/abs/2610.13896v1"
+      "link": "http://arxiv.org/abs/2610.22343v1"
+    },
+    {
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "authors": "Yipeng Gao, Ziyao Zeng, Jinfa Huang et al.",
+      "summary": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable ",
+      "published": "2026-10-15T17:56:07Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.22341v1"
+    },
+    {
+      "title": "Dexterity from Supervised Play",
+      "authors": "Botao He, Yiming Dou, Yiannis Aloimonos et al.",
+      "summary": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a play polic",
+      "published": "2026-10-15T17:55:50Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.22340v1"
     }
   ]
 }
