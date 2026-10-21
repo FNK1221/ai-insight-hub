@@ -1,224 +1,228 @@
 {
-  "timestamp": "2026-10-18T03:11:55.189736+00:00",
+  "timestamp": "2026-10-21T03:28:12.850856+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
-      "authors": "Zhixu Li, Keqian Tang, Litian Gong et al.",
-      "summary": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, person",
-      "published": "2026-10-15T17:59:59Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.22372v1"
-    },
-    {
-      "title": "Gen4P: Video Generators are 4D Perceivers",
-      "authors": "Yitong Xia, Zeren Jiang, Chuanxia Zheng et al.",
-      "summary": "We introduce Gen4P, a unified framework for recovering 4D geometry and motion from monocular video. We show that a pretrained video generator can be repurposed into a feed-forward 4D perceiver without",
-      "published": "2026-10-15T17:59:48Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.22371v1"
-    },
-    {
-      "title": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation",
-      "authors": "SeungJu Cha, Ye-Chan Kim, HyunGee Kim et al.",
-      "summary": "Token merging has emerged as an effective training-free strategy for accelerating diffusion models by reducing redundant token computation while minimizing generation degradation. A key challenge is d",
-      "published": "2026-10-15T17:59:35Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.22370v1"
-    },
-    {
-      "title": "SoftCache: Adaptive Step Size Caching for Diffusion Transformers",
-      "authors": "Shimon Malnick, Nadav Orenstein, Ohad Fried et al.",
-      "summary": "Diffusion and flow models generate a sample over iterative steps, each a full pass through a large network, and that pass dominates generation cost. Training-free caching accelerates them by reusing a",
-      "published": "2026-10-15T17:59:34Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.22369v1"
-    },
-    {
-      "title": "Discovering state-of-the-art quantum circuits with large language models",
-      "authors": "Andi Gu, Alek H. Kemeny, Susanne F. Yelin et al.",
-      "summary": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the development of effici",
-      "published": "2026-10-15T17:59:20Z",
-      "categories": [
-        "quant-ph",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.22367v1"
-    },
-    {
-      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
-      "authors": "Chenyuan Zhou, Yining Hong, Huang Huang et al.",
-      "summary": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly observable nor explicitly specified, from ph",
-      "published": "2026-10-15T17:59:11Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.22364v1"
-    },
-    {
-      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
-      "authors": "Zirui Wu, Chen Guo, Tianjian Jiang et al.",
-      "summary": "We introduce P$^{3}$-WAM, a unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three compleme",
-      "published": "2026-10-15T17:59:07Z",
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "authors": "Noam Rotstein, Yoad Tewel, Chen Tessler et al.",
+      "summary": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For",
+      "published": "2026-10-20T17:59:56Z",
       "categories": [
         "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG",
         "cs.RO"
       ],
-      "link": "http://arxiv.org/abs/2610.22363v1"
+      "link": "http://arxiv.org/abs/2610.28632v1"
     },
     {
-      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-      "authors": "Tianjiao Yu, Zhilin Ou, Yifan Shen et al.",
-      "summary": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a p",
-      "published": "2026-10-15T17:59:02Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.22362v1"
-    },
-    {
-      "title": "Grounding Generative Verification in 3D Content",
-      "authors": "Shuanglin Li, Jiaying Lin, Shuquan Ye et al.",
-      "summary": "Recent advances in multimodal large language models (MLLMs) and 3D generation have expanded 3D understanding and synthesis. However, beyond visual fidelity, task-specific correctness grounded in 3D ev",
-      "published": "2026-10-15T17:59:01Z",
+      "title": "AEON: Unifying Video and 3D World Models",
+      "authors": "Weiqi Zhang, Wenyuan Zhang, Yu-Shen Liu et al.",
+      "summary": "Current world models for explicit world simulation typically follow two distinct pathways: (1) video generative models (e.g., Sora), which simulate realistic appearances but fail to preserve 3D consis",
+      "published": "2026-10-20T17:59:51Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.22360v1"
+      "link": "http://arxiv.org/abs/2610.28631v1"
     },
     {
-      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
-      "authors": "Jiachen Yao, Xiyuan Zhang, Annan Yu et al.",
-      "summary": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of future tra",
-      "published": "2026-10-15T17:58:45Z",
+      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
+      "authors": "Guian Fang, Shengju Qian, Dongyue Lu et al.",
+      "summary": "Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and complete",
+      "published": "2026-10-20T17:59:48Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.28630v1"
+    },
+    {
+      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+      "authors": "Yazhuo Liu, Kunqing Ding, Xiaoguo Gong et al.",
+      "summary": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending them to domain-intensive mechanistic investigation",
+      "published": "2026-10-20T17:59:40Z",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "link": "http://arxiv.org/abs/2610.28629v1"
+    },
+    {
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "authors": "Yuxuan Kuang, Jiashun Wang, Yixuan Sun et al.",
+      "summary": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning reci",
+      "published": "2026-10-20T17:59:32Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.28628v1"
+    },
+    {
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "authors": "Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.",
+      "summary": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language model that learns video, action, and language in a",
+      "published": "2026-10-20T17:59:04Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.28626v1"
+    },
+    {
+      "title": "PsycheMME: A Psychology-Informed Benchmark for Social Understanding and Interaction in Videos",
+      "authors": "Heran Hu, Yuhang Dong, Zhucun Xue et al.",
+      "summary": "Understanding human needs and selecting responses require distinct judgments that aggregate accuracy can obscure. We introduce PsycheMME, a video benchmark informed by psychology, with eight capabilit",
+      "published": "2026-10-20T17:59:00Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.28625v1"
+    },
+    {
+      "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+      "authors": "Jad Yammine, Malek Wahidi, Abrar Anwar et al.",
+      "summary": "Warehouse robot fleets continuously observe operational conditions, but preserving these observations as reusable semantic memory incurs substantial computation, communication, and storage costs. For ",
+      "published": "2026-10-20T17:58:32Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "link": "http://arxiv.org/abs/2610.28624v1"
+    },
+    {
+      "title": "Planning under Noise with Neural Operators",
+      "authors": "Michael Chen, Hong Chul Nam, Xi Deng et al.",
+      "summary": "Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (PUN), a neural operator that learns noise-aware val",
+      "published": "2026-10-20T17:58:30Z",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "link": "http://arxiv.org/abs/2610.28623v1"
+    },
+    {
+      "title": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
+      "authors": "Yanbo Wang, Siqi Luo, Siyu Zhang et al.",
+      "summary": "Spatial intelligence has recently been assessed through generative tasks such as spatially grounded image editing, yet language-guided generation of spatially consistent views from partial multi-view ",
+      "published": "2026-10-20T17:58:25Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28622v1"
+    },
+    {
+      "title": "Adaptive Multi-Token Prediction: How far should we go?",
+      "authors": "Emile Anand, Mohammed Rehan Parwani, Xinyuan Cao et al.",
+      "summary": "Multi-token prediction (MTP) can accelerate language-model decoding by drafting several tokens and verifying them in a single target-model pass. However, the best speculation horizon changes with cont",
+      "published": "2026-10-20T17:56:32Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "link": "http://arxiv.org/abs/2610.28619v1"
+    },
+    {
+      "title": "Efficient Edge-aware Attention Network for Graph Generation",
+      "authors": "Vincent Jung, Alba Carballo-Castro, Yiming Qin et al.",
+      "summary": "Graph generative models commonly use graph-specific Transformer architectures to jointly update node and edge features. However, these architectures do not directly benefit from recent hardware-aware ",
+      "published": "2026-10-20T17:56:05Z",
       "categories": [
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.22358v1"
+      "link": "http://arxiv.org/abs/2610.28618v1"
     },
     {
-      "title": "DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models",
-      "authors": "Han Su, Meng Tian, Tianyu Huang et al.",
-      "summary": "Vision-language models still struggle to understand 3D spatial relations across views and update spatial judgments as the observer moves. A common approach fuses 3D reconstruction features into visual",
-      "published": "2026-10-15T17:58:15Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.22356v1"
-    },
-    {
-      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
-      "authors": "Bowei Liu, Xinchen Zhang, Xuhuan Li et al.",
-      "summary": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements",
-      "published": "2026-10-15T17:58:04Z",
+      "title": "NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification",
+      "authors": "Qingming Li, Ruiyan Sun, Satoshi Nakamura et al.",
+      "summary": "Picture-description dementia classification uses a shared visual scene, but a transcript-level prediction alone does not identify the scene evidence underlying its inputs. NarraSpace links words and s",
+      "published": "2026-10-20T17:55:44Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.22355v1"
+      "link": "http://arxiv.org/abs/2610.28616v1"
     },
     {
-      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
-      "authors": "Bingcong Li, Hao Ma, Michael Muehlebach et al.",
-      "summary": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert segmentation and s",
-      "published": "2026-10-15T17:58:02Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.22353v1"
-    },
-    {
-      "title": "SUPRA-TEX: 3D Generation with Super-Aligned Texture",
-      "authors": "Chen Yang, Jiemin Fang, Fanpeng Meng et al.",
-      "summary": "Single image 3D generation aims to dress a given 3D mesh with relightable materials while faithfully preserving the visual details of a reference image. Existing methods either introduce artifacts whe",
-      "published": "2026-10-15T17:58:02Z",
-      "categories": [
-        "cs.CV",
-        "cs.GR"
-      ],
-      "link": "http://arxiv.org/abs/2610.22352v1"
-    },
-    {
-      "title": "FDE-Gym: The Last Mile of AI Delivery",
-      "authors": "Dongxu Yang, Hongda Yan, Renxin Wang et al.",
-      "summary": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engin",
-      "published": "2026-10-15T17:57:23Z",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.SE"
-      ],
-      "link": "http://arxiv.org/abs/2610.22350v1"
-    },
-    {
-      "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
-      "authors": "Hyunwook Choi, Seungryong Kim, Dongyoon Han et al.",
-      "summary": "Few-step autoregressive video generators enable streaming generation, yet they run every token through the final denoising step, regardless of how much refinement it needs. We find this uniform comput",
-      "published": "2026-10-15T17:57:01Z",
+      "title": "KoalaGS: Complexity-Aware Continuous Level of Detail for Gaussian Splatting",
+      "authors": "Radu Beche, Raoul de Charette",
+      "summary": "Deploying a trained 3D Gaussian Splatting scene under shrinking compute budgets requires one primitive set to remain effective when rendered at smaller prefixes. In this continuous level of detail (Lo",
+      "published": "2026-10-20T17:55:06Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.22347v1"
+      "link": "http://arxiv.org/abs/2610.28615v1"
     },
     {
-      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-      "authors": "Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.",
-      "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recur",
-      "published": "2026-10-15T17:56:32Z",
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "authors": "Jitendra Solanki, Anand Todkar, Ziran Min et al.",
+      "summary": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes",
+      "published": "2026-10-20T17:53:32Z",
       "categories": [
-        "cs.AI",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28611v1"
+    },
+    {
+      "title": "Benchmarking Arabic Dialects for Math Problems",
+      "authors": "Noor Abo Mokh, Teresa Lynn, Nizar Habash et al.",
+      "summary": "Mathematical reasoning remains underexplored for low-resource languages, including Dialectal Arabic. To bridge this gap, we introduce the DAR-MGSM (Dialectal Arabic Multilingual Grade School Math) Ben",
+      "published": "2026-10-20T17:50:13Z",
+      "categories": [
         "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28607v1"
+    },
+    {
+      "title": "Value-Rich, Differently Organized: Measuring Value Expression and Organization in AI-Generated Debates",
+      "authors": "Maoyuan Li, Haoyuan Li, Zhongsheng Wang et al.",
+      "summary": "Current evaluation of LLM-generated debate largely focuses on argumentative quality, leaving the value structure of generated arguments underexamined. We introduce a diagnostic metric framework for co",
+      "published": "2026-10-20T17:48:56Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28604v1"
+    },
+    {
+      "title": "Turning TS2Vec into a Foundation Model for Time Series Classification",
+      "authors": "Vasilii Feofanov, Zhenghan Tai, Andrei Ermakov et al.",
+      "summary": "TS2Vec is one of the strongest self-supervised methods for time series classification, introduced in 2022. It is designed to be trained anew on every dataset: self-supervised pre-training followed by ",
+      "published": "2026-10-20T17:47:51Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28602v1"
+    },
+    {
+      "title": "Evolving Agent Interfaces",
+      "authors": "Saaket Agashe, Yuzhe Yang, Gonzalo Gonzalez-Pumariega et al.",
+      "summary": "Computer-use agents are limited by the interfaces humans give them. An agent may type a spreadsheet cell by cell when a single line of code would do, or print all two thousand lines of a file through ",
+      "published": "2026-10-20T17:47:37Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.28601v1"
+    },
+    {
+      "title": "Neural Implicit Energy Optimization for LiDAR Mapping",
+      "authors": "Hrishikesh Viswanath, Md Ashiqur Rahman, Chi Lin et al.",
+      "summary": "Neural implicit representations provide memory-efficient signed distance field (SDF) parameterizations for large-scale LiDAR scenes, but the geometry recovered from sparse and often noisy inputs carri",
+      "published": "2026-10-20T17:47:07Z",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.22344v1"
-    },
-    {
-      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
-      "authors": "Hongchang Liu, Jian Liu, Yujuan Ding et al.",
-      "summary": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these f",
-      "published": "2026-10-15T17:56:18Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "link": "http://arxiv.org/abs/2610.22343v1"
-    },
-    {
-      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
-      "authors": "Yipeng Gao, Ziyao Zeng, Jinfa Huang et al.",
-      "summary": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable ",
-      "published": "2026-10-15T17:56:07Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.22341v1"
-    },
-    {
-      "title": "Dexterity from Supervised Play",
-      "authors": "Botao He, Yiming Dou, Yiannis Aloimonos et al.",
-      "summary": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a play polic",
-      "published": "2026-10-15T17:55:50Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.22340v1"
+      "link": "http://arxiv.org/abs/2610.28598v1"
     }
   ]
 }
