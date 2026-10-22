@@ -1,228 +1,219 @@
 {
-  "timestamp": "2026-10-21T03:28:12.850856+00:00",
+  "timestamp": "2026-10-22T03:27:34.322451+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
-      "authors": "Noam Rotstein, Yoad Tewel, Chen Tessler et al.",
-      "summary": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For",
-      "published": "2026-10-20T17:59:56Z",
+      "title": "Near Minimax Rate for Quantile Distributional Reinforcement Learning",
+      "authors": "Zijie Cheng, Zhihua Zhang",
+      "summary": "In this paper, we study quantile distributional policy evaluation, where the return distribution under a given policy is approximated by the quantile Bellman fixed point $\\bmη_m$. We investigate the s",
+      "published": "2026-10-21T11:35:36Z",
       "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.GR",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "link": "http://arxiv.org/abs/2610.28632v1"
-    },
-    {
-      "title": "AEON: Unifying Video and 3D World Models",
-      "authors": "Weiqi Zhang, Wenyuan Zhang, Yu-Shen Liu et al.",
-      "summary": "Current world models for explicit world simulation typically follow two distinct pathways: (1) video generative models (e.g., Sora), which simulate realistic appearances but fail to preserve 3D consis",
-      "published": "2026-10-20T17:59:51Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.28631v1"
-    },
-    {
-      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
-      "authors": "Guian Fang, Shengju Qian, Dongyue Lu et al.",
-      "summary": "Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and complete",
-      "published": "2026-10-20T17:59:48Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.28630v1"
-    },
-    {
-      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
-      "authors": "Yazhuo Liu, Kunqing Ding, Xiaoguo Gong et al.",
-      "summary": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending them to domain-intensive mechanistic investigation",
-      "published": "2026-10-20T17:59:40Z",
-      "categories": [
-        "cond-mat.mtrl-sci",
-        "cond-mat.mes-hall",
-        "cs.AI",
-        "cs.MA"
-      ],
-      "link": "http://arxiv.org/abs/2610.28629v1"
-    },
-    {
-      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
-      "authors": "Yuxuan Kuang, Jiashun Wang, Yixuan Sun et al.",
-      "summary": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning reci",
-      "published": "2026-10-20T17:59:32Z",
-      "categories": [
-        "cs.RO",
-        "cs.CV",
-        "cs.GR",
+        "stat.ML",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.28628v1"
+      "link": "http://arxiv.org/abs/2610.29595v1"
     },
     {
-      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
-      "authors": "Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.",
-      "summary": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language model that learns video, action, and language in a",
-      "published": "2026-10-20T17:59:04Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.28626v1"
-    },
-    {
-      "title": "PsycheMME: A Psychology-Informed Benchmark for Social Understanding and Interaction in Videos",
-      "authors": "Heran Hu, Yuhang Dong, Zhucun Xue et al.",
-      "summary": "Understanding human needs and selecting responses require distinct judgments that aggregate accuracy can obscure. We introduce PsycheMME, a video benchmark informed by psychology, with eight capabilit",
-      "published": "2026-10-20T17:59:00Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.28625v1"
-    },
-    {
-      "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
-      "authors": "Jad Yammine, Malek Wahidi, Abrar Anwar et al.",
-      "summary": "Warehouse robot fleets continuously observe operational conditions, but preserving these observations as reusable semantic memory incurs substantial computation, communication, and storage costs. For ",
-      "published": "2026-10-20T17:58:32Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "link": "http://arxiv.org/abs/2610.28624v1"
-    },
-    {
-      "title": "Planning under Noise with Neural Operators",
-      "authors": "Michael Chen, Hong Chul Nam, Xi Deng et al.",
-      "summary": "Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (PUN), a neural operator that learns noise-aware val",
-      "published": "2026-10-20T17:58:30Z",
+      "title": "A Transfer Learning-Driven Methodology for Efficient and Sustainable Indoor Localization Using VLC",
+      "authors": "Masood Jan, Wafa Njima, Xun Zhang et al.",
+      "summary": "The rapid expansion of the Internet of Things enables seamless collaboration among connected devices, making indoor localization a critical component of industrial automation. However, conventional lo",
+      "published": "2026-10-21T11:33:42Z",
       "categories": [
         "cs.LG",
-        "cs.RO"
+        "eess.SP"
       ],
-      "link": "http://arxiv.org/abs/2610.28623v1"
+      "link": "http://arxiv.org/abs/2610.29594v1"
     },
     {
-      "title": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
-      "authors": "Yanbo Wang, Siqi Luo, Siyu Zhang et al.",
-      "summary": "Spatial intelligence has recently been assessed through generative tasks such as spatially grounded image editing, yet language-guided generation of spatially consistent views from partial multi-view ",
-      "published": "2026-10-20T17:58:25Z",
+      "title": "CineEvolve: An Agentic Self-Evolution Framework for Cinematic Multi-Shot Video Generation",
+      "authors": "Jingzhe Zhang, Peixuan Zhang, Genying Li et al.",
+      "summary": "Cinematic multi-shot video generation requires both narrative planning and iterative refinement. Existing methods either lack narrative reasoning or rely on feed-forward workflows without policy updat",
+      "published": "2026-10-21T11:30:09Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.29590v1"
+    },
+    {
+      "title": "Fragment-Level Graph Encoding for Interpretable Molecular Property Prediction",
+      "authors": "Rafael Lopes Almeida, Ina Pöhner",
+      "summary": "Graph neural networks (GNNs) are among the standard tools for molecular property prediction, but the atom-level explanations of their predictions are hard for medicinal chemists to act on. We propose ",
+      "published": "2026-10-21T11:29:50Z",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2610.29589v1"
+    },
+    {
+      "title": "Unlocking Spatial Grounding in Flow-Matching Models via SNR Tuning",
+      "authors": "Martin Thißen, Elke Hergenröther",
+      "summary": "Despite the success of foundation models in image synthesis, achieving fine-grained spatial control remains a significant challenge, typically requiring auxiliary structural adapters or complex infere",
+      "published": "2026-10-21T11:22:58Z",
       "categories": [
         "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.29581v1"
+    },
+    {
+      "title": "Fast Bayesian Optimization Through Linear Models",
+      "authors": "Colin Doumont, Henry Moss, Philipp Hennig et al.",
+      "summary": "Bayesian optimization (BO) is typically used only for problems where the underlying function is deemed \"expensive\" (e.g. in time or money), with the speed of the BO algorithm being of little importanc",
+      "published": "2026-10-21T11:22:11Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.29580v1"
+    },
+    {
+      "title": "What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk",
+      "authors": "Ahmed Mahrous, Roberto Di Pietro",
+      "summary": "Using a near-census of 802,863 resolved markets listed on Polymarket between January 2023 and May 2026, and only information available at listing (the market's title and description, named resolution ",
+      "published": "2026-10-21T11:20:35Z",
+      "categories": [
+        "q-fin.ST",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.29578v1"
+    },
+    {
+      "title": "The Reflexivity Threshold: A Phase Transition for Multi-Agent Performative Prediction",
+      "authors": "Ahmed Mahrous, Roberto Di Pietro",
+      "summary": "Many learning systems are performative: once deployed, their predictions change the data distribution on which future models are trained. In multi-agent settings, this feedback is routed through a net",
+      "published": "2026-10-21T11:20:29Z",
+      "categories": [
+        "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.28622v1"
+      "link": "http://arxiv.org/abs/2610.29577v1"
     },
     {
-      "title": "Adaptive Multi-Token Prediction: How far should we go?",
-      "authors": "Emile Anand, Mohammed Rehan Parwani, Xinyuan Cao et al.",
-      "summary": "Multi-token prediction (MTP) can accelerate language-model decoding by drafting several tokens and verifying them in a single target-model pass. However, the best speculation horizon changes with cont",
-      "published": "2026-10-20T17:56:32Z",
+      "title": "Private Online Prediction from Experts with Small Losses",
+      "authors": "Bo Li, Peng Ye",
+      "summary": "We consider online prediction from experts, a fundamental problem in machine learning, under differential privacy constraints. Existing private algorithms achieve near-optimal regret $\\tilde{O}(\\sqrt{",
+      "published": "2026-10-21T11:18:45Z",
       "categories": [
-        "cs.AI",
         "cs.LG",
-        "eess.SY"
+        "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2610.28619v1"
+      "link": "http://arxiv.org/abs/2610.29575v1"
     },
     {
-      "title": "Efficient Edge-aware Attention Network for Graph Generation",
-      "authors": "Vincent Jung, Alba Carballo-Castro, Yiming Qin et al.",
-      "summary": "Graph generative models commonly use graph-specific Transformer architectures to jointly update node and edge features. However, these architectures do not directly benefit from recent hardware-aware ",
-      "published": "2026-10-20T17:56:05Z",
+      "title": "Implicit Feature Reweighting for Label-Free Graph Generalization",
+      "authors": "Tianjun Yao, Chen Xi, Xinyang Li et al.",
+      "summary": "Graph-level out-of-distribution (OOD) generalization is critical for deploying graph neural networks in real-world applications where distribution shifts are inevitable. Existing approaches typically ",
+      "published": "2026-10-21T11:04:32Z",
       "categories": [
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.28618v1"
+      "link": "http://arxiv.org/abs/2610.29571v1"
     },
     {
-      "title": "NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification",
-      "authors": "Qingming Li, Ruiyan Sun, Satoshi Nakamura et al.",
-      "summary": "Picture-description dementia classification uses a shared visual scene, but a transcript-level prediction alone does not identify the scene evidence underlying its inputs. NarraSpace links words and s",
-      "published": "2026-10-20T17:55:44Z",
+      "title": "Rethinking Underwater Image Enhancement: Learning through Text-Guided Degradation Curriculum",
+      "authors": "Hongri Tian, Wenxue Li, Tian Ye et al.",
+      "summary": "Existing paired clean-degraded datasets have advanced learning-based underwater image enhancement, but they remain either limited in scale or difficult to acquire, and still fail to adequately cover t",
+      "published": "2026-10-21T11:02:44Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.29569v1"
+    },
+    {
+      "title": "Certified Neural Approximation of Robust Nonlinear Model Predictive Control",
+      "authors": "Hendrik Alsmeier, Maik Pfefferkorn, Rolf Findeisen et al.",
+      "summary": "Model predictive control is a high-performance control method, but it incurs comparatively high online computational costs across many control tasks and is challenging to realize in low-level hardware",
+      "published": "2026-10-21T10:46:55Z",
+      "categories": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.29559v1"
+    },
+    {
+      "title": "SOAR: Social and Opinion-Aware Recommendations",
+      "authors": "Giannis Christoforidis, Apostolos N. Papadopoulos",
+      "summary": "One of the enduring challenges in online platforms is recommendation. Both communities and advertisers face difficulties in analyzing complex user behavior, identifying habits and evolving preferences",
+      "published": "2026-10-21T10:42:44Z",
+      "categories": [
+        "cs.LG",
+        "cs.IR"
+      ],
+      "link": "http://arxiv.org/abs/2610.29556v1"
+    },
+    {
+      "title": "WRDO: Weighted Refusal Direction Optimization in Aligned Language Models",
+      "authors": "Grigoriy Evseev, Vladimir Solodkin, Dmitry Bylinkin et al.",
+      "summary": "Aligned large language models are trained to comply with benign requests while refusing harmful ones. However, recent work shows that this refusal behavior is fragile and can often be disrupted by sim",
+      "published": "2026-10-21T10:42:25Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2610.29555v1"
+    },
+    {
+      "title": "Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding",
+      "authors": "Xin Zhang, Haochen Wang, Beibei Lin et al.",
+      "summary": "Fine-grained multimodal intelligence requires models to both understand a designated region and localize it from language. Existing methods learn these directions with separate objectives and task-spe",
+      "published": "2026-10-21T10:39:56Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.29552v1"
+    },
+    {
+      "title": "Hyperspherical Simplex Representations for Backward-Compatible Retrieval",
+      "authors": "Simone Ricci, Niccolò Biondi, Federico Pernici et al.",
+      "summary": "Training modern AI models has become increasingly expensive, and updating deployed models can alter their internal feature representations, affecting applications built upon them. In retrieval systems",
+      "published": "2026-10-21T10:35:39Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.29550v1"
+    },
+    {
+      "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
+      "authors": "Patrick Haller, Filipe Laitenberger, Alan Akbik et al.",
+      "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing ",
+      "published": "2026-10-21T10:31:52Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.28616v1"
+      "link": "http://arxiv.org/abs/2610.29545v1"
     },
     {
-      "title": "KoalaGS: Complexity-Aware Continuous Level of Detail for Gaussian Splatting",
-      "authors": "Radu Beche, Raoul de Charette",
-      "summary": "Deploying a trained 3D Gaussian Splatting scene under shrinking compute budgets requires one primitive set to remain effective when rendered at smaller prefixes. In this continuous level of detail (Lo",
-      "published": "2026-10-20T17:55:06Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.28615v1"
-    },
-    {
-      "title": "Semantic Observability for Autonomous Systems Diagnostics",
-      "authors": "Jitendra Solanki, Anand Todkar, Ziran Min et al.",
-      "summary": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes",
-      "published": "2026-10-20T17:53:32Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.28611v1"
-    },
-    {
-      "title": "Benchmarking Arabic Dialects for Math Problems",
-      "authors": "Noor Abo Mokh, Teresa Lynn, Nizar Habash et al.",
-      "summary": "Mathematical reasoning remains underexplored for low-resource languages, including Dialectal Arabic. To bridge this gap, we introduce the DAR-MGSM (Dialectal Arabic Multilingual Grade School Math) Ben",
-      "published": "2026-10-20T17:50:13Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.28607v1"
-    },
-    {
-      "title": "Value-Rich, Differently Organized: Measuring Value Expression and Organization in AI-Generated Debates",
-      "authors": "Maoyuan Li, Haoyuan Li, Zhongsheng Wang et al.",
-      "summary": "Current evaluation of LLM-generated debate largely focuses on argumentative quality, leaving the value structure of generated arguments underexamined. We introduce a diagnostic metric framework for co",
-      "published": "2026-10-20T17:48:56Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.28604v1"
-    },
-    {
-      "title": "Turning TS2Vec into a Foundation Model for Time Series Classification",
-      "authors": "Vasilii Feofanov, Zhenghan Tai, Andrei Ermakov et al.",
-      "summary": "TS2Vec is one of the strongest self-supervised methods for time series classification, introduced in 2022. It is designed to be trained anew on every dataset: self-supervised pre-training followed by ",
-      "published": "2026-10-20T17:47:51Z",
+      "title": "Stochastic Pruning of the DPO Computation Graph: 1.4x Faster Training and Lower Peak Memory",
+      "authors": "Yubing Wu, Wei Chen, Junmei Yang et al.",
+      "summary": "Direct preference optimization (DPO) incurs training costs in output scoring, sequence execution, and backpropagation, so reducing supervision alone does not necessarily save computation. We introduce",
+      "published": "2026-10-21T10:25:15Z",
       "categories": [
         "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.28602v1"
+      "link": "http://arxiv.org/abs/2610.29538v1"
     },
     {
-      "title": "Evolving Agent Interfaces",
-      "authors": "Saaket Agashe, Yuzhe Yang, Gonzalo Gonzalez-Pumariega et al.",
-      "summary": "Computer-use agents are limited by the interfaces humans give them. An agent may type a spreadsheet cell by cell when a single line of code would do, or print all two thousand lines of a file through ",
-      "published": "2026-10-20T17:47:37Z",
+      "title": "Melange: A Synthetic Visual Bias Benchmark for Multi-modal Large Language Models",
+      "authors": "Razieh Rezaei, Ehsaneddin Asgary, Masoud Jalili Sabet et al.",
+      "summary": "Multi-modal Large Language Models (MLLMs) have seen broad adoption, but their biases are still far less examined than those of standard LLMs, creating possible social harms when deployed in real-world",
+      "published": "2026-10-21T10:25:06Z",
       "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.29537v1"
+    },
+    {
+      "title": "Block Diffusion for Longitudinal EHR: Accuracy, Efficiency, and Representation Trade-offs",
+      "authors": "Ashvin Gupta, Joshua Placidi, Brendan Delaney et al.",
+      "summary": "Autoregressive (AR) models have proved effective for zero-shot prediction from longitudinal electronic health records, but impose strictly sequential generation on trajectories containing temporally c",
+      "published": "2026-10-21T10:23:34Z",
+      "categories": [
+        "cs.LG",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.28601v1"
-    },
-    {
-      "title": "Neural Implicit Energy Optimization for LiDAR Mapping",
-      "authors": "Hrishikesh Viswanath, Md Ashiqur Rahman, Chi Lin et al.",
-      "summary": "Neural implicit representations provide memory-efficient signed distance field (SDF) parameterizations for large-scale LiDAR scenes, but the geometry recovered from sparse and often noisy inputs carri",
-      "published": "2026-10-20T17:47:07Z",
-      "categories": [
-        "cs.CV",
-        "cs.GR",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.28598v1"
+      "link": "http://arxiv.org/abs/2610.29533v1"
     }
   ]
 }
