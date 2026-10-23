@@ -1,219 +1,221 @@
 {
-  "timestamp": "2026-10-22T03:27:34.322451+00:00",
+  "timestamp": "2026-10-23T03:32:11.636316+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Near Minimax Rate for Quantile Distributional Reinforcement Learning",
-      "authors": "Zijie Cheng, Zhihua Zhang",
-      "summary": "In this paper, we study quantile distributional policy evaluation, where the return distribution under a given policy is approximated by the quantile Bellman fixed point $\\bmη_m$. We investigate the s",
-      "published": "2026-10-21T11:35:36Z",
+      "title": "A Unified Framework for Image-to-3D Part Generation via Variable Granularity",
+      "authors": "Qiwen Gu, Xin Zhou, Xiwu Chen et al.",
+      "summary": "Controllable 3D part generation is pivotal for digital asset creation, yet existing methods lack the flexibility to accommodate diverse user workflows requiring varying levels of control. In this pape",
+      "published": "2026-10-22T17:59:53Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31671v1"
+    },
+    {
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "authors": "Yunfei Xie, Howard H. Qian, Shiyi Lan et al.",
+      "summary": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests",
+      "published": "2026-10-22T17:59:51Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "link": "http://arxiv.org/abs/2610.31670v1"
+    },
+    {
+      "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
+      "authors": "Shengqiong Wu, Meng Luo, Bobo Li et al.",
+      "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their",
+      "published": "2026-10-22T17:59:50Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31668v1"
+    },
+    {
+      "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+      "authors": "Mahdi Salmani, Adel Javanmard, Devansh Gupta et al.",
+      "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Runn",
+      "published": "2026-10-22T17:59:48Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2610.31667v1"
+    },
+    {
+      "title": "Phase Transition from Random Features to Fully Trainable Networks",
+      "authors": "Xin He, Huan Lao, Xiliang Lu et al.",
+      "summary": "Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adapt",
+      "published": "2026-10-22T17:59:29Z",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.ST",
+        "stat.ML"
+      ],
+      "link": "http://arxiv.org/abs/2610.31663v1"
+    },
+    {
+      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+      "authors": "Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani et al.",
+      "summary": "We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthine",
+      "published": "2026-10-22T17:59:22Z",
       "categories": [
         "stat.ML",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.29595v1"
-    },
-    {
-      "title": "A Transfer Learning-Driven Methodology for Efficient and Sustainable Indoor Localization Using VLC",
-      "authors": "Masood Jan, Wafa Njima, Xun Zhang et al.",
-      "summary": "The rapid expansion of the Internet of Things enables seamless collaboration among connected devices, making indoor localization a critical component of industrial automation. However, conventional lo",
-      "published": "2026-10-21T11:33:42Z",
-      "categories": [
         "cs.LG",
-        "eess.SP"
+        "stat.ME"
       ],
-      "link": "http://arxiv.org/abs/2610.29594v1"
+      "link": "http://arxiv.org/abs/2610.31662v1"
     },
     {
-      "title": "CineEvolve: An Agentic Self-Evolution Framework for Cinematic Multi-Shot Video Generation",
-      "authors": "Jingzhe Zhang, Peixuan Zhang, Genying Li et al.",
-      "summary": "Cinematic multi-shot video generation requires both narrative planning and iterative refinement. Existing methods either lack narrative reasoning or rely on feed-forward workflows without policy updat",
-      "published": "2026-10-21T11:30:09Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.29590v1"
-    },
-    {
-      "title": "Fragment-Level Graph Encoding for Interpretable Molecular Property Prediction",
-      "authors": "Rafael Lopes Almeida, Ina Pöhner",
-      "summary": "Graph neural networks (GNNs) are among the standard tools for molecular property prediction, but the atom-level explanations of their predictions are hard for medicinal chemists to act on. We propose ",
-      "published": "2026-10-21T11:29:50Z",
-      "categories": [
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2610.29589v1"
-    },
-    {
-      "title": "Unlocking Spatial Grounding in Flow-Matching Models via SNR Tuning",
-      "authors": "Martin Thißen, Elke Hergenröther",
-      "summary": "Despite the success of foundation models in image synthesis, achieving fine-grained spatial control remains a significant challenge, typically requiring auxiliary structural adapters or complex infere",
-      "published": "2026-10-21T11:22:58Z",
+      "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
+      "authors": "Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.",
+      "summary": "Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can absorb collection-level visual characteristics without reproducing training image",
+      "published": "2026-10-22T17:59:03Z",
       "categories": [
         "cs.CV",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.29581v1"
+      "link": "http://arxiv.org/abs/2610.31659v1"
     },
     {
-      "title": "Fast Bayesian Optimization Through Linear Models",
-      "authors": "Colin Doumont, Henry Moss, Philipp Hennig et al.",
-      "summary": "Bayesian optimization (BO) is typically used only for problems where the underlying function is deemed \"expensive\" (e.g. in time or money), with the speed of the BO algorithm being of little importanc",
-      "published": "2026-10-21T11:22:11Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.29580v1"
-    },
-    {
-      "title": "What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk",
-      "authors": "Ahmed Mahrous, Roberto Di Pietro",
-      "summary": "Using a near-census of 802,863 resolved markets listed on Polymarket between January 2023 and May 2026, and only information available at listing (the market's title and description, named resolution ",
-      "published": "2026-10-21T11:20:35Z",
-      "categories": [
-        "q-fin.ST",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.29578v1"
-    },
-    {
-      "title": "The Reflexivity Threshold: A Phase Transition for Multi-Agent Performative Prediction",
-      "authors": "Ahmed Mahrous, Roberto Di Pietro",
-      "summary": "Many learning systems are performative: once deployed, their predictions change the data distribution on which future models are trained. In multi-agent settings, this feedback is routed through a net",
-      "published": "2026-10-21T11:20:29Z",
+      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "authors": "Sachin Gupta",
+      "summary": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on cali",
+      "published": "2026-10-22T17:58:52Z",
       "categories": [
         "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.29577v1"
-    },
-    {
-      "title": "Private Online Prediction from Experts with Small Losses",
-      "authors": "Bo Li, Peng Ye",
-      "summary": "We consider online prediction from experts, a fundamental problem in machine learning, under differential privacy constraints. Existing private algorithms achieve near-optimal regret $\\tilde{O}(\\sqrt{",
-      "published": "2026-10-21T11:18:45Z",
-      "categories": [
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2610.29575v1"
-    },
-    {
-      "title": "Implicit Feature Reweighting for Label-Free Graph Generalization",
-      "authors": "Tianjun Yao, Chen Xi, Xinyang Li et al.",
-      "summary": "Graph-level out-of-distribution (OOD) generalization is critical for deploying graph neural networks in real-world applications where distribution shifts are inevitable. Existing approaches typically ",
-      "published": "2026-10-21T11:04:32Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.29571v1"
-    },
-    {
-      "title": "Rethinking Underwater Image Enhancement: Learning through Text-Guided Degradation Curriculum",
-      "authors": "Hongri Tian, Wenxue Li, Tian Ye et al.",
-      "summary": "Existing paired clean-degraded datasets have advanced learning-based underwater image enhancement, but they remain either limited in scale or difficult to acquire, and still fail to adequately cover t",
-      "published": "2026-10-21T11:02:44Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.29569v1"
-    },
-    {
-      "title": "Certified Neural Approximation of Robust Nonlinear Model Predictive Control",
-      "authors": "Hendrik Alsmeier, Maik Pfefferkorn, Rolf Findeisen et al.",
-      "summary": "Model predictive control is a high-performance control method, but it incurs comparatively high online computational costs across many control tasks and is challenging to realize in low-level hardware",
-      "published": "2026-10-21T10:46:55Z",
-      "categories": [
-        "eess.SY",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.29559v1"
-    },
-    {
-      "title": "SOAR: Social and Opinion-Aware Recommendations",
-      "authors": "Giannis Christoforidis, Apostolos N. Papadopoulos",
-      "summary": "One of the enduring challenges in online platforms is recommendation. Both communities and advertisers face difficulties in analyzing complex user behavior, identifying habits and evolving preferences",
-      "published": "2026-10-21T10:42:44Z",
-      "categories": [
-        "cs.LG",
-        "cs.IR"
-      ],
-      "link": "http://arxiv.org/abs/2610.29556v1"
-    },
-    {
-      "title": "WRDO: Weighted Refusal Direction Optimization in Aligned Language Models",
-      "authors": "Grigoriy Evseev, Vladimir Solodkin, Dmitry Bylinkin et al.",
-      "summary": "Aligned large language models are trained to comply with benign requests while refusing harmful ones. However, recent work shows that this refusal behavior is fragile and can often be disrupted by sim",
-      "published": "2026-10-21T10:42:25Z",
-      "categories": [
-        "cs.LG",
+        "cs.AI",
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.29555v1"
+      "link": "http://arxiv.org/abs/2610.31657v1"
     },
     {
-      "title": "Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding",
-      "authors": "Xin Zhang, Haochen Wang, Beibei Lin et al.",
-      "summary": "Fine-grained multimodal intelligence requires models to both understand a designated region and localize it from language. Existing methods learn these directions with separate objectives and task-spe",
-      "published": "2026-10-21T10:39:56Z",
+      "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+      "authors": "Ali Najar, Hosein Hasani, Amir Kooshan Fattah et al.",
+      "summary": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical re",
+      "published": "2026-10-22T17:58:27Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.31656v1"
+    },
+    {
+      "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
+      "authors": "Ava Pun, Kevin Dai, Sally Chen et al.",
+      "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assembl",
+      "published": "2026-10-22T17:57:20Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.29552v1"
+      "link": "http://arxiv.org/abs/2610.31651v1"
     },
     {
-      "title": "Hyperspherical Simplex Representations for Backward-Compatible Retrieval",
-      "authors": "Simone Ricci, Niccolò Biondi, Federico Pernici et al.",
-      "summary": "Training modern AI models has become increasingly expensive, and updating deployed models can alter their internal feature representations, affecting applications built upon them. In retrieval systems",
-      "published": "2026-10-21T10:35:39Z",
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "authors": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao et al.",
+      "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action eve",
+      "published": "2026-10-22T17:57:04Z",
       "categories": [
-        "cs.CV",
+        "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.29550v1"
+      "link": "http://arxiv.org/abs/2610.31650v1"
     },
     {
-      "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
-      "authors": "Patrick Haller, Filipe Laitenberger, Alan Akbik et al.",
-      "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing ",
-      "published": "2026-10-21T10:31:52Z",
+      "title": "Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation",
+      "authors": "Xiaolin Li, Zihao Huang, Fanpeng Meng et al.",
+      "summary": "Single-image 3D generation has achieved high fidelity on curated benchmarks, yet degrades sharply on real-world images with uneven illumination, blur, and occlusions. Purifying such inputs requires de",
+      "published": "2026-10-22T17:57:02Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31649v1"
+    },
+    {
+      "title": "Low-Bit N-Gram Embeddings for Language Models",
+      "authors": "Stephen Chung, Wenyu Du",
+      "summary": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive",
+      "published": "2026-10-22T17:56:13Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.31646v1"
+    },
+    {
+      "title": "OmniRay: Camera-Agnostic Monocular 3D Reconstruction with Composite Ray Fields",
+      "authors": "Namitha Guruprasad, Abhay Yadav, Cheng Peng et al.",
+      "summary": "Monocular models recover 3D geometry from a single image in one pass, but most assume a pinhole camera and produce distorted geometry on the wide-angle imagery produced by fisheye and panoramic lenses",
+      "published": "2026-10-22T17:55:30Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31645v1"
+    },
+    {
+      "title": "GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution",
+      "authors": "Matteo Fusconi, Alex Costanzino, Pierluigi Zama Ramirez et al.",
+      "summary": "Learnable Representations (LRs) can fit parametric families of functions to diverse kinds of signals. These emergent neural-native data formats are gathering interest in the scientific community due t",
+      "published": "2026-10-22T17:55:10Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31644v1"
+    },
+    {
+      "title": "A Fix for Softmax and Cross-Entropy",
+      "authors": "Jonathan T. Barron, Dan Gnanapragasam, Michael Tschannen et al.",
+      "summary": "Standard implementations of softmax, log-softmax, and cross-entropy have two numerical bugs. The first bug, Softmax Collapse, rounds the target logit's gradient to zero if that one logit is much large",
+      "published": "2026-10-22T17:54:56Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.31642v1"
+    },
+    {
+      "title": "UniVOE: A Removal-Driven Framework for Interaction-Aware Universal Video Object Editing",
+      "authors": "Shuzhou Yang, Lanqing Guo, Lingen Li et al.",
+      "summary": "Video object removal and injection are reciprocal editing operations between object-present and object-absent video states, yet they differ substantially in training difficulty. Removal can be effecti",
+      "published": "2026-10-22T17:54:03Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31641v1"
+    },
+    {
+      "title": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
+      "authors": "Chenxi Song, Yanming Yang, Tong Zhao et al.",
+      "summary": "Video diffusion models have learned rich 3D/4D priors, making them promising for scene generation and video re-rendering. However, their use in spatial tasks is limited by imprecise camera control, sp",
+      "published": "2026-10-22T17:53:03Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.31640v1"
+    },
+    {
+      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+      "authors": "Gabriele Dominici, Teague McMillan, Fazl Barez et al.",
+      "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregres",
+      "published": "2026-10-22T17:52:56Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.31639v1"
+    },
+    {
+      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
+      "authors": "Marek Šuppa, Ivan Vykopal, Jaroslav Kopčan et al.",
+      "summary": "Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather t",
+      "published": "2026-10-22T17:52:22Z",
       "categories": [
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.29545v1"
-    },
-    {
-      "title": "Stochastic Pruning of the DPO Computation Graph: 1.4x Faster Training and Lower Peak Memory",
-      "authors": "Yubing Wu, Wei Chen, Junmei Yang et al.",
-      "summary": "Direct preference optimization (DPO) incurs training costs in output scoring, sequence execution, and backpropagation, so reducing supervision alone does not necessarily save computation. We introduce",
-      "published": "2026-10-21T10:25:15Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.29538v1"
-    },
-    {
-      "title": "Melange: A Synthetic Visual Bias Benchmark for Multi-modal Large Language Models",
-      "authors": "Razieh Rezaei, Ehsaneddin Asgary, Masoud Jalili Sabet et al.",
-      "summary": "Multi-modal Large Language Models (MLLMs) have seen broad adoption, but their biases are still far less examined than those of standard LLMs, creating possible social harms when deployed in real-world",
-      "published": "2026-10-21T10:25:06Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.29537v1"
-    },
-    {
-      "title": "Block Diffusion for Longitudinal EHR: Accuracy, Efficiency, and Representation Trade-offs",
-      "authors": "Ashvin Gupta, Joshua Placidi, Brendan Delaney et al.",
-      "summary": "Autoregressive (AR) models have proved effective for zero-shot prediction from longitudinal electronic health records, but impose strictly sequential generation on trajectories containing temporally c",
-      "published": "2026-10-21T10:23:34Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.29533v1"
+      "link": "http://arxiv.org/abs/2610.31636v1"
     }
   ]
 }
