@@ -1,221 +1,227 @@
 {
-  "timestamp": "2026-10-24T03:26:54.566302+00:00",
+  "timestamp": "2026-11-02T04:38:29.806083+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "A Unified Framework for Image-to-3D Part Generation via Variable Granularity",
-      "authors": "Qiwen Gu, Xin Zhou, Xiwu Chen et al.",
-      "summary": "Controllable 3D part generation is pivotal for digital asset creation, yet existing methods lack the flexibility to accommodate diverse user workflows requiring varying levels of control. In this pape",
-      "published": "2026-10-22T17:59:53Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.31671v1"
-    },
-    {
-      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
-      "authors": "Yunfei Xie, Howard H. Qian, Shiyi Lan et al.",
-      "summary": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests",
-      "published": "2026-10-22T17:59:51Z",
+      "title": "GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning",
+      "authors": "Nattakorn Kittisut, Roy M. Gabriel, Marly van Assen et al.",
+      "summary": "Radiologists' visual attention can supervise medical image learning, but how reader panel composition affects its value remains untested. We evaluated GazeRIB (Gaze-guided Radiologist-Informed Blackou",
+      "published": "2026-10-30T17:59:59Z",
       "categories": [
         "cs.CV",
-        "cs.LG",
-        "cs.RO"
+        "cs.HC",
+        "eess.IV",
+        "eess.SP"
       ],
-      "link": "http://arxiv.org/abs/2610.31670v1"
+      "link": "http://arxiv.org/abs/2610.42152v1"
     },
     {
-      "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
-      "authors": "Shengqiong Wu, Meng Luo, Bobo Li et al.",
-      "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their",
-      "published": "2026-10-22T17:59:50Z",
+      "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+      "authors": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al.",
+      "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought re",
+      "published": "2026-10-30T17:59:43Z",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2610.42149v1"
+    },
+    {
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "authors": "Bobo Li, Jiajia Song, Hao Fei et al.",
+      "summary": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existin",
+      "published": "2026-10-30T17:59:38Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2610.42148v1"
+    },
+    {
+      "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+      "authors": "Ales Kubicek, Andrea Caciolai, Liangzu Peng et al.",
+      "summary": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. However, at ultra-long context (above 1M tok",
+      "published": "2026-10-30T17:59:34Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.42147v1"
+    },
+    {
+      "title": "Hierarchical World Models with Implicit Dynamics",
+      "authors": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al.",
+      "summary": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative err",
+      "published": "2026-10-30T17:59:25Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2610.42146v1"
+    },
+    {
+      "title": "SemEllipsoid: Semantic-aware Shape Abstraction with Ellipsoid",
+      "authors": "Kuankuan Cheng, Haocheng Yuan, Changjian Li et al.",
+      "summary": "Representing 3D shapes using a set of primitives - known as shape abstraction - is an actively studied problem in computer graphics with wide applications in shape understanding, analysis, and simulat",
+      "published": "2026-10-30T17:59:14Z",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.42145v1"
+    },
+    {
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "authors": "Shengguang Wu, Suning Huang, Cherie Ho et al.",
+      "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet to",
+      "published": "2026-10-30T17:58:48Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2610.42141v1"
+    },
+    {
+      "title": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
+      "authors": "Vitaly Feldman, Audra McMillan, Kunal Talwar et al.",
+      "summary": "In many practical deployments of Differentially Private Stochastic Gradient Descent (DP-SGD), the server processes data in batches. Randomly sampling these batches allows for better privacy bounds via",
+      "published": "2026-10-30T17:58:42Z",
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "link": "http://arxiv.org/abs/2610.42139v1"
+    },
+    {
+      "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
+      "authors": "Assaf Singer, Maroun Khriesh, Noam Rotstein et al.",
+      "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically lear",
+      "published": "2026-10-30T17:58:33Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.31668v1"
+      "link": "http://arxiv.org/abs/2610.42136v1"
     },
     {
-      "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
-      "authors": "Mahdi Salmani, Adel Javanmard, Devansh Gupta et al.",
-      "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Runn",
-      "published": "2026-10-22T17:59:48Z",
+      "title": "A Better Critic Matters for Distribution Matching Distillation",
+      "authors": "Zongze Wu, Xianbang Wang, Zhengyang Geng et al.",
+      "summary": "Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate wh",
+      "published": "2026-10-30T17:58:26Z",
       "categories": [
-        "cs.AI",
-        "cs.CL"
+        "cs.CV",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.31667v1"
+      "link": "http://arxiv.org/abs/2610.42135v1"
     },
     {
-      "title": "Phase Transition from Random Features to Fully Trainable Networks",
-      "authors": "Xin He, Huan Lao, Xiliang Lu et al.",
-      "summary": "Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adapt",
-      "published": "2026-10-22T17:59:29Z",
+      "title": "Instance-dependent sequential limits as an exact information ledger",
+      "authors": "Akshay Balsubramani",
+      "summary": "Instance-dependent limits for bandit regret, sequential tests, best-arm identification and Markov decision processes are proved by one chain. It runs from a divergence decomposition through data proce",
+      "published": "2026-10-30T17:57:44Z",
       "categories": [
-        "math.NA",
         "cs.LG",
+        "cs.IT",
         "math.ST",
         "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2610.31663v1"
+      "link": "http://arxiv.org/abs/2610.42133v1"
     },
     {
-      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
-      "authors": "Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani et al.",
-      "summary": "We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthine",
-      "published": "2026-10-22T17:59:22Z",
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "authors": "Yanran Wu, Dian Yu, Chongyang Bai et al.",
+      "summary": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision mod",
+      "published": "2026-10-30T17:56:58Z",
       "categories": [
-        "stat.ML",
-        "cs.LG",
-        "stat.ME"
-      ],
-      "link": "http://arxiv.org/abs/2610.31662v1"
-    },
-    {
-      "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
-      "authors": "Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.",
-      "summary": "Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can absorb collection-level visual characteristics without reproducing training image",
-      "published": "2026-10-22T17:59:03Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.31659v1"
-    },
-    {
-      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
-      "authors": "Sachin Gupta",
-      "summary": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on cali",
-      "published": "2026-10-22T17:58:52Z",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2610.31657v1"
+      "link": "http://arxiv.org/abs/2610.42128v1"
     },
     {
-      "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
-      "authors": "Ali Najar, Hosein Hasani, Amir Kooshan Fattah et al.",
-      "summary": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical re",
-      "published": "2026-10-22T17:58:27Z",
+      "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+      "authors": "Benjamin T. Pike",
+      "summary": "Objective: To distinguish the transferable predictive value of physiological trajectories from that of observation patterns in ICU mortality prediction, and to assess whether measurement timing affect",
+      "published": "2026-10-30T17:56:10Z",
       "categories": [
         "cs.LG",
-        "cs.AI"
+        "q-bio.QM"
       ],
-      "link": "http://arxiv.org/abs/2610.31656v1"
+      "link": "http://arxiv.org/abs/2610.42126v1"
     },
     {
-      "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-      "authors": "Ava Pun, Kevin Dai, Sally Chen et al.",
-      "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assembl",
-      "published": "2026-10-22T17:57:20Z",
+      "title": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
+      "authors": "Binghua Li, Mengzhe Li, Denny Wu et al.",
+      "summary": "Understanding how gradient descent learns features remains a central challenge in neural network theory. We study this question in a minimal multi-index setting that already exhibits rich multi-phase ",
+      "published": "2026-10-30T17:51:35Z",
       "categories": [
-        "cs.CV"
+        "cs.LG",
+        "stat.ML"
       ],
-      "link": "http://arxiv.org/abs/2610.31651v1"
+      "link": "http://arxiv.org/abs/2610.42118v1"
     },
     {
-      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-      "authors": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao et al.",
-      "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action eve",
-      "published": "2026-10-22T17:57:04Z",
+      "title": "Fast Privacy Loss Accounting for Random Allocation via Multiscale FFT",
+      "authors": "Vitaly Feldman, Moshe Shenfeld",
+      "summary": "In the random allocation sampling scheme each user's data is used in $k$ steps chosen randomly and uniformly from a sequence of $t$ steps. This scheme is known to improve on Poisson sampling in privat",
+      "published": "2026-10-30T17:51:03Z",
       "categories": [
-        "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.31650v1"
+      "link": "http://arxiv.org/abs/2610.42117v1"
     },
     {
-      "title": "Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation",
-      "authors": "Xiaolin Li, Zihao Huang, Fanpeng Meng et al.",
-      "summary": "Single-image 3D generation has achieved high fidelity on curated benchmarks, yet degrades sharply on real-world images with uneven illumination, blur, and occlusions. Purifying such inputs requires de",
-      "published": "2026-10-22T17:57:02Z",
+      "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+      "authors": "Yuzhe Liu, Haolin Tian, Tonghan Wang et al.",
+      "summary": "In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked ",
+      "published": "2026-10-30T17:50:49Z",
       "categories": [
-        "cs.CV"
+        "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.31649v1"
+      "link": "http://arxiv.org/abs/2610.42116v1"
     },
     {
-      "title": "Low-Bit N-Gram Embeddings for Language Models",
-      "authors": "Stephen Chung, Wenyu Du",
-      "summary": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive",
-      "published": "2026-10-22T17:56:13Z",
+      "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+      "authors": "Leon Lufkin, Cutter Dawes, Alexander Speicher et al.",
+      "summary": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but th",
+      "published": "2026-10-30T17:48:37Z",
       "categories": [
         "cs.CL",
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2610.31646v1"
+      "link": "http://arxiv.org/abs/2610.42112v1"
     },
     {
-      "title": "OmniRay: Camera-Agnostic Monocular 3D Reconstruction with Composite Ray Fields",
-      "authors": "Namitha Guruprasad, Abhay Yadav, Cheng Peng et al.",
-      "summary": "Monocular models recover 3D geometry from a single image in one pass, but most assume a pinhole camera and produce distorted geometry on the wide-angle imagery produced by fisheye and panoramic lenses",
-      "published": "2026-10-22T17:55:30Z",
+      "title": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
+      "authors": "Ioannis Dravilas, Miruna Stoicescu, Roope Tervo et al.",
+      "summary": "Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning ap",
+      "published": "2026-10-30T17:48:20Z",
       "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.31645v1"
-    },
-    {
-      "title": "GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution",
-      "authors": "Matteo Fusconi, Alex Costanzino, Pierluigi Zama Ramirez et al.",
-      "summary": "Learnable Representations (LRs) can fit parametric families of functions to diverse kinds of signals. These emergent neural-native data formats are gathering interest in the scientific community due t",
-      "published": "2026-10-22T17:55:10Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.31644v1"
-    },
-    {
-      "title": "A Fix for Softmax and Cross-Entropy",
-      "authors": "Jonathan T. Barron, Dan Gnanapragasam, Michael Tschannen et al.",
-      "summary": "Standard implementations of softmax, log-softmax, and cross-entropy have two numerical bugs. The first bug, Softmax Collapse, rounds the target logit's gradient to zero if that one logit is much large",
-      "published": "2026-10-22T17:54:56Z",
-      "categories": [
+        "physics.ao-ph",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.31642v1"
+      "link": "http://arxiv.org/abs/2610.42111v1"
     },
     {
-      "title": "UniVOE: A Removal-Driven Framework for Interaction-Aware Universal Video Object Editing",
-      "authors": "Shuzhou Yang, Lanqing Guo, Lingen Li et al.",
-      "summary": "Video object removal and injection are reciprocal editing operations between object-present and object-absent video states, yet they differ substantially in training difficulty. Removal can be effecti",
-      "published": "2026-10-22T17:54:03Z",
+      "title": "Regret-Optimal Wasserstein-Robust Linear Regression",
+      "authors": "Sloan Nietert, Daniel Kuhn",
+      "summary": "Distributionally robust optimization (DRO) minimizes worst-case risk under distributional uncertainty, but its decisions can be suboptimal in terms of their excess risk, or regret. We study this gap f",
+      "published": "2026-10-30T17:47:58Z",
       "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.31641v1"
-    },
-    {
-      "title": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
-      "authors": "Chenxi Song, Yanming Yang, Tong Zhao et al.",
-      "summary": "Video diffusion models have learned rich 3D/4D priors, making them promising for scene generation and video re-rendering. However, their use in spatial tasks is limited by imprecise camera control, sp",
-      "published": "2026-10-22T17:53:03Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.31640v1"
-    },
-    {
-      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
-      "authors": "Gabriele Dominici, Teague McMillan, Fazl Barez et al.",
-      "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregres",
-      "published": "2026-10-22T17:52:56Z",
-      "categories": [
+        "stat.ML",
         "cs.LG",
-        "cs.AI"
+        "math.OC"
       ],
-      "link": "http://arxiv.org/abs/2610.31639v1"
+      "link": "http://arxiv.org/abs/2610.42109v1"
     },
     {
-      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
-      "authors": "Marek Šuppa, Ivan Vykopal, Jaroslav Kopčan et al.",
-      "summary": "Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather t",
-      "published": "2026-10-22T17:52:22Z",
+      "title": "Hard Constraint Projection in a Physics Informed Neural Network (Burgers)",
+      "authors": "Miranda J S Horne, Peter K Jimack, Amirul Khan et al.",
+      "summary": "Physics informed machine learning provides a framework to study and simulate fluid dynamics, potentially at a fraction of the computational cost of traditional numerical methods, with the goal of impr",
+      "published": "2026-10-30T17:47:01Z",
       "categories": [
-        "cs.CL"
+        "physics.flu-dyn",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.31636v1"
+      "link": "http://arxiv.org/abs/2610.42106v1"
     }
   ]
 }
