@@ -1,227 +1,223 @@
 {
-  "timestamp": "2026-11-02T04:38:29.806083+00:00",
+  "timestamp": "2026-11-05T05:18:55.780713+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning",
-      "authors": "Nattakorn Kittisut, Roy M. Gabriel, Marly van Assen et al.",
-      "summary": "Radiologists' visual attention can supervise medical image learning, but how reader panel composition affects its value remains untested. We evaluated GazeRIB (Gaze-guided Radiologist-Informed Blackou",
-      "published": "2026-10-30T17:59:59Z",
+      "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+      "authors": "Weichen Fan, Haiwen Diao, Penghao Wu et al.",
+      "summary": "Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipulation often hinges on ",
+      "published": "2026-11-04T18:59:58Z",
       "categories": [
-        "cs.CV",
-        "cs.HC",
-        "eess.IV",
-        "eess.SP"
+        "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2610.42152v1"
+      "link": "http://arxiv.org/abs/2611.06918v1"
     },
     {
-      "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
-      "authors": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al.",
-      "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought re",
-      "published": "2026-10-30T17:59:43Z",
+      "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+      "authors": "Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel et al.",
+      "summary": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been ",
+      "published": "2026-11-04T18:58:23Z",
       "categories": [
-        "cs.CV",
+        "cs.MA",
         "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.42149v1"
+      "link": "http://arxiv.org/abs/2611.06914v1"
     },
     {
-      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
-      "authors": "Bobo Li, Jiajia Song, Hao Fei et al.",
-      "summary": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existin",
-      "published": "2026-10-30T17:59:38Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2610.42148v1"
-    },
-    {
-      "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
-      "authors": "Ales Kubicek, Andrea Caciolai, Liangzu Peng et al.",
-      "summary": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. However, at ultra-long context (above 1M tok",
-      "published": "2026-10-30T17:59:34Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.42147v1"
-    },
-    {
-      "title": "Hierarchical World Models with Implicit Dynamics",
-      "authors": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al.",
-      "summary": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative err",
-      "published": "2026-10-30T17:59:25Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.42146v1"
-    },
-    {
-      "title": "SemEllipsoid: Semantic-aware Shape Abstraction with Ellipsoid",
-      "authors": "Kuankuan Cheng, Haocheng Yuan, Changjian Li et al.",
-      "summary": "Representing 3D shapes using a set of primitives - known as shape abstraction - is an actively studied problem in computer graphics with wide applications in shape understanding, analysis, and simulat",
-      "published": "2026-10-30T17:59:14Z",
-      "categories": [
-        "cs.GR",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.42145v1"
-    },
-    {
-      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-      "authors": "Shengguang Wu, Suning Huang, Cherie Ho et al.",
-      "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet to",
-      "published": "2026-10-30T17:58:48Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.42141v1"
-    },
-    {
-      "title": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
-      "authors": "Vitaly Feldman, Audra McMillan, Kunal Talwar et al.",
-      "summary": "In many practical deployments of Differentially Private Stochastic Gradient Descent (DP-SGD), the server processes data in batches. Randomly sampling these batches allows for better privacy bounds via",
-      "published": "2026-10-30T17:58:42Z",
-      "categories": [
-        "cs.LG",
-        "cs.CR"
-      ],
-      "link": "http://arxiv.org/abs/2610.42139v1"
-    },
-    {
-      "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
-      "authors": "Assaf Singer, Maroun Khriesh, Noam Rotstein et al.",
-      "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically lear",
-      "published": "2026-10-30T17:58:33Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2610.42136v1"
-    },
-    {
-      "title": "A Better Critic Matters for Distribution Matching Distillation",
-      "authors": "Zongze Wu, Xianbang Wang, Zhengyang Geng et al.",
-      "summary": "Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate wh",
-      "published": "2026-10-30T17:58:26Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.42135v1"
-    },
-    {
-      "title": "Instance-dependent sequential limits as an exact information ledger",
-      "authors": "Akshay Balsubramani",
-      "summary": "Instance-dependent limits for bandit regret, sequential tests, best-arm identification and Markov decision processes are proved by one chain. It runs from a divergence decomposition through data proce",
-      "published": "2026-10-30T17:57:44Z",
-      "categories": [
-        "cs.LG",
-        "cs.IT",
-        "math.ST",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2610.42133v1"
-    },
-    {
-      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
-      "authors": "Yanran Wu, Dian Yu, Chongyang Bai et al.",
-      "summary": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision mod",
-      "published": "2026-10-30T17:56:58Z",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2610.42128v1"
-    },
-    {
-      "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
-      "authors": "Benjamin T. Pike",
-      "summary": "Objective: To distinguish the transferable predictive value of physiological trajectories from that of observation patterns in ICU mortality prediction, and to assess whether measurement timing affect",
-      "published": "2026-10-30T17:56:10Z",
-      "categories": [
-        "cs.LG",
-        "q-bio.QM"
-      ],
-      "link": "http://arxiv.org/abs/2610.42126v1"
-    },
-    {
-      "title": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
-      "authors": "Binghua Li, Mengzhe Li, Denny Wu et al.",
-      "summary": "Understanding how gradient descent learns features remains a central challenge in neural network theory. We study this question in a minimal multi-index setting that already exhibits rich multi-phase ",
-      "published": "2026-10-30T17:51:35Z",
-      "categories": [
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2610.42118v1"
-    },
-    {
-      "title": "Fast Privacy Loss Accounting for Random Allocation via Multiscale FFT",
-      "authors": "Vitaly Feldman, Moshe Shenfeld",
-      "summary": "In the random allocation sampling scheme each user's data is used in $k$ steps chosen randomly and uniformly from a sequence of $t$ steps. This scheme is known to improve on Poisson sampling in privat",
-      "published": "2026-10-30T17:51:03Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.42117v1"
-    },
-    {
-      "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
-      "authors": "Yuzhe Liu, Haolin Tian, Tonghan Wang et al.",
-      "summary": "In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked ",
-      "published": "2026-10-30T17:50:49Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.42116v1"
-    },
-    {
-      "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
-      "authors": "Leon Lufkin, Cutter Dawes, Alexander Speicher et al.",
-      "summary": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but th",
-      "published": "2026-10-30T17:48:37Z",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2610.42112v1"
-    },
-    {
-      "title": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
-      "authors": "Ioannis Dravilas, Miruna Stoicescu, Roope Tervo et al.",
-      "summary": "Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning ap",
-      "published": "2026-10-30T17:48:20Z",
-      "categories": [
-        "physics.ao-ph",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2610.42111v1"
-    },
-    {
-      "title": "Regret-Optimal Wasserstein-Robust Linear Regression",
-      "authors": "Sloan Nietert, Daniel Kuhn",
-      "summary": "Distributionally robust optimization (DRO) minimizes worst-case risk under distributional uncertainty, but its decisions can be suboptimal in terms of their excess risk, or regret. We study this gap f",
-      "published": "2026-10-30T17:47:58Z",
-      "categories": [
-        "stat.ML",
-        "cs.LG",
-        "math.OC"
-      ],
-      "link": "http://arxiv.org/abs/2610.42109v1"
-    },
-    {
-      "title": "Hard Constraint Projection in a Physics Informed Neural Network (Burgers)",
-      "authors": "Miranda J S Horne, Peter K Jimack, Amirul Khan et al.",
-      "summary": "Physics informed machine learning provides a framework to study and simulate fluid dynamics, potentially at a fraction of the computational cost of traditional numerical methods, with the goal of impr",
-      "published": "2026-10-30T17:47:01Z",
+      "title": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
+      "authors": "Nicolas Tricard, Linzheng Wang, Jason Chen et al.",
+      "summary": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimato",
+      "published": "2026-11-04T18:57:47Z",
       "categories": [
         "physics.flu-dyn",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2610.42106v1"
+      "link": "http://arxiv.org/abs/2611.06912v1"
+    },
+    {
+      "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+      "authors": "Fei Lin, Tengchao Zhang, Ziyang Gong et al.",
+      "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act und",
+      "published": "2026-11-04T18:57:17Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06911v1"
+    },
+    {
+      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+      "authors": "Bingran You, Wenjun Ke, Ria Rosenauer et al.",
+      "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solut",
+      "published": "2026-11-04T18:56:22Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06910v1"
+    },
+    {
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "authors": "Siyuan Hu, Abulikemu Abuduweili, Yue Meng et al.",
+      "summary": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-",
+      "published": "2026-11-04T18:55:33Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2611.06908v1"
+    },
+    {
+      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+      "authors": "Michal Korniak, Marco Bagatella, Ralf Römer et al.",
+      "summary": "The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-s",
+      "published": "2026-11-04T18:52:28Z",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "link": "http://arxiv.org/abs/2611.06905v1"
+    },
+    {
+      "title": "Motion-guided Contrastive Regularization For Latent World Models",
+      "authors": "Yiwen Chen, Qiqi Hou, Jisoo Jeong et al.",
+      "summary": "JEPA-style world models learn action-conditioned latent dynamics without reconstructing observations, but distributional regularization alone does not ensure that their representations preserve inform",
+      "published": "2026-11-04T18:49:35Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.06901v1"
+    },
+    {
+      "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
+      "authors": "Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem et al.",
+      "summary": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally trained on occlusion annotations that deployme",
+      "published": "2026-11-04T18:49:13Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06899v1"
+    },
+    {
+      "title": "Procedural Adversarial Learning",
+      "authors": "Jack Nugent, Jia Deng",
+      "summary": "For many computer vision tasks, neural networks can be trained to produce a low average error, yet they still fail on seemingly simple scenes. Reducing these failures requires first finding them, but ",
+      "published": "2026-11-04T18:42:28Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.06890v1"
+    },
+    {
+      "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+      "authors": "Siyi Yu",
+      "summary": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher e",
+      "published": "2026-11-04T18:41:40Z",
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "econ.GN"
+      ],
+      "link": "http://arxiv.org/abs/2611.06888v1"
+    },
+    {
+      "title": "Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes",
+      "authors": "Benjamin Jacob Bodner",
+      "summary": "The best classical optimizer for a continuous black-box problem depends on its budget and landscape. Existing routers decide from the dimension and budget, past improvement or features fitted to one b",
+      "published": "2026-11-04T18:35:35Z",
+      "categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.OC"
+      ],
+      "link": "http://arxiv.org/abs/2611.06879v1"
+    },
+    {
+      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+      "authors": "Yulu An, Yifei Feng, Xiangyang Yin et al.",
+      "summary": "LLM agents use context compaction to manage growing interaction histories, but summarizing long histories with large models can introduce substantial delays. Compaction therefore requires balancing in",
+      "published": "2026-11-04T18:34:41Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2611.06876v1"
+    },
+    {
+      "title": "Learning to Decode Linear Codes with Generalized Belief Propagation Network",
+      "authors": "Samira Malek",
+      "summary": "Error correcting codes are a fundamental component of communication systems, enabling reliable data transmission over noisy channels. Recently, neural decoders have demonstrated notable performance ga",
+      "published": "2026-11-04T18:29:31Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06874v1"
+    },
+    {
+      "title": "PixelSpline: Continuous Space-Time Video Super-Resolution via Endpoint-Anchored Shared Pixel Trajectories",
+      "authors": "Wanqi Yuan, Nianyi Li",
+      "summary": "Existing continuous space-time video super-resolution methods often infer motion from only two endpoint frames and model the two motion directions independently, making them vulnerable to ambiguous co",
+      "published": "2026-11-04T18:25:55Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.06870v1"
+    },
+    {
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "authors": "Jalaj Bhandari, Dhawal Gupta, Hongli Zhan et al.",
+      "summary": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We in",
+      "published": "2026-11-04T18:23:14Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06868v1"
+    },
+    {
+      "title": "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification",
+      "authors": "Ankit K. Upadhyay, Aleksandr Algasov, Ekaterina Nepovinnykh et al.",
+      "summary": "Automated identification of individual animals is moving from small curated studies toward shared benchmarks and reusable foundation models. This progress is useful, but current evaluation leaves the ",
+      "published": "2026-11-04T18:19:26Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2611.06864v1"
+    },
+    {
+      "title": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
+      "authors": "Kai Ponel, Marco Polignano, Erasmo Purificato et al.",
+      "summary": "Hierarchical text embedding models offer variable-length representations, while quantization reduces numerical precision; both aim to improve computational efficiency. This work is an empirical benchm",
+      "published": "2026-11-04T18:15:08Z",
+      "categories": [
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2611.06859v1"
+    },
+    {
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "authors": "Xinrui Zhong, Zhifeng Li, Zhiming Wang et al.",
+      "summary": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's ",
+      "published": "2026-11-04T18:14:50Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.06858v1"
+    },
+    {
+      "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+      "authors": "Haoxiang Cao, Yuxuan Zhang, Penghui Du et al.",
+      "summary": "We introduce LongBanana, to our knowledge the first expert-designed and expert-verified benchmark for long-context multi-reference image synthesis in the age of agent-driven image generation. The task",
+      "published": "2026-11-04T18:11:56Z",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "link": "http://arxiv.org/abs/2611.06856v1"
     }
   ]
 }
