@@ -1,223 +1,222 @@
 {
-  "timestamp": "2026-11-05T05:18:55.780713+00:00",
+  "timestamp": "2026-11-06T05:18:09.491425+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
-      "authors": "Weichen Fan, Haiwen Diao, Penghao Wu et al.",
-      "summary": "Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipulation often hinges on ",
-      "published": "2026-11-04T18:59:58Z",
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "authors": "Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen et al.",
+      "summary": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are in",
+      "published": "2026-11-05T18:59:42Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2611.08487v1"
+    },
+    {
+      "title": "Do You Miss the Nights We Spent Crafting Figures? Rethinking Teaser and Framework Figures in the Age of Generative AI",
+      "authors": "Xiaoqi Zhao, Youwei Pang, Kailai Zhou et al.",
+      "summary": "Scientific figures give research ideas a visual form through choices of abstraction, composition, and emphasis. Generative AI offers new ways to realize these choices, raising questions about explanat",
+      "published": "2026-11-05T18:59:33Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.06918v1"
+      "link": "http://arxiv.org/abs/2611.08486v1"
     },
     {
-      "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-      "authors": "Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel et al.",
-      "summary": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been ",
-      "published": "2026-11-04T18:58:23Z",
+      "title": "Where and Why is Grounded Reasoning Useful?",
+      "authors": "David Yan, Le Xue, Forrest Huang et al.",
+      "summary": "Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefit",
+      "published": "2026-11-05T18:59:32Z",
       "categories": [
-        "cs.MA",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.08485v1"
+    },
+    {
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "authors": "Qile Jiang, George Em Karniadakis",
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process",
+      "published": "2026-11-05T18:59:29Z",
+      "categories": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "link": "http://arxiv.org/abs/2611.08483v1"
+    },
+    {
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu et al.",
+      "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Sc",
+      "published": "2026-11-05T18:58:17Z",
+      "categories": [
+        "cs.AI",
         "cs.CL",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.06914v1"
+      "link": "http://arxiv.org/abs/2611.08478v1"
     },
     {
-      "title": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
-      "authors": "Nicolas Tricard, Linzheng Wang, Jason Chen et al.",
-      "summary": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimato",
-      "published": "2026-11-04T18:57:47Z",
-      "categories": [
-        "physics.flu-dyn",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.06912v1"
-    },
-    {
-      "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
-      "authors": "Fei Lin, Tengchao Zhang, Ziyang Gong et al.",
-      "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act und",
-      "published": "2026-11-04T18:57:17Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2611.06911v1"
-    },
-    {
-      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-      "authors": "Bingran You, Wenjun Ke, Ria Rosenauer et al.",
-      "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solut",
-      "published": "2026-11-04T18:56:22Z",
-      "categories": [
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2611.06910v1"
-    },
-    {
-      "title": "Perceptive Humanoid Motion from Simulation",
-      "authors": "Siyuan Hu, Abulikemu Abuduweili, Yue Meng et al.",
-      "summary": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-",
-      "published": "2026-11-04T18:55:33Z",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.06908v1"
-    },
-    {
-      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
-      "authors": "Michal Korniak, Marco Bagatella, Ralf Römer et al.",
-      "summary": "The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-s",
-      "published": "2026-11-04T18:52:28Z",
-      "categories": [
-        "cs.LG",
-        "cs.RO"
-      ],
-      "link": "http://arxiv.org/abs/2611.06905v1"
-    },
-    {
-      "title": "Motion-guided Contrastive Regularization For Latent World Models",
-      "authors": "Yiwen Chen, Qiqi Hou, Jisoo Jeong et al.",
-      "summary": "JEPA-style world models learn action-conditioned latent dynamics without reconstructing observations, but distributional regularization alone does not ensure that their representations preserve inform",
-      "published": "2026-11-04T18:49:35Z",
+      "title": "EgoGeneralist: Unifying Egocentric Action-Video Tasks through Video-Native Modeling",
+      "authors": "Yanlin Jin, Bowen Yang, Cheng Zhang et al.",
+      "summary": "Modern video models possess strong visual priors, yet do not natively represent human action in metric 3D space. We present EgoGeneralist, which adapts pretrained video generators to unify action-cond",
+      "published": "2026-11-05T18:58:13Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.06901v1"
+      "link": "http://arxiv.org/abs/2611.08477v1"
     },
     {
-      "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
-      "authors": "Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem et al.",
-      "summary": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally trained on occlusion annotations that deployme",
-      "published": "2026-11-04T18:49:13Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "link": "http://arxiv.org/abs/2611.06899v1"
-    },
-    {
-      "title": "Procedural Adversarial Learning",
-      "authors": "Jack Nugent, Jia Deng",
-      "summary": "For many computer vision tasks, neural networks can be trained to produce a low average error, yet they still fail on seemingly simple scenes. Reducing these failures requires first finding them, but ",
-      "published": "2026-11-04T18:42:28Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2611.06890v1"
-    },
-    {
-      "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
-      "authors": "Siyi Yu",
-      "summary": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher e",
-      "published": "2026-11-04T18:41:40Z",
-      "categories": [
-        "cs.AI",
-        "cs.HC",
-        "econ.GN"
-      ],
-      "link": "http://arxiv.org/abs/2611.06888v1"
-    },
-    {
-      "title": "Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes",
-      "authors": "Benjamin Jacob Bodner",
-      "summary": "The best classical optimizer for a continuous black-box problem depends on its budget and landscape. Existing routers decide from the dimension and budget, past improvement or features fitted to one b",
-      "published": "2026-11-04T18:35:35Z",
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "authors": "Linrong Cai, Taiming Lu, Haozhe Chen et al.",
+      "summary": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repos",
+      "published": "2026-11-05T18:55:54Z",
       "categories": [
         "cs.LG",
-        "cs.NE",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.08472v1"
+    },
+    {
+      "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+      "authors": "Linqian Wu, Diaoxuan He",
+      "summary": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, n",
+      "published": "2026-11-05T18:55:31Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.NC"
+      ],
+      "link": "http://arxiv.org/abs/2611.08469v1"
+    },
+    {
+      "title": "Towards interpreting any residual stream direction by scaling activation inversion",
+      "authors": "Celeste De Schamphelaere, Juan J. Vazquez, Ari Spiesberger et al.",
+      "summary": "To interpret a direction in a language model's residual stream, we can look for text that strongly activates it. But when such text is found by scanning a corpus, it is limited to what that corpus con",
+      "published": "2026-11-05T18:54:40Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.08465v1"
+    },
+    {
+      "title": "Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness",
+      "authors": "Yi Feng, Andrea Paudice",
+      "summary": "Adversarial Training (AT) is an important method for improving model robustness. We study the dynamics of deterministic Gradient Descent (GD) in AT. Most existing works in this direction focus on the ",
+      "published": "2026-11-05T18:48:50Z",
+      "categories": [
+        "cs.LG",
         "math.OC"
       ],
-      "link": "http://arxiv.org/abs/2611.06879v1"
+      "link": "http://arxiv.org/abs/2611.08457v1"
     },
     {
-      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
-      "authors": "Yulu An, Yifei Feng, Xiangyang Yin et al.",
-      "summary": "LLM agents use context compaction to manage growing interaction histories, but summarizing long histories with large models can introduce substantial delays. Compaction therefore requires balancing in",
-      "published": "2026-11-04T18:34:41Z",
+      "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+      "authors": "Zeyu Leo Liu, Yang Li, Bo Pang et al.",
+      "summary": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLOPs needed to reach a target accuracy com",
+      "published": "2026-11-05T18:47:05Z",
       "categories": [
+        "cs.LG",
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2611.06876v1"
+      "link": "http://arxiv.org/abs/2611.08453v1"
     },
     {
-      "title": "Learning to Decode Linear Codes with Generalized Belief Propagation Network",
-      "authors": "Samira Malek",
-      "summary": "Error correcting codes are a fundamental component of communication systems, enabling reliable data transmission over noisy channels. Recently, neural decoders have demonstrated notable performance ga",
-      "published": "2026-11-04T18:29:31Z",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "authors": "Yubo Wang, Rui Meng, Jaehyun Nam et al.",
+      "summary": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success c",
+      "published": "2026-11-05T18:45:36Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2611.06874v1"
+      "link": "http://arxiv.org/abs/2611.08452v1"
     },
     {
-      "title": "PixelSpline: Continuous Space-Time Video Super-Resolution via Endpoint-Anchored Shared Pixel Trajectories",
-      "authors": "Wanqi Yuan, Nianyi Li",
-      "summary": "Existing continuous space-time video super-resolution methods often infer motion from only two endpoint frames and model the two motion directions independently, making them vulnerable to ambiguous co",
-      "published": "2026-11-04T18:25:55Z",
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "authors": "Yu-Cheng Chou, Shihao Wang, Jin Huang et al.",
+      "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goa",
+      "published": "2026-11-05T18:44:43Z",
       "categories": [
+        "cs.RO",
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.06870v1"
+      "link": "http://arxiv.org/abs/2611.08449v1"
     },
     {
-      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
-      "authors": "Jalaj Bhandari, Dhawal Gupta, Hongli Zhan et al.",
-      "summary": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We in",
-      "published": "2026-11-04T18:23:14Z",
+      "title": "A Hidden Markov Preference Model for Online Prediction of Adversary Actions",
+      "authors": "Angel Daruna, Michael Cogswell, Tixiao Shan et al.",
+      "summary": "A defender anticipating an attacker needs a probability distribution over the attacker's next action from information available before that action occurs. Two structures complicate this: the attacker'",
+      "published": "2026-11-05T18:37:07Z",
       "categories": [
-        "cs.AI"
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.06868v1"
+      "link": "http://arxiv.org/abs/2611.08445v1"
     },
     {
-      "title": "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification",
-      "authors": "Ankit K. Upadhyay, Aleksandr Algasov, Ekaterina Nepovinnykh et al.",
-      "summary": "Automated identification of individual animals is moving from small curated studies toward shared benchmarks and reusable foundation models. This progress is useful, but current evaluation leaves the ",
-      "published": "2026-11-04T18:19:26Z",
+      "title": "Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception",
+      "authors": "Hongsen Cao, Chia-Yen Chiang, Mona Jaber et al.",
+      "summary": "Cyclist fatality rates remain high despite policy support for active travel, and autonomous vehicles add complexity to mixed traffic. Neither crash statistics nor multi-model detection pipelines scale",
+      "published": "2026-11-05T18:33:58Z",
       "categories": [
         "cs.CV",
+        "eess.IV"
+      ],
+      "link": "http://arxiv.org/abs/2611.08441v1"
+    },
+    {
+      "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+      "authors": "Vladimir Beskorovainyi",
+      "summary": "Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-",
+      "published": "2026-11-05T18:31:24Z",
+      "categories": [
+        "cs.CL",
         "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.06864v1"
+      "link": "http://arxiv.org/abs/2611.08439v1"
     },
     {
-      "title": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
-      "authors": "Kai Ponel, Marco Polignano, Erasmo Purificato et al.",
-      "summary": "Hierarchical text embedding models offer variable-length representations, while quantization reduces numerical precision; both aim to improve computational efficiency. This work is an empirical benchm",
-      "published": "2026-11-04T18:15:08Z",
+      "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "authors": "Fazl Barez, Tung-Yu Wu, Hunar Batra et al.",
+      "summary": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making",
+      "published": "2026-11-05T18:30:54Z",
       "categories": [
         "cs.CL",
-        "cs.IR",
+        "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.06859v1"
+      "link": "http://arxiv.org/abs/2611.08438v1"
     },
     {
-      "title": "CompressionBench: How can your coding agents compress LLMs?",
-      "authors": "Xinrui Zhong, Zhifeng Li, Zhiming Wang et al.",
-      "summary": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's ",
-      "published": "2026-11-04T18:14:50Z",
+      "title": "SM4RT: Cascaded Feed-forward Model for 4D Reconstruction",
+      "authors": "Pang-Chi Lo, Jhao-Syun Lai, Tsung-Wei Ke et al.",
+      "summary": "We introduce SM4RT, a multi-task cascade feed-forward model for dynamic scene reconstruction from RGB videos. While existing feed-forward approaches typically address geometry reconstruction and motio",
+      "published": "2026-11-05T18:28:38Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.08436v1"
+    },
+    {
+      "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+      "authors": "Donghua Zhang, Zizheng Wang, Ze Dong et al.",
+      "summary": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudin",
+      "published": "2026-11-05T18:27:20Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.08433v1"
+    },
+    {
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "authors": "Julian Kunkel, Ali Doosthosseini",
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the w",
+      "published": "2026-11-05T18:22:24Z",
       "categories": [
         "cs.AI"
       ],
-      "link": "http://arxiv.org/abs/2611.06858v1"
-    },
-    {
-      "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
-      "authors": "Haoxiang Cao, Yuxuan Zhang, Penghui Du et al.",
-      "summary": "We introduce LongBanana, to our knowledge the first expert-designed and expert-verified benchmark for long-context multi-reference image synthesis in the age of agent-driven image generation. The task",
-      "published": "2026-11-04T18:11:56Z",
-      "categories": [
-        "cs.CV",
-        "cs.CL"
-      ],
-      "link": "http://arxiv.org/abs/2611.06856v1"
+      "link": "http://arxiv.org/abs/2611.08428v1"
     }
   ]
 }
