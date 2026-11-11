@@ -1,69 +1,160 @@
 {
-  "timestamp": "2026-11-10T06:04:44.374523+00:00",
+  "timestamp": "2026-11-11T04:52:47.001703+00:00",
   "count": 24,
   "items": [
     {
-      "title": "Anthropic reportedly plans to move forward with IPO plans",
-      "link": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
-      "pubDate": "2026-11-10T01:27:12+00:00",
+      "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "pubDate": "2026-11-10T21:08:52+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
-      "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
-      "pubDate": "2026-11-10T00:28:49+00:00",
+      "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+      "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "pubDate": "2026-11-10T20:52:13+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+      "link": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+      "pubDate": "2026-11-10T19:57:52+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+      "link": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "pubDate": "2026-11-10T19:23:34+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "The US is winning the AI race. Jensen Huang could have blown it",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "pubDate": "2026-11-10T19:04:05+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "What could China get from Jensen Huang?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
-      "pubDate": "2026-11-09T23:51:58+00:00",
+      "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+      "link": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+      "pubDate": "2026-11-10T19:03:52+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+      "link": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+      "pubDate": "2026-11-10T18:49:52+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "ChatGPT is getting verified AI ‘Business Agents’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "pubDate": "2026-11-10T18:00:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Here’s what Trump said he knew about Jensen Huang",
-      "link": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
-      "pubDate": "2026-11-09T23:47:46+00:00",
+      "title": "The indie game community is in disarray over AI and Big Walk",
+      "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+      "pubDate": "2026-11-10T17:32:47+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Jensen Huang reportedly engaged a PR firm with a history of handling  high-profile sex scandals a year ago",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
-      "pubDate": "2026-11-09T23:28:37+00:00",
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "link": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "pubDate": "2026-11-10T17:30:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "pubDate": "2026-11-09T23:07:59+00:00",
+      "title": "Anthropic has its own AI-powered office suite now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+      "pubDate": "2026-11-10T17:30:00+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
-      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
-      "pubDate": "2026-11-09T22:46:09+00:00",
+      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+      "link": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "pubDate": "2026-11-10T17:04:19+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "The race is on to sue Nvidia",
-      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
-      "pubDate": "2026-11-09T22:23:42+00:00",
+      "title": "eBay appears to have shut the door on third-party AI agents",
+      "link": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+      "pubDate": "2026-11-10T16:20:30+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "pubDate": "2026-11-10T16:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "pubDate": "2026-11-10T15:54:08+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
-      "pubDate": "2026-11-09T20:09:06+00:00",
+      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+      "link": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
+      "pubDate": "2026-11-10T15:29:30+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
+    },
+    {
+      "title": "Anthropic targets $1.4 trillion IPO",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+      "pubDate": "2026-11-10T14:06:54+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Adobe is going all in on agentic AI",
+      "link": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "pubDate": "2026-11-10T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+      "link": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
+      "pubDate": "2026-11-10T14:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Hands-on with Ring’s new AI drone camera for your home",
+      "link": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "pubDate": "2026-11-10T13:30:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
+      "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
+      "pubDate": "2026-11-10T13:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Evolving metal extraction processes",
+      "link": "https://www.technologyreview.com/2026/11/10/1147726/evolving-metal-extraction-processes/",
+      "pubDate": "2026-11-10T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
     },
     {
       "title": "The backlash about data centers might really just be about electricity",
@@ -73,100 +164,9 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
-      "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-      "pubDate": "2026-11-09T19:24:51+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
-      "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
-      "pubDate": "2026-11-09T19:09:58+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "pubDate": "2026-11-09T19:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-      "pubDate": "2026-11-09T18:09:52+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Instagram’s Effect Builder makes new filters from AI prompts",
-      "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
-      "pubDate": "2026-11-09T18:07:23+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
-      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "pubDate": "2026-11-09T18:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "The future of AI hinges on… Jensen Huang’s sex life?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
-      "pubDate": "2026-11-09T17:36:08+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "Nancy Pelosi’s replacement is ready to regulate AI",
       "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
       "pubDate": "2026-11-09T17:05:43+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
-      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
-      "pubDate": "2026-11-09T16:56:54+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Medium’s new TK app brings AI assistance directly into the writing process",
-      "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
-      "pubDate": "2026-11-09T16:12:28+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
-      "pubDate": "2026-11-09T15:50:38+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Disney and Adobe are building generative AI tools together",
-      "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
-      "pubDate": "2026-11-09T15:38:56+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The Download: empty AI climate claims, and an Nvidia investigation",
-      "link": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/",
-      "pubDate": "2026-11-09T13:15:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Innovating with AI in the special chemicals industry",
-      "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
-      "pubDate": "2026-11-09T13:00:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
