@@ -1,90 +1,160 @@
 {
-  "timestamp": "2026-11-12T05:55:04.480816+00:00",
+  "timestamp": "2026-11-13T05:16:11.216892+00:00",
   "count": 24,
   "items": [
     {
-      "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
-      "link": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
-      "pubDate": "2026-11-12T03:13:10+00:00",
+      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "pubDate": "2026-11-12T22:42:51+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
+    },
+    {
+      "title": "Muse can now place calls to US businesses — if you pay",
+      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "pubDate": "2026-11-12T22:22:28+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Google’s new Gemini model is better at understanding complicated questions",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "pubDate": "2026-11-12T21:55:32+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
     },
     {
       "title": "The unfolding Jensen Huang scandal: a timeline",
-      "link": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "pubDate": "2026-11-11T23:50:00+00:00",
+      "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "pubDate": "2026-11-12T21:35:00+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
-      "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
-      "pubDate": "2026-11-11T23:28:45+00:00",
+      "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "pubDate": "2026-11-12T21:27:10+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
-      "link": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
-      "pubDate": "2026-11-11T23:17:05+00:00",
+      "title": "Jensen Huang was having a third affair, Reuters reports",
+      "link": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+      "pubDate": "2026-11-12T20:26:47+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Nvidia is reportedly preparing to fire Jensen Huang",
-      "link": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-      "pubDate": "2026-11-11T22:44:36+00:00",
+      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "pubDate": "2026-11-12T20:16:24+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "No, AI agents did not discover a previously unknown Maya site",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+      "pubDate": "2026-11-12T19:42:40+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "United won’t let your AI agent book your flight",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
-      "pubDate": "2026-11-11T21:54:21+00:00",
+      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+      "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "pubDate": "2026-11-12T19:27:45+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
+      "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+      "pubDate": "2026-11-12T19:11:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "pubDate": "2026-11-12T18:39:23+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Oh, Palantir is ‘progressive’ now, is it?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
+      "pubDate": "2026-11-12T18:06:54+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
     {
-      "title": "Why the data center you dread might never even be built",
-      "link": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
-      "pubDate": "2026-11-11T20:15:15+00:00",
+      "title": "The Jensen Huang scandal is hardly over",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
+      "pubDate": "2026-11-12T17:44:33+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
+      "link": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "pubDate": "2026-11-12T17:36:40+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "Meta is losing its longtime head of  infrastructure",
-      "link": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
-      "pubDate": "2026-11-11T20:12:01+00:00",
+      "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+      "link": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "pubDate": "2026-11-12T17:17:58+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
     {
-      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-      "link": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-      "pubDate": "2026-11-11T20:02:14+00:00",
+      "title": "AI chatbots are recommending fake retail websites, study finds",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+      "pubDate": "2026-11-12T17:00:00+00:00",
       "thumbnail": "",
-      "source": "TechCrunch AI"
+      "source": "The Verge AI"
     },
     {
-      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-      "link": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-      "pubDate": "2026-11-11T19:54:00+00:00",
+      "title": "More game developers are starting to use generative AI",
+      "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "pubDate": "2026-11-12T17:00:00+00:00",
       "thumbnail": "",
-      "source": "TechCrunch AI"
+      "source": "The Verge AI"
     },
     {
-      "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
-      "link": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
-      "pubDate": "2026-11-11T19:34:55+00:00",
+      "title": "Jensen Huang is out. What did China want from him?",
+      "link": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+      "pubDate": "2026-11-12T16:30:00+00:00",
       "thumbnail": "",
-      "source": "TechCrunch AI"
+      "source": "The Verge AI"
     },
     {
-      "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
-      "link": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-      "pubDate": "2026-11-11T19:22:22+00:00",
+      "title": "Read Nvidia’s internal emails about the ‘extraordinarily difficult period’ amid CEO shakeup",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
+      "pubDate": "2026-11-12T15:48:12+00:00",
       "thumbnail": "",
-      "source": "TechCrunch AI"
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "pubDate": "2026-11-12T15:01:31+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "I reviewed the Apple HomeView, ask me anything",
+      "link": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
+      "pubDate": "2026-11-12T14:10:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The Download: COP31’s climate challenge and the quest for immortality",
+      "link": "https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/",
+      "pubDate": "2026-11-12T13:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
     },
     {
       "title": "What to know about this year’s UN climate talks",
@@ -94,79 +164,9 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-      "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-      "pubDate": "2026-11-11T16:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-      "pubDate": "2026-11-11T15:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
-      "link": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-      "pubDate": "2026-11-11T14:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "The Download: preserving minds and weighing open AI risks",
       "link": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/",
       "pubDate": "2026-11-11T13:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "The US is winning the AI race. Jensen Huang could have blown it",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-      "pubDate": "2026-11-10T19:04:05+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "ChatGPT is getting verified AI ‘Business Agents’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
-      "pubDate": "2026-11-10T18:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The indie game community is in disarray over AI and Big Walk",
-      "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-      "pubDate": "2026-11-10T17:32:47+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Anthropic has its own AI-powered office suite now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-      "pubDate": "2026-11-10T17:30:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "eBay appears to have shut the door on third-party AI agents",
-      "link": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
-      "pubDate": "2026-11-10T16:20:30+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
-      "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
-      "pubDate": "2026-11-10T13:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Evolving metal extraction processes",
-      "link": "https://www.technologyreview.com/2026/11/10/1147726/evolving-metal-extraction-processes/",
-      "pubDate": "2026-11-10T13:00:00+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
