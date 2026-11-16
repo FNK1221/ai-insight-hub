@@ -1,7 +1,63 @@
 {
-  "timestamp": "2026-11-15T04:59:21.516715+00:00",
+  "timestamp": "2026-11-16T04:56:15.485146+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "Apple launches new app to study how people use AI for health",
+      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "pubDate": "2026-11-16T01:30:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Apple’s new study looks to improve the effectiveness of AI health tools",
+      "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+      "pubDate": "2026-11-16T01:26:56+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "pubDate": "2026-11-15T23:30:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "link": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "pubDate": "2026-11-15T21:56:35+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+      "link": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "pubDate": "2026-11-15T20:43:49+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "link": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "pubDate": "2026-11-15T20:20:57+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "pubDate": "2026-11-15T19:15:43+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "An overview of Jensen Huang’s messy days",
+      "link": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+      "pubDate": "2026-11-15T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "Where was Nvidia’s security team?",
       "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
@@ -73,39 +129,11 @@
       "source": "TechCrunch AI"
     },
     {
-      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "pubDate": "2026-11-13T18:40:30+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
-      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-      "pubDate": "2026-11-13T16:00:12+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "link": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "pubDate": "2026-11-13T15:58:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "What&#8217;s really at stake in the Jensen Huang saga",
       "link": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
       "pubDate": "2026-11-13T14:47:16+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
-      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-      "pubDate": "2026-11-13T14:44:48+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
@@ -122,13 +150,6 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "Let’s talk about Jensen Huang’s many affairs!",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow",
-      "pubDate": "2026-11-13T12:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
       "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
       "pubDate": "2026-11-13T10:00:00+00:00",
@@ -143,32 +164,11 @@
       "source": "MIT Tech Review"
     },
     {
-      "title": "Google’s new Gemini model is better at understanding complicated questions",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "pubDate": "2026-11-12T21:55:32+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
       "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
       "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
       "pubDate": "2026-11-12T20:16:24+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
-    },
-    {
-      "title": "No, AI agents did not discover a previously unknown Maya site",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-      "pubDate": "2026-11-12T19:42:40+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Oh, Palantir is ‘progressive’ now, is it?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-      "pubDate": "2026-11-12T18:06:54+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
     }
   ]
 }
