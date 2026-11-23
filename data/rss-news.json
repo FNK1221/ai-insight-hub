@@ -1,7 +1,49 @@
 {
-  "timestamp": "2026-11-22T05:17:52.941312+00:00",
+  "timestamp": "2026-11-23T05:56:46.735244+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "pubDate": "2026-11-23T01:25:53+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "We haven’t seen the last of the major tech outages",
+      "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
+      "pubDate": "2026-11-22T22:48:02+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "pubDate": "2026-11-22T21:14:07+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Why data centers are at the center of the Big Tech backlash",
+      "link": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+      "pubDate": "2026-11-22T18:08:43+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "pubDate": "2026-11-22T17:25:20+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "The vibe-coding revolution is coming to all the gadgets",
+      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "pubDate": "2026-11-22T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
     {
       "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
       "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
@@ -94,25 +136,11 @@
       "source": "The Verge AI"
     },
     {
-      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-      "link": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-      "pubDate": "2026-11-20T14:55:44+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "The week everything fell apart",
       "link": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
       "pubDate": "2026-11-20T14:06:59+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Six AI-powered gadgets that could make your home office smarter",
-      "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-      "pubDate": "2026-11-20T14:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "The Download: inside the quest to make our minds immortal",
@@ -125,34 +153,6 @@
       "title": "Signal is blocking Gemini and Siri AI from reading your screen",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
       "pubDate": "2026-11-20T12:30:47+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "pubDate": "2026-11-20T00:56:01+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Apple is hiring engineers to build its own AI agent",
-      "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "pubDate": "2026-11-19T22:31:41+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "A brief history of Nvidia’s recent stock fluctuations",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-      "pubDate": "2026-11-19T21:59:35+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Meta’s Muse Charm might cost $300",
-      "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-      "pubDate": "2026-11-19T20:22:17+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
     },
