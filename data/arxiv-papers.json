@@ -1,225 +1,220 @@
 {
-  "timestamp": "2026-11-15T04:58:46.167264+00:00",
+  "timestamp": "2026-11-26T06:59:02.449022+00:00",
   "count": 20,
   "papers": [
     {
-      "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
-      "authors": "Yanke Song, Shuo Chen, Chris Rockwell et al.",
-      "summary": "Frontier video generation models work in a VAE latent space that compresses video in both space and time. This compression made training tractable, but now limits high-resolution, controllable, and in",
-      "published": "2026-11-12T18:59:55Z",
+      "title": "AnyCam: Anything Can Represent Camera for Video Generation",
+      "authors": "Weijie Lyu, Zhixin Shu, Yuntian Ke et al.",
+      "summary": "Camera-controlled video generation re-renders a video along a target camera trajectory, yet moving the camera around an object, the most natural way to change the viewpoint of an object-centric scene,",
+      "published": "2026-11-25T18:59:59Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.17336v1"
+      "link": "http://arxiv.org/abs/2611.34944v1"
     },
     {
-      "title": "Unbundling Multimodal Vision Encoding",
-      "authors": "Ellis Brown, Chris Hoang, Shengyi Qian et al.",
-      "summary": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language",
-      "published": "2026-11-12T18:59:54Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17334v1"
-    },
-    {
-      "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
-      "authors": "Chin-Yang Lin, Ryo Hachiuma, Jaesung Choe et al.",
-      "summary": "Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while ",
-      "published": "2026-11-12T18:59:52Z",
+      "title": "Tracking Any Point with Agentic Visual Reasoning",
+      "authors": "Xuweiyi Chen, Jin Yao, Linzhan Mou et al.",
+      "summary": "A general-purpose Vision-Language Model (VLM) has surpassed expert vision models in many domains such as object detection and video recognition. However, point correspondence is known to be challengin",
+      "published": "2026-11-25T18:59:58Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.17331v1"
+      "link": "http://arxiv.org/abs/2611.34943v1"
     },
     {
-      "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
-      "authors": "Jie Wang, Tong Zhu, JiaHao Kuang et al.",
-      "summary": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSe",
-      "published": "2026-11-12T18:59:52Z",
+      "title": "Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning",
+      "authors": "Yalin E. Sagduyu, Tugba Erpek",
+      "summary": "End-to-end physical-layer learning replaces separate modulation, coding, and detection operations with an autoencoder (AE) that consists of a jointly trained encoder-decoder pair at the transmitter an",
+      "published": "2026-11-25T18:59:57Z",
       "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17332v1"
-    },
-    {
-      "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
-      "authors": "Guangyuan Sui, Yunzhong Hou, Chi Harold Liu et al.",
-      "summary": "Vision language navigation (VLN) is very challenging for Unmanned Aerial Vehicles (UAVs) since small errors in 3D motion prediction can lead to navigation errors and collisions. Unable to fathom execu",
-      "published": "2026-11-12T18:59:49Z",
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2611.17330v1"
-    },
-    {
-      "title": "Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation",
-      "authors": "Zeynep Yıldız, Satchit Chatterji, Ercan Atam et al.",
-      "summary": "Institutional portfolios operate under investment policy statements that specify asset allocation constraints, often conditioned on market regime information. Deep reinforcement learning has been show",
-      "published": "2026-11-12T18:59:37Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17329v1"
-    },
-    {
-      "title": "K2V: Generative Keyframing For Physically Plausible Video Generation",
-      "authors": "Felix O'Mahony, Daniel Olmeda Reino, Roberto Cipolla et al.",
-      "summary": "Video diffusion models are able to generate samples with high-quality appearance and textural qualities. However, content produced by these methods is known to exhibit significant physical errors. Thi",
-      "published": "2026-11-12T18:59:09Z",
-      "categories": [
-        "cs.CV"
-      ],
-      "link": "http://arxiv.org/abs/2611.17324v1"
-    },
-    {
-      "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
-      "authors": "Ethan Lin, Akanksha Sarkar, Ziang Liu et al.",
-      "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline de",
-      "published": "2026-11-12T18:59:06Z",
-      "categories": [
+        "cs.NI",
         "cs.AI",
-        "cs.LG"
+        "eess.SP"
       ],
-      "link": "http://arxiv.org/abs/2611.17323v1"
+      "link": "http://arxiv.org/abs/2611.34942v1"
     },
     {
-      "title": "BrickFlow: Connectivity-Guided Brick Reconstruction",
-      "authors": "Peter Kulits, Cordelia Schmid",
-      "summary": "Given a set of LEGO parts and an image of an assembled object, our task is to infer the pose of each part to assemble the object. In contrast with traditional 3D reconstruction, doing so requires sati",
-      "published": "2026-11-12T18:58:51Z",
+      "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+      "authors": "Ji Xie, Yanhao Jia, Xiangpeng Yang et al.",
+      "summary": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible",
+      "published": "2026-11-25T18:59:55Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34941v1"
+    },
+    {
+      "title": "LuxAvatar: Real-Time Relightable Head Avatars via Causal Neural Shading of 3D Intrinsic Proxies",
+      "authors": "Yipengjing Sun, Chenyang Wang, Boyao Zhou et al.",
+      "summary": "We present LuxAvatar, a feed-forward framework for real-time head avatar animation and relighting from a single portrait. To achieve both 3D controllability and complex facial light transport, we fact",
+      "published": "2026-11-25T18:59:46Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34940v1"
+    },
+    {
+      "title": "A Mesh for Every Moment",
+      "authors": "Roy Or-El, Jeong Joon Park, Ira Kemelmacher-Shlizerman et al.",
+      "summary": "We present MEMO (a Mesh for Every MOment), a method that reconstructs the geometry of complete dynamic scenes, captured by multiple synchronized cameras, and extracts a mesh at every frame. Existing d",
+      "published": "2026-11-25T18:59:45Z",
       "categories": [
         "cs.CV",
         "cs.GR"
       ],
-      "link": "http://arxiv.org/abs/2611.17321v1"
+      "link": "http://arxiv.org/abs/2611.34939v1"
     },
     {
-      "title": "Learning When Diffusion Language Models Should Regenerate",
-      "authors": "Minhae Oh, Jeonghye Kim, Jinwoo Koo et al.",
-      "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain",
-      "published": "2026-11-12T18:58:50Z",
+      "title": "Tokenisation is not in APX",
+      "authors": "Violeta Kastreva, Philip Whittington, Dennis Komm et al.",
+      "summary": "In this paper, we prove that, unless P=NP, no polynomial-time algorithm can find a tokeniser whose objective is within any constant factor of the optimum, meaning that tokenisation is not in the APX c",
+      "published": "2026-11-25T18:59:38Z",
       "categories": [
-        "cs.CL"
+        "cs.CL",
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.17320v1"
+      "link": "http://arxiv.org/abs/2611.34938v1"
     },
     {
-      "title": "Spatial Foundry: A Multimodal Dataset for Spatial Intelligence",
-      "authors": "Ethan Lin, Yang Song",
-      "summary": "Spatial intelligence requires connecting visual observations to the geometry, objects, and persistent state of an environment. Images alone leave these relationships implicit, while disconnected annot",
-      "published": "2026-11-12T18:58:36Z",
+      "title": "Can image generation help visual reasoning? An empirical study",
+      "authors": "Xueyang Yu, Yifan Jing, Taiming Lu et al.",
+      "summary": "Language models think in words; then multimodal models might think in images. We test whether a generated helper improves the answer to a visual question. A model describes the helper it needs and the",
+      "published": "2026-11-25T18:59:31Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34935v1"
+    },
+    {
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "authors": "Charlie Griffin, Oliver Makins, Asa Cooper Stickland et al.",
+      "summary": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment. We ev",
+      "published": "2026-11-25T18:59:28Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.34934v1"
+    },
+    {
+      "title": "DynMF2: Rigid Motion Factorization by Expectation-Maximization for Monocular 4D Reconstruction and Motion Segmentation",
+      "authors": "Agelos Kratimenos, Yile Hua, Kostas Daniilidis et al.",
+      "summary": "A single casual video leaves a moving scene under-determined: a point seen once from each place can slide toward or away from the camera and still match every frame. We constrain the reconstruction wi",
+      "published": "2026-11-25T18:59:14Z",
       "categories": [
         "cs.CV"
       ],
-      "link": "http://arxiv.org/abs/2611.17318v1"
+      "link": "http://arxiv.org/abs/2611.34931v1"
     },
     {
-      "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
-      "authors": "Peiwen Li, Harshit Verma, Sophia Zhou et al.",
-      "summary": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for unknown next tasks requires balancing fut",
-      "published": "2026-11-12T18:58:22Z",
+      "title": "A gene informed benchmark for BioScoring of pathology foundation models",
+      "authors": "Paul Vilars, Vincent Quoc-Huy Trinh, Maria Vakalopoulou et al.",
+      "summary": "Pathology foundation models are usually compared by their performance on downstream tasks such as classification and retrieval. While such benchmarks measure how useful a model is, they provide no ins",
+      "published": "2026-11-25T18:59:13Z",
       "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.SE"
+        "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.17316v1"
+      "link": "http://arxiv.org/abs/2611.34930v1"
     },
     {
-      "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
-      "authors": "Abigail L. Tenenbaum, R. Thomas McCoy",
-      "summary": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a neural network can enable it to learn ra",
-      "published": "2026-11-12T18:57:49Z",
+      "title": "High-Fidelity Image Matting with Pixel-Space Diffusion Transformers",
+      "authors": "Baihan Yang, Xin Lin, Yufan Wei et al.",
+      "summary": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion mod",
+      "published": "2026-11-25T18:59:12Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34929v1"
+    },
+    {
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "authors": "Lukas Aichberger, Adam Golinski, Arno Blaas et al.",
+      "summary": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare unde",
+      "published": "2026-11-25T18:59:11Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "http://arxiv.org/abs/2611.34928v1"
+    },
+    {
+      "title": "Mixture-of-Loops Transformer",
+      "authors": "Lianghui Zhu, Shijie Wang, Xinggang Wang et al.",
+      "summary": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism conne",
+      "published": "2026-11-25T18:58:53Z",
       "categories": [
         "cs.LG",
         "cs.CL"
       ],
-      "link": "http://arxiv.org/abs/2611.17314v1"
+      "link": "http://arxiv.org/abs/2611.34923v1"
     },
     {
-      "title": "Sketching Language Models for Context Attribution",
-      "authors": "Christopher Liaw, Aranyak Mehta, Grigoris Velegkas et al.",
-      "summary": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens and a fixed measurement function. Computi",
-      "published": "2026-11-12T18:57:48Z",
-      "categories": [
-        "cs.DS",
-        "cs.AI",
-        "cs.LG",
-        "stat.ML"
-      ],
-      "link": "http://arxiv.org/abs/2611.17313v1"
-    },
-    {
-      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
-      "authors": "Benjamin Hoover, Hugh Blayney, James C. R. Whittington et al.",
-      "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to trai",
-      "published": "2026-11-12T18:56:56Z",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17309v1"
-    },
-    {
-      "title": "Quantifying structural stability of transparent models for general insurance pricing",
-      "authors": "Félix Côté, Marie-Pier Côté",
-      "summary": "The short duration of general insurance contracts leads to rapid distributional shifts in the data, warranting regular model updates. This process may yield a post-update model that differs considerab",
-      "published": "2026-11-12T18:56:54Z",
-      "categories": [
-        "stat.ML",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17308v1"
-    },
-    {
-      "title": "Towards a Theory of Learnability via Debate",
-      "authors": "Tosca Lechner, Vinayak Pathak, Sivan Sabato et al.",
-      "summary": "Debate has been recently proposed as a training protocol that is hoped to produce more aligned models even as model capabilities scale. The idea is that the human, instead of providing supervision in ",
-      "published": "2026-11-12T18:55:58Z",
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17303v1"
-    },
-    {
-      "title": "FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification",
-      "authors": "Mohamed Alimoussa, Amal El Kaid",
-      "summary": "Local Binary Patterns (LBP) remain among the most widely used texture descriptors, from industrial inspection to medical imaging. Yet their radius, sampling angles, color transform and thresholds are ",
-      "published": "2026-11-12T18:55:56Z",
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17302v1"
-    },
-    {
-      "title": "Consistent Video-to-Video Translation via Explicit Correspondences",
-      "authors": "Gaurav Parmar, Zhengqi Li, Richard Zhang et al.",
-      "summary": "Interactive video-to-video applications require real-time generation while maintaining long-range temporal consistency. However, recent methods achieve speed by restricting attention to a fixed-length",
-      "published": "2026-11-12T18:55:09Z",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.GR",
-        "cs.LG"
-      ],
-      "link": "http://arxiv.org/abs/2611.17298v1"
-    },
-    {
-      "title": "Goal Encoding in LLMs",
-      "authors": "Arnab Sen Sharma, Eric Todd, Sheridan Feucht et al.",
-      "summary": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We ",
-      "published": "2026-11-12T18:55:06Z",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "authors": "Qihao Lin, Guanxu Chen, Shuhang Zheng et al.",
+      "summary": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when partic",
+      "published": "2026-11-25T18:58:42Z",
       "categories": [
         "cs.CL",
+        "cs.AI"
+      ],
+      "link": "http://arxiv.org/abs/2611.34920v1"
+    },
+    {
+      "title": "Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs",
+      "authors": "Agelos Kratimenos, Kostas Daniilidis, Evangelos Chatzipantazis et al.",
+      "summary": "Vision-language-action models (VLAs) are capable low-level controllers, but they tie where objects go to the layouts they were trained on: when objects are moved or obstacles block the way, they carry",
+      "published": "2026-11-25T18:57:29Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34914v1"
+    },
+    {
+      "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
+      "authors": "Jiachen An, Sijie Zhao, Le Li et al.",
+      "summary": "While video diffusion models have grown faster and increasingly streamable, the video VAE remains a primary latency bottleneck across interactive generation and editing pipelines. Existing VAEs and th",
+      "published": "2026-11-25T18:57:14Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34912v1"
+    },
+    {
+      "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+      "authors": "Shaoteng Liu, Shuai Yang, Wei Huang et al.",
+      "summary": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent sy",
+      "published": "2026-11-25T18:54:03Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34907v1"
+    },
+    {
+      "title": "ProbFaS: Probabilistic Video Frame Selection for MLLMs via Multi-Fidelity Calibration",
+      "authors": "Tianru Zhang, Mayank Nautiyal, Hugo Eidmann et al.",
+      "summary": "Processing long videos with multimodal large language models (MLLMs) is prohibitively expensive, making informative frame selection essential for accurate video understanding. The default uniform samp",
+      "published": "2026-11-25T18:53:10Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "link": "http://arxiv.org/abs/2611.34903v1"
+    },
+    {
+      "title": "Enhancing Maritime Domain Awareness using Latent Space Representations",
+      "authors": "Rikard Vinge, Miguel A. Belenguer-Plomer, Isabelle Wittmann et al.",
+      "summary": "This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly",
+      "published": "2026-11-25T18:51:36Z",
+      "categories": [
+        "cs.CV",
         "cs.AI",
         "cs.LG"
       ],
-      "link": "http://arxiv.org/abs/2611.17297v1"
+      "link": "http://arxiv.org/abs/2611.34899v1"
     }
   ]
 }

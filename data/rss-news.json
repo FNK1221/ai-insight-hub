@@ -1,46 +1,130 @@
 {
-  "timestamp": "2026-11-25T07:09:51.697903+00:00",
+  "timestamp": "2026-11-26T06:59:39.214173+00:00",
   "count": 24,
   "items": [
+    {
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "pubDate": "2026-11-25T22:44:32+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "pubDate": "2026-11-25T21:51:26+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "pubDate": "2026-11-25T20:03:27+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "link": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "pubDate": "2026-11-25T19:54:57+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "link": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "pubDate": "2026-11-25T19:44:24+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "link": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "pubDate": "2026-11-25T18:11:46+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "pubDate": "2026-11-25T17:44:51+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+      "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "pubDate": "2026-11-25T17:35:58+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "How data centers are driving a US natural-gas boom",
+      "link": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+      "pubDate": "2026-11-25T17:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "Nothing offers a full look at its AI earbuds and charging case",
+      "link": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "pubDate": "2026-11-25T16:00:59+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "link": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "pubDate": "2026-11-25T15:41:43+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+      "link": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "pubDate": "2026-11-25T14:12:33+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "link": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "pubDate": "2026-11-25T14:10:18+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "The Download: AI swamping open records, and firefighting for permafrost",
+      "link": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
+      "pubDate": "2026-11-25T13:10:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
+    {
+      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "link": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "pubDate": "2026-11-25T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "Has vibe coding made open source the new normal for synths?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "pubDate": "2026-11-25T13:00:00+00:00",
+      "thumbnail": "",
+      "source": "The Verge AI"
+    },
+    {
+      "title": "AI is straining America’s open records systems",
+      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "pubDate": "2026-11-25T10:00:00+00:00",
+      "thumbnail": "",
+      "source": "MIT Tech Review"
+    },
     {
       "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
       "link": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
       "pubDate": "2026-11-25T00:12:02+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-      "link": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-      "pubDate": "2026-11-24T22:27:52+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
-      "link": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
-      "pubDate": "2026-11-24T21:48:27+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Even the best AI agents struggle with everyday life",
-      "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "pubDate": "2026-11-24T21:33:29+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
-      "link": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
-      "pubDate": "2026-11-24T21:32:38+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
-      "link": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
-      "pubDate": "2026-11-24T21:19:52+00:00",
       "thumbnail": "",
       "source": "TechCrunch AI"
     },
@@ -52,13 +136,6 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
-      "link": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-      "pubDate": "2026-11-24T18:30:42+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "David Fincher is being dragged for suspected use of AI in his latest film",
       "link": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
       "pubDate": "2026-11-24T18:15:00+00:00",
@@ -66,32 +143,11 @@
       "source": "The Verge AI"
     },
     {
-      "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
-      "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
-      "pubDate": "2026-11-24T18:02:59+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
       "title": "Tidal will start banning AI-generated music next month",
       "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
       "pubDate": "2026-11-24T17:17:09+00:00",
       "thumbnail": "",
       "source": "The Verge AI"
-    },
-    {
-      "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
-      "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-      "pubDate": "2026-11-24T17:00:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
-    },
-    {
-      "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-      "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-      "pubDate": "2026-11-24T16:46:00+00:00",
-      "thumbnail": "",
-      "source": "TechCrunch AI"
     },
     {
       "title": "Jensen Huang deepfakes are the hot new AI slop",
@@ -108,65 +164,9 @@
       "source": "The Verge AI"
     },
     {
-      "title": "Raising the stakes for enterprise networks with AI modernization",
-      "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
-      "pubDate": "2026-11-24T15:15:16+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
       "title": "The Download: AI’s gas power boom and a consciousness reality check",
       "link": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/",
       "pubDate": "2026-11-24T13:10:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Data centers are getting their own natural gas power plants",
-      "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
-      "pubDate": "2026-11-24T11:00:00+00:00",
-      "thumbnail": "",
-      "source": "MIT Tech Review"
-    },
-    {
-      "title": "Trump engineered a risky comeback for Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
-      "pubDate": "2026-11-23T22:25:12+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang is back. What happens next?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "pubDate": "2026-11-23T22:10:32+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Welcome to elite impunity, Jensen Huang",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
-      "pubDate": "2026-11-23T22:09:26+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "AI data centers throw another wrench into chaotic UN climate talks",
-      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-      "pubDate": "2026-11-23T21:09:37+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "Claude AI can review pull requests and ship fixes on its own now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "pubDate": "2026-11-23T20:00:00+00:00",
-      "thumbnail": "",
-      "source": "The Verge AI"
-    },
-    {
-      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-      "pubDate": "2026-11-23T17:36:08+00:00",
       "thumbnail": "",
       "source": "MIT Tech Review"
     }
